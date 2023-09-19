@@ -10,12 +10,16 @@ function About() {
     <div className="container">
       <Grid container spacing={2}>
         <Grid item smdown={12} smUp={4}>
-          <Typography variant="h1" className="AboutTitle">
+          <Typography variant="h1" className="AboutTitle" sx={{ marginTop: 6 }}>
             About
           </Typography>
         </Grid>
         <Grid item smdown={12} smUp={8} mt={2}>
-          <Typography className="About-text">
+          <Typography
+            className="About-text"
+            component="div"
+            sx={{ margin: "auto" }}
+          >
             Dedicated and skilled web developer with a strong foundation in
             HTML, CSS, Javascript and React, backed by a diverse professional
             background, including CDL truck driving and Financial analysis

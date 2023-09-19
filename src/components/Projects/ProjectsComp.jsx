@@ -1,9 +1,13 @@
 import React from "react";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Box, Grid, Typography } from "@mui/material";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Card from "@mui/material/Card";
+import { Button } from "reactstrap";
 import Ecomm from "../../assets/images/ecomm.jpeg";
-import { Box, Card, Grid, Typography } from "@mui/material";
-import { Button, CardBody, CardTitle } from "reactstrap";
 
 function ProjectsComp() {
   return (
@@ -11,18 +15,33 @@ function ProjectsComp() {
       <div className="project-container">
         <Grid container spacing={2}>
           <Grid item smUp={4} xs={12}>
-            <Typography className="project-list" variant="h1">
+            <Typography
+              className="project-list"
+              variant="h1"
+              sx={{ marginTop: 6 }}
+            >
               Projects
             </Typography>
           </Grid>
 
           <Grid item xs={12} smUp={8} marginRight={-20} mt={2}>
-            <ol>
+            <ol style={{ listStyle: "none" }}>
               <li>
-                <Typography className="project-text" xs={12}>
-                  <Typography variant="h4" className="project-subt" xs={12}>
-                    Ecommerce site:
-                  </Typography>
+                {" "}
+                <Typography
+                  variant="h4"
+                  className="project-subt"
+                  component="div"
+                  xs={1}
+                  sx={{ marginTop: 2, marginLeft: 20 }}
+                >
+                  Ecommerce site:
+                </Typography>
+                <Typography
+                  className="project-text"
+                  xs={8}
+                  sx={{ margin: "auto" }}
+                >
                   Used a real world API to create an ecommerce
                   platform(Mercadolibre.com), that has a search capabbility,
                   shopping cart functionality (decrease/increse/clear cart) and
@@ -34,13 +53,23 @@ function ProjectsComp() {
                 </Typography>
                 <br></br>
                 <Box className="project-details">
-                  <Card class="card" style={{ width: "17rem" }}>
-                    <img src={Ecomm} class="card-img-top" alt="..." />
-                    <CardBody class="card-body">
-                      <CardTitle class="card-title">Ecommerce site</CardTitle>
-                      <Box
+                  <Card sx={{ width: "30rem", margin: "auto" }}>
+                    <CardMedia
+                      component="img"
+                      image={Ecomm}
+                      title="projectImage"
+                    />
+                    <CardContent>
+                      <Typography variant="h5" component="div">
+                        Ecommerce site
+                      </Typography>
+
+                      <CardActions
                         className="project-links"
-                        xs={{ justifyContent: "space-between" }}
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-around",
+                        }}
                       >
                         <Button href="https://react---ecomm.web.app/">
                           Live Site
@@ -48,21 +77,36 @@ function ProjectsComp() {
                         <Button href="https://github.com/T00lio/mlchallenge">
                           Repo
                         </Button>
-                      </Box>
-                    </CardBody>
+                      </CardActions>
+                    </CardContent>
                   </Card>
                 </Box>
               </li>
               <br></br>
               <li>
                 {" "}
-                <Typography className="project-text">
-                  <Typography variant="h4" className="project-subt">
-                    Spotify Clone:
-                  </Typography>
+                <Typography
+                  variant="h4"
+                  className="project-subt"
+                  component="div"
+                  xs={1}
+                  sx={{ marginTop: 2, marginLeft: 20 }}
+                >
+                  Spotify Clone:
+                </Typography>
+                <Typography
+                  className="project-text"
+                  xs={8}
+                  width={"70%"}
+                  sx={{ margin: "auto" }}
+                >
                   Currently working on the development of a site with social
                   network type capabilities, using this time a database and
-                  backend architechture integrated into the application.{" "}
+                  backend architechture integrated into the application.
+                  Developing a database and API communication between back/front
+                  end, integrating typescript to leverage code quality and
+                  avoiding errors in the code early in the production. Vite will
+                  be used instead of create react app for faster performance.{" "}
                 </Typography>
               </li>
             </ol>

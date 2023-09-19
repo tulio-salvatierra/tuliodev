@@ -31,10 +31,6 @@
   margin-bottom: 4rem;
 }
 
-.project-links {
-  display: flex;
-  flex-direction: row;
-}
 .card {
   margin-left: auto;
   margin-right: auto;
