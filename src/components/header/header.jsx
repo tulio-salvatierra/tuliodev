@@ -63,7 +63,9 @@ function Header() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="NavbarLink">Contact me</NavLink>
+              <NavLink href="/contact" className="NavbarLink">
+                Contact me
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
