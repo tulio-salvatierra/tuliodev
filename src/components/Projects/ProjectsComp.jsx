@@ -60,10 +60,6 @@ function ProjectsComp() {
                       title="projectImage"
                     />
                     <CardContent>
-                      <Typography variant="h5" component="div">
-                        Ecommerce site
-                      </Typography>
-
                       <CardActions
                         className="project-links"
                         style={{
@@ -97,7 +93,6 @@ function ProjectsComp() {
                 <Typography
                   className="project-text"
                   xs={8}
-                  width={"70%"}
                   sx={{ margin: "auto" }}
                 >
                   Currently working on the development of a site with social
