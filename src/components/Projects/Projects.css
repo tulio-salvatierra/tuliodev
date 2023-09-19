@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: black;
-  width: 75%;
+  width: 80%;
   height: 85%;
   color: white;
   border-radius: 2rem;
@@ -49,4 +49,25 @@
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Roboto";
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    font-size: 2.25rem;
+  }
+  .project-text {
+    font-size: 1rem;
+  }
+  .project-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-list {
+    font-size: 2rem;
+  }
+  .project-text {
+    font-size: 0.5rem;
+  }
 }

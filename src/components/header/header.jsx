@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <div className="container">
+    <div>
       <Navbar className="navbar" expand="md" color="black">
         <NavbarBrand href="/" className="logo">
           <div className="logo">
