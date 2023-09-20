@@ -40,7 +40,7 @@ function ProjectsComp() {
                 <Typography
                   className="project-text"
                   xs={8}
-                  sx={{ margin: "auto" }}
+                  sx={{ margin: "auto", fontSize: "1.5rem", fontWeight: "300" }}
                 >
                   Used a real world API to create an ecommerce
                   platform(Mercadolibre.com), that has a search capabbility,
@@ -101,7 +101,7 @@ function ProjectsComp() {
                 <Typography
                   className="project-text"
                   xs={8}
-                  sx={{ margin: "auto" }}
+                  sx={{ margin: "auto", fontSize: "1.5rem", fontWeight: "300" }}
                 >
                   Currently working on the development of a site with social
                   network type capabilities, using this time a database and

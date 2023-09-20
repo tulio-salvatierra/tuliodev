@@ -22,7 +22,7 @@ function About() {
           <Typography
             className="About-text"
             component="div"
-            sx={{ margin: "auto" }}
+            sx={{ margin: "auto", fontSize: "1.5rem", fontWeight: "300" }}
           >
             Dedicated and skilled web developer with a strong foundation in
             HTML, CSS, Javascript and React, backed by a diverse professional
