@@ -8,9 +8,13 @@ import WY from "../../assets/images/wy.jpeg";
 function About() {
   return (
     <div className="container">
-      <Grid container spacing={2}>
+      <Grid container spacing={2} marginBottom={10}>
         <Grid item smdown={12} smUp={4}>
-          <Typography variant="h1" className="AboutTitle" sx={{ marginTop: 6 }}>
+          <Typography
+            variant="h1"
+            className="AboutTitle"
+            sx={{ marginTop: 6, marginRight: "auto" }}
+          >
             About
           </Typography>
         </Grid>

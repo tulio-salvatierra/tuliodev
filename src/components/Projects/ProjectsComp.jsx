@@ -18,7 +18,7 @@ function ProjectsComp() {
             <Typography
               className="project-list"
               variant="h1"
-              sx={{ marginTop: 6 }}
+              sx={{ marginTop: 6, marginRight: "auto" }}
             >
               Projects
             </Typography>
@@ -32,7 +32,7 @@ function ProjectsComp() {
                   variant="h4"
                   className="project-subt"
                   component="div"
-                  xs={1}
+                  xs={12}
                   sx={{ marginTop: 2, marginLeft: 20 }}
                 >
                   Ecommerce site:

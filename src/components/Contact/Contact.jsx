@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
+import "./Contact.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import { Button } from "reactstrap";
+import emailjs from "@emailjs/browser";
 
 const styles = {
   container: {
-    padding: "20px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 100,
+    marginBottom: 100,
+    xs: 12,
   },
   card: {
-    maxWidth: 500,
+    maxWidth: 600,
     margin: "auto",
     backgroundColor: "#fefefe",
+    marginBottom: 100,
   },
   title: {
     marginTop: 6,
@@ -31,6 +39,26 @@ const styles = {
 };
 
 export default function Component() {
+  const formRef = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    alert("Message sent!");
+  };
   return (
     <div className="container">
       <Typography
@@ -47,13 +75,15 @@ export default function Component() {
               possible.
             </Typography>
 
-            <form>
+            <form ref={formRef} onSubmit={sendEmail}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <TextField
                     id="first-name"
                     label="First Name"
                     variant="outlined"
+                    name="first-name"
+                    autoComplete="true"
                     style={styles.textField}
                   />
                 </Grid>
@@ -62,6 +92,8 @@ export default function Component() {
                     id="last-name"
                     label="Last Name"
                     variant="outlined"
+                    name="last-name"
+                    autoComplete="true"
                     style={styles.textField}
                   />
                 </Grid>
@@ -69,7 +101,9 @@ export default function Component() {
                   <TextField
                     id="email"
                     label="Email"
+                    name="email"
                     variant="outlined"
+                    autoComplete="true"
                     style={styles.textField}
                     type="email"
                   />
@@ -81,6 +115,8 @@ export default function Component() {
                     variant="outlined"
                     multiline
                     rows={4}
+                    name="message"
+                    autoComplete="false"
                     style={styles.textField}
                   />
                 </Grid>
