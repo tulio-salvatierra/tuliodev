@@ -47,18 +47,19 @@ export default function Component() {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         formRef.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_USER_ID
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
         },
-        (error) => {
-          console.log(error.text);
+        function (error) {
+          console.log("FAILED...", error);
         }
       );
     alert("Message sent!");
   };
+
   return (
     <div className="container">
       <Typography
@@ -79,6 +80,7 @@ export default function Component() {
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <TextField
+                    type="text"
                     id="first-name"
                     label="First Name"
                     variant="outlined"
@@ -89,6 +91,7 @@ export default function Component() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
+                    type="text"
                     id="last-name"
                     label="Last Name"
                     variant="outlined"
