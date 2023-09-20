@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Box, Grid, Typography } from "@mui/material";
-import Button from "@mui/material/Button";
+import { Button } from "reactstrap";
 import AZ from "../../assets/images/az.jpeg";
 import VA from "../../assets/images/va.jpeg";
 import WY from "../../assets/images/wy.jpeg";
@@ -42,14 +42,11 @@ function About() {
             projects. I am also looking forward to continue learning and growing
             as a developer. I am currently looking for a job as a web developer,
             and I am open to discuss any opportunities.
-            <Button
-              variant="contained"
-              size="large"
-              color="primary"
-              sx={{ margin: "auto", marginTop: 2, display: "flex" }}
-            >
-              Contact me
-            </Button>
+            <div className="button">
+              <Button outline size="lg" color="secondary" href="/contact">
+                Contact me
+              </Button>
+            </div>
           </Typography>
           <Box className="pic-container">
             <img src={WY} alt="pic" width={400} height={300} />

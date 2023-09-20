@@ -13,7 +13,7 @@ function ProjectsComp() {
   return (
     <>
       <div className="project-container">
-        <Grid container spacing={2}>
+        <Grid container spacing={2} marginBottom={10}>
           <Grid item smUp={4} xs={12}>
             <Typography
               className="project-list"
@@ -67,10 +67,18 @@ function ProjectsComp() {
                           justifyContent: "space-around",
                         }}
                       >
-                        <Button href="https://react---ecomm.web.app/">
+                        <Button
+                          outline
+                          size="lg"
+                          href="https://react---ecomm.web.app/"
+                        >
                           Live Site
                         </Button>
-                        <Button href="https://github.com/T00lio/mlchallenge">
+                        <Button
+                          size="lg"
+                          outline
+                          href="https://github.com/T00lio/mlchallenge"
+                        >
                           Repo
                         </Button>
                       </CardActions>
