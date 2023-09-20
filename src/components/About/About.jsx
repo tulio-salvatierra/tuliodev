@@ -2,13 +2,10 @@ import React from "react";
 import "./About.css";
 import { Box, Grid, Typography } from "@mui/material";
 import { Button } from "reactstrap";
-import AZ from "../../assets/images/az.jpeg";
-import VA from "../../assets/images/va.jpeg";
+
 import WY from "../../assets/images/wy.jpeg";
 
 function About() {
-  const commonHeight = 300;
-
   return (
     <div className="container">
       <Grid container spacing={2}>
