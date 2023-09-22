@@ -20,9 +20,8 @@ function Hero() {
       opacity: 1,
       ease: "power4.out",
     });
-
-    console.log(heroRef);
   }, []);
+
   return (
     <div className="hero-container">
       <div ref={heroRef} className="imageContainer">
