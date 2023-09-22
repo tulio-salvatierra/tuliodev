@@ -10,13 +10,15 @@ function Hero() {
     gsap.set(heroRef.current, {
       yPercent: -100,
       opacity: 0,
+      scale: 0.5,
     });
     gsap.to(heroRef.current, {
-      duration: 2,
-      delay: 1,
+      duration: 1.5,
+      delay: 0.5,
+      scale: 1.5,
       yPercent: 0,
       opacity: 1,
-      ease: "ease-in",
+      ease: "power4.out",
     });
 
     console.log(heroRef);
