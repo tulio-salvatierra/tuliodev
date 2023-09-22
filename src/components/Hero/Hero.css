@@ -6,6 +6,7 @@
 }
 .imageContainer {
   display: flex;
+  width: auto;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;

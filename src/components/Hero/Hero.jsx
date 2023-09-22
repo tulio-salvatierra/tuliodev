@@ -8,7 +8,6 @@ function Hero() {
   const heroRef = useRef(null);
   useEffect(() => {
     gsap.set(heroRef.current, {
-      yPercent: -100,
       opacity: 0,
       scale: 0.5,
     });
