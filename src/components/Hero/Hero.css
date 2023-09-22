@@ -6,10 +6,12 @@
 }
 .imageContainer {
   display: flex;
-  width: auto;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 body {
   align-items: center;
