@@ -14,7 +14,7 @@ function ProjectsComp() {
     <>
       <div className="project-container">
         <Grid container spacing={2} marginBottom={10}>
-          <Grid item smUp={4} xs={12}>
+          <Grid item smup={4} xs={12}>
             <Typography
               className="project-list"
               variant="h1"
@@ -24,7 +24,7 @@ function ProjectsComp() {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} smUp={8} marginRight={-20} mt={2}>
+          <Grid item xs={12} smup={8} marginRight={-20} mt={2}>
             <ol style={{ listStyle: "none" }}>
               <li>
                 {" "}

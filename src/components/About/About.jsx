@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="container">
       <Grid container spacing={2} marginBottom={10}>
-        <Grid item smdown={12} smUp={4}>
+        <Grid item smdown={12} p={4}>
           <Typography
             variant="h1"
             className="AboutTitle"
@@ -18,7 +18,7 @@ function About() {
             About
           </Typography>
         </Grid>
-        <Grid item smdown={12} smUp={8} mt={2}>
+        <Grid item smdown={12} smup={8} mt={2}>
           <Typography
             className="About-text"
             component="div"
