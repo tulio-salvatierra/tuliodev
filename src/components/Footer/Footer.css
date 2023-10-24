@@ -1,16 +1,18 @@
 .footer-container {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
   bottom: 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  background-color: rgb(rgb(78, 71, 71), rgb(54, 56, 54), rgb(55, 55, 63));
 }
 
 .link-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-text {
-  color: white;
+  bottom: 0;
+  width: 100%;
 }

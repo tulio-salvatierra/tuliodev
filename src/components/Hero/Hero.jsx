@@ -1,10 +1,29 @@
 import React, { useRef, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "@mui/material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import { Grid, Typography } from "@mui/material";
 import "./Hero.css";
-import hero from "../../assets/images/Untitled design (7).png";
+import hero from "../../assets/images/hero.PNG";
 import { gsap } from "gsap";
 
 function Hero() {
+  const phoneNumber = "786-314-6121";
+  const email = "salvacorp@gmail.com";
+
+  const handlePhoneClick = () => {
+    window.open(`tel:${phoneNumber}`);
+  };
+
+  const handleEmailClick = () => {
+    window.open(`mailto:${email}`);
+  };
+
+  const handleWhatsappClick = () => {
+    window.open(`https://wa.me/${phoneNumber}`);
+  };
+
   const heroRef = useRef(null);
   useEffect(() => {
     gsap.set(heroRef.current, {
@@ -22,24 +41,62 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero-container">
-      <div ref={heroRef} className="imageContainer">
-        <img
-          src={hero}
-          alt="hero"
-          width={"284px"}
-          height={"284px"}
-          className="image"
-        />
+    <Grid container spacing={2} marginBottom={10}>
+      <div className="hero-container">
+        <div ref={heroRef} className="imageContainer">
+          <img
+            src={hero}
+            alt="hero"
+            width={"150px"}
+            height={"150px"}
+            className="image"
+          />
+        </div>
+        <div className="heroText">
+          <h1 className="heroTitle">Front end Developer</h1>
+          <p className="heroP">
+            I’m Tulio, Software developer with a background in finance and
+            freight. Here you'll see some of my projects and skills. Feel free
+            to contact me, let me know how can I help you or your business!
+          </p>
+        </div>
+        <div className="button">
+          <Button
+            size="lg"
+            variant="contained"
+            color="primary"
+            target="_blank"
+            endIcon={<MailOutlineIcon />}
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleEmailClick}
+          >
+            Email
+          </Button>
+          <Button
+            size="lg"
+            variant="contained"
+            color="primary"
+            endIcon={<PermPhoneMsgIcon />}
+            target="_blank"
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handlePhoneClick}
+          >
+            Call/Text
+          </Button>
+          <Button
+            size="lg"
+            variant="contained"
+            color="primary"
+            target="_blank"
+            endIcon={<WhatsAppIcon />}
+            style={{ marginLeft: "auto", marginRight: "auto" }}
+            onClick={handleWhatsappClick}
+          >
+            Whatsapp
+          </Button>
+        </div>
       </div>
-      <div className="heroText">
-        <h1 className="heroTitle">Front end Software Developer</h1>
-        <p className="heroP">
-          Hey, I’m Tulio. Aspiring software developer with a diverse background
-          and experience. Here you'll see what projects I've been working on.
-        </p>
-      </div>
-    </div>
+    </Grid>
   );
 }
 

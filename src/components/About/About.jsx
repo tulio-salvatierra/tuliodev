@@ -14,6 +14,8 @@ function About() {
             variant="h1"
             className="AboutTitle"
             sx={{ marginTop: 6, marginRight: "auto" }}
+            fontFamily={"'Montserrat', sans-serif"}
+            fontWeight={700}
           >
             About
           </Typography>
@@ -26,23 +28,12 @@ function About() {
           >
             Dedicated and skilled web developer with a strong foundation in
             HTML, CSS, Javascript and React, backed by a diverse professional
-            background, including CDL truck driving and Financial analysis
-            roles. Originally from Venezuela 🇻🇪 , move the United States in 2017
-            and had the pleasure of visiting all 48 states as a truck driver. On
-            my free time I code and play drums which is simmilar to programming,
-            which led me to persue a career in web development as a technology
-            enthusiast. I am a team player, a fast learner, and I am always
-            looking for ways to improve my skills and knowledge. I began my
-            journey in web development in 2023, when I enrolled in Nucamp coding
-            bootcamp, for Front end web develepment back in march. I have
-            learned a lot since then, and I am looking forward to continue
-            learning and growing as a developer. Once completed I began
-            developing project which have increased my skills and knowledge in
-            the field. I am currently working on a project that will be deployed
-            soon, and I am looking forward to continue working on it and other
-            projects. I am also looking forward to continue learning and growing
-            as a developer. I am currently looking for a job as a web developer,
-            and I am open to discuss any opportunities.
+            background, including CDL trucking and Financial analysis roles. I
+            do have a soft spot for music, being a drummer I''ve fortunate to be
+            in many bands, I love live music and being creative, which is why I
+            pursued front end development. Originally from Venezuela, located in
+            Chicago, Illinois. Find me on social media or contact me for more
+            information.
             <div className="button">
               <Button outline size="lg" color="secondary" href="/contact">
                 Contact me

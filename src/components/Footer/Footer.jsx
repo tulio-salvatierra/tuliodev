@@ -14,6 +14,8 @@ function Footer() {
           href="https://www.linkedin.com/in/tulio-salvatierra/"
           target="_blank"
           rel="noopener noreferrer"
+          size="large"
+          color="primary"
         >
           <LinkedInIcon />
         </IconButton>
@@ -22,6 +24,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           size="large"
+          color="primary"
         >
           <GitHubIcon />
         </IconButton>
