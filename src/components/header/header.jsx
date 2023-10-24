@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <header>
       <Navbar className="navbar" expand="md" color="black">
         <NavbarBrand href="/" className="logo">
           <div className="logo">
@@ -70,7 +70,7 @@ function Header() {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </header>
   );
 }
 

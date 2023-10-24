@@ -3,8 +3,6 @@ import "./About.css";
 import { Box, Grid, Typography } from "@mui/material";
 import { Button } from "reactstrap";
 
-import WY from "../../assets/images/wy.jpeg";
-
 function About() {
   return (
     <div className="container">
@@ -40,9 +38,7 @@ function About() {
               </Button>
             </div>
           </Typography>
-          <Box className="pic-container">
-            <img src={WY} alt="pic" width={400} height={300} />
-          </Box>
+          <Box className="pic-container"></Box>
         </Grid>
       </Grid>
     </div>

@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import "./Hero.css";
 import hero from "../../assets/images/hero.PNG";
 import { gsap } from "gsap";
