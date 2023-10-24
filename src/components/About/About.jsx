@@ -5,7 +5,7 @@ import { Button } from "reactstrap";
 
 function About() {
   return (
-    <div className="container">
+    <section className="container">
       <Grid container spacing={2} marginBottom={10}>
         <Grid item smdown={12} p={4}>
           <Typography
@@ -32,16 +32,14 @@ function About() {
             pursued front end development. Originally from Venezuela, located in
             Chicago, Illinois. Find me on social media or contact me for more
             information.
-            <div className="button">
-              <Button outline size="lg" color="secondary" href="/contact">
-                Contact me
-              </Button>
-            </div>
+            <Button outline size="lg" color="secondary" href="/contact">
+              Contact me
+            </Button>
           </Typography>
           <Box className="pic-container"></Box>
         </Grid>
       </Grid>
-    </div>
+    </section>
   );
 }
 
