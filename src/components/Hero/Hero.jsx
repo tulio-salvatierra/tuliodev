@@ -21,7 +21,7 @@ function Hero() {
   };
 
   const handleWhatsappClick = () => {
-    window.open(`https://wa.me/${phoneNumber}`);
+    window.open(`whatsapp://send?phone=${phoneNumber}`);
   };
 
   const heroRef = useRef(null);
