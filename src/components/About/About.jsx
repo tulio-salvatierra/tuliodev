@@ -21,8 +21,13 @@ function About() {
         <Grid item smdown={12} smup={8} mt={2}>
           <Typography
             className="About-text"
-            component="div"
-            sx={{ margin: "auto", fontSize: "1.5rem", fontWeight: "300" }}
+            component="p"
+            sx={{
+              margin: "auto",
+              fontSize: "2rem",
+              fontWeight: "400",
+              textAlign: "justify",
+            }}
           >
             Dedicated and skilled web developer with a strong foundation in
             HTML, CSS, Javascript and React, backed by a diverse professional
@@ -32,11 +37,13 @@ function About() {
             pursued front end development. Originally from Venezuela, located in
             Chicago, Illinois. Find me on social media or contact me for more
             information.
+          </Typography>
+          <Box className="pic-container">
+            {" "}
             <Button outline size="lg" color="secondary" href="/contact">
               Contact me
             </Button>
-          </Typography>
-          <Box className="pic-container"></Box>
+          </Box>
         </Grid>
       </Grid>
     </section>
