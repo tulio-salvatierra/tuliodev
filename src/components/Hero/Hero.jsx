@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { Grid } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import "./Hero.css";
 import hero from "../../assets/images/hero.PNG";
 import { gsap } from "gsap";
@@ -42,60 +42,64 @@ function Hero() {
 
   return (
     <Grid container spacing={2} marginBottom={10}>
-      <div className="hero-container">
-        <div ref={heroRef} className="imageContainer">
-          <img
-            src={hero}
-            alt="hero"
-            width={"150px"}
-            height={"150px"}
-            className="image"
-          />
-        </div>
-        <div className="heroText">
-          <h1 className="heroTitle">Front end Developer</h1>
-          <p className="heroP">
-            I’m Tulio, Software developer with a background in finance and
-            freight. Here you'll see some of my projects and skills. Feel free
-            to contact me, let me know how can I help you or your business!
-          </p>
-        </div>
-        <div className="button">
-          <Button
-            size="lg"
-            variant="contained"
-            color="primary"
-            target="_blank"
-            endIcon={<MailOutlineIcon />}
-            style={{ marginLeft: "auto", marginRight: "auto" }}
-            onClick={handleEmailClick}
-          >
-            Email
-          </Button>
-          <Button
-            size="lg"
-            variant="contained"
-            color="primary"
-            endIcon={<PermPhoneMsgIcon />}
-            target="_blank"
-            style={{ marginLeft: "auto", marginRight: "auto" }}
-            onClick={handlePhoneClick}
-          >
-            Call/Text
-          </Button>
-          <Button
-            size="lg"
-            variant="contained"
-            color="primary"
-            target="_blank"
-            endIcon={<WhatsAppIcon />}
-            style={{ marginLeft: "auto", marginRight: "auto" }}
-            onClick={handleWhatsappClick}
-          >
-            Whatsapp
-          </Button>
-        </div>
+      <div ref={heroRef} className="imageContainer">
+        <img
+          src={hero}
+          alt="hero"
+          width={"150px"}
+          height={"150px"}
+          className="image"
+        />
       </div>
+      <div className="heroText">
+        <h1 className="heroTitle">Front end Developer</h1>
+        <p className="heroP">
+          I’m Tulio, Software developer with a background in finance and
+          freight. Here you'll see some of my projects and skills. Feel free to
+          contact me, let me know how can I help you or your business!
+        </p>
+      </div>
+      <Box
+        sx={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          justifyContent: "evenly",
+        }}
+      >
+        <Button
+          size="lg"
+          variant="contained"
+          color="primary"
+          target="blank"
+          endIcon={<MailOutlineIcon />}
+          style={{ marginLeft: "2rem", marginRight: "2rem" }}
+          onClick={handleEmailClick}
+        >
+          Email
+        </Button>
+        <Button
+          size="lg"
+          variant="contained"
+          color="primary"
+          endIcon={<PermPhoneMsgIcon />}
+          target="_blank"
+          style={{ marginLeft: "2rem", marginRight: "2rem" }}
+          onClick={handlePhoneClick}
+        >
+          Call/Text
+        </Button>
+        <Button
+          size="lg"
+          variant="contained"
+          color="primary"
+          target="_blank"
+          endIcon={<WhatsAppIcon />}
+          style={{ marginLeft: "2rem", marginRight: "2rem" }}
+          onClick={handleWhatsappClick}
+        >
+          Whatsapp
+        </Button>
+      </Box>
     </Grid>
   );
 }

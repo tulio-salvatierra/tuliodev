@@ -40,7 +40,7 @@ function About() {
           </Typography>
           <Box className="pic-container">
             {" "}
-            <Button outline size="lg" color="secondary" href="/contact">
+            <Button size="lg" color="primary" href="/contact">
               Contact me
             </Button>
           </Box>
