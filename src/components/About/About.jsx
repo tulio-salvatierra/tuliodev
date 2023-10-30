@@ -3,6 +3,7 @@ import "./About.css";
 import { Box, Grid, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Skills from "../Skills/Skills";
 
 function About() {
   return (
@@ -49,7 +50,9 @@ function About() {
             front end developer.
           </Typography>
 
-          <Box className="stack-icons"></Box>
+          <Box className="stack-icons">
+            <Skills />
+          </Box>
         </Grid>
       </Grid>
     </section>
