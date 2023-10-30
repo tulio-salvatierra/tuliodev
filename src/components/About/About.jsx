@@ -27,9 +27,12 @@ function About() {
         </Grid>
         <Grid item smdown={12} smup={8} mt={2}>
           <Box className="icon-container">
-            {" "}
-            <LinkedInIcon sx={{ fontSize: 50, margin: "auto" }} />
-            <GitHubIcon sx={{ fontSize: 50, margin: "auto" }} />
+            <a href="https://www.linkedin.com/in/tulio-salvatierra/">
+              <LinkedInIcon sx={{ fontSize: 50, color: "white" }} />
+            </a>
+            <a href="https://github.com/T00lio">
+              <GitHubIcon sx={{ fontSize: 50, color: "white" }} />
+            </a>
           </Box>
           <Typography
             className="About-text"
@@ -38,7 +41,8 @@ function About() {
               margin: "auto",
               fontSize: "1.75rem",
               fontWeight: "400",
-              textAlign: "justify",
+              textAlign: "left",
+              width: "80%",
             }}
           >
             Dedicated and skilled web developer with a strong foundation in

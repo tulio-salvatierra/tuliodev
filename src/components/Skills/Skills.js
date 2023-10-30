@@ -20,7 +20,7 @@ function Skills() {
   return (
     <>
       <br></br>
-      <h2 style={{ textAlign: "center", fontSize: "2.75rem" }}>Skills</h2>
+      <h2 style={{ textAlign: "center", fontSize: "3rem" }}>Skills</h2>
       <ul
         style={{
           listStyle: "none",

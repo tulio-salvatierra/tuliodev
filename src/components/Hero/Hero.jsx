@@ -52,7 +52,7 @@ function Hero() {
         />
       </div>
       <div className="heroText">
-        <h1 className="heroTitle">Front end Developer</h1>
+        <h1 className="heroTitle display-1">Front end Developer</h1>
         <p className="heroP">
           I’m Tulio, Software developer with a background in finance and
           freight. Here you'll see some of my projects and skills. Feel free to
