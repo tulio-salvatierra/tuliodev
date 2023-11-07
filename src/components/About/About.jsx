@@ -19,8 +19,8 @@ function About() {
             variant="h1"
             className="AboutTitle"
             sx={{ marginTop: 6, marginRight: "auto", marginLeft: "auto" }}
-            fontFamily={"'Montserrat', sans-serif"}
-            fontWeight={700}
+            fontFamily={"Montserrat"}
+            fontWeight={900}
           >
             About
           </Typography>

@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Geostar&display=swap");
+
+@font-face {
+  font-family: "Geist";
+  src: url("../public/Geist-Regular.otf") format("truetype");
+}
+
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
+  font-family: "Geist", sans-serif;
 }

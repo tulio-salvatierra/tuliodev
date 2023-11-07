@@ -1,106 +1,42 @@
 import React, { useRef, useEffect } from "react";
-import { Button } from "@mui/material";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { Grid, Box } from "@mui/material";
+import { Typography } from "@mui/material";
+import Button from "@mui/material/Button";
 import "./Hero.css";
-import hero from "../../assets/images/hero.PNG";
+import hero from "../../assets/images/hero.svg";
 import { gsap } from "gsap";
 
 function Hero() {
-  const phoneNumber = "786-314-6121";
-  const email = "salvacorp@gmail.com";
-
-  const handlePhoneClick = () => {
-    window.open(`tel:${phoneNumber}`);
-  };
-
-  const handleEmailClick = () => {
-    window.open(`mailto:${email}`);
-  };
-
-  const handleWhatsappClick = () => {
-    window.open(`whatsapp://send?phone=${phoneNumber}`);
-  };
-
-  const heroRef = useRef(null);
-  useEffect(() => {
-    gsap.set(heroRef.current, {
-      opacity: 0,
-      scale: 0.5,
-    });
-    gsap.to(heroRef.current, {
-      duration: 1.5,
-      delay: 0.5,
-      scale: 1.5,
-      yPercent: 0,
-      opacity: 1,
-      ease: "power4.out",
-    });
-  }, []);
-
   return (
-    <Grid container spacing={2} marginBottom={10}>
-      <div ref={heroRef} className="imageContainer">
-        <img
-          src={hero}
-          alt="hero"
-          width={"150px"}
-          height={"150px"}
-          className="image"
-        />
-      </div>
-      <div className="heroText">
-        <h1 className="heroTitle display-1">Front end Developer</h1>
-        <p className="heroP">
-          I’m Tulio, Software developer with a background in finance and
-          freight. Here you'll see some of my projects and skills. Feel free to
-          contact me, let me know how can I help you or your business!
-        </p>
-      </div>
-      <Box
-        sx={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          justifyContent: "evenly",
-        }}
-      >
-        <Button
-          size="lg"
-          variant="contained"
-          color="primary"
-          target="blank"
-          endIcon={<MailOutlineIcon />}
-          style={{ marginLeft: "2rem", marginRight: "2rem" }}
-          onClick={handleEmailClick}
-        >
-          Email
-        </Button>
-        <Button
-          size="lg"
-          variant="contained"
-          color="primary"
-          endIcon={<PermPhoneMsgIcon />}
-          target="_blank"
-          style={{ marginLeft: "2rem", marginRight: "2rem" }}
-          onClick={handlePhoneClick}
-        >
-          Call/Text
-        </Button>
-        <Button
-          size="lg"
-          variant="contained"
-          color="primary"
-          target="_blank"
-          endIcon={<WhatsAppIcon />}
-          style={{ marginLeft: "2rem", marginRight: "2rem" }}
-          onClick={handleWhatsappClick}
-        >
-          Whatsapp
-        </Button>
-      </Box>
-    </Grid>
+    <section className="hero">
+      <dix className="row">
+        <div className="col-8">
+          <h1 className="text-image-mask">
+            Hey, I'm Tulio, welcome to my portfolio!
+          </h1>
+          <h3>
+            I’m Tulio, Software developer with a background in finance and
+            freight. Here you'll see some of my projects and skills. Feel free
+            to contact me, let me know how can I help you or your business!
+          </h3>
+          <Button
+            className="button"
+            sx={{
+              color: "white",
+              borderRadius: "50px",
+              fontFamily: "Geist",
+              padding: "1rem",
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              width: "50%",
+              textTransform: "none",
+            }}
+          >
+            let's talk
+          </Button>
+        </div>
+        <div className="col-4"></div>
+      </dix>
+    </section>
   );
 }
 

@@ -2,15 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import resume from "../../assets/TulioSalvatierra_CV.pdf";
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  Collapse,
-} from "reactstrap";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Navbar, NavbarBrand } from "reactstrap";
 import Logo from "../../assets/images/Untitled design (7).png";
 
 function Header() {
@@ -21,54 +15,37 @@ function Header() {
   };
 
   return (
-    <header>
-      <Navbar className="navbar" expand="md" color="black">
-        <NavbarBrand href="/" className="logo">
-          <div className="logo">
-            <img
-              alt="logo"
-              src={Logo}
-              style={{
-                height: 40,
-                width: 40,
-                border: ".25rem solid #fff",
-                borderRadius: 50,
-                marginRight: 20,
-                marginLeft: 20,
-              }}
-            />
-            <h4 className="navbarTitle">Tulio' Portfolio</h4>
-          </div>
+    <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
+      <Navbar color="" light expand="md" fluid>
+        <NavbarBrand href="/" style={{ fontWeight: "bold", fontSize: "2rem" }}>
+          <img
+            src={Logo}
+            alt="logo"
+            className="logo"
+            width={"55px"}
+            height={"auto"}
+            style={{ marginRight: "1rem", borderRadius: "50%" }}
+          />
+          Portfolio
         </NavbarBrand>
-        <NavbarToggler
-          onClick={toggleNavbar}
-          style={{ backgroundColor: "#fff" }}
-          className="navbar-toggler-white"
-        />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="navLinkList">
-            <NavItem>
-              <NavLink href="/about" className="NavbarLink">
-                About Me
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/projects" className="NavbarLink">
-                Projects
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href={resume} target="_blank" className="NavbarLink">
-                Resume
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/contact" className="NavbarLink">
-                Contact me
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
+
+        <nav className="navigation" navbar>
+          <ul>
+            <li href="/about">Projects</li>
+            <li href="/about">Technologies</li>
+            <li href="/about">About</li>
+          </ul>
+        </nav>
+
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/tulio-salvatierra/">
+            <LinkedInIcon sx={{ fontSize: 30, color: "black" }} />
+          </a>
+
+          <a href="https://www.github.com/T00lio">
+            <GitHubIcon sx={{ fontSize: 30, color: "black" }} />
+          </a>
+        </div>
       </Navbar>
     </header>
   );

@@ -1,72 +1,79 @@
-.image {
-  justify-self: center;
-  border-radius: 50%;
-  border: white 0.25rem solid;
+h1 {
+  font-family: "Geist";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 65px;
+  padding: 1rem;
+  overflow: visible;
+  background-image: url(../../assets/images/cool-background.png);
 }
-.imageContainer {
+.text-image-mask {
+  font-size: 60px;
+  font-weight: bold;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+h3 {
+  font-family: "Geist";
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 34px;
+  padding: 1rem;
+  overflow: visible;
+}
+
+.col {
   display: flex;
-  width: fit-content;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
 }
 
 .heroText {
-  flex-wrap: wrap;
-  background-color: black;
-  border-radius: 2rem;
+  text-align: left;
+  margin-bottom: 32px;
+  font-family: "Geist";
+  z-index: 1;
+  overflow: visible;
+}
+
+.heroImage {
   width: 100%;
-  margin-left: auto;
+  height: 100%;
+  object-fit: cover;
   margin-right: auto;
-  margin-top: 2rem;
-}
-
-.heroTitle {
-  justify-content: center;
-  align-items: center;
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  max-width: 90%;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .heroTitle {
-    font-size: 3.5rem;
-  }
-  .heroP {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .heroTitle {
-    font-size: 3.5rem;
-  }
-  .heroP {
-    font-size: 2rem;
-  }
-}
-
-.heroP {
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.75rem;
-  margin-top: 2rem;
-  width: 70%;
   margin-left: auto;
-  margin-right: auto;
-  font-weight: 400;
-  text-align: center;
+}
+
+.hero {
+  padding: 24px 48px 0px;
+  margin-left: auto;
 }
 
 .button {
-  width: 80%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
 }
