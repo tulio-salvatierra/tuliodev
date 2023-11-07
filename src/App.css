@@ -8,3 +8,30 @@
 body {
   font-family: "Geist", sans-serif;
 }
+
+/* Global styles.css or App.css */
+.section {
+  min-height: 100vh; /* Each section takes at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Add some padding */
+}
+
+/* Use media queries to adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .section {
+    min-height: 50vh; /* On smaller screens, reduce the min-height if desired */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Additional media query for even smaller screens */
+@media (max-width: 480px) {
+  .section {
+    min-height: 25vh; /* On even smaller screens, reduce the min-height if desired */
+
+    /* Further adjustments for very small devices */
+  }
+}

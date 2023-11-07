@@ -20,12 +20,18 @@ function Skills() {
   return (
     <>
       <br></br>
-      <h2 style={{ textAlign: "center", fontSize: "3rem" }}>Skills</h2>
+      <h2
+        style={{ textAlign: "left", fontSize: "4rem", padding: "1rem" }}
+        className="text-image-mask"
+      >
+        Skills
+      </h2>
       <ul
         style={{
           listStyle: "none",
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "left",
+          padding: "1rem",
         }}
       >
         {skills.map((skill) => (

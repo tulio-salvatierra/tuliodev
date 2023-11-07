@@ -29,6 +29,7 @@ h3 {
   line-height: 34px;
   padding: 1rem;
   overflow: visible;
+  color: #6f6f6f;
 }
 
 .col {
@@ -69,6 +70,21 @@ h3 {
 }
 
 .button {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+}
+
+.sep {
+  width: 15%;
+  margin-left: 3.5rem;
+  height: 10px;
+  margin-top: 4rem;
+  border-radius: 5rem;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,

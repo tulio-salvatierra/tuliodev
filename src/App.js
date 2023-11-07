@@ -1,19 +1,27 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/header";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
 
 function App() {
+  function Section({ id, children }) {
+    return (
+      <section id={id} style={{ height: "100vh" }}>
+        {children}
+      </section>
+    );
+  }
   return (
     <>
       <Header />
-      <Hero />
+      <Section>
+        <Hero />
+      </Section>
+      <Section>
+        <About />
+      </Section>
     </>
   );
 }
