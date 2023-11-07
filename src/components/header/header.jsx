@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
-import resume from "../../assets/TulioSalvatierra_CV.pdf";
+// import resume from "../../assets/TulioSalvatierra_CV.pdf";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
@@ -9,12 +9,6 @@ import Logo from "../../assets/images/Untitled design (7).png";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
       <Navbar color="" light expand="md" fluid>
