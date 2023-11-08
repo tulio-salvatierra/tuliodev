@@ -34,9 +34,14 @@ function Skills() {
           padding: "1rem",
         }}
       >
-        {skills.map((skill) => (
+        {skills.map((skill, index) => (
           <li>
-            <img src={skill} alt="skill" style={{ margin: "1rem" }} />
+            <img
+              src={skill}
+              alt="skill"
+              key={index}
+              style={{ margin: "1rem" }}
+            />
           </li>
         ))}
       </ul>

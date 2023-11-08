@@ -4,8 +4,8 @@ import Skills from "../Skills/Skills";
 
 function About() {
   return (
-    <section className="about">
-      <div className="col-8">
+    <>
+      <section className="about">
         <h1 className="text-image-mask">About</h1>
 
         <h3 className="About-text">
@@ -17,13 +17,12 @@ function About() {
           pursued front end development. Currently looking for a position as a
           front end developer.
         </h3>
-      </div>
-      <div className="row">
-        <Skills />
-      </div>
-
-      <br />
-    </section>
+        <div className="row">
+          <Skills />
+        </div>
+        <br />
+      </section>
+    </>
   );
 }
 

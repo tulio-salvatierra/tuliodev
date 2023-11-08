@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
-      <Navbar color="" light expand="md" fluid>
+      <Navbar light expand="md">
         <NavbarBrand
           href="/"
           style={{ fontWeight: "bold", fontSize: "2rem", color: "#6f6f6f" }}

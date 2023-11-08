@@ -1,121 +1,54 @@
 import React from "react";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Box, Grid, Typography } from "@mui/material";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Card from "@mui/material/Card";
-import { Button } from "reactstrap";
 import Ecomm from "../../assets/images/ecomm.jpeg";
+import { autocompleteClasses } from "@mui/material";
 
 function ProjectsComp() {
   return (
     <>
-      <div className="project-container">
-        <Grid container spacing={2} marginBottom={10}>
-          <Grid item smup={4} xs={12}>
-            <Typography
-              className="project-list"
-              variant="h1"
-              sx={{ marginTop: 6, marginRight: "auto" }}
-            >
-              Projects
-            </Typography>
-          </Grid>
+      <section className="projects">
+        <h1 className="text-image-mask">Projects</h1>
 
-          <Grid item xs={12} smup={8} marginRight={-20} mt={2}>
-            <ol style={{ listStyle: "none" }}>
-              <li>
-                {" "}
-                <Typography
-                  variant="h4"
-                  className="project-subt"
-                  component="div"
-                  xs={12}
-                  sx={{ marginTop: 2, marginLeft: 20 }}
-                >
-                  Ecommerce site:
-                </Typography>
-                <Typography
-                  className="project-text"
-                  xs={8}
-                  sx={{ margin: "auto", fontSize: "1.5rem", fontWeight: "300" }}
-                >
-                  Used a real world API to create an ecommerce
-                  platform(Mercadolibre.com), that has a search capabbility,
-                  shopping cart functionality (decrease/increse/clear cart) and
-                  has authenticated routes, integrated with a database using
-                  Firebase/Firestore for hosting and data managment. Also
-                  developed for CI/CD with automted actions integrating
-                  automatic push, when the repository on a PR or merge, also
-                  Material UI library component and themes were appplied{" "}
-                </Typography>
-                <br></br>
-                <Box className="project-details">
-                  <Card sx={{ width: "30rem", margin: "auto" }}>
-                    <CardMedia
-                      component="img"
-                      image={Ecomm}
-                      title="projectImage"
-                    />
-                    <CardContent>
-                      <CardActions
-                        className="project-links"
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-around",
-                        }}
-                      >
-                        <Button
-                          outline
-                          size="lg"
-                          href="https://react---ecomm.web.app/"
-                        >
-                          Live Site
-                        </Button>
-                        <Button
-                          size="lg"
-                          outline
-                          href="https://github.com/T00lio/mlchallenge"
-                        >
-                          Repo
-                        </Button>
-                      </CardActions>
-                    </CardContent>
-                  </Card>
-                </Box>
-              </li>
-              <br></br>
-              <li>
-                {" "}
-                <Typography
-                  variant="h4"
-                  className="project-subt"
-                  component="div"
-                  xs={1}
-                  sx={{ marginTop: 2, marginLeft: 20 }}
-                >
-                  Spotify Clone:
-                </Typography>
-                <Typography
-                  className="project-text"
-                  xs={8}
-                  sx={{ margin: "auto", fontSize: "1.5rem", fontWeight: "300" }}
-                >
-                  Currently working on the development of a site with social
-                  network type capabilities, using this time a database and
-                  backend architechture integrated into the application.
-                  Developing a database and API communication between back/front
-                  end, integrating typescript to leverage code quality and
-                  avoiding errors in the code early in the production. Vite will
-                  be used instead of create react app for faster performance.{" "}
-                </Typography>
-              </li>
-            </ol>
-          </Grid>
-        </Grid>
-      </div>
+        <ol style={{ listStyle: "none" }}>
+          <li>
+            {" "}
+            <h3>Ecommerce site:</h3>
+            <p>
+              Used a real world API to create an ecommerce
+              platform(Mercadolibre.com), that has a search capabbility,
+              shopping cart functionality (decrease/increse/clear cart) and has
+              authenticated routes, integrated with a database using
+              Firebase/Firestore for hosting and data managment. Also developed
+              for CI/CD with automted actions integrating automatic push, when
+              the repository on a PR or merge, also Material UI library
+              component and themes were appplied{" "}
+            </p>
+            <br></br>
+            <img
+              src={Ecomm}
+              alt="Ecommerce site"
+              height={350}
+              width={"auto"}
+              style={{ justifyContent: "center" }}
+            />
+          </li>
+          <br></br>
+          <li>
+            {" "}
+            <h3>Spotify Clone:</h3>
+            <p>
+              Currently working on the development of a site with social network
+              type capabilities, using this time a database and backend
+              architechture integrated into the application. Developing a
+              database and API communication between back/front end, integrating
+              typescript to leverage code quality and avoiding errors in the
+              code early in the production. Vite will be used instead of create
+              react app for faster performance.{" "}
+            </p>
+          </li>
+        </ol>
+      </section>
     </>
   );
 }

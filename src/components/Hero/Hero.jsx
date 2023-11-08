@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <section className="hero">
-        <dix className="row">
+        <div className="row">
           <div className="col-8">
             <h1 className="text-image-mask">
               Hey, I'm Tulio, welcome to my portfolio!
@@ -32,11 +32,11 @@ function Hero() {
             </Button>
           </div>
           <div className="col-4"></div>
-        </dix>
+        </div>
+        <div className="sep"></div>
+
+        <br />
       </section>
-      <br />
-      <div className="sep"></div>
-      <br />
     </>
   );
 }
