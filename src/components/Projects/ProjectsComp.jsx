@@ -2,7 +2,6 @@ import React from "react";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Ecomm from "../../assets/images/ecomm.jpeg";
-import { autocompleteClasses } from "@mui/material";
 
 function ProjectsComp() {
   return (

@@ -6,13 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import ProjectsComp from "./components/Projects/ProjectsComp";
 import Footer from "./components/Footer";
-function Section({ id, children }) {
-  return (
-    <section id={id} style={{ height: "100vh" }}>
-      {children}
-    </section>
-  );
-}
+
 function App() {
   return (
     <>
