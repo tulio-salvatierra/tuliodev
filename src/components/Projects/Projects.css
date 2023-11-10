@@ -3,12 +3,29 @@
   margin-left: auto;
   height: auto;
 }
+
+.text-image-mask {
+  font-size: 60px;
+  font-weight: bold;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
 h3 {
   font-family: "Geist";
   font-weight: 500;
   font-size: 1.75rem;
   line-height: 34px;
-  padding: 1rem;
+  padding: 1.5rem;
   overflow: visible;
   color: #6f6f6f;
 }

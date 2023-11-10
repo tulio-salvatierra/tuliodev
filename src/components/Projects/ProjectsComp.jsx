@@ -6,7 +6,7 @@ import Ecomm from "../../assets/images/ecomm.jpeg";
 function ProjectsComp() {
   return (
     <>
-      <section className="projects">
+      <section className="projects row-md-cols-10 row-cols-sm-12">
         <h1 className="text-image-mask">Projects</h1>
 
         <ol style={{ listStyle: "none" }}>
