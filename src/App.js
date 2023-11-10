@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/header";
@@ -13,11 +14,14 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <ProjectsComp />
-      <About />
-      <Technologies />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<ProjectsComp />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/tech" element={<Technologies />} />
+        <Route path="*" element={<div>Not Found</div>} />
+      </Routes>
       <Footer />
     </>
   );

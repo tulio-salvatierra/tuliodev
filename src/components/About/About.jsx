@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import RESUME from "../../assets/images/resume.pdf";
 
 function About() {
   return (
@@ -20,10 +21,10 @@ function About() {
           drums 🥁
         </h3>
         <a
-          href={`${process.env.PUBLIC_URL}/resume.pdf`}
+          href={RESUME}
           target="_blank"
           rel="noopener noreferrer"
-          download="resume.pdf"
+          download="RESUME"
         >
           Download My Resume
         </a>

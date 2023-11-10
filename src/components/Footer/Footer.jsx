@@ -3,6 +3,7 @@ import "./Footer.css";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import RESUME from "../../assets/images/resume.pdf";
 
 function Footer() {
   return (
@@ -10,12 +11,7 @@ function Footer() {
       <div className="col">
         <h4>Connect with me!</h4>
         <h5>Email: salvacorp@gmail.com</h5>
-        <a
-          href={`${process.env.PUBLIC_URL}/resume.pdf`}
-          target="_blank"
-          rel="noopener noreferrer"
-          download="resume.pdf"
-        >
+        <a href={RESUME} download>
           Download My Resume
         </a>
       </div>
