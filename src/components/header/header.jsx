@@ -33,7 +33,7 @@ function Header() {
         <nav className="navigation" navbar>
           <ul>
             <Link
-              href="/projects"
+              to="/projects"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
@@ -46,7 +46,7 @@ function Header() {
               Projects
             </Link>
             <Link
-              href="/tech"
+              to="/tech"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
@@ -58,7 +58,7 @@ function Header() {
               Technologies
             </Link>
             <Link
-              href="/about"
+              to="/about"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
