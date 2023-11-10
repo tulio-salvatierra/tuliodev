@@ -7,9 +7,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 function ProjectsComp() {
   return (
     <>
-      <div className="sep"></div>
       <section className="projects-content">
-        <h1 className="text-image-mask">Projects</h1> <h3>Ecommerce site:</h3>
+        <div className="sep"></div>
+        <br></br>
+        <h1 className="text-image-mask">Projects</h1>
         <div className="image-container">
           <img
             src={Ecomm}
@@ -40,8 +41,8 @@ function ProjectsComp() {
         </div>
         <br></br>
         <h5 style={{ width: "75vw" }}>
-          Ecommerce with cart and checkout functionalities, authentication
-          routes, Context API for state management, working with
+          <strong>Ecommerce:</strong> with cart and checkout functionalities,
+          authentication routes, Context API for state management, working with
           Mercadolibre.com API, showcasing hability to handle API call and data
           handling with props globally. Create an user account of full cart
           functionality Technologies: React, React-Bootstrap, React-Router,

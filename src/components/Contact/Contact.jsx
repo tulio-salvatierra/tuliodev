@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "./Contact.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import { Button } from "reactstrap";
@@ -20,17 +19,20 @@ const styles = {
   card: {
     maxWidth: 600,
     margin: "auto",
-    backgroundColor: "#fefefe",
     marginBottom: 100,
+    backgroundColor: "#f5f5f5",
+    elevation: 10,
   },
   title: {
-    marginTop: 6,
+    marginTop: 2,
     marginBottom: 2,
   },
   subtitle: {
     margin: "auto",
   },
   formLabel: {
+    fontFamily: "Geist",
+    fontSize: 5,
     marginTop: 2,
   },
   textField: {
@@ -38,7 +40,7 @@ const styles = {
   },
 };
 
-export default function Component() {
+export default function Contact() {
   const formRef = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -61,20 +63,12 @@ export default function Component() {
   };
 
   return (
-    <div className="container">
-      <Typography
-        variant="h1"
-        sx={{ marginRight: "auto", marginTop: 6, marginBottom: 2 }}
-      >
-        Contact me
-      </Typography>
+    <section className="contact-content" id="contact">
+      <h1 className="text-image-mask">Contact me</h1>
       <div style={styles.container}>
         <Card style={styles.card}>
           <CardContent>
-            <Typography variant="h5" style={styles.subtitle}>
-              Fill out the form below, and I'll get back to you as soon as
-              possible.
-            </Typography>
+            <h3>Send me an email, let's talk!</h3>
 
             <form ref={formRef} onSubmit={sendEmail}>
               <Grid container spacing={2}>
@@ -124,7 +118,7 @@ export default function Component() {
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <Button outline size="lg" color="secondary" type="submit">
+                  <Button outline size="lg" type="submit">
                     Send message
                   </Button>
                 </Grid>
@@ -133,6 +127,6 @@ export default function Component() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }
