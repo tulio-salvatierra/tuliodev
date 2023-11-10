@@ -1,11 +1,7 @@
 import React from "react";
-import { Button } from "@mui/material";
 import "./About.css";
 
 function About() {
-  const handleClick = () => {
-    window.open("../../public/TulioSalvatierra_CV.pdf");
-  };
   return (
     <>
       <section className="about">
@@ -23,7 +19,14 @@ function About() {
           learn CRUD operations to become a Full Stack Developer. Also I play
           drums 🥁
         </h3>
-        <Button onClick={handleClick}>Download My Resume</Button>
+        <a
+          href={`${process.env.PUBLIC_URL}/resume.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          download="resume.pdf"
+        >
+          Download My Resume
+        </a>
       </section>
     </>
   );

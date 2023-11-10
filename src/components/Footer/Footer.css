@@ -1,14 +1,21 @@
 .footer-container {
   display: flex;
   flex-direction: row;
-  color: #6f6f6f;
+
   font-family: "Geist";
-  font-weight: bold;
+
   font-size: 1.75rem;
   position: relative;
   bottom: 0;
   justify-content: center;
   text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
 }
 .footer-container a {
   color: #6f6f6f;

@@ -33,8 +33,6 @@ function Footer() {
       >
         <GitHubIcon />
       </IconButton>
-
-      <h4> Coded by Tulio Salvatierra 💻</h4>
     </footer>
   );
 }
