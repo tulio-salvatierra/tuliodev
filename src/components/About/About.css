@@ -10,16 +10,12 @@ h1 {
 
 h3 {
   font-family: "Geist";
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.75rem;
   line-height: 34px;
   padding: 1rem;
   overflow: visible;
   color: #6f6f6f;
-}
-
-.About-text {
-  max-width: 100%;
 }
 
 .about {

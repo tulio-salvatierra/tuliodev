@@ -5,17 +5,19 @@ import Skills from "../Skills/Skills";
 function About() {
   return (
     <>
+      <div className="sep"></div>
       <section className="about">
         <h1 className="text-image-mask">About</h1>
 
         <h3 className="About-text">
-          Dedicated and skilled web developer with a strong foundation in HTML,
-          CSS, Javascript and React, backed by a diverse professional
-          background, including CDL trucking and Financial analysis roles. I do
-          have a soft spot for music, being a drummer I''ve fortunate to be in
-          many bands, I love live music and being creative, which is why I
-          pursued front end development. Currently looking for a position as a
-          front end developer.
+          Frontend Developer with a background in Finance roles and freight
+          management with a passion for solving problems and creating solutions.
+          I have a strong interest in the latest technologies and frameworks and
+          I am always looking to learn new skills and improve my knowledge. I am
+          a team player and I am always looking to help others and share my
+          knowledge. Currently looking for a role as a Frontend Developer &
+          learn CRUD operations to become a Full Stack Developer. Also I play
+          drums 🥁
         </h3>
         <div className="row">
           <Skills />
