@@ -1,7 +1,11 @@
 import React from "react";
+import { Button } from "@mui/material";
 import "./About.css";
 
 function About() {
+  const handleClick = () => {
+    window.open("../../public/TulioSalvatierra_CV.pdf");
+  };
   return (
     <>
       <section className="about">
@@ -19,6 +23,7 @@ function About() {
           learn CRUD operations to become a Full Stack Developer. Also I play
           drums 🥁
         </h3>
+        <Button onClick={handleClick}>Download My Resume</Button>
       </section>
     </>
   );

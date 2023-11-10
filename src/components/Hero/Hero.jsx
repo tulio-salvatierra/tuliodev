@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import Landing from "../../assets/images/Untitled design (7).png";
+import React from "react";
 import "./Hero.css";
 
 function Hero() {

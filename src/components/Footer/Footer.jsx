@@ -1,13 +1,20 @@
 import React from "react";
 import "./Footer.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
+  const handleClick = () => {
+    window.open("../../public/TulioSalvatierra_CV.pdf");
+  };
   return (
-    <section className="footer-container">
+    <footer className="footer-container">
+      <h4>Connect with me!</h4>
+      <h5>Email: salvacorp@gmail.com</h5>
+      <Button onClick={handleClick}>Download My Resume</Button>
+
       <IconButton
         href="https://www.linkedin.com/in/tulio-salvatierra/"
         target="_blank"
@@ -28,7 +35,7 @@ function Footer() {
       </IconButton>
 
       <h4> Coded by Tulio Salvatierra 💻</h4>
-    </section>
+    </footer>
   );
 }
 
