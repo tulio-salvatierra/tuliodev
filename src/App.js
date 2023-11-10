@@ -5,6 +5,8 @@ import Header from "./components/header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import ProjectsComp from "./components/Projects/ProjectsComp";
+import Technologies from "./components/tech";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Hero />
       <ProjectsComp />
       <About />
+      <Technologies />
+      <Contact />
       <Footer />
     </>
   );

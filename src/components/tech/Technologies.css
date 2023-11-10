@@ -1,0 +1,53 @@
+h1 {
+  font-family: "Geist";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 65px;
+  padding: 1rem;
+  overflow: visible;
+  background-image: url(../../assets/images/cool-background.png);
+}
+
+h3 {
+  font-family: "Geist";
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 34px;
+  padding: 1rem;
+  overflow: visible;
+  color: #6f6f6f;
+}
+
+.tech-container {
+  padding: 24px 48px 0px;
+  margin-left: auto;
+  height: 100vh;
+}
+
+.row {
+  padding: 24px 48px 0px;
+  margin-left: auto;
+  height: 80vh;
+}
+
+.col {
+  display: flex;
+}
+
+.tech-list {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: "Geist";
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 34px;
+  padding: 1rem;
+  overflow: visible;
+  color: #6f6f6f;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+}

@@ -62,20 +62,3 @@ h5 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-.project-text {
-  margin-top: 4rem;
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 0;
-  color: white;
-  font-family: "Roboto";
-  width: 80%;
-  inline-size: 80%;
-}
-
-.project-details {
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
