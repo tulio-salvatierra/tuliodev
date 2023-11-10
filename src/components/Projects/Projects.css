@@ -1,5 +1,20 @@
-.projects {
-  padding: 24px 48px 0px;
+.sep {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+  height: 5px;
+  width: 15%;
+  margin-left: 4rem;
+
+  border-radius: 2rem;
+}
+
+.projects-content {
+  padding: 2rem;
   margin-left: auto;
   height: auto;
 }
@@ -22,7 +37,7 @@
 
 h3 {
   font-family: "Geist";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.75rem;
   line-height: 34px;
   padding: 1.5rem;
@@ -30,14 +45,22 @@ h3 {
   color: #6f6f6f;
 }
 
-p {
+h5 {
   font-family: "Geist";
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.25rem;
   line-height: 34px;
-  padding: 1rem;
+  padding: 1.5rem;
   overflow: visible;
   color: #6f6f6f;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project-text {
@@ -55,41 +78,4 @@ p {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 4rem;
-}
-
-.card {
-  margin-left: auto;
-  margin-right: auto;
-}
-.card-body {
-  background-color: black;
-  border: "none";
-}
-
-.card-title {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: "Roboto";
-}
-
-@media (max-width: 768px) {
-  .project-list {
-    font-size: 2.25rem;
-  }
-  .project-text {
-    font-size: 1rem;
-  }
-  .project-container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .project-list {
-    font-size: 2rem;
-  }
-  .project-text {
-    font-size: 0.5rem;
-  }
 }

@@ -18,6 +18,7 @@ function Hero() {
         </div>
         <Button
           className="button"
+          href="#contact"
           sx={{
             color: "white",
             borderRadius: "50px",
