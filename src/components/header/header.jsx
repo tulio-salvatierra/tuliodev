@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
-// import resume from "../../assets/TulioSalvatierra_CV.pdf";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
@@ -34,7 +33,7 @@ function Header() {
         <nav className="navigation" navbar>
           <ul>
             <Link
-              href="/about"
+              href="/projects"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
@@ -47,7 +46,7 @@ function Header() {
               Projects
             </Link>
             <Link
-              href="/about"
+              href="/tech"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
