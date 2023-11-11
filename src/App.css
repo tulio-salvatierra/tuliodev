@@ -11,12 +11,19 @@ body {
 
 .content {
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
 /* Use media queries to adjust layout for smaller screens */
 @media (max-width: 768px) {
   .content {
-    min-height: 50vh; /* On smaller screens, reduce the min-height if desired */
+    min-height: 100vh; /* On smaller screens, reduce the min-height if desired */
     padding: 20px; /* Adjust padding for smaller screens */
   }
 }
