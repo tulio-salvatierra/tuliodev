@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import RESUME from "../../assets/images/resume.pdf";
+import RESUME from "../../assets/resume.pdf";
+import Button from "@mui/material/Button";
 
 function About() {
   return (
@@ -20,14 +21,23 @@ function About() {
           learn CRUD operations to become a Full Stack Developer. Also I play
           drums 🥁
         </h3>
-        <a
+        <br />
+        <Button
+          className="button"
           href={RESUME}
-          target="_blank"
-          rel="noopener noreferrer"
-          download="RESUME"
+          sx={{
+            color: "white",
+            borderRadius: "50px",
+            fontFamily: "Geist",
+            padding: "1rem",
+            fontSize: "1.5rem",
+            fontWeight: "bold",
+            width: "50%",
+            textTransform: "none",
+          }}
         >
-          Download My Resume
-        </a>
+          Resume
+        </Button>
       </section>
     </>
   );

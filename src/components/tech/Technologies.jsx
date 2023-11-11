@@ -46,7 +46,6 @@ function Technologies() {
           <div></div>
         </div>
         <br />
-        <div className="sep"></div>
       </section>
     </>
   );

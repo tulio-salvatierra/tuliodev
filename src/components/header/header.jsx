@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Logo from "../../assets/images/Untitled design (7).png";
@@ -79,6 +80,9 @@ function Header() {
 
           <a href="https://www.github.com/T00lio">
             <GitHubIcon sx={{ fontSize: 40, color: "black" }} />
+          </a>
+          <a href="https://wa.me/17863146121">
+            <WhatsAppIcon sx={{ fontSize: 40, color: "black" }} />
           </a>
         </div>
       </Navbar>
