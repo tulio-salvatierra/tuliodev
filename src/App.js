@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/header";
 import HomePage from "./pages/HomePage";
@@ -15,15 +14,17 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/tech" element={<TechnologiesPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/tech" element={<TechnologiesPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer className="footer" />
     </>
   );
 }

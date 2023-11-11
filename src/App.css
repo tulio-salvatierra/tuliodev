@@ -9,19 +9,13 @@ body {
   font-family: "Geist", sans-serif;
 }
 
-.section {
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
+.content {
+  margin-bottom: 100px;
 }
 
 /* Use media queries to adjust layout for smaller screens */
 @media (max-width: 768px) {
-  .section {
+  .content {
     min-height: 50vh; /* On smaller screens, reduce the min-height if desired */
     padding: 20px; /* Adjust padding for smaller screens */
   }
@@ -29,7 +23,7 @@ body {
 
 /* Additional media query for even smaller screens */
 @media (max-width: 480px) {
-  .section {
+  .content {
     padding: 20px; /* Example: Increase padding */
     margin-bottom: 20px; /* Example: Add space between sections */
     /* Further adjustments for very small devices */
