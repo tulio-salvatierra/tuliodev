@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <Header />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -24,7 +23,6 @@ function App() {
         <Route path="/tech" element={<TechnologiesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-
       <Footer />
     </>
   );
