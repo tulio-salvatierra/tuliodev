@@ -14,7 +14,6 @@ function Footer() {
           {" "}
           <a href="mailto:salvacorp@gmail.com">salvacorp@gmail.com</a>
         </h5>
-        <h6 className="location">Chicago, IL</h6>
       </div>
       <div className="col">
         <a href={RESUME} download style={{ color: "white" }}>
