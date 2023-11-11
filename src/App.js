@@ -15,16 +15,16 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/tech" element={<TechnologiesPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/tech" element={<TechnologiesPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+
       <Footer />
     </>
   );
