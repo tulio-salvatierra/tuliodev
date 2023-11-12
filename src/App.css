@@ -13,6 +13,8 @@ body {
   margin-bottom: 100px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
 }
 @media (min-width: 768px) {
   .container {

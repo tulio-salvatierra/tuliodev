@@ -22,6 +22,7 @@ h3 {
   padding: 24px 48px 0px;
   margin-left: auto;
   height: 90vh;
+  z-index: 0;
 }
 
 .button {

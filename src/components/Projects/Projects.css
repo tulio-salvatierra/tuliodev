@@ -15,7 +15,6 @@
 
 .projects-content {
   padding: 2rem;
-  margin-left: auto;
   height: auto;
 }
 
@@ -61,4 +60,11 @@ h5 {
   justify-content: space-between;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.image {
+  width: "50vw";
+  height: "auto";
+  border-radius: "1rem";
+  cursor: "pointer";
 }

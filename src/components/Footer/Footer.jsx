@@ -7,7 +7,7 @@ import RESUME from "../../assets/resume.pdf";
 
 function Footer() {
   return (
-    <section className="footer-container">
+    <footer className="footer-container">
       <div className="col">
         <h3>Email:</h3>
         <h5 className="email">
@@ -44,7 +44,7 @@ function Footer() {
           <WhatsAppIcon />
         </a>
       </div>
-    </section>
+    </footer>
   );
 }
 

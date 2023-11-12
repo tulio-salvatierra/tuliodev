@@ -13,19 +13,12 @@ function ProjectsComp() {
         <h1 className="text-image-mask">Projects</h1>
         <div className="image-container">
           <img
+            className="image"
             src={Ecomm}
             onClick={() => {
               window.open("https://react---ecomm.web.app/");
             }}
             alt="Ecommerce site"
-            height={350}
-            width={"auto"}
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              border: "1px solid black",
-              borderRadius: "10px",
-            }}
           />
           <footer
             style={{ marginLeft: "auto", marginRight: "auto", padding: "1rem" }}

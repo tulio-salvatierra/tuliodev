@@ -4,8 +4,8 @@
   flex-direction: row;
   font-family: "Geist";
   font-size: 1.5rem;
-  font-weight: 600;
-  position: static;
+  font-weight: 400;
+  z-index: 0;
   bottom: 0;
   justify-content: center;
   text-align: center;
