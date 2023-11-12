@@ -5,7 +5,7 @@ import Skills from "../Skills/Skills";
 function Technologies() {
   return (
     <>
-      <section className="tech-container">
+      <section className="tech-container" id="tech">
         <div className="sep"></div>
         <br />
         <h1 className="text-image-mask">Technologies</h1>

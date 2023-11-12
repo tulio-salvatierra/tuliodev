@@ -6,7 +6,6 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Logo from "../../assets/images/Untitled design (7).png";
-import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -33,8 +32,8 @@ function Header() {
 
         <nav className="navigation" navbar>
           <ul>
-            <Link
-              to="/projects"
+            <a
+              href="#projects"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
@@ -45,9 +44,9 @@ function Header() {
               }}
             >
               Projects
-            </Link>
-            <Link
-              to="/tech"
+            </a>
+            <a
+              href="#tech"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
@@ -57,9 +56,9 @@ function Header() {
               }}
             >
               Technologies
-            </Link>
-            <Link
-              to="/about"
+            </a>
+            <a
+              href="#about"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
@@ -69,7 +68,7 @@ function Header() {
               }}
             >
               About
-            </Link>
+            </a>
           </ul>
         </nav>
 

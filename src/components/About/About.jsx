@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 function About() {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about">
         <div className="sep"></div>
         <br />
         <h1 className="text-image-mask">About</h1>

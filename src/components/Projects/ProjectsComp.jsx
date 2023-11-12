@@ -7,7 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 function ProjectsComp() {
   return (
     <>
-      <section className="projects-content">
+      <section className="projects-content" id="projects">
         <div className="sep"></div>
         <br></br>
         <h1 className="text-image-mask">Projects</h1>
