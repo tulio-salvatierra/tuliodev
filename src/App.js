@@ -14,17 +14,12 @@ function App() {
   return (
     <>
       <Header />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/tech" element={<TechnologiesPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-      <Footer className="footer" />
+      <HomePage />
+      <AboutPage />
+      <ProjectsPage />
+      <TechnologiesPage />
+      <ContactPage />
+      <Footer />
     </>
   );
 }
