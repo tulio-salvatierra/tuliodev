@@ -65,7 +65,7 @@ export default function Contact() {
   return (
     <section className="contact-content" id="contact">
       <div className="sep"></div>
-      <h1 className="text-image-mask">Contact me</h1>
+      <h1 className="contact-text-image-mask">Contact me</h1>
       <div style={styles.container}>
         <Card style={styles.card}>
           <CardContent>
