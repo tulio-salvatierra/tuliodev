@@ -31,27 +31,40 @@ function Skills() {
     pgsql,
   ];
   return (
-    <>
+    <div className="skill-container">
       <ul
         style={{
           listStyle: "none",
           display: "flex",
-          justifyContent: "left",
+          justifyContent: "space-around",
           flexWrap: "wrap",
+          alignItems: "center",
         }}
       >
         {skills.map((skill, index) => (
-          <li>
+          <li style={{ margin: "0", padding: "0" }}>
             <img
               src={skill}
               alt="skill"
               key={index}
-              style={{ margin: "1rem" }}
+              style={{ height: "20px", width: "auto" }}
             />
           </li>
         ))}
       </ul>
-    </>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            img {
+              max-width: 1rem;
+            }
+            li {
+              margin: 0.5rem;
+            }
+          }
+        `}
+      </style>
+    </div>
   );
 }
 

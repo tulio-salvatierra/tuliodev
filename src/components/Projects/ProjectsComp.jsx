@@ -7,10 +7,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 function ProjectsComp() {
   return (
     <>
-      <section className="projects-content" id="projects">
+      <section className="projects-container" id="projects">
         <div className="sep"></div>
         <br></br>
-        <h1 className="text-image-mask">Projects</h1>
+        <h1 className="projects-text-image-mask">Projects</h1>
         <div className="image-container">
           <img
             className="image"
@@ -33,7 +33,7 @@ function ProjectsComp() {
           </footer>
         </div>
         <br></br>
-        <h5 style={{ width: "75vw" }}>
+        <h5 className="projects-text">
           <strong>Ecommerce:</strong> with cart and checkout functionalities,
           authentication routes, Context API for state management, working with
           Mercadolibre.com API, showcasing hability to handle API call and data

@@ -9,32 +9,39 @@ body {
   font-family: "Geist", sans-serif;
 }
 
-.content {
-  margin-bottom: 100px;
-  display: flex;
+.container {
+  display: grid flex;
   flex-direction: column;
-  flex: 1;
-  min-height: 100vh;
-}
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
-}
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 1fr 1fr;
 
-/* Use media queries to adjust layout for smaller screens */
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 20px; /* Gap between grid items */
+}
+.section {
+  margin-top: 1rem;
+  margin-top: 1rem;
+  height: 100vh;
+  grid-auto-rows: minmax(100px, auto);
+  height: auto;
+  border: 1px solid #ddd; /* Optional: Add borders to sections */
+}
 @media (max-width: 768px) {
-  .content {
-    min-height: 100vh; /* On smaller screens, reduce the min-height if desired */
-    padding: 20px; /* Adjust padding for smaller screens */
+  .container {
+    grid-template-columns: 1fr;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
   }
-}
+  .section {
+    margin-left: auto;
+    padding: 0;
+    border: black 1px solid;
+  }
 
-/* Additional media query for even smaller screens */
-@media (max-width: 480px) {
-  .content {
-    padding: 20px; /* Example: Increase padding */
-    margin-bottom: 20px; /* Example: Add space between sections */
-    /* Further adjustments for very small devices */
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
   }
 }

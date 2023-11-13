@@ -1,16 +1,22 @@
-h1 {
-  font-family: "Geist";
-  font-weight: 700;
+.about-text-image-mask {
+  font-weight: bold;
   font-size: 4rem;
-  line-height: 65px;
-  padding: 1rem;
-  overflow: visible;
-  background-image: url(../../assets/images/cool-background.png);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-h3 {
+.about-text {
   font-family: "Geist";
-  font-weight: 600;
+  width: 90%;
+  font-weight: 500;
   font-size: 1.75rem;
   line-height: 34px;
   padding: 1rem;
@@ -18,11 +24,59 @@ h3 {
   color: #6f6f6f;
 }
 
-.about {
-  padding: 24px 48px 0px;
-  margin-left: auto;
-  height: 90vh;
-  z-index: 0;
+section {
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0;
+    margin: 0;
+  }
+  .about-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+  }
+  section {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    height: 100vh;
+  }
+  .about-text {
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 0;
+  }
+  .about {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  .about-text-image-mask {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .about-container {
+    height: 100vh;
+  }
+  .about-text-image-mask {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .about-text {
+    font-size: 1rem;
+    width: 100%;
+    line-height: normal;
+  }
 }
 
 .button {

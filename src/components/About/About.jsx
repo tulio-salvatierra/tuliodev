@@ -9,9 +9,9 @@ function About() {
       <section className="about" id="about">
         <div className="sep"></div>
         <br />
-        <h1 className="text-image-mask">About</h1>
+        <h1 className="about-text-image-mask">About</h1>
 
-        <h3>
+        <h3 className="about-text">
           Frontend Developer with a background in Finance roles and freight
           management with a passion for solving problems and creating solutions.
           I have a strong interest in the latest technologies and frameworks and

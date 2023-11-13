@@ -1,11 +1,16 @@
-h1 {
-  font-family: "Geist";
-  font-weight: 700;
+.tech-text-image-mask {
+  font-weight: bold;
   font-size: 4rem;
-  line-height: 65px;
-  padding: 1rem;
-  overflow: visible;
-  background-image: url(../../assets/images/cool-background.png);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 h3 {
@@ -24,30 +29,44 @@ h3 {
   height: 100vh;
 }
 
-.row {
-  padding: 24px 48px 0px;
-  margin-left: auto;
-  height: 80vh;
-}
-
-.col {
-  display: flex;
-}
-
 .tech-list {
   display: flex;
   padding: 1rem;
   margin: 1rem;
   font-family: "Geist";
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 34px;
   padding: 1rem;
   overflow: visible;
   color: #6f6f6f;
+  overflow: hidden;
 }
 
 li {
   list-style-type: none;
   padding: 1rem;
+}
+@media (max-width: 768px) {
+  .tech-text-image-mask {
+    font-size: 2.5rem;
+  }
+  .tech-text {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+  }
+  .tech-container {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .tech-list {
+    font-size: 0.75rem;
+    padding: 0;
+    margin: 0;
+  }
 }

@@ -7,10 +7,10 @@ function Hero() {
     <>
       <section className="hero-container">
         <div className="hero-content">
-          <h1 className="text-image-mask">
+          <h1 className="hero-text-image-mask">
             Hey, I'm Tulio, welcome to my portfolio!
           </h1>
-          <h3>
+          <h3 className="hero-text">
             I’m Tulio, Software developer with a background in finance and
             freight. Here you'll see some of my projects and skills. Feel free
             to contact me, let me know how can I help you or your business!

@@ -7,7 +7,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Logo from "../../assets/images/Untitled design (7).png";
 
+import { useState } from "react";
+
 function Header() {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
+
   return (
     <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
       <Navbar light expand="md">
@@ -30,7 +38,20 @@ function Header() {
           Portfolio
         </NavbarBrand>
 
-        <nav className="navigation" navbar>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={toggleNav}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <nav
+          className={`navigation ${showNav ? "show" : ""}`}
+          navbar
+          style={{ display: showNav ? "block" : "none" }}
+        >
           <ul>
             <a
               href="#projects"

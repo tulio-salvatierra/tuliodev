@@ -8,10 +8,10 @@ function Technologies() {
       <section className="tech-container" id="tech">
         <div className="sep"></div>
         <br />
-        <h1 className="text-image-mask">Technologies</h1>
+        <h1 className="tech-text-image-mask">Technologies</h1>
         <div className="tech-content">
           <div className="tech-content-left">
-            <h3>
+            <h3 className="tech-text">
               I have experience working with a wide range of technologies and
               languages. I am always looking to learn new technologies and
               improve my skills.
