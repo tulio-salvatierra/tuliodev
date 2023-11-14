@@ -12,3 +12,8 @@
 .social-icons a {
   padding-left: 10px;
 }
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+}

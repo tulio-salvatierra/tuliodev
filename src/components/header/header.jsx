@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
-      <Navbar light expand="md">
+      <Navbar light expand="lg">
         <NavbarBrand
           href="/"
           style={{ fontWeight: "bold", fontSize: "2rem", color: "#6f6f6f" }}
@@ -39,20 +39,19 @@ function Header() {
         </NavbarBrand>
 
         <button
-          className="navbar-toggler"
+          class="navbar-toggler"
           type="button"
-          onClick={toggleNav}
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <nav
-          className={`navigation ${showNav ? "show" : ""}`}
-          navbar
-          style={{ display: showNav ? "block" : "none" }}
-        >
-          <ul>
+        <nav className="collapse navbar-collapse" id="#navbarSupportedContent">
+          <ul className="list">
             <a
               href="#projects"
               style={{

@@ -13,11 +13,12 @@ body {
   display: grid flex;
   flex-direction: column;
   margin-left: auto;
+  padding: 0;
   margin-right: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: [full-width-start]1fr 1fr 1fr[full-widtg-end];
+  min-width: 100%;
 
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  grid-gap: 20px; /* Gap between grid items */
+  grid-gap: 0px; /* Gap between grid items */
 }
 .section {
   margin-top: 1rem;
