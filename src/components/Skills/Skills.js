@@ -45,9 +45,10 @@ function Skills() {
           <li style={{ margin: "0", padding: "0" }}>
             <img
               src={skill}
+              className="skill-icon"
               alt="skill"
               key={index}
-              style={{ height: "20px", width: "auto" }}
+              style={{ height: "45px", width: "auto" }}
             />
           </li>
         ))}
@@ -55,8 +56,10 @@ function Skills() {
       <style>
         {`
           @media (max-width: 768px) {
-            img {
+            .skill-icon {
               max-width: 1rem;
+              height: 50px;
+              width: auto;
             }
             li {
               margin: 0.5rem;

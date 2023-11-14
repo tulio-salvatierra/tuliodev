@@ -9,7 +9,6 @@
   height: 5px;
   width: 15%;
   margin-left: 4rem;
-
   border-radius: 2rem;
 }
 .image-container {
@@ -19,13 +18,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-/* .image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-} */
 
 .projects-content {
   display: grid;
@@ -105,8 +97,8 @@
     height: 100vh;
   }
   .image {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover;
     border-radius: 0;
   }
