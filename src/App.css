@@ -25,7 +25,6 @@ body {
   height: 100vh;
   grid-auto-rows: minmax(100px, auto);
   height: auto;
-  border: 1px solid #ddd; /* Optional: Add borders to sections */
 }
 @media (max-width: 768px) {
   .container {
