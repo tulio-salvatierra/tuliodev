@@ -7,15 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Logo from "../../assets/images/Untitled design (7).png";
 
-import { useState } from "react";
-
 function Header() {
-  const [showNav, setShowNav] = useState(false);
-
-  const toggleNav = () => {
-    setShowNav(!showNav);
-  };
-
   return (
     <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
       <Navbar light expand="lg">
