@@ -36,6 +36,7 @@ function Skills() {
         style={{
           listStyle: "none",
           display: "flex",
+          flexDirection: "row",
           justifyContent: "space-around",
           flexWrap: "wrap",
           alignItems: "center",

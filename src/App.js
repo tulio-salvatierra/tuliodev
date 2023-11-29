@@ -15,19 +15,19 @@ function App() {
         <Header />
       </div>
       <div>
-        <div className="section">
+        <div>
           <HomePage />
         </div>
-        <div className="section">
+        <div>
           <AboutPage />
         </div>
-        <div className="section">
+        <div>
           <ProjectsPage />
         </div>
-        <div className="section">
+        <div>
           <TechnologiesPage />
         </div>
-        <div className="section">
+        <div>
           <ContactPage />
         </div>
       </div>

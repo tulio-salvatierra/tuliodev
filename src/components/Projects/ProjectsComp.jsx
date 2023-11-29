@@ -25,8 +25,14 @@ function ProjectsComp() {
           >
             Click on image ⬆️
             <span>
-              <strong style={{ marginLeft: "1rem" }}> Project Repo:</strong>
-              <a href="https://github.com/T00lio/mlchallenge">
+              <strong style={{ marginLeft: "1rem", color: "black" }}>
+                {" "}
+                Project Repo:
+              </strong>
+              <a
+                style={{ color: "black" }}
+                href="https://github.com/T00lio/mlchallenge"
+              >
                 <GitHubIcon />
               </a>
             </span>
