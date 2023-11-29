@@ -38,7 +38,7 @@ function Technologies() {
                   <hr />
                 </strong>
                 GitHub, VS Code, Heroku, Netlify, Postman, Firebase/Firestore,
-                Chrome DevTools, npm, Slack, Trello, Figma,
+                Chrome DevTools, npm, Slack, Trello, Figma
               </li>
             </ol>
           </div>

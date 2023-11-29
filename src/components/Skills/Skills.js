@@ -49,7 +49,7 @@ function Skills() {
               className="skill-icon"
               alt="skill"
               key={index}
-              style={{ height: "45px", width: "auto" }}
+              style={{ height: "85px", width: "auto" }}
             />
           </li>
         ))}
