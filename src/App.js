@@ -11,10 +11,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div className="full-width">
+      <div className="container">
         <Header />
       </div>
-      <div className="container">
+      <div>
         <div className="section">
           <HomePage />
         </div>

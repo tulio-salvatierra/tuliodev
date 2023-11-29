@@ -28,19 +28,15 @@ body {
   height: auto;
 }
 @media (max-width: 768px) {
-  .container {
+  .section {
     grid-template-columns: 1fr;
     min-width: 100%;
-    padding: 0;
-    margin: 0;
+    height: 75dvh;
+    padding: 1rem;
+    margin: 1rem;
   }
-  .section {
+  /* .section {
     margin-left: auto;
     padding: 0;
-  }
-
-  .container {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
+  } */
 }
