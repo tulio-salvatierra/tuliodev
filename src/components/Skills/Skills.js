@@ -49,7 +49,7 @@ function Skills() {
               className="skill-icon"
               alt="skill"
               key={index}
-              style={{ height: "85px", width: "auto" }}
+              style={{ height: "85px", width: "auto", margin: "0.75rem" }}
             />
           </li>
         ))}
@@ -59,11 +59,11 @@ function Skills() {
           @media (max-width: 768px) {
             .skill-icon {
               max-width: 1rem;
-              height: 50px;
+              height: 85px;
               width: auto;
             }
             li {
-              margin: 0.5rem;
+              margin: 0.75rem;
             }
           }
         `}

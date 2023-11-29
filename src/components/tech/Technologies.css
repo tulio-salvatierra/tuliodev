@@ -54,20 +54,21 @@ li {
     font-size: 2.5rem;
   }
   .tech-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     padding: 0;
     margin: 0;
-    line-height: normal;
+    line-height: 54px;
   }
   .tech-container {
-    height: 100vh;
+    height: auto;
     width: 100%;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
+    justify-content: space-evenly;
   }
   .tech-list {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     padding: 0;
     margin: 0;
   }
