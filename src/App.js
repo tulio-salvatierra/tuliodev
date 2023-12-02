@@ -13,26 +13,15 @@ function App() {
     <>
       <div className="container">
         <Header />
-      </div>
-      <div>
-        <div>
-          <HomePage />
+
+        <HomePage />
+        <AboutPage />
+        <ProjectsPage />
+        <TechnologiesPage />
+        <ContactPage />
+        <div className="full-width">
+          <Footer />
         </div>
-        <div>
-          <AboutPage />
-        </div>
-        <div>
-          <ProjectsPage />
-        </div>
-        <div>
-          <TechnologiesPage />
-        </div>
-        <div>
-          <ContactPage />
-        </div>
-      </div>
-      <div className="full-width">
-        <Footer />
       </div>
     </>
   );
