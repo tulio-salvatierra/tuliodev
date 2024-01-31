@@ -17,7 +17,7 @@ function App() {
         <HomePage />
         <ProjectsPage />
         <AboutPage />
-        <TechnologiesPage />
+        {/* <TechnologiesPage /> */}
         <ContactPage />
         <Footer />
       </div>

@@ -21,7 +21,9 @@ const styles = {
     margin: "auto",
     marginBottom: 100,
     backgroundColor: "#ffffff",
-    elevation: 10,
+    borderRadius: 10,
+    padding: 20,
+    border: "1px solid #000000",
   },
   title: {
     marginTop: 2,
