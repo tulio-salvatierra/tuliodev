@@ -39,11 +39,9 @@ function ProjectsComp() {
           </span>
         </footer> */}
         <p className="projects-text">
-          <strong>
-            Ecommerce: with cart and checkout functionalities, authentication
-            routes, Context API for state management, working with
-            Mercadolibre.com{" "}
-          </strong>
+          Ecommerce: with cart and checkout functionalities, authentication
+          routes, Context API for state management, working with
+          Mercadolibre.com{" "}
         </p>
       </div>
       <br></br>

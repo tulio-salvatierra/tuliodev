@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import "./Contact.css";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Grid from "@mui/material/Grid";
+
 import TextField from "@mui/material/TextField";
 import { Button } from "reactstrap";
 import emailjs from "@emailjs/browser";
