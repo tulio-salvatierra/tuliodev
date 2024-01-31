@@ -15,13 +15,11 @@ function App() {
         <Header />
 
         <HomePage />
-        <AboutPage />
         <ProjectsPage />
+        <AboutPage />
         <TechnologiesPage />
         <ContactPage />
-        <div className="full-width">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );

@@ -11,9 +11,7 @@ function Hero() {
             Hey, I'm Tulio, welcome to my portfolio!
           </h1>
           <h3 className="hero-text">
-            I’m Tulio, Software developer with a background in finance and
-            freight. Here you'll see some of my projects and skills. Feel free
-            to contact me, let me know how can I help you or your business!
+            I’m Tulio, here you'll see some of my projects and skills.
           </h3>
         </div>
         <Button
@@ -26,11 +24,12 @@ function Hero() {
             padding: "1rem",
             fontSize: "1.5rem",
             fontWeight: "bold",
-            width: "50%",
+            width: "auto",
             textTransform: "none",
           }}
         >
-          let's talk
+          Feel free to contact me, let me know how can I help you or your
+          business!
         </Button>
         <div className="hero-background"></div>
       </section>

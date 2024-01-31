@@ -37,16 +37,17 @@ function ProjectsComp() {
               </a>
             </span>
           </footer>
+          <p className="projects-text">
+            <strong>Ecommerce:</strong> with cart and checkout functionalities,
+            authentication routes, Context API for state management, working
+            with Mercadolibre.com API, showcasing hability to handle API call
+            and data handling with props globally. Create an user account of
+            full cart functionality Technologies: React, React-Bootstrap,
+            React-Router, MaterialUI, Firestore & Firebase, CI/CI
+          </p>
         </div>
         <br></br>
-        <h5 className="projects-text">
-          <strong>Ecommerce:</strong> with cart and checkout functionalities,
-          authentication routes, Context API for state management, working with
-          Mercadolibre.com API, showcasing hability to handle API call and data
-          handling with props globally. Create an user account of full cart
-          functionality Technologies: React, React-Bootstrap, React-Router,
-          MaterialUI, Firestore & Firebase, CI/CI
-        </h5>
+
         <br></br>
       </section>
     </>
