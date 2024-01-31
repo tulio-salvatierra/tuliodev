@@ -20,19 +20,21 @@ const styles = {
     maxWidth: 600,
     margin: "auto",
     marginBottom: 100,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#ffffff",
     elevation: 10,
   },
   title: {
     marginTop: 2,
     marginBottom: 2,
+    fontWeight: "bold",
+    fontSize: 60,
   },
   subtitle: {
     margin: "auto",
   },
   formLabel: {
     fontFamily: "Geist",
-    fontSize: 5,
+    fontSize: 60,
     marginTop: 2,
   },
   textField: {
