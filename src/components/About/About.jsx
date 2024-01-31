@@ -11,14 +11,26 @@ function About() {
         <br />
         <h1 className="about-text-image-mask">About</h1>
 
-        <h3 className="about-text">
-          Frontend Developer with a background in Finance roles and freight
-          management with a passion for solving problems and creating solutions.
-          I have a strong interest in the latest technologies and frameworks and
-          I am always looking to learn new skills and improve my knowledge.
-          Currently learning backend and databases to become a full stack
-          developer.
-        </h3>
+        <p className="about-text">
+          Hey there! I'm Tulio, Full Stack Developer based in Chicago, IL. I
+          have experience working with a wide range of technologies and
+          languages. I am always looking to learn new technologies and improve
+          my skills to help businesses thrive.
+          <br />
+          I am passionate about creating software that is user-friendly,
+          scalable, and maintainable. I am a result oriented team player and I
+          am always looking to collaborate with other developers to create
+          amazing products.
+          <br />
+          Techologies:
+          <br />
+          FrontEnd: React, Redux, HTML, CSS, JavaScript
+          <br />
+          BackEnd: Node.js, Express, postgreSQL, RESTful API
+          <br />
+          Tools: GitHub, VS Code, Heroku, Netlify, Postman, Firebase/Firestore,
+          Chrome DevTools, npm, Slack, Trello, Figma
+        </p>
 
         <Button
           className="button"
