@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header";
-import HomePage from "./pages/HomePage";
+import Home from "./components/Hero";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
@@ -10,16 +10,25 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="header">
         <Header />
-
-        <HomePage />
-        <ProjectsPage />
-        <AboutPage />
-        {/* <TechnologiesPage /> */}
-        <ContactPage />
-        <Footer />
       </div>
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+        <section id="projects">
+          <ProjectsPage />
+        </section>
+        <section id="about">
+          <AboutPage />
+        </section>
+        {/* <TechnologiesPage /> */}
+        <section id="contact">
+          <ContactPage />
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }

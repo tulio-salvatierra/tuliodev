@@ -1,4 +1,5 @@
 .hero-text-image-mask {
+  margin-top: 2rem;
   font-weight: bold;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -10,15 +11,15 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 .hero-text {
-  width: 75%;
+  width: 100%;
   font-family: "Geist";
   font-weight: 500;
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   line-height: 54px;
   padding: 1rem;
   overflow: visible;
@@ -26,6 +27,14 @@
   margin-bottom: 2rem;
 }
 
+.hero-image {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-radius: 1rem;
+  /*  */
+}
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -34,7 +43,7 @@
   position: relative;
   padding: 2rem;
   width: 100%;
-  height: 80vh;
+  height: auto;
 }
 
 .hero-content {
@@ -45,20 +54,20 @@
   flex-wrap: wrap;
 }
 
-.hero-background {
+.animation {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   z-index: -1;
   background-image: url("../../assets/images/hero.PNG");
-  background-size: "fit";
+  background-size: "fill";
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(8px);
-  -webkit-filter: blur(8px);
-  opacity: 0.5;
+  -webkit-filter: blur(2px);
+  opacity: 0;
   animation: float 10s ease-in-out infinite;
 }
 
@@ -85,12 +94,7 @@
     font-size: 2.5rem;
     margin-bottom: 4rem;
   }
-  .hero-container {
-    height: 72dvh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
+
   .hero-text {
     width: 100%;
     font-size: 1.5rem;
