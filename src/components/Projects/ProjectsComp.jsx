@@ -3,7 +3,7 @@ import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Ecomm from "../../assets/images/ecomm.jpeg";
 import Quiz from "../../assets/images/quiz.png";
-import GitHubIcon from "@mui/icons-material/GitHub";
+// import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ProjectsComp() {
   return (
