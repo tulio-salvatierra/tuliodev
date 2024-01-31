@@ -11,10 +11,7 @@ function Header() {
   return (
     <header className="header-grid" style={{ margin: "2rem 0", width: "100%" }}>
       <Navbar light expand="lg">
-        <NavbarBrand
-          href="/"
-          style={{ fontWeight: "bold", fontSize: "2rem", color: "#6f6f6f" }}
-        >
+        <NavbarBrand href="/" style={{ fontSize: "2rem", color: "#6f6f6f" }}>
           <img
             src={Logo}
             alt="logo"
@@ -43,14 +40,13 @@ function Header() {
         </button>
 
         <nav className="collapse navbar-collapse" id="#navbarSupportedContent">
-          <ul className="list">
+          <ul className="list" style={{ marginTop: ".5rem" }}>
             <a
               href="#projects"
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
-                fontSize: "1.5rem",
-                fontWeight: "bold",
+                fontSize: "1.75rem",
                 padding: "0 1rem",
                 justifyContent: "center",
               }}
@@ -62,8 +58,7 @@ function Header() {
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
-                fontSize: "1.5rem",
-                fontWeight: "bold",
+                fontSize: "1.75rem",
                 padding: "0 1rem",
               }}
             >
@@ -74,8 +69,7 @@ function Header() {
               style={{
                 textDecoration: "none",
                 color: "#6f6f6f",
-                fontSize: "1.5rem",
-                fontWeight: "bold",
+                fontSize: "1.75rem",
                 padding: "0 1rem",
               }}
             >
