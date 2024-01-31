@@ -9,15 +9,8 @@ import Logo from "../../assets/images/Untitled design (7).png";
 
 function Header() {
   return (
-    <header
-      style={{
-        position: "fixed",
-        margin: "2rem 0",
-        width: "100%",
-        backgroundColor: "#f5f4f7",
-      }}
-    >
-      <Navbar light expand="lg">
+    <header className="header">
+      <Navbar light expand="lg" style={{ backgroundColor: "#f5f4f7" }}>
         <NavbarBrand href="/" style={{ fontSize: "2rem", color: "#6f6f6f" }}>
           <img
             src={Logo}

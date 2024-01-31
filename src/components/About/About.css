@@ -15,10 +15,10 @@
 
 .about-text {
   font-family: "Geist";
-  width: 90%;
+  width: 100%;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 54px;
+  font-size: 1rem;
+  line-height: 30px;
   padding: 1rem;
   overflow: visible;
   color: #6f6f6f;

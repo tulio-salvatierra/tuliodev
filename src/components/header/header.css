@@ -1,7 +1,7 @@
 .header-grid {
   display: grid;
   align-items: center;
-  padding: 0 20px;
+  padding: 0;
   position: sticky;
 }
 
