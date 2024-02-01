@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 function About() {
   return (
     <>
-      <br />
       <h1 className="about-text-image-mask">About</h1>
 
       <p className="about-text">

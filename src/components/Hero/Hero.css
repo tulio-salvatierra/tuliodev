@@ -20,7 +20,7 @@
   font-family: "Geist";
   font-weight: 500;
   font-size: 1.75rem;
-  line-height: 54px;
+  line-height: 40px;
   padding: 1rem;
   overflow: visible;
   color: #6f6f6f;
@@ -36,10 +36,10 @@
   /*  */
 }
 .hero-container {
-  display: flex;
+  display: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: relative;
   padding: 2rem;
   width: 100%;
@@ -60,8 +60,8 @@
   left: 0;
   width: 50%;
   height: 50%;
-  z-index: -1;
-  background-image: url("../../assets/images/hero.PNG");
+  z-index: -1000;
+
   background-size: "fill";
   background-position: center;
   background-repeat: no-repeat;

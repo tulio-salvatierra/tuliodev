@@ -113,7 +113,7 @@ export default function Contact() {
             style={styles.textField}
           />
 
-          <Button outline size="lg" type="submit">
+          <Button size="lg" className="button" type="submit">
             Send message
           </Button>
         </form>

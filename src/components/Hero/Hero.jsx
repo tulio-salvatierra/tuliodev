@@ -7,14 +7,13 @@ function Hero() {
   return (
     <>
       <div className="hero-content">
-        <img src={Heropic} alt="landingPic" className="hero-image"></img>
-        <h1 className="hero-text-image-mask">
-          I'm Tulio, welcome to my portfolio!
-        </h1>
+        <h1 className="hero-text-image-mask">I'm Tulio</h1>
+        <h2 className="hero-subtitle">Full Stack Developer Jr.</h2>
 
-        <img src={Heropic} alt="landingPic" className="animation"></img>
+        <img src={Heropic} alt="landingPic" className="hero-image"></img>
         <h3 className="hero-text">
-          Here you'll see some of my projects and skills. Let's talk!
+          Welcome to my portfolio! Here you'll see some of my projects and
+          skills
         </h3>
       </div>
       <Button
