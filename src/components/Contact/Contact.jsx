@@ -40,6 +40,7 @@ const styles = {
   textField: {
     width: "100%",
     marginBottom: 20,
+    border: "2px solid #000000",
   },
 };
 
