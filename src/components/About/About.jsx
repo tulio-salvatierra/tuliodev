@@ -1,33 +1,53 @@
 import React from "react";
+import skillsObject from "../../assets/about-list.js";
 import "./About.css";
 import RESUME from "../../assets/resume.pdf";
 import Button from "@mui/material/Button";
+import pic from "../../assets/images/profile.jpeg";
+import Skills from "../Skills/Skills";
 
 function About() {
+  console.log(skillsObject);
   return (
     <>
       <h1 className="about-text-image-mask">About</h1>
-
+      <img
+        src={pic}
+        alt="landingPic"
+        className="image"
+        style={{ height: "400px", width: "auto" }}
+      ></img>
       <p className="about-text">
-        Hey there! I'm Tulio, Full Stack Developer based in Chicago, IL. I have
-        experience working with a wide range of technologies and languages. I am
-        always looking to learn new technologies and improve my skills to help
-        businesses thrive.
+        <strong>
+          I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
+        </strong>
+        <br />I have experience working with a wide range of technologies and I
+        am always looking to learn new technologies and improve my skills to
+        help businesses <strong>thrive!</strong>
         <br />
-        I am passionate about creating software that is user-friendly, scalable,
-        and maintainable. I am a result oriented team player and I am always
-        looking to collaborate with other developers to create amazing products.
-        <br />
-        Techologies:
-        <br />
-        FrontEnd: React, Redux, HTML, CSS, JavaScript
-        <br />
-        BackEnd: Node.js, Express, postgreSQL, RESTful API
-        <br />
-        Tools: GitHub, VS Code, Heroku, Netlify, Postman, Firebase/Firestore,
-        Chrome DevTools, npm, Slack, Trello, Figma
       </p>
-
+      <div className="about-list">
+        <h3>Techologies:</h3>
+        {skillsObject.map((skill, index) => (
+          <ul>
+            <li key={index}>
+              <strong>{skill.title}</strong>
+              <br />
+              {skill.content.map((content, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  className="btn btn-outline-secondary"
+                  style={{ margin: "5px" }}
+                >
+                  {content}
+                </button>
+              ))}
+            </li>
+          </ul>
+        ))}
+      </div>
+      <Skills />
       <Button
         className="button"
         href={RESUME}
@@ -35,10 +55,10 @@ function About() {
           color: "white",
           borderRadius: "50px",
           fontFamily: "Geist",
-          padding: "1rem",
-          fontSize: "1.5rem",
-          fontWeight: "bold",
-          width: "50%",
+          padding: ".75rem",
+          fontSize: "1.25rem",
+          fontWeight: "400",
+          width: "25rem",
           textTransform: "none",
         }}
       >

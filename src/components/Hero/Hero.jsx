@@ -1,7 +1,7 @@
-import Button from "@mui/material/Button";
 import Heropic from "../../assets/images/hero.PNG";
 import React from "react";
 import "./Hero.css";
+import { Button } from "@mui/material";
 
 function Hero() {
   return (
@@ -23,16 +23,15 @@ function Hero() {
           color: "white",
           borderRadius: "50px",
           fontFamily: "Geist",
-          padding: "1rem",
-          fontSize: "1.5rem",
-          fontWeight: "bold",
-          width: "auto",
+          padding: ".75rem",
+          fontSize: "1.25rem",
+          fontWeight: "400",
+          width: "25rem",
           textTransform: "none",
         }}
       >
         Feel free to contact me!
       </Button>
-      <div className="hero-background"></div>
     </>
   );
 }

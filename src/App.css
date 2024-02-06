@@ -14,7 +14,7 @@ html {
 }
 
 .Navbar {
-  position: static;
+  position: fixed;
   display: flex;
   background-color: "#fff";
 }
@@ -23,11 +23,12 @@ section {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
   justify-content: space-evenly;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  height: fit-content;
 }
 
 main {
@@ -40,7 +41,7 @@ main {
   padding: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
   .section {
     grid-template-columns: 1fr;
     min-width: 100%;

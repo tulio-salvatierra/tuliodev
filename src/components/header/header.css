@@ -1,8 +1,14 @@
-.header-grid {
+header {
   display: grid;
-  align-items: center;
+  grid-template-columns: 1fr;
   padding: 0;
-  position: sticky;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f5f4f7;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .social-icons {

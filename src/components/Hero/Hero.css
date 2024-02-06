@@ -11,15 +11,15 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
 }
 
 .hero-text {
   width: 100%;
   font-family: "Geist";
-  font-weight: 500;
-  font-size: 1.75rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   line-height: 40px;
   padding: 1rem;
   overflow: visible;
@@ -27,8 +27,15 @@
   margin-bottom: 2rem;
 }
 
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6f6f6f;
+  margin-bottom: 2rem;
+}
+
 .hero-image {
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -54,21 +61,33 @@
   flex-wrap: wrap;
 }
 
-.animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  z-index: -1000;
+.hero-image {
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
-  background-size: "fill";
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(8px);
-  -webkit-filter: blur(2px);
-  opacity: 0;
-  animation: float 10s ease-in-out infinite;
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+
+    background-size: "fill";
+    background-position: center;
+    background-repeat: repeat;
+
+    opacity: 0;
+    animation: float 5s ease-in-out infinite;
+  }
 }
 
 @keyframes float {
@@ -97,9 +116,10 @@
 
   .hero-text {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     line-height: 40px;
-    padding: 0;
+    padding-top: 2;
     margin: 0;
+    font-weight: 700;
   }
 }
