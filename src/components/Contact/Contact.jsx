@@ -67,7 +67,7 @@ export default function Contact() {
 
   return (
     <>
-      <div classname="top">
+      <div className="top">
         <h1 className="contact-text-image-mask">Contact me</h1>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <form ref={formRef} onSubmit={sendEmail} id="form">

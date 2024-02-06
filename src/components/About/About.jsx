@@ -24,13 +24,12 @@ function About() {
         <br />I have experience working with a wide range of technologies and I
         am always looking to learn new technologies and improve my skills to
         help businesses <strong>thrive!</strong>
-        <br />
       </p>
       <div className="about-list">
         <h3>Techologies:</h3>
         {skillsObject.map((skill, index) => (
-          <ul>
-            <li key={index}>
+          <ul key={index}>
+            <li>
               <strong>{skill.title}</strong>
               <br />
               {skill.content.map((content, index) => (
