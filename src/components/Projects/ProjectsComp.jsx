@@ -26,26 +26,23 @@ function ProjectsComp() {
               <div className="project-info">
                 <p>{project.description}</p>
                 <div className="project-links">
-                  <a href={project.url} target="_blank" rel="noreferrer">
-                    Live Demo
-                  </a>
-                  <a href={project.repo} target="_blank" rel="noreferrer">
-                    GitHub
-                  </a>
                   <Button
-                    className="button"
-                    href="#contact"
-                    sx={{
-                      color: "white",
-                      borderRadius: "50px",
-                      fontFamily: "Geist",
-                      padding: ".75rem",
-                      fontSize: "1.25rem",
-                      fontWeight: "400",
-                      width: "25rem",
-                      textTransform: "none",
-                    }}
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="projectButton"
                   >
+                    Live Demo
+                  </Button>
+                  <Button
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="projectButton"
+                  >
+                    GitHub
+                  </Button>
+                  <Button className="projectButton" href="#contact">
                     View Project
                   </Button>
                 </div>
