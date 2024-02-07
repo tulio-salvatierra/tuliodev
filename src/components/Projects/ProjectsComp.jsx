@@ -30,7 +30,18 @@ function ProjectsComp() {
                     href={project.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="projectButton"
+                    className="button"
+                    sx={{
+                      color: "white",
+                      borderRadius: "50px",
+                      fontFamily: "Geist",
+                      padding: ".75rem",
+                      fontSize: "1.25rem",
+                      fontWeight: "400",
+                      width: "10rem",
+                      textTransform: "none",
+                      marginRight: "20px",
+                    }}
                   >
                     Live Demo
                   </Button>
@@ -38,13 +49,41 @@ function ProjectsComp() {
                     href={project.repo}
                     target="_blank"
                     rel="noreferrer"
-                    className="projectButton"
+                    className="button"
+                    sx={{
+                      color: "white",
+                      borderRadius: "50px",
+                      fontFamily: "Geist",
+                      padding: ".75rem",
+                      fontSize: "1.25rem",
+                      fontWeight: "400",
+                      width: "10rem",
+                      textTransform: "none",
+                      margin: "20px",
+                      marginRight: "20px",
+                    }}
                   >
                     GitHub
                   </Button>
-                  <Button className="projectButton" href="#contact">
-                    View Project
-                  </Button>
+                  {/* <Button
+                    className="projectButton"
+                    href="#Details"
+                    className="button"
+                    sx={{
+                      color: "white",
+                      borderRadius: "50px",
+                      fontFamily: "Geist",
+                      padding: ".75rem",
+                      fontSize: "1.25rem",
+                      fontWeight: "400",
+                      width: "10rem",
+                      textTransform: "none",
+                      margin: "20px",
+                      marginRight: "20px",
+                    }}
+                  >
+                    Details
+                  </Button> */}
                 </div>
               </div>
             </div>
