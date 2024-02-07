@@ -6,6 +6,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Logo from "../../assets/images/Untitled design (7).png";
+import Logo2 from "../../assets/images/_logo.svg";
 
 function Header() {
   return (
@@ -24,45 +25,20 @@ function Header() {
               color: "#6f6f6f",
             }}
           />
-          Portfolio
+          <img src={Logo2} alt="headerLogo" height={22}></img>
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="list" style={{ marginTop: ".5rem" }}>
-            <a
-              href="#projects"
-              style={{
-                textDecoration: "none",
-                color: "#6f6f6f",
-                fontSize: "1.75rem",
-                padding: "0 1rem",
-                justifyContent: "center",
-              }}
-            >
-              Projects
-            </a>
-            <a
-              href="#tech"
-              style={{
-                textDecoration: "none",
-                color: "#6f6f6f",
-                fontSize: "1.75rem",
-                padding: "0 1rem",
-              }}
-            >
-              Technologies
-            </a>
-            <a
-              href="#about"
-              style={{
-                textDecoration: "none",
-                color: "#6f6f6f",
-                fontSize: "1.75rem",
-                padding: "0 1rem",
-              }}
-            >
-              About
-            </a>
+          <ul className="list">
+            <li className="listItem">
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#tech">Technologies</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
           </ul>
         </nav>
 
