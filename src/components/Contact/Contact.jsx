@@ -129,8 +129,6 @@ export default function Contact() {
           </Button>
         </form>
       </div>
-
-      <div className="bottom"></div>
     </>
   );
 }
