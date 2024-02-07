@@ -67,70 +67,69 @@ export default function Contact() {
 
   return (
     <>
-      <div className="top">
-        <h1 className="contact-text-image-mask">Contact me</h1>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <form ref={formRef} onSubmit={sendEmail} id="form">
-            <TextField
-              type="text"
-              id="first-name"
-              label="First Name"
-              variant="outlined"
-              name="first-name"
-              autoComplete="true"
-              style={styles.textField}
-            />
+      <h1 className="contact-text-image-mask">Contact me</h1>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <form ref={formRef} onSubmit={sendEmail} id="form">
+          <TextField
+            type="text"
+            id="first-name"
+            label="First Name"
+            variant="outlined"
+            name="first-name"
+            autoComplete="true"
+            style={styles.textField}
+          />
 
-            <TextField
-              type="text"
-              id="last-name"
-              label="Last Name"
-              variant="outlined"
-              name="last-name"
-              autoComplete="true"
-              style={styles.textField}
-            />
+          <TextField
+            type="text"
+            id="last-name"
+            label="Last Name"
+            variant="outlined"
+            name="last-name"
+            autoComplete="true"
+            style={styles.textField}
+          />
 
-            <TextField
-              id="email"
-              label="Email"
-              name="email"
-              variant="outlined"
-              autoComplete="true"
-              style={styles.textField}
-              type="email"
-            />
+          <TextField
+            id="email"
+            label="Email"
+            name="email"
+            variant="outlined"
+            autoComplete="true"
+            style={styles.textField}
+            type="email"
+          />
 
-            <TextField
-              id="message"
-              label="Message"
-              variant="outlined"
-              multiline
-              rows={4}
-              name="message"
-              autoComplete="false"
-              style={styles.textField}
-            />
+          <TextField
+            id="message"
+            label="Message"
+            variant="outlined"
+            multiline
+            rows={4}
+            name="message"
+            autoComplete="false"
+            style={styles.textField}
+          />
 
-            <Button
-              className="button"
-              type="submit"
-              sx={{
-                color: "white",
-                borderRadius: "50px",
-                fontFamily: "Geist",
-                padding: ".75rem",
-                fontSize: "1.25rem",
-                fontWeight: "400",
-                width: "25rem",
-                textTransform: "none",
-              }}
-            >
-              Send message
-            </Button>
-          </form>
-        </div>
+          <Button
+            className="button"
+            type="submit"
+            sx={{
+              color: "white",
+              borderRadius: "50px",
+              fontFamily: "Geist",
+              padding: ".75rem",
+              fontSize: "1.25rem",
+              fontWeight: "400",
+              width: "25rem",
+              textTransform: "none",
+            }}
+          >
+            Send message
+          </Button>
+        </form>
       </div>
+
       <div className="bottom"></div>
     </>
   );
