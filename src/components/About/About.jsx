@@ -7,7 +7,6 @@ import pic from "../../assets/images/profile.jpeg";
 import Skills from "../Skills/Skills";
 
 function About() {
-  console.log(skillsObject);
   return (
     <>
       <h1 className="about-text-image-mask">About</h1>
