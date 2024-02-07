@@ -5,10 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Ecomm from "../../assets/images/ecomm.jpeg";
 import Quiz from "../../assets/images/quiz.png";
 import { Button } from "@mui/material";
-// import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ProjectsComp() {
-  console.log(projectsData);
   return (
     <>
       <h1 className="projects-text-image-mask">Projects</h1>
