@@ -9,6 +9,7 @@ header {
   z-index: 1000;
   background-color: #f5f4f7;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
 }
 
 .social-icons {
