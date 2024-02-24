@@ -31,7 +31,7 @@ const styles = {
       color: "white", // Input text color
     },
     width: "50%",
-    marginBottom: 5,
+    marginBottom: 3,
     display: "flex",
   },
 
@@ -76,6 +76,8 @@ export default function Contact() {
 
   return (
     <>
+      <div className="freelancing pricing"></div>
+
       <h1 className="contact-text-image-mask">Contact me</h1>
       <div
         style={{ padding: "2rem", display: "flex", flexDirection: "column" }}
