@@ -9,18 +9,19 @@ function About() {
   return (
     <>
       <h1 className="about-text-image-mask">About</h1>
-      <div className="row">
+      <div className="row-about">
         <div className="col-about">
           <img src={pic} alt="landingPic" className="image"></img>
         </div>
-        <div className="col">
+        <div className="">
           <p className="about-text">
             <strong>
               I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
             </strong>
             <br />I have experience working with a wide range of technologies
             and I am always looking to learn new technologies and improve my
-            skills to help businesses <strong>thrive!</strong>
+            skills to help businesses . My goal is to aim for excelence while
+            helping your business <strong>thrive!</strong>
           </p>
         </div>
       </div>
