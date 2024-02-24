@@ -2,7 +2,6 @@ import React from "react";
 import skillsObject from "../../assets/about-list.js";
 import "./About.css";
 import RESUME from "../../assets/resume.pdf";
-import Button from "@mui/material/Button";
 import pic from "../../assets/images/profile.jpeg";
 import Skills from "../Skills/Skills";
 

@@ -2,8 +2,6 @@ import React from "react";
 import { projectsData } from "./projectsData";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Ecomm from "../../assets/images/ecomm.jpeg";
-import Quiz from "../../assets/images/quiz.png";
 
 function ProjectsComp() {
   return (
