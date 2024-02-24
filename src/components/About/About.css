@@ -1,25 +1,38 @@
 .about-text-image-mask {
   font-weight: bold;
   font-size: 4rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(175, 175, 186, 1) 0%,
-    rgba(0, 84, 255, 0.9514180672268907) 38%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #fff;
+  padding: 2rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.listTitle,
+list-item {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.li,
+ul {
+  list-style: none;
 }
 
 .image {
-  width: 100%;
+  width: 45dvw;
   height: 100%;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin: 1rem;
-  object-fit: cover;
+  border-radius: 1rem;
+  object-fit: fit;
 }
 
 .about-text {
@@ -30,7 +43,7 @@
   line-height: 30px;
   padding: 1rem;
   overflow: visible;
-  color: #6f6f6f;
+  color: #fff;
 }
 
 .about-list {
@@ -57,7 +70,7 @@
     width: 100%;
   }
   section {
-    padding: 2rem;
+    padding: 0;
     margin: 0;
   }
 }

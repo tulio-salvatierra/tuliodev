@@ -6,12 +6,19 @@
 }
 
 #root,
-body,
 html {
   font-family: "Geist", sans-serif;
-  height: 100dvh;
-  width: 100dvw;
-  background-color: #f5f4f7;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(230, 230, 255, 1) 100%
+  );
 }
 
 .Navbar {
@@ -23,35 +30,10 @@ html {
 section {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  padding: 1rem;
+
   margin: 1rem;
   border-radius: 1rem;
   justify-content: space-evenly;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
   height: fit-content;
-}
-
-.content {
-  margin-top: 5rem;
-  flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-@media (max-width: 1200px) {
-  .section {
-    display: flex;
-    grid-template-columns: 1fr;
-    min-width: 100%;
-    height: fit-content;
-    padding: 2rem;
-    margin: 1rem;
-  }
-  .content {
-    grid-template-columns: 1fr;
-  }
 }

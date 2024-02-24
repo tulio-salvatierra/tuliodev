@@ -1,16 +1,8 @@
 .contact-text-image-mask {
   font-weight: bold;
   font-size: 4rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(175, 175, 186, 1) 0%,
-    rgba(0, 84, 255, 0.9514180672268907) 38%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #fff;
+  padding: 2rem;
 }
 
 .bottom {

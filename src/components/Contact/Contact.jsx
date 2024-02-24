@@ -1,44 +1,53 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
 import emailjs from "@emailjs/browser";
 
 const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "left",
-    alignItems: "center",
-    marginTop: 100,
-    marginBottom: 100,
-    xs: 12,
-  },
-  card: {
-    maxWidth: 600,
-    margin: "auto",
-    marginBottom: 100,
-    backgroundColor: "#ffffff",
-    borderRadius: 10,
-    padding: 20,
-    border: "1px solid #000000",
-  },
-  title: {
-    marginTop: 2,
-    marginBottom: 2,
-    fontWeight: "bold",
-    fontSize: 60,
-  },
-  subtitle: {
-    margin: "auto",
-  },
-  formLabel: {
-    fontFamily: "Geist",
-    fontSize: 60,
-    marginTop: 2,
-  },
   textField: {
-    width: "100%",
-    marginBottom: 20,
+    "& label.Mui-focused": {
+      color: "white",
+    },
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "white",
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "white",
+      },
+      "&:hover fieldset": {
+        borderColor: "white",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "white",
+      },
+      color: "white", // Text color
+    },
+    "& .MuiInputLabel-root": {
+      // Label color
+      color: "white",
+    },
+    "& .MuiInputBase-input": {
+      color: "white", // Input text color
+    },
+    width: "50%",
+    marginBottom: 5,
+    display: "flex",
+  },
+
+  buttonStyle: {
+    color: "white",
+    borderRadius: "50px",
+    fontFamily: "Geist",
+    padding: ".75rem",
+    fontSize: "1.25rem",
+    fontWeight: "400",
+    width: "25rem",
+    textTransform: "none",
+    backgroundColor: "#000", // Adjust button background color as needed
+    "&:hover": {
+      backgroundColor: "#333", // Darker on hover
+    },
   },
 };
 
@@ -54,10 +63,10 @@ export default function Contact() {
         "lRQEHERgGdBoUqxEY"
       )
       .then(
-        function (response) {
+        (response) => {
           console.log("SUCCESS!", response.status, response.text);
         },
-        function (error) {
+        (error) => {
           console.log("FAILED...", error);
         }
       );
@@ -68,7 +77,9 @@ export default function Contact() {
   return (
     <>
       <h1 className="contact-text-image-mask">Contact me</h1>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div
+        style={{ padding: "2rem", display: "flex", flexDirection: "column" }}
+      >
         <form ref={formRef} onSubmit={sendEmail} id="form">
           <TextField
             type="text"
@@ -77,7 +88,13 @@ export default function Contact() {
             variant="outlined"
             name="first-name"
             autoComplete="true"
-            style={styles.textField}
+            InputLabelProps={{
+              style: { color: "white" },
+            }}
+            InputProps={{
+              style: { color: "white" },
+            }}
+            sx={styles.textField}
           />
 
           <TextField
@@ -87,7 +104,13 @@ export default function Contact() {
             variant="outlined"
             name="last-name"
             autoComplete="true"
-            style={styles.textField}
+            InputLabelProps={{
+              style: { color: "white" },
+            }}
+            InputProps={{
+              style: { color: "white" },
+            }}
+            sx={styles.textField}
           />
 
           <TextField
@@ -96,7 +119,13 @@ export default function Contact() {
             name="email"
             variant="outlined"
             autoComplete="true"
-            style={styles.textField}
+            InputLabelProps={{
+              style: { color: "white" },
+            }}
+            InputProps={{
+              style: { color: "white" },
+            }}
+            sx={styles.textField}
             type="email"
           />
 
@@ -108,25 +137,22 @@ export default function Contact() {
             rows={4}
             name="message"
             autoComplete="false"
-            style={styles.textField}
+            InputLabelProps={{
+              style: { color: "white" },
+            }}
+            InputProps={{
+              style: { color: "white", borderColor: "white" },
+            }}
+            sx={styles.textField}
           />
 
-          <Button
-            className="button"
+          <button
+            className="btn btn-dark"
             type="submit"
-            sx={{
-              color: "white",
-              borderRadius: "50px",
-              fontFamily: "Geist",
-              padding: ".75rem",
-              fontSize: "1.25rem",
-              fontWeight: "400",
-              width: "25rem",
-              textTransform: "none",
-            }}
+            sx={styles.buttonStyle}
           >
             Send message
-          </Button>
+          </button>
         </form>
       </div>
     </>

@@ -11,11 +11,9 @@ import RESUME from "../../assets/resume.pdf";
 
 function Footer() {
   return (
-    <footer className="footer-container">
+    <footer className="footer-div">
       <div className="col">
-        <h3 className="left">
-          <strong>Need pricing on your project?</strong>
-        </h3>
+        <h3 className="left">Need pricing on your project?</h3>
         <a href="tel:+17863146121">
           {" "}
           <PhoneIcon /> +1 (786) 314-6121
@@ -30,9 +28,7 @@ function Footer() {
         </a>
       </div>
       <div className="col">
-        <h3>
-          <strong>Connect with me:</strong>
-        </h3>
+        <h3>Connect with me:</h3>
         <a
           href="https://www.linkedin.com/in/tulio-salvatierra/"
           target="_blank"
@@ -59,9 +55,7 @@ function Footer() {
         </a>
       </div>
       <div className="col">
-        <h3>
-          <strong>Location:</strong>
-        </h3>
+        <h3>Location:</h3>
         <p>Chicago, IL</p>
       </div>
       <div className="separator"></div>

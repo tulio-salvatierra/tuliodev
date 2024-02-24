@@ -1,21 +1,17 @@
-.footer-container {
+.footer-div {
   display: flex;
   padding: 2rem;
   flex-direction: row;
   font-family: "Geist";
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   z-index: 0;
   bottom: 0;
   justify-content: center;
   text-align: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(175, 175, 186, 1) 0%,
-    rgba(0, 84, 255, 0.9514180672268907) 38%
-  );
+  background: rgba(255, 255, 255, 0.25); /* Adjust transparency as needed */
+  backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   border-radius: 10px;
   width: 95%;
   margin-right: auto;
@@ -23,8 +19,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Adds a subtle border for more depth */
 }
+
+.left {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
 .col {
+  color: white;
   display: flex;
   flex-direction: column;
   padding: 1rem;
