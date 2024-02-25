@@ -18,10 +18,14 @@ function About() {
             <strong>
               I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
             </strong>
-            <br />I have experience working with a wide range of technologies
-            and I am always looking to learn new technologies and improve my
-            skills to help businesses . My goal is to aim for excelence while
-            helping your business <strong>thrive!</strong>
+            <br />
+            Hello there! I'm Tulio Salvatierra, a Full-Stack Developer based in
+            Chicago, specializing in creating dynamic and responsive web
+            applications. With a passion for both frontend and backend
+            technologies, I am on a mission to build digital solutions that meet
+            and exceed expectations. My approach is to blend creativity with
+            functionality, offering unique web experiences tailored to your
+            needs. Reach Out Today!
           </p>
         </div>
       </div>

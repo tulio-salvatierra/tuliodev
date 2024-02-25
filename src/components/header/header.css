@@ -7,9 +7,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: #f5f4f7;
+  background-color: #fff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .social-icons {
@@ -20,11 +20,6 @@ header {
 
 .social-icons a {
   padding-left: 10px;
-}
-
-.social-icons :hover {
-  border-radius: 0.5rem;
-  background-color: #c8c8cc;
 }
 
 .list {

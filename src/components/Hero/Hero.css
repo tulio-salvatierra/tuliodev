@@ -2,6 +2,7 @@
   font-weight: 700;
   font-size: 5rem;
   margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .padleft,
@@ -83,6 +84,7 @@
   grid-template-rows: 0.5fr 1.75fr 0.25fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  height: 100dvh;
 }
 
 @media screen and (max-width: 768px) {
