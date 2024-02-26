@@ -19,14 +19,14 @@ function Hero() {
           <h3 className="hero-text">Welcome to my portfolio </h3>
           <div className="socialhero-icons">
             <a href="https://www.linkedin.com/in/tulio-salvatierra/">
-              <LinkedInIcon sx={{ fontSize: 40, color: "#6f6f6f" }} />
+              <LinkedInIcon sx={{ fontSize: 40, color: "#fff" }} />
             </a>
 
             <a href="https://www.github.com/T00lio">
-              <GitHubIcon sx={{ fontSize: 40, color: "#6f6f6f" }} />
+              <GitHubIcon sx={{ fontSize: 40, color: "#fff" }} />
             </a>
             <a href="https://wa.me/17863146121">
-              <WhatsAppIcon sx={{ fontSize: 40, color: "#6f6f6f" }} />
+              <WhatsAppIcon sx={{ fontSize: 40, color: "#fff" }} />
             </a>
           </div>
           <div className="buttons">
