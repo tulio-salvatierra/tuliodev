@@ -3,6 +3,7 @@ import "./Hero.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import RESUME from "../../assets/resume.pdf";
 
 function Hero() {
   return (
@@ -30,9 +31,14 @@ function Hero() {
             </a>
           </div>
           <div className="buttons">
-            <button type="button" className="btn btn-dark me-1" href="#contact">
+            <a
+              type="button"
+              className="btn btn-dark me-1"
+              href={RESUME}
+              download
+            >
               download resume
-            </button>
+            </a>
             <button type="button" className="btn btn-dark me-1" href="#contact">
               contact me
             </button>
