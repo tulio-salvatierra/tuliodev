@@ -59,6 +59,6 @@ header {
     justify-content: flex-start;
   }
   .social-icons {
-    margin-left: auto;
+    display: none;
   }
 }
