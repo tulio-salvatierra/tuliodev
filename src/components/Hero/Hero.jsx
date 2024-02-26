@@ -15,7 +15,7 @@ function Hero() {
           <button className="btn btn-outline-secondary rounded-pill">
             Full Stack Developer
           </button>
-          <h1 className="hero-text-image-mask">Tulio Salvatierra</h1>
+          <h1 className="hero-text-image-mask">I'm Tulio</h1>
 
           <h3 className="hero-text">Welcome to my portfolio </h3>
           <div className="socialhero-icons">
