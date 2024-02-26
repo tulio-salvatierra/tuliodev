@@ -12,7 +12,17 @@ function ProjectsComp() {
       </h3>
       <div className="projects-container d-flex flex-wrap justify-content-center">
         {projectsData.map((project) => (
-          <div key={project.id} className="card m-2" style={{ width: "36rem" }}>
+          <div
+            key={project.id}
+            className="card m-2"
+            style={{
+              width: "30rem",
+              backgroundColor: "transparent",
+              border: "none",
+              boxShadow: "0 0 20px 0 rgba(0, 0, 0, 0.2)",
+              backdropFilter: "blur(5px)",
+            }}
+          >
             <img
               src={project.image}
               className="card-img-top"
