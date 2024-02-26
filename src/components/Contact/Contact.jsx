@@ -27,7 +27,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="freelancing pricing"></div>
+      <div className="freelancing pricing" id="#contact"></div>
       <h1 className="contact-text-image-mask">Contact me</h1>
       <div className="flex" style={{ padding: "1rem" }}>
         <div className="col-md-6 col-sm-12">

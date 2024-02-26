@@ -39,9 +39,9 @@ function Hero() {
             >
               download resume
             </a>
-            <button type="button" className="btn btn-dark me-1" href="#contact">
+            <a className="btn btn-dark me-1" href="#contact">
               contact me
-            </button>
+            </a>
           </div>
         </div>
         <div className="image"></div>
