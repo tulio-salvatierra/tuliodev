@@ -56,7 +56,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .list {
-    display: none;
+    justify-content: flex-start;
   }
   .social-icons {
     margin-left: auto;
