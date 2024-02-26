@@ -30,12 +30,12 @@ export default function Contact() {
       <div className="freelancing pricing"></div>
       <h1 className="contact-text-image-mask">Contact me</h1>
       <div className="flex" style={{ padding: "1rem" }}>
-        <div className="col-6 col-md-6">
+        <div className="col-md-6 col-sm-12">
           <h2 className="text-white">Need pricing on your project?</h2>
           <p className="text-white">let discuss how can I help you!</p>
         </div>
-        <div className="col-6 col-md-6">
-          <form ref={formRef} onSubmit={sendEmail}>
+        <div className="col-md-6 col-sm-12">
+          <form ref={formRef} onSubmit={sendEmail} className="contact-form">
             <div className="mb-3">
               <label htmlFor="first-name" className="form-label text-white">
                 First Name

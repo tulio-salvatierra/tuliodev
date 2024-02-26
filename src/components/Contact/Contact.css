@@ -51,4 +51,9 @@
   .card {
     margin: 0;
   }
+  .contact-form {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
 }

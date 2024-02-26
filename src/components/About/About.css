@@ -13,6 +13,22 @@
   padding: 2rem;
 }
 
+.button-skill {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(175, 175, 186, 1) 0%,
+    rgba(0, 84, 255, 0.9514180672268907) 38%
+  );
+  padding: 1rem;
+
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .btn {
   font-size: 1rem;
   padding: 1rem;
@@ -25,7 +41,7 @@
 }
 
 .listTitle,
-list-item {
+.list-item {
   font-size: 2rem;
   color: #fff;
   padding: 1rem;
