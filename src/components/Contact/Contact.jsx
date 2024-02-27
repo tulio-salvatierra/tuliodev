@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./Contact.css";
 import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
+import photo from "../../assets/images/portrait.jpg";
 
 const styles = {
   textField: {
@@ -135,7 +136,23 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <div className="3"></div>
+      <div className="photo">
+        <img
+          src={photo}
+          alt="portrait"
+          style={{
+            height: 300,
+            width: 300,
+            borderRadius: "50%",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        />
+        <h3 className="contact-text">
+          Get in touch with me, send a message and we can discuss how to make
+          your business thrive!
+        </h3>
+      </div>
       <div className="4"></div>
       <div className="5"></div>
       <div className="6"></div>

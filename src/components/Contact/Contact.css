@@ -23,6 +23,8 @@
 
 .contact-parent {
   display: grid;
+  column-gap: 1rem;
+  row-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.5fr 1.75fr 0.25fr;
   grid-column-gap: 0px;
@@ -30,6 +32,15 @@
   padding: 2rem;
   margin: 0;
   height: 100vh;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }
 
 .btn {
