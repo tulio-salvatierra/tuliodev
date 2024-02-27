@@ -30,24 +30,9 @@ const styles = {
     "& .MuiInputBase-input": {
       color: "white", // Input text color
     },
-    width: "50%",
+    width: "100%",
     marginBottom: 5,
     display: "flex",
-  },
-
-  buttonStyle: {
-    color: "white",
-    borderRadius: "50px",
-    fontFamily: "Geist",
-    padding: ".75rem",
-    fontSize: "1.25rem",
-    fontWeight: "400",
-    width: "25rem",
-    textTransform: "none",
-    backgroundColor: "#000", // Adjust button background color as needed
-    "&:hover": {
-      backgroundColor: "#333", // Darker on hover
-    },
   },
 };
 
@@ -75,11 +60,10 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <div className="contact-parent">
       <h1 className="contact-text-image-mask">Contact me</h1>
-      <div
-        style={{ padding: "2rem", display: "flex", flexDirection: "column" }}
-      >
+      <div className="2"></div>
+      <div className="form">
         <form ref={formRef} onSubmit={sendEmail} id="form">
           <TextField
             type="text"
@@ -146,15 +130,15 @@ export default function Contact() {
             sx={styles.textField}
           />
 
-          <button
-            className="btn btn-dark"
-            type="submit"
-            sx={styles.buttonStyle}
-          >
+          <button className="btn btn-dark" type="submit">
             Send message
           </button>
         </form>
       </div>
-    </>
+      <div className="3"></div>
+      <div className="4"></div>
+      <div className="5"></div>
+      <div className="6"></div>
+    </div>
   );
 }

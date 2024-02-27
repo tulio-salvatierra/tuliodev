@@ -4,34 +4,37 @@
   color: #fff;
   padding: 2rem;
 }
-
-.bottom {
-  height: 50%;
+.form {
+  margin: 0;
+  height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2rem;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(175, 175, 186, 1) 0%,
-    rgba(0, 84, 255, 0.9514180672268907) 38%
-  );
 }
 
-.button {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(175, 175, 186, 1) 0%,
-    rgba(0, 84, 255, 0.9514180672268907) 38%
-  );
+.form {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+
+.contact-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1.75fr 0.25fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 2rem;
+  margin: 0;
+  height: 100vh;
+}
+
+.btn {
+  margin: 0;
+  padding: 1rem;
+
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .contact-content {
     padding: 1rem;
@@ -46,9 +49,6 @@
   .contact {
     height: 100vh;
     padding: 0;
-    margin: 0;
-  }
-  .card {
     margin: 0;
   }
 }
