@@ -13,14 +13,17 @@ function About() {
         <div className="col-about">
           <img src={pic} alt="landingPic" className="image"></img>
         </div>
-        <div className="col">
-          <p className="about-text">
+        <div className="">
+          <p className="about-text mt-lg-5 text-left">
             <strong>
               I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
             </strong>
             <br />I have experience working with a wide range of technologies
-            and I am always looking to learn new technologies and improve my
-            skills to help businesses <strong>thrive!</strong>
+            and a passion for learning new technologies and improve my skills to
+            help solve problems and create solutions. I am a quick learner and
+            have a strong work ethic. Originally from Venezuela, now living in
+            Chicago, IL. Strong and diverse background in Finance and business
+            management.
           </p>
         </div>
       </div>
