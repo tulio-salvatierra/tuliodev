@@ -7,12 +7,10 @@ function ProjectsComp() {
   return (
     <div className="project-section">
       <h1 className="projects-text-image-mask">Projects</h1>
-      <h3 className="projects-subtitle">
-        Here are some of the projects I am working on
-      </h3>
-      <div className="projects-container d-flex flex-wrap justify-content-center">
+
+      <div className="projects-container d-flex flex-wrap justify-content-center mt-5">
         {projectsData.map((project) => (
-          <div key={project.id} className="card m-2" style={{ width: "18rem" }}>
+          <div key={project.id} className="card m-2" style={{ width: "32rem" }}>
             <img
               src={project.image}
               className="card-img-top"
