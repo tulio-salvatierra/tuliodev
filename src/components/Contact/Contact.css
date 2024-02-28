@@ -37,6 +37,7 @@
 .photo {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -46,7 +47,6 @@
 .btn {
   margin: 0;
   padding: 1rem;
-
   width: auto;
 }
 
@@ -65,5 +65,19 @@
     height: 100vh;
     padding: 0;
     margin: 0;
+  }
+  .contact-parent {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 20rem;
+    height: 100vh;
+  }
+  .contact-text {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
   }
 }
