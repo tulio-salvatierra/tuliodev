@@ -12,13 +12,12 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(230, 230, 255, 1) 100%
-  );
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=8ab97d&c2=3d6cd1&gt=l&gd=dbb
+*/
+  background: #8ab97d;
+  background: linear-gradient(0deg, #8ab97d, #3d6cd1);
 }
 
 .Navbar {
