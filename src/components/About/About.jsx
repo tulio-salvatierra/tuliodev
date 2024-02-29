@@ -14,18 +14,16 @@ function About() {
           <img src={pic} alt="landingPic" className="image"></img>
         </div>
         <div className="">
-          <p className="about-text">
+          <p className="about-text mt-lg-5 text-left">
             <strong>
               I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
             </strong>
-            <br />
-            Hello there! I'm Tulio Salvatierra, a Full-Stack Developer based in
-            Chicago, specializing in creating dynamic and responsive web
-            applications. With a passion for both frontend and backend
-            technologies, I am on a mission to build digital solutions that meet
-            and exceed expectations. My approach is to blend creativity with
-            functionality, offering unique web experiences tailored to your
-            needs. Reach Out Today!
+            <br />I have experience working with a wide range of technologies
+            and a passion for learning new technologies and improve my skills to
+            help solve problems and create solutions. I am a quick learner and
+            have a strong work ethic. Originally from Venezuela, now living in
+            Chicago, IL. Strong and diverse background in Finance and business
+            management.
           </p>
         </div>
       </div>

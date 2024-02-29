@@ -5,6 +5,7 @@
   padding: 2rem;
 }
 
+<<<<<<< HEAD
 .row-about {
   display: flex;
   flex-direction: row;
@@ -27,6 +28,12 @@
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+=======
+.a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+>>>>>>> origin/contact-refactor
 }
 
 .btn {
@@ -38,6 +45,7 @@
   color: #000;
   font-weight: bold;
   cursor: pointer;
+  height: auto;
 }
 
 .listTitle,
@@ -99,6 +107,7 @@ ul {
     margin: 0;
   }
 }
+<<<<<<< HEAD
 
 @media (max-width: 576px) {
   .about-container {
@@ -148,3 +157,5 @@ ul {
 .about-button {
   margin: 1rem;
 }
+=======
+>>>>>>> origin/contact-refactor
