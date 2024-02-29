@@ -10,21 +10,7 @@ function ProjectsComp() {
 
       <div className="projects-container d-flex flex-wrap justify-content-center mt-5">
         {projectsData.map((project) => (
-<<<<<<< HEAD
-          <div
-            key={project.id}
-            className="card m-2"
-            style={{
-              width: "30rem",
-              backgroundColor: "transparent",
-              border: "none",
-              boxShadow: "0 0 20px 0 rgba(0, 0, 0, 0.2)",
-              backdropFilter: "blur(5px)",
-            }}
-          >
-=======
           <div key={project.id} className="card m-2" style={{ width: "32rem" }}>
->>>>>>> origin/contact-refactor
             <img
               src={project.image}
               className="card-img-top"

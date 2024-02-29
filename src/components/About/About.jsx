@@ -9,12 +9,12 @@ function About() {
   return (
     <>
       <h1 className="about-text-image-mask">About</h1>
-      <div className="row-about">
-        <div className="col-about">
+      <div className="row">
+        <div className="row-about">
           <img src={pic} alt="landingPic" className="image"></img>
         </div>
-        <div className="">
-          <p className="about-text mt-lg-5 text-left">
+        <div className="row">
+          <p className="about-text mt-lg-5 text-center w-100">
             <strong>
               I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
             </strong>
@@ -28,7 +28,7 @@ function About() {
         </div>
       </div>
       <div className="about-list">
-        <h3 className="listTitle">Techologies:</h3>
+        <h1 className="about-text-image-mask">Techologies:</h1>
         {skillsObject.map((skill, index) => (
           <ul key={index}>
             <li>

@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
+import TextField from "@mui/material/TextField";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import photo from "../../assets/images/portrait.jpg";
 
-<<<<<<< HEAD
-=======
 const styles = {
   textField: {
     "& label.Mui-focused": {
@@ -38,7 +37,6 @@ const styles = {
   },
 };
 
->>>>>>> origin/contact-refactor
 export default function Contact() {
   const formRef = useRef();
   const sendEmail = (e) => {
@@ -63,30 +61,6 @@ export default function Contact() {
   };
 
   return (
-<<<<<<< HEAD
-    <>
-      <div className="freelancing pricing" id="#contact"></div>
-      <h1 className="contact-text-image-mask">Contact me</h1>
-      <div className="flex" style={{ padding: "1rem" }}>
-        <div className="col-md-6 col-sm-12">
-          <h2 className="text-white">Need pricing on your project?</h2>
-          <p className="text-white">let discuss how can I help you!</p>
-        </div>
-        <div className="col-md-6 col-sm-12">
-          <form ref={formRef} onSubmit={sendEmail} className="contact-form">
-            <div className="mb-3">
-              <label htmlFor="first-name" className="form-label text-white">
-                First Name
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="first-name"
-                name="first-name"
-                autoComplete="true"
-              />
-            </div>
-=======
     <div className="contact-parent">
       <h1 className="contact-text-image-mask">Contact me</h1>
       <div className="2"></div>
@@ -107,59 +81,50 @@ export default function Contact() {
             }}
             sx={styles.textField}
           />
->>>>>>> origin/contact-refactor
 
-            <div className="mb-3">
-              <label htmlFor="last-name" className="form-label text-white">
-                Last Name
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="last-name"
-                name="last-name"
-                autoComplete="true"
-              />
-            </div>
+          <div className="mb-3">
+            <label htmlFor="last-name" className="form-label text-white">
+              Last Name
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="last-name"
+              name="last-name"
+              autoComplete="true"
+            />
+          </div>
 
-            <div className="mb-3">
-              <label htmlFor="email" className="form-label text-white">
-                Email
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                name="email"
-                autoComplete="true"
-              />
-            </div>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label text-white">
+              Email
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              name="email"
+              autoComplete="true"
+            />
+          </div>
 
-            <div className="mb-3">
-              <label htmlFor="message" className="form-label text-white">
-                Message
-              </label>
-              <textarea
-                className="form-control"
-                id="message"
-                name="message"
-                rows="4"
-                autoComplete="false"
-              ></textarea>
-            </div>
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label text-white">
+              Message
+            </label>
+            <textarea
+              className="form-control"
+              id="message"
+              name="message"
+              rows="4"
+              autoComplete="false"
+            ></textarea>
+          </div>
 
-<<<<<<< HEAD
-            <button type="submit" className="btn btn-dark">
-              Send message
-            </button>
-          </form>
-        </div>
-=======
           <button className="btn btn-dark" type="submit">
             Send message
           </button>
         </form>
->>>>>>> origin/contact-refactor
       </div>
       <div className="photo">
         <img
