@@ -16,34 +16,8 @@ function Technologies() {
               languages. I am always looking to learn new technologies and
               improve my skills.
             </h3>
-            <ol className="tech-list">
-              <li>
-                {" "}
-                <strong>
-                  FrontEnd:
-                  <hr />{" "}
-                </strong>
-                Bootstrap, React, Redux, HTML, CSS, JavaScript{" "}
-              </li>
-              <li>
-                <strong>
-                  BackEnd:
-                  <hr />
-                </strong>
-                Node.js, Express, postgreSQL, RESTful API
-              </li>
-              <li>
-                <strong>
-                  Tools:
-                  <hr />
-                </strong>
-                GitHub, VS Code, Heroku, Netlify, Postman, Firebase/Firestore,
-                Chrome DevTools, npm, Slack, Trello, Figma
-              </li>
-            </ol>
           </div>
           <Skills />
-          <div></div>
         </div>
         <br />
       </section>

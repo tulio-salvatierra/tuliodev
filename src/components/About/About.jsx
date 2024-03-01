@@ -1,5 +1,4 @@
 import React from "react";
-import skillsObject from "../../assets/about-list.js";
 import "./About.css";
 import RESUME from "../../assets/resume.pdf";
 import pic from "../../assets/images/profile.jpeg";
@@ -29,24 +28,6 @@ function About() {
       </div>
       <div className="about-list">
         <h1 className="about-text-image-mask">Techologies:</h1>
-        {skillsObject.map((skill, index) => (
-          <ul key={index}>
-            <li>
-              <strong className="list-item">{skill.title}</strong>
-              <br />
-              {skill.content.map((content, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  className="btn btn-outline-light"
-                  style={{ margin: "5px" }}
-                >
-                  {content}
-                </button>
-              ))}
-            </li>
-          </ul>
-        ))}
       </div>
       <Skills />
       <button className="btn btn-dark" href={RESUME}>

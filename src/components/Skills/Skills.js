@@ -1,4 +1,5 @@
 import React from "react";
+import "./Skills.css";
 import Bootstrap from "../../assets/images/skill-icons/bootstrap.svg";
 import CSS from "../../assets/images/skill-icons/css.svg";
 import HTML from "../../assets/images/skill-icons/html.svg";
@@ -12,45 +13,89 @@ import node from "../../assets/images/skill-icons/node.svg";
 import npm from "../../assets/images/skill-icons/npm.svg";
 import pgsql from "../../assets/images/skill-icons/pgsql.svg";
 import slack from "../../assets/images/skill-icons/slack.svg";
+import tailwind from "../../assets/images/skill-icons/Tailwind.svg";
+import sequelize from "../../assets/images/skill-icons/sequelize-svgrepo-com.svg";
+import express from "../../assets/images/skill-icons/express.svg";
+import jira from "../../assets/images/skill-icons/jira.svg";
+import github from "../../assets/images/skill-icons/github.svg";
 
 function Skills() {
   const skills = [
-    Bootstrap,
-    CSS,
-    HTML,
-    JavaScript,
-    ReactSVG,
-    MaterialUI,
-    slack,
-    code,
-    figma,
-    firebase,
-    node,
-    npm,
-    pgsql,
+    {
+      title: "FrontEnd",
+      content: [
+        Bootstrap,
+        CSS,
+        HTML,
+        JavaScript,
+        ReactSVG,
+        MaterialUI,
+        tailwind,
+      ],
+    },
+    {
+      title: "BackEnd",
+      content: [node, pgsql, firebase, npm, sequelize, firebase, express],
+    },
+    {
+      title: "Tools",
+      content: [code, figma, slack, jira, github],
+    },
   ];
+
+  console.log(skills);
+
   return (
     <div className="skill-container">
       <ul
         style={{
           listStyle: "none",
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "col",
           justifyContent: "space-around",
           flexWrap: "wrap",
-          alignItems: "center",
+          alignItems: "start",
+          padding: "1rem",
         }}
       >
-        {skills.map((skill, index) => (
-          <li key={index} style={{ margin: "0", padding: "0" }}>
-            <img
-              src={skill}
-              className="skill-icon"
-              alt="skill"
-              style={{
-                margin: "0.75rem",
-              }}
-            />
+        {skills.map((skillCategory, index) => (
+          <li
+            key={index}
+            style={{
+              margin: "0",
+              padding: "0",
+            }}
+          >
+            <h2 style={{ color: "#fff", marginBottom: "1rem" }}>
+              {skillCategory.title}
+            </h2>
+            <ul style={{ display: "flex", alignItems: "start" }}>
+              {skillCategory.content.map((skill, skillIndex) => (
+                <div
+                  key={skillIndex}
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginBottom: "1rem",
+                    opacity: 4,
+                  }}
+                >
+                  <img
+                    src={skill}
+                    className="skill-icon"
+                    alt="skill"
+                    style={{
+                      margin: "2rem",
+                      padding: "1rem",
+                      backgroundColor: "#fff",
+
+                      borderRadius: ".5rem",
+                      backdropFilter: "blur(10px)",
+                    }}
+                  />
+                </div>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>
