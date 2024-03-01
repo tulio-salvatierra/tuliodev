@@ -1,41 +1,7 @@
 import React, { useRef } from "react";
-import TextField from "@mui/material/TextField";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import photo from "../../assets/images/portrait.jpg";
-
-const styles = {
-  textField: {
-    "& label.Mui-focused": {
-      color: "white",
-    },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "white",
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "white",
-      },
-      "&:hover fieldset": {
-        borderColor: "white",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "white",
-      },
-      color: "white", // Text color
-    },
-    "& .MuiInputLabel-root": {
-      // Label color
-      color: "white",
-    },
-    "& .MuiInputBase-input": {
-      color: "white", // Input text color
-    },
-    width: "100%",
-    marginBottom: 5,
-    display: "flex",
-  },
-};
 
 export default function Contact() {
   const formRef = useRef();
