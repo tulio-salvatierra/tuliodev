@@ -91,6 +91,7 @@ export default function Contact() {
       <div className="photo">
         <img
           src={photo}
+          className="contact-photo"
           alt="portrait"
           style={{
             height: 300,
@@ -105,7 +106,7 @@ export default function Contact() {
           your business thrive!
         </h3>
       </div>
-      <div className="4"></div>
+      <div className="mb-5"></div>
       <div className="5"></div>
       <div className="6"></div>
     </div>
