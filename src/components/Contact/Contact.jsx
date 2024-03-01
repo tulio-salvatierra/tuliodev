@@ -66,22 +66,18 @@ export default function Contact() {
       <div className="2"></div>
       <div className="form">
         <form ref={formRef} onSubmit={sendEmail} id="form">
-          <TextField
-            type="text"
-            id="first-name"
-            label="First Name"
-            variant="outlined"
-            name="first-name"
-            autoComplete="true"
-            InputLabelProps={{
-              style: { color: "white" },
-            }}
-            InputProps={{
-              style: { color: "white" },
-            }}
-            sx={styles.textField}
-          />
-
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label text-white">
+              Name
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              name="name"
+              autoComplete="true"
+            />
+          </div>
           <div className="mb-3">
             <label htmlFor="last-name" className="form-label text-white">
               Last Name

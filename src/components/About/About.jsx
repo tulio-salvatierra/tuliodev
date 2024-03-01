@@ -27,12 +27,14 @@ function About() {
         </div>
       </div>
       <div className="about-list">
-        <h1 className="about-text-image-mask">Techologies:</h1>
+        <h1 className="about-text-image-mask">Tech Stack</h1>
       </div>
       <Skills />
-      <button className="btn btn-dark" href={RESUME}>
-        Download CV
-      </button>
+      <div className="flex m-5">
+        <button className="btn btn-dark w-75 " href={RESUME}>
+          Download CV
+        </button>
+      </div>
     </>
   );
 }
