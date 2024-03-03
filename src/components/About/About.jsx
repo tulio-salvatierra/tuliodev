@@ -12,19 +12,17 @@ function About() {
         <div className="row-about">
           <img src={pic} alt="landingPic" className="image"></img>
         </div>
-        <div className="row">
-          <p className="about-text mt-lg-5 text-center w-100">
-            <strong>
-              I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
-            </strong>
-            <br />I have experience working with a wide range of technologies
-            and a passion for learning new technologies and improve my skills to
-            help solve problems and create solutions. I am a quick learner and
-            have a strong work ethic. Originally from Venezuela, now living in
-            Chicago, IL. Strong and diverse background in Finance and business
-            management.
-          </p>
-        </div>
+
+        <p className="about-row">
+          <strong>
+            I'm Tulio, a Jr Full Stack Developer based in Chicago, IL.
+          </strong>
+          <br />I have experience working with a wide range of technologies and
+          a passion for learning new technologies and improve my skills to help
+          solve problems and create solutions. I am a quick learner and have a
+          strong work ethic. Originally from Venezuela, now living in Chicago,
+          IL. Strong and diverse background in Finance and business management.
+        </p>
       </div>
       <div className="about-list">
         <h1 className="about-text-image-mask">Tech Stack</h1>

@@ -101,6 +101,9 @@
   .padleft {
     display: none;
   }
+  .padright {
+    display: none;
+  }
   .content {
     grid-template-columns: 1fr;
   }
