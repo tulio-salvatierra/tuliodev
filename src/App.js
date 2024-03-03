@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
+import Experience from "./components/experience";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </section>
         <section id="projects">
           <ProjectsPage />
+        </section>
+        <section id="experience">
+          <Experience />
         </section>
         <section id="about">
           <AboutPage />

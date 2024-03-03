@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import portrait from "../../assets/images/portrait.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -44,7 +45,9 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="image"></div>
+        <div className="image-container">
+          <img src={portrait} alt="portrait" className="portrait"></img>
+        </div>
 
         <div className="6"></div>
       </div>

@@ -22,7 +22,7 @@ function Header() {
               <a href="#projects">Projects</a>
             </li>
             <li className="listItem">
-              <a href="#projects">Experience</a>
+              <a href="#experience">Experience</a>
             </li>
             <li>
               <a href="#tech">Technologies</a>

@@ -1,0 +1,19 @@
+.about-text-image-mask {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #fff;
+  padding: 2rem;
+}
+
+.card {
+  margin: 2rem;
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
