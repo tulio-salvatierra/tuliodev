@@ -4,7 +4,7 @@ import "./Experience.css";
 function Experience() {
   return (
     <section>
-      <h1 className="about-text-image-mask">Experience</h1>
+      <h1 className="about-text-image-mask">Exp.</h1>
       <div className="card">
         <div className="experience-item">
           <h2>Full Stack Developer</h2>
