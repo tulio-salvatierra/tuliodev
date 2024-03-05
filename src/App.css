@@ -12,12 +12,8 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=8ab97d&c2=3d6cd1&gt=l&gd=dbb
-*/
-  background: #8ab97d;
-  background: linear-gradient(0deg, #8ab97d, #3d6cd1);
+  background: #284579;
+  background: linear-gradient(135deg, #284579, #4bc3ad);
 }
 
 .Navbar {
