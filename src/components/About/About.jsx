@@ -24,7 +24,7 @@ function About() {
           IL. Strong and diverse background in Finance and business management.
         </p>
       </div>
-      <div className="about-list">
+      <div className="about-list" id="tech">
         <h1 className="about-text-image-mask">Tech Stack</h1>
       </div>
       <Skills />
