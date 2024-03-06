@@ -85,7 +85,7 @@
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-self: left;
 }
 .hero-content {
   padding-left: 2rem;
