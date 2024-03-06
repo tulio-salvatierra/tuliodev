@@ -14,7 +14,7 @@
   display: flex;
   justify-content: left;
   padding-top: 1rem;
-  align-items: center;
+  justify-items: space-between;
 }
 
 .btn btn-outline-secondary {
@@ -85,7 +85,7 @@
 .right {
   display: flex;
   flex-direction: column;
-  justify-self: left;
+  justify-content: space-between;
 }
 .hero-content {
   padding-left: 2rem;
