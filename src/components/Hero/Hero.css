@@ -1,8 +1,6 @@
 .hero-text-image-mask {
   font-weight: 700;
   font-size: 5rem;
-  margin-bottom: 2rem;
-  padding-top: 2rem;
 }
 
 .padleft,
@@ -13,26 +11,7 @@
 .buttons {
   display: flex;
   justify-content: left;
-  padding-top: 1rem;
   justify-items: space-between;
-}
-
-.btn btn-outline-secondary {
-  background: rgb(247, 247, 247);
-  background: linear-gradient(
-    90deg,
-    rgba(247, 247, 247, 0.7427564775910365) 0%,
-    rgba(15, 15, 255, 1) 100%
-  );
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  border-radius: 1rem;
 }
 
 .hero-text {
@@ -63,7 +42,6 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   backdrop-filter: blur(10px);
