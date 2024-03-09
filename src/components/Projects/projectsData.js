@@ -1,5 +1,5 @@
 import Ecommerce from "../../assets/images/ecomm.jpeg";
-import Quiz from "../../assets/images/quiz.png";
+import Quiz from "../../assets/images/quiz.gif";
 
 export const projectsData = [
   {
@@ -20,6 +20,6 @@ export const projectsData = [
     url: "https://react---ecomm.web.app/",
     repo: "https://github.com/T00lio/quiz",
     description:
-      "(in development) a full stack app made using vite, node.js, express, postgresSQL, Sequelize (ORM) and react.",
+      "(in development) a full stack app made using vite, node.js, express, postgresSQL, Sequelize (ORM) and react. It's a quiz app with a leaderboard and a user authentication system. It's a work in progress.",
   },
 ];
