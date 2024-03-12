@@ -1,5 +1,8 @@
-import Ecommerce from "../../assets/images/ecomm.jpeg";
+
+import Ecommerce from "../../assets/images/meli gif.gif";
 import Quiz from "../../assets/images/quiz.gif";
+
+
 
 export const projectsData = [
   {
