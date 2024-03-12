@@ -13,7 +13,7 @@ function Header() {
     <header className="header">
       <Navbar light expand="lg" style={{ backgroundColor: "#f5f4f7" }}>
         <NavbarBrand href="/" style={{ fontSize: "2rem", color: "#6f6f6f" }}>
-          <img src={Logo2} alt="headerLogo" height={22}></img>
+          <img src={Logo2} alt="headerLogo" height={20}></img>
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -35,14 +35,14 @@ function Header() {
 
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/tulio-salvatierra/">
-            <LinkedInIcon sx={{ fontSize: 40, color: "#6f6f6f" }} />
+            <LinkedInIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
           </a>
 
           <a href="https://www.github.com/T00lio">
-            <GitHubIcon sx={{ fontSize: 40, color: "#6f6f6f" }} />
+            <GitHubIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
           </a>
           <a href="https://wa.me/17863146121">
-            <WhatsAppIcon sx={{ fontSize: 40, color: "#6f6f6f" }} />
+            <WhatsAppIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
           </a>
         </div>
         <button
