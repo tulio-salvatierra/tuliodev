@@ -6,10 +6,12 @@
 }
 
 .card-image-top {
-  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   height: 300px;
   border-radius: 1rem;
-  object-fit: fill;
+  object-fit: cover; /* Added property */
 }
 .projects-subtitle {
   font-size: 30px;
