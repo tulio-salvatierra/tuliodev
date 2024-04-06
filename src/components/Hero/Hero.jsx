@@ -13,7 +13,7 @@ function Hero() {
         <div className="padleft d-sm-none d-md-block"></div>
         <div className="padright d-sm-none d-md-block"></div>
         <div className="right">
-          <button className="btn btn-outline-secondary rounded-pill">
+          <button className="btn btn-outline-success disabled rounded-pill">
             Full Stack Developer
           </button>
           <h1 className="hero-text-image-mask">I'm Tulio</h1>
