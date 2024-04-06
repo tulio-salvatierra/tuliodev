@@ -13,26 +13,38 @@ function Hero() {
         <div className="padleft d-sm-none d-md-block"></div>
         <div className="padright d-sm-none d-md-block"></div>
         <div className="right">
-          <button className="btn btn-outline-light disabled rounded-pill">
-            Full Stack Developer
-          </button>
-          <h1 className="hero-text-image-mask">I'm Tulio</h1>
+          <div className="right-div">
+            <a
+              className="btn btn-outline-light disabled rounded-pill"
+              href="#about"
+            >
+              Full Stack Developer
+            </a>
+            <h1 className="hero-title">I'm Tulio</h1>
 
-          <h3 className="hero-text">Welcome to my web development portfolio</h3>
-          <div className="socialhero-icons">
-            <a href="https://www.linkedin.com/in/tulio-salvatierra/">
-              <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
-            </a>
+            <h3 className="hero-text">
+              Welcome to my web development portfolio
+            </h3>
 
-            <a href="https://www.github.com/T00lio">
-              <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
-            </a>
-            <a href="https://wa.me/17863146121">
-              <WhatsAppIcon sx={{ fontSize: 30, color: "#fff" }} />
-            </a>
+            <h4 className="hero-description">
+              I'm a Full Stack Developer with a passion for creating web
+              applications that are both functional and visually appealing.
+            </h4>
+            <div className="socialhero-icons">
+              <a href="https://www.linkedin.com/in/tulio-salvatierra/">
+                <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
+              </a>
+
+              <a href="https://www.github.com/T00lio">
+                <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
+              </a>
+              <a href="https://wa.me/17863146121">
+                <WhatsAppIcon sx={{ fontSize: 30, color: "#fff" }} />
+              </a>
+            </div>
           </div>
         </div>
-        <div className="image-container">
+        <div className="hero-image">
           <img src={portrait} alt="portrait" className="portrait"></img>
         </div>
 

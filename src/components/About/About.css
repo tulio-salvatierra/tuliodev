@@ -10,6 +10,14 @@
   font-size: 1.5rem;
 }
 
+.about-sub {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 2rem;
+  margin-left: auto;
+  font-weight: bolder;
+}
+
 .btn {
   font-size: 1rem;
   padding: 1rem;
@@ -35,26 +43,22 @@ ul {
 }
 
 .image {
-  width: 50dvw;
-  height: 100%;
+  max-width: 1200px;
+  height: auto;
   border-radius: 1rem;
-  object-fit: cover;
 }
 
 .about-row {
   font-family: "Geist";
-  width: 65%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 400;
   font-size: 1.5rem;
-  line-height: 30px;
-  padding: 1rem;
-  overflow: visible;
-  color: #fff;
   line-height: 1.5;
+  padding: 1rem;
+  color: #fff;
   text-align: left;
 }
 
