@@ -13,7 +13,8 @@
   backdrop-filter: blur(10px); /* Creates the frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   border-radius: 10px;
-  width: 95%;
+  width: 90%;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
