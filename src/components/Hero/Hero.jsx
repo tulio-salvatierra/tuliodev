@@ -13,12 +13,12 @@ function Hero() {
         <div className="padleft d-sm-none d-md-block"></div>
         <div className="padright d-sm-none d-md-block"></div>
         <div className="right">
-          <button className="btn btn-outline-success disabled rounded-pill">
+          <button className="btn btn-outline-light disabled rounded-pill">
             Full Stack Developer
           </button>
           <h1 className="hero-text-image-mask">I'm Tulio</h1>
 
-          <h3 className="hero-text">Welcome to my portfolio </h3>
+          <h3 className="hero-text">Welcome to my web development portfolio</h3>
           <div className="socialhero-icons">
             <a href="https://www.linkedin.com/in/tulio-salvatierra/">
               <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
@@ -31,25 +31,21 @@ function Hero() {
               <WhatsAppIcon sx={{ fontSize: 30, color: "#fff" }} />
             </a>
           </div>
-          <div className="buttons">
-            <a
-              type="button"
-              className="btn btn-dark me-1"
-              href={RESUME}
-              download
-            >
-              download resume
-            </a>
-            <a className="btn btn-dark me-1" href="#contact">
-              contact me
-            </a>
-          </div>
         </div>
         <div className="image-container">
           <img src={portrait} alt="portrait" className="portrait"></img>
         </div>
 
-        <div className="6"></div>
+        <div className="lowerL">
+          <button type="button" className="link" href={RESUME} download>
+            download resume
+          </button>
+        </div>
+        <div className="lowerR">
+          <button type="button" className="link" href="#contact">
+            contact me
+          </button>
+        </div>
       </div>
     </>
   );

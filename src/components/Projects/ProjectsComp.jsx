@@ -23,7 +23,7 @@ function ProjectsComp() {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-dark rounded m-1"
+                className="project-btn"
               >
                 Live Demo
               </a>
@@ -31,7 +31,7 @@ function ProjectsComp() {
                 href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-dark rounded m-1"
+                className="project-btn"
               >
                 GitHub
               </a>
