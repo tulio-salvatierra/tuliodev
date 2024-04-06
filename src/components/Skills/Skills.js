@@ -73,24 +73,8 @@ function Skills() {
               style={{ display: "flex", alignItems: "start", flexWrap: "wrap" }}
             >
               {skillCategory.content.map((skill, skillIndex) => (
-                <div
-                  key={skillIndex}
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    marginBottom: "1rem",
-                    opacity: 4,
-                  }}
-                >
-                  <img
-                    src={skill}
-                    className="skill-icon"
-                    alt="skill"
-                    style={{
-                      margin: "2rem",
-                      padding: "1rem",
-                    }}
-                  />
+                <div key={skillIndex} className="skill-container">
+                  <img src={skill} className="skill-icon" alt="skill" />
                 </div>
               ))}
             </ul>
