@@ -13,9 +13,17 @@ header {
 }
 
 .dropdown-footer {
-  display: flex;
+  display: none;
+  font-weight: bold;
+  font-size: 2rem;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-footer {
+    display: flex;
+  }
 }
 
 .dropdown-icons {
@@ -23,9 +31,10 @@ header {
   align-items: flex-start;
 }
 
-.dropdown-footer a {
+.dropdown-footer {
   text-decoration: none;
-  color: black;
+  font-size: 1rem;
+
   font-size: large;
   margin-left: 0;
   margin-bottom: 2rem;

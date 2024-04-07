@@ -38,20 +38,14 @@ function Header() {
             </ul>
 
             <div className="dropdown-footer">
-              <div className="dropdown-icons">
-                <a href="https://www.linkedin.com/in/tulio-salvatierra/">
-                  <LinkedInIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
-                </a>
-
-                <a href="https://www.github.com/T00lio">
-                  <GitHubIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
-                </a>
-                <a href="https://wa.me/17863146121">
-                  <WhatsAppIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
-                </a>
-              </div>
               <footer className="footer">
-                <p> 2024 Tulio Salvatierra</p>
+                <a
+                  href="https://tuliosalvatierra.com"
+                  style={{ color: "#6f6f6f" }}
+                >
+                  {" "}
+                  2024 Tulio Salvatierra
+                </a>
               </footer>
             </div>
           </nav>
