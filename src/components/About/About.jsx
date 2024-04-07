@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import RESUME from "../../assets/resume.pdf";
 import pic from "../../assets/images/profile.jpeg";
 import Skills from "../Skills/Skills";
 
