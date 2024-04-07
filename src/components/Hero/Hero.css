@@ -74,6 +74,7 @@
   height: 50%;
   box-sizing: border-box;
   max-height: 600px;
+  margin-top: 2rem;
 }
 
 .hero-image {
