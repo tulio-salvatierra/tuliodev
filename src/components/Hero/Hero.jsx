@@ -49,14 +49,14 @@ function Hero() {
         </div>
 
         <div className="lowerL">
-          <button type="button" className="link" href={RESUME} download>
+          <a type="button" className="link" href={RESUME} download>
             download resume
-          </button>
+          </a>
         </div>
         <div className="lowerR">
-          <button type="button" className="link" href="#contact">
+          <a type="button" className="link" href="#contact">
             contact me
-          </button>
+          </a>
         </div>
       </div>
     </>
