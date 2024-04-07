@@ -27,11 +27,6 @@ function About() {
         <h1 className="about-text-image-mask">Tech Stack</h1>
       </div>
       <Skills />
-      <div className="flex m-5">
-        <button className="btn btn-dark w-75 " href={RESUME}>
-          Download CV
-        </button>
-      </div>
     </>
   );
 }
