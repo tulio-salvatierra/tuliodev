@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -9,6 +9,10 @@ import { Navbar, NavbarBrand } from "reactstrap";
 import Logo2 from "../../assets/images/_logo.svg";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <header className="header">
       <div className="container">
@@ -25,13 +29,31 @@ function Header() {
               <li className="listItem">
                 <a href="#experience">Experience</a>
               </li>
-              <li>
+              <li className="listItem">
                 <a href="#tech">Technologies</a>
               </li>
-              <li>
+              <li className="listItem">
                 <a href="#about">About</a>
               </li>
             </ul>
+
+            <div className="dropdown-footer">
+              <div className="dropdown-icons">
+                <a href="https://www.linkedin.com/in/tulio-salvatierra/">
+                  <LinkedInIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
+                </a>
+
+                <a href="https://www.github.com/T00lio">
+                  <GitHubIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
+                </a>
+                <a href="https://wa.me/17863146121">
+                  <WhatsAppIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
+                </a>
+              </div>
+              <footer className="footer">
+                <p> 2024 Tulio Salvatierra</p>
+              </footer>
+            </div>
           </nav>
 
           <div className="social-icons">
@@ -54,6 +76,7 @@ function Header() {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={toggleMenu}
           >
             <span className="navbar-toggler-icon"></span>
           </button>

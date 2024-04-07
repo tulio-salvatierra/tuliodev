@@ -12,6 +12,27 @@ header {
   opacity: 0.9;
 }
 
+.dropdown-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown-icons {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dropdown-footer a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
 .navbar {
   background-color: transparent;
   margin-left: auto;
@@ -71,5 +92,10 @@ header {
   }
   .social-icons {
     display: none;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
   }
 }
