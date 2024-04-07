@@ -5,6 +5,12 @@
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
 .link {
   border-radius: 2rem;
   margin-left: auto;

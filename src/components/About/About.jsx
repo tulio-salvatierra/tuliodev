@@ -17,10 +17,10 @@ function About() {
           I have experience working with a wide range of technologies and a
           passion for learning new technologies and improve my skills to help
           solve problems and create solutions. I am a quick learner and have a
-          strong work ethic. Originally from Venezuela, now living in Chicago,
-          IL. Strong and diverse background in Finance and business management.
-          My main is goal is to become a Full Stack Developer and work on
-          projects that can help people and make a difference.
+          strong work ethic. I have a strong and diverse background in Finance
+          and business management. My main is goal is to become a Full Stack
+          Developer and work on projects that can help people and make a
+          difference.
         </p>
       </div>
       <div className="about-list" id="tech">

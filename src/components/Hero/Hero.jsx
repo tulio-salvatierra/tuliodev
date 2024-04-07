@@ -20,7 +20,7 @@ function Hero() {
             >
               Full Stack Developer
             </a>
-            <h1 className="hero-title">I'm Tulio</h1>
+            <h1 className="hero-title">Tulio Salvatierra</h1>
 
             <h3 className="hero-text">
               Welcome to my web development portfolio
