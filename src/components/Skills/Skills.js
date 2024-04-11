@@ -47,25 +47,9 @@ function Skills() {
 
   return (
     <div className="skill-container">
-      <ul
-        style={{
-          listStyle: "none",
-          display: "flex",
-          flexDirection: "col",
-          justifyContent: "flex-start",
-          flexWrap: "wrap",
-          alignItems: "start",
-          padding: "1rem",
-        }}
-      >
+      <ul className="skills-list">
         {skills.map((skillCategory, index) => (
-          <li
-            key={index}
-            style={{
-              margin: "0",
-              padding: "0",
-            }}
-          >
+          <li key={index}>
             <h2 style={{ color: "#fff", marginBottom: "1rem" }}>
               {skillCategory.title}
             </h2>
@@ -73,9 +57,15 @@ function Skills() {
               style={{ display: "flex", alignItems: "start", flexWrap: "wrap" }}
             >
               {skillCategory.content.map((skill, skillIndex) => (
-                <div key={skillIndex} className="skill-container">
-                  <img src={skill} className="skill-icon" alt="skill" />
-                </div>
+                <li key={skillIndex} style={{ margin: "0.5rem" }}>
+                  <img
+                    key={skillIndex}
+                    src={skill}
+                    className="skill-icon"
+                    alt="skill"
+                    style={{ width: "40px", height: "40px" }}
+                  />
+                </li>
               ))}
             </ul>
           </li>

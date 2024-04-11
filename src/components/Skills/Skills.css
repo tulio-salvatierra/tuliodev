@@ -1,25 +1,19 @@
 .skill-container {
-  margin: 10px;
-
-  padding: 10px;
-  backdrop-filter: blur(10px);
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  transition: all 0.3s ease-in;
-  transition: all 0.5s ease-out;
 }
 
 .skill-icon {
   background-color: transparent;
-  border-radius: 25%;
-  backdrop-filter: blur(1000px);
+  border-radius: 1rem;
   background: #fff;
-  margin: 1rem;
-  opacity: 0.9;
-  transition: all 0.3s ease;
+  min-height: 4rem;
+}
 
-  margin: 10px;
+svg {
+  width: 150px;
+  height: 150px;
 }
 
 @media screen {
@@ -27,26 +21,6 @@
     width: auto;
     height: 50px;
   }
-}
-
-.skill-icon:hover {
-  transform: scale(1.1);
-  opacity: 1;
-  backdrop-filter: blur(10px);
-  border: 1px solid #fff;
-  background-color: transparent;
-  border-radius: 25%;
-  transition: all 0.3s ease;
-}
-
-.img:hover .skill-icon {
-  transform: scale(1.1);
-  opacity: 1;
-  backdrop-filter: blur(10px);
-  border: 1px solid #fff;
-  background-color: transparent;
-  border-radius: 25%;
-  transition: all 0.3s ease;
 }
 
 .ul {

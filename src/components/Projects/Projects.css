@@ -1,5 +1,4 @@
-.projects-text-image-mask,
-.projects-text-image-mask::before {
+.projects-text-image-mask {
   font-size: 60px;
   font-weight: bold;
   color: #fff;
@@ -9,17 +8,18 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 300px;
-  border-radius: 1rem;
+  height: auto;
+  border-radius: 2rem;
   object-fit: cover; /* Added property */
 }
+
 .projects-subtitle {
   font-size: 30px;
   font-weight: bold;
-  color: #fff;
+  color: black;
 }
+
 .project {
-  width: 600px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   padding: auto;
@@ -75,7 +75,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 300px;
+  height: auto;
   border-radius: 1rem;
 }
 
@@ -89,11 +89,19 @@
 }
 
 .card {
+  height: fit-content;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.25); /* Adjust transparency as needed */
   backdrop-filter: blur(10px); /* Creates the frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+}
+
+.card-title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {

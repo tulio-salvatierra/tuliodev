@@ -17,7 +17,7 @@ function Header() {
     <header className="header">
       <div className="container">
         <Navbar light expand="lg" style={{ maxWidth: "1200px" }}>
-          <NavbarBrand href="/" style={{ fontSize: "2rem", color: "#6f6f6f" }}>
+          <NavbarBrand href="/">
             <img src={Logo2} alt="headerLogo" height={20}></img>
           </NavbarBrand>
 

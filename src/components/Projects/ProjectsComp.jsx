@@ -10,13 +10,13 @@ function ProjectsComp() {
 
       <div className="projects-container d-flex flex-wrap justify-content-center mt-5">
         {projectsData.map((project) => (
-          <div key={project.id} className="card m-2" style={{ width: "32rem" }}>
-            <img
-              src={project.image}
-              className="card-img-top"
-              alt={project.alt}
-            />
+          <div key={project.id} className="card m-3" style={{ width: "32rem" }}>
             <div className="card-body">
+              <img
+                src={project.image}
+                className="card-img-top"
+                alt={project.alt}
+              />
               <h5 className="card-title">{project.title}</h5>
               <p className="card-text">{project.description}</p>
               <a
