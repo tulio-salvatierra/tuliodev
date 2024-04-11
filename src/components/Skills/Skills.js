@@ -58,13 +58,7 @@ function Skills() {
             >
               {skillCategory.content.map((skill, skillIndex) => (
                 <li key={skillIndex} style={{ margin: "0.5rem" }}>
-                  <img
-                    key={skillIndex}
-                    src={skill}
-                    className="skill-icon"
-                    alt="skill"
-                    style={{ width: "40px", height: "40px" }}
-                  />
+                  <button className="btn btn-light">Bootstrap</button>
                 </li>
               ))}
             </ul>

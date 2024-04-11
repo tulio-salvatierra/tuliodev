@@ -25,7 +25,6 @@ function About() {
       <div className="about-list" id="tech">
         <h1 className="about-text-image-mask">Tech Stack</h1>
       </div>
-      <Skills />
     </>
   );
 }
