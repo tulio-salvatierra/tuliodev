@@ -56,9 +56,9 @@ function Skills() {
             <ul
               style={{ display: "flex", alignItems: "start", flexWrap: "wrap" }}
             >
-              {skillCategory.content.map((skill, skillIndex) => (
-                <li key={skillIndex} style={{ margin: "0.5rem" }}>
-                  <button className="btn btn-light">Bootstrap</button>
+              {skillCategory.content.map((skill, index) => (
+                <li key={index} style={{ margin: "0.5rem" }}>
+                  <img src={skill} alt="skill" style={{ width: "50px" }} />
                 </li>
               ))}
             </ul>
