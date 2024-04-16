@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RESUME from "../../assets/resume.pdf";
+import "animate.css";
 
 function Hero() {
   return (
@@ -24,10 +25,9 @@ function Hero() {
             </h3>
 
             <h4 className="hero-description">
-              I'm a{" "}
-              <strong className="strong-font">Full Stack Developer</strong> with
-              a passion for creating web applications that are both functional
-              and visually appealing.
+              I'm a <strong className="strong">Full Stack Developer</strong>{" "}
+              with a passion for creating web applications that are both
+              functional and visually appealing.
             </h4>
             <div className="socialhero-icons">
               <a href="https://www.linkedin.com/in/tulio-salvatierra/">

@@ -120,9 +120,11 @@
   max-height: 500px;
 }
 
-.strong-font {
+.strong {
   font-weight: 900;
   color: #7fff00;
+  animation-name: flash;
+  animation-duration: infinite;
 }
 
 .hero-content {
