@@ -43,7 +43,7 @@ ul {
 }
 
 .image {
-  max-width: 1200px;
+  max-width: 500px;
   min-width: 80%;
   height: auto;
   border-radius: 1rem;
@@ -51,16 +51,25 @@ ul {
 
 .about-row {
   font-family: "Geist";
-  max-width: 1200px;
-  display: flex;
+  max-width: 650px;
+  display: inline;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.25rem;
   line-height: 1.5;
-  padding: 1rem;
-  color: #fff;
+  padding: 2rem;
+  color: grey;
   text-align: left;
+  font-weight: 500;
+  background-color: #c3ff38;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.about-row strong {
+  font-weight: bold;
+  display: inline;
 }
 
 @media screen and (max-width: 768px) {

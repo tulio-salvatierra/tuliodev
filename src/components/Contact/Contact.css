@@ -7,17 +7,25 @@
   margin: 0;
   height: 100%;
   width: 100%;
+  color: grey;
 }
 
 .form {
+  color: grey;
   margin: 0;
   padding: 2rem;
   height: 100%;
   width: 100%;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.25); /* Adjust transparency as needed */
+  background: #c3ff38; /* Adjust transparency as needed */
   backdrop-filter: blur(10px); /* Creates the frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: grey;
 }
 
 .contact-parent {

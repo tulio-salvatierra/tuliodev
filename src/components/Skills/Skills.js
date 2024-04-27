@@ -18,6 +18,7 @@ import sequelize from "../../assets/images/skill-icons/sequelize-svgrepo-com.svg
 import express from "../../assets/images/skill-icons/express.svg";
 import jira from "../../assets/images/skill-icons/jira.svg";
 import github from "../../assets/images/skill-icons/github.svg";
+import ts from "../../assets/images/skill-icons/ts.svg";
 
 function Skills() {
   const skills = [
@@ -31,6 +32,7 @@ function Skills() {
         ReactSVG,
         MaterialUI,
         tailwind,
+        ts,
       ],
     },
     {

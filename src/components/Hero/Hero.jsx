@@ -5,7 +5,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RESUME from "../../assets/resume.pdf";
-import "animate.css";
 
 function Hero() {
   return (

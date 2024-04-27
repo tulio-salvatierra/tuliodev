@@ -45,7 +45,7 @@ export default function Contact() {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="last-name" className="form-label text-white">
+            <label htmlFor="last-name" className="form-label">
               Last Name
             </label>
             <input
@@ -58,7 +58,7 @@ export default function Contact() {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="email" className="form-label text-white">
+            <label htmlFor="email" className="form-label">
               Email
             </label>
             <input
@@ -71,7 +71,7 @@ export default function Contact() {
           </div>
 
           <div className="mb-3">
-            <label htmlFor="message" className="form-label text-white">
+            <label htmlFor="message" className="form-label">
               Message
             </label>
             <textarea

@@ -60,7 +60,7 @@ function Footer() {
       </div>
       <div className="separator"></div>
       <div className="row">
-        <p>© 2024 Tulio Salvatierra</p>
+        <p style={{ color: "white" }}>© 2024 Tulio Salvatierra</p>
       </div>
     </footer>
   );

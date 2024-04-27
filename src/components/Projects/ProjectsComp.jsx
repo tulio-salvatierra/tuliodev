@@ -17,7 +17,7 @@ function ProjectsComp() {
                 className="card-img-top"
                 alt={project.alt}
               />
-              <h5 className="card-title">{project.title}</h5>
+              <p className="card-title">{project.title}</p>
               <p className="card-text">{project.description}</p>
               <a
                 href={project.url}
