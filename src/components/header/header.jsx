@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -17,23 +18,31 @@ function Header() {
     <header className="header">
       <div className="container">
         <Navbar light expand="lg" style={{ maxWidth: "1200px" }}>
-          <NavbarBrand href="/" style={{ fontSize: "2rem", color: "#6f6f6f" }}>
+          <NavbarBrand href="/">
             <img src={Logo2} alt="headerLogo" height={20}></img>
           </NavbarBrand>
 
           <nav className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="list">
               <li className="listItem">
-                <a href="#projects">Projects</a>
+                <a href="#projects" onClick={toggleMenu}>
+                  Projects
+                </a>
               </li>
               <li className="listItem">
-                <a href="#experience">Experience</a>
+                <a href="#experience" onClick={toggleMenu}>
+                  Experience
+                </a>
               </li>
               <li className="listItem">
-                <a href="#tech">Technologies</a>
+                <a href="#tech" onClick={toggleMenu}>
+                  Technologies
+                </a>
               </li>
               <li className="listItem">
-                <a href="#about">About</a>
+                <a href="#about" onClick={toggleMenu}>
+                  About
+                </a>
               </li>
             </ul>
 

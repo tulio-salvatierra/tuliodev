@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section>
       <h1 className="about-text-image-mask">Experience</h1>
-      <div className="card">
+      <div className="card-exp">
         <div className="experience-item">
           <h2 className="exp-title">Full Stack Developer</h2>
           <p className="exp-role">Learner to professional, Remote</p>

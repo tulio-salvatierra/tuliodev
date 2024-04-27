@@ -12,8 +12,12 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background: #284579;
-  background: linear-gradient(135deg, #284579, #4bc3ad);
+  background: rgb(40, 69, 121);
+  background: radial-gradient(
+    circle,
+    rgba(40, 69, 121, 1) 26%,
+    rgba(112, 112, 112, 0.9360337885154062) 100%
+  );
 }
 
 .Navbar {
