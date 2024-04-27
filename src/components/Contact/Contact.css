@@ -96,4 +96,8 @@ label {
     margin: 0;
     width: 100%;
   }
+  .padder5,
+  .padder6 {
+    display: none;
+  }
 }

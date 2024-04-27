@@ -106,9 +106,9 @@ export default function Contact() {
           your business thrive!
         </h3>
       </div>
-      <div className="mb-5"></div>
-      <div className="5"></div>
-      <div className="6"></div>
+
+      <div className="padder5"></div>
+      <div className="padder6"></div>
     </div>
   );
 }

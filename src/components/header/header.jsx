@@ -50,7 +50,11 @@ function Header() {
               <footer className="footer">
                 <a
                   href="https://tuliosalvatierra.com"
-                  style={{ color: "#6f6f6f" }}
+                  style={{
+                    color: "grey",
+                    fontSize: "10px",
+                    fontWeight: "thin",
+                  }}
                 >
                   {" "}
                   2024 Tulio Salvatierra
