@@ -33,7 +33,7 @@ export default function Contact() {
       <div className="form">
         <form ref={formRef} onSubmit={sendEmail} id="form">
           <div className="mb-3">
-            <label htmlFor="name" className="form-label text-white">
+            <label htmlFor="name" className="form-label">
               Name
             </label>
             <input
@@ -83,7 +83,7 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <button className="btn btn-dark" type="submit">
+          <button className="btn btn-secondary" type="submit">
             Send message
           </button>
         </form>

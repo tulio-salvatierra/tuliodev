@@ -1,5 +1,5 @@
 .projects-text-image-mask {
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: bold;
   color: #fff;
 }
@@ -9,7 +9,6 @@
   margin-right: auto;
   width: 100%;
   height: auto;
-  border-radius: 2rem;
   object-fit: cover; /* Added property */
 }
 
@@ -19,12 +18,14 @@
   color: grey;
 }
 
-.card-title {
+.project-card-title {
   font-size: 1.5rem;
+  font-weight: bold;
   color: grey;
 }
 .card-text {
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
   color: grey;
 }
 
@@ -40,19 +41,21 @@
   padding: 2rem;
 }
 
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .project-btn {
   margin-top: 1rem;
   font-size: 1rem;
-  border: 0;
   color: grey;
-  padding: 0.5rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
-  transition: 0.3s;
-
-  font-weight: 500;
-  border: 1px solid grey;
+  font-weight: bolder;
+  border: 2px solid grey;
   justify-content: center;
+  width: 48%;
 }
 
 .project-btn:hover {
@@ -116,8 +119,5 @@
 @media screen and (max-width: 768px) {
   .project {
     width: auto;
-  }
-  .card-text {
-    font-size: 1rem;
   }
 }

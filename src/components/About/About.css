@@ -1,7 +1,12 @@
 .about-text-image-mask {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
+}
+
+.about-container {
+  background-color: black;
+  padding: 2rem;
 }
 
 .a {

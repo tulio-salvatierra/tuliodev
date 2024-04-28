@@ -5,7 +5,7 @@ import Skills from "../Skills/Skills";
 
 function About() {
   return (
-    <>
+    <div className="about-container">
       <h1 className="about-text-image-mask">About</h1>
       <div className="row">
         <div className="row-about">
@@ -27,7 +27,7 @@ function About() {
         <h1 className="about-text-image-mask">Tech Stack</h1>
       </div>
       <Skills />
-    </>
+    </div>
   );
 }
 

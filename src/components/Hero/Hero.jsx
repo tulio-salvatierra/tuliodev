@@ -19,14 +19,12 @@ function Hero() {
             </p>
             <h1 className="hero-title">Tulio Salvatierra</h1>
 
-            <h3 className="hero-text">
-              Welcome to my web development portfolio.
-            </h3>
+            <h3 className="hero-text">Web development portfolio.</h3>
 
             <h4 className="hero-description">
               I'm a <strong className="strong">Full Stack Developer</strong>{" "}
-              with a passion for creating web applications that are both
-              functional and visually appealing.
+              passionate for providing solutions with a strong base in HTML, CSS
+              and Javascript.
             </h4>
             <div className="socialhero-icons">
               <a href="https://www.linkedin.com/in/tulio-salvatierra/">

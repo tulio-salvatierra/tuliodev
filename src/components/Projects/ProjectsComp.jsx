@@ -12,13 +12,16 @@ function ProjectsComp() {
         {projectsData.map((project) => (
           <div key={project.id} className="card m-3" style={{ width: "32rem" }}>
             <div className="card-body">
+              <p className="project-card-title">{project.title}</p>
               <img
                 src={project.image}
                 className="card-img-top"
                 alt={project.alt}
               />
-              <p className="card-title">{project.title}</p>
+
               <p className="card-text">{project.description}</p>
+            </div>
+            <div className="btn-row">
               <a
                 href={project.url}
                 target="_blank"
