@@ -28,7 +28,7 @@ function Footer() {
         </a>
       </div>
       <div className="col">
-        <h3>Connect with me:</h3>
+        <h3>Find me:</h3>
         <a
           href="https://www.linkedin.com/in/tulio-salvatierra/"
           target="_blank"
@@ -57,10 +57,11 @@ function Footer() {
       <div className="col">
         <h3>Location:</h3>
         <p>Chicago, IL</p>
+        <p>Born in 🇻🇪</p>
       </div>
       <div className="separator"></div>
       <div className="row">
-        <p style={{ color: "white" }}>© 2024 Tulio Salvatierra</p>
+        <p style={{ color: "white" }}> Tulio Salvatierra</p>
       </div>
     </footer>
   );

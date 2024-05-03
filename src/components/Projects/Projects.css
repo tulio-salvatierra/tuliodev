@@ -3,7 +3,7 @@
   font-weight: bold;
   color: #fff;
   -webkit-text-stroke: 3px currentColor;
-  word-spacing: 10px;
+  letter-spacing: 2.5px;
 }
 
 .title {

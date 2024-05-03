@@ -3,7 +3,7 @@
   font-size: 3rem;
   color: #fff;
   -webkit-text-stroke: 3px currentColor;
-  word-spacing: 10px;
+  letter-spacing: 2.5px;
 }
 .form {
   margin: 0;

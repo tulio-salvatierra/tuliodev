@@ -2,6 +2,7 @@
   font-weight: bold;
   font-size: 3rem;
   color: #fff;
+  letter-spacing: 2.5px;
 }
 
 .about-container {
@@ -17,11 +18,13 @@
 }
 
 .about-sub {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
   padding: 2rem;
   margin-left: auto;
   font-weight: bolder;
+  -webkit-text-stroke: 3px currentColor;
+  letter-spacing: 2.5px;
 }
 
 .btn {
