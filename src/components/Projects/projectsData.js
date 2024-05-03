@@ -1,8 +1,5 @@
-
 import Ecommerce from "../../assets/images/meli gif.gif";
 import Quiz from "../../assets/images/quiz.gif";
-
-
 
 export const projectsData = [
   {
@@ -13,16 +10,16 @@ export const projectsData = [
     url: "https://react---ecomm.web.app/",
     repo: "https://github.com/T00lio/mlchallenge",
     description:
-      "Ecommerce: with cart and checkout functionalities, authentication routes, Context API for state management, working with Mercadolibre.com real world API",
+      "A frontend ecommerce app that has cart and checkout functionalities, authentication routes, Context API for state management, working with Mercadolibre.com real world API, many reusable components, and a responsive design. It was made using React, Material-UI, and Firebase.",
   },
   {
     id: 2,
     title: "React Quiz App",
     image: Quiz,
     alt: "Quiz",
-    url: "https://react---ecomm.web.app/",
+    url: "https://quiz-app-772a7.web.app/",
     repo: "https://github.com/T00lio/quiz",
     description:
-      "(in development) a full stack app made using vite, node.js, express, postgresSQL, Sequelize (ORM) and react. It's a quiz app with a leaderboard and a user authentication system. It's a work in progress.",
+      "a full stack app made using React and Tailwind for frontend, and Node and express for backend and postgresSQL for databse. It has a login system, a quiz with multiple choice questions, and a leaderboard and user profile. Still in development.",
   },
 ];

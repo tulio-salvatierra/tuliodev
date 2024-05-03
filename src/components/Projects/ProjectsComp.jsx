@@ -5,44 +5,55 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProjectsComp() {
   return (
-    <div className="project-section">
-      <h1 className="projects-text-image-mask">Projects</h1>
-
-      <div className="projects-container d-flex flex-wrap justify-content-center mt-5">
-        {projectsData.map((project) => (
-          <div key={project.id} className="card m-3" style={{ width: "32rem" }}>
-            <div className="card-body">
-              <p className="project-card-title">{project.title}</p>
-              <img
-                src={project.image}
-                className="card-img-top"
-                alt={project.alt}
-              />
-
-              <p className="card-text">{project.description}</p>
+    <>
+      <div className="project-container">
+        <h1 className="projects-text-image-mask">Projects</h1>
+        <h5 className="title">
+          These are some of the projects I developed as study projects:
+        </h5>
+        {projectsData.map((project, index) => (
+          <div key={index}>
+            <div className="parent" key={project.id}>
+              <div className="div1">
+                {" "}
+                <img
+                  src={project.image}
+                  className="img-top"
+                  alt={project.alt}
+                />
+              </div>
+              <div className="div2">
+                <p className="project-title">{project.title}</p>{" "}
+              </div>
+              <div className="div3">
+                <div className="btn-row">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-btn"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-btn"
+                  >
+                    GitHub
+                  </a>
+                </div>{" "}
+              </div>
+              <div className="div4">
+                <p className="project-info">{project.description}</p>{" "}
+              </div>
             </div>
-            <div className="btn-row">
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-btn"
-              >
-                Live Demo
-              </a>
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-btn"
-              >
-                GitHub
-              </a>
-            </div>
+            <div class="separator"></div>
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

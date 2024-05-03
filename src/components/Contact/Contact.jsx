@@ -89,22 +89,11 @@ export default function Contact() {
         </form>
       </div>
       <div className="photo">
-        <img
-          src={photo}
-          className="contact-photo"
-          alt="portrait"
-          style={{
-            height: 300,
-            width: 300,
-            borderRadius: "50%",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        />
-        <h3 className="contact-text">
-          Get in touch with me, send a message and we can discuss how to make
-          your business thrive!
-        </h3>
+        <img src={photo} className="contact-photo" alt="portrait" />
+        <h5 className="contact-text">
+          I'll be happy to help you with your project or answer any questions,
+          reach out, be a friend!
+        </h5>
       </div>
 
       <div className="padder5"></div>

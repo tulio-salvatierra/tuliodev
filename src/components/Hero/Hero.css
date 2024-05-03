@@ -1,8 +1,10 @@
 .hero-title {
   padding-top: 1rem;
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: 900;
+  font-size: 4rem;
   color: #fff;
+  -webkit-text-stroke: 3px currentColor;
+  word-spacing: 10px;
 }
 @media screen and (max-width: 768px) {
   .hero-title {
@@ -47,14 +49,14 @@
 }
 
 .hero-description {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 200;
   color: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .hero-description {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -81,13 +83,14 @@
 }
 
 .hero-text {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   width: 100%;
   font-family: "Geist";
-  font-weight: 700;
+  font-weight: 900;
   line-height: 60 px;
   overflow: visible;
   color: #c3ff38;
+  -webkit-text-stroke: 3px currentColor;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,9 +110,9 @@
   display: flex;
   align-items: center;
   object-fit: cover;
-  border-radius: 50%;
-  width: 50%;
-  height: 50%;
+  border-radius: 10%;
+  width: 40%;
+  height: 40%;
   box-sizing: border-box;
   max-height: 500px;
   margin-left: auto;
@@ -146,7 +149,7 @@
 
 .strong {
   font-weight: 900;
-  color: #7fff00;
+  color: #c3ff38;
   animation-name: flash;
   animation-duration: infinite;
 }
@@ -166,6 +169,7 @@
   grid-template-rows: 0.25fr 1.25fr 0.25fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  height: 85dvh;
 }
 
 @media screen and (max-width: 768px) {

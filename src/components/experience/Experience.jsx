@@ -5,6 +5,7 @@ function Experience() {
   return (
     <section>
       <h1 className="about-text-image-mask">Experience</h1>
+
       <div className="card-exp">
         <div className="experience-item">
           <h2 className="exp-title">Full Stack Developer</h2>
@@ -17,7 +18,7 @@ function Experience() {
             academic knowledge to practical tech industry challenges.
           </p>
           <h4 className="exp-sub">Key Contributions:</h4>
-          <ul className="exp-item ">
+          <ol className="exp-item ">
             <li>
               Developed an e-commerce site using SCRUM, focusing on React, React
               Router Dom, React Query, and Material-UI
@@ -47,7 +48,7 @@ function Experience() {
               CSS.
             </li>
             <li>Adopted CI/CD practices with GitHub Actions.</li>
-          </ul>
+          </ol>
           <h4 className="exp-sub">Back-end Contributions:</h4>
           <ul className="exp-item">
             <li>Utilized Express.js for server-side development.</li>
@@ -67,6 +68,7 @@ function Experience() {
             </li>
           </ul>
         </div>
+        <div className="separator"></div>
       </div>
     </section>
   );

@@ -1,10 +1,9 @@
-import React from "react";
-import ProjectsComp from "../components/Projects";
+import ProjectsComp1 from "../components/Projects";
 
 function ProjectsPage() {
   return (
     <>
-      <ProjectsComp />
+      <ProjectsComp1 />
     </>
   );
 }
