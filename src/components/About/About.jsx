@@ -20,7 +20,9 @@ function About() {
           and a passion for learning new technologies and improve my skills to
           help solve problems and create solutions. I am a quick learner and
           have a strong work ethic. I have a strong and diverse background in
-          Finance and business management.
+          Finance and business management. I also play drums and enjoy
+          photography.
+          <br></br>
         </p>
       </div>
       <div className="about-list" id="tech">
