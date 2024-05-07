@@ -14,7 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.2",
-    "dotenv": "^16.4.1",
+    "dotenv": "^16.4.5",
     "firebase": "^10.4.0",
     "geist": "^1.0.0",
     "gsap": "^3.12.2",
@@ -22,7 +22,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "reactstrap": "^9.2.0",
     "web-vitals": "^2.1.4"
   },

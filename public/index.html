@@ -46,13 +46,17 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <!-- <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "lRQEHERgGdBoUqxEY",
+          publicKey: proccess.env.REACT_APP_EMAILJS_PUBLIC_KEY,
         });
       })();
-    </script>
+    </script> -->
     <title>Tulio's portfolio</title>
   </head>
   <body>

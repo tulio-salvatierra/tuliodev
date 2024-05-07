@@ -1,38 +1,29 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/header";
-import Home from "./components/Hero";
-import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
-import Experience from "./components/experience";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
     <>
-      <div className="header">
-        <Header />
-      </div>
-      <main className="content">
-        <section id="home">
-          <Home />
-        </section>
-        <section id="projects">
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <div className="top">
+          <Header />
+        </div>{" "}
+        <main className="content">
+          <HomePage />
           <ProjectsPage />
-        </section>
-        <section id="experience">
-          <Experience />
-        </section>
-        <section id="about">
           <AboutPage />
-        </section>
-        {/* <TechnologiesPage /> */}
-        <section id="contact">
           <ContactPage />
-        </section>
-      </main>
-      <Footer />
+        </main>
+        <div className="footer">
+          <Footer />
+        </div>
+      </React.Suspense>
     </>
   );
 }

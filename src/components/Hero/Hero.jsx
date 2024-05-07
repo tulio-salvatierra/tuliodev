@@ -19,7 +19,7 @@ function Hero() {
             </p>
             <h1 className="hero-title">Tulio Salvatierra</h1>
 
-            <h3 className="hero-text">Web development portfolio</h3>
+            <h2 className="hero-text">Web development portfolio</h2>
 
             <h4 className="hero-description">
               I'm a <strong className="strong">Full Stack Developer</strong>{" "}
@@ -33,9 +33,6 @@ function Hero() {
 
               <a href="https://www.github.com/T00lio">
                 <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
-              </a>
-              <a href="https://wa.me/17863146121">
-                <WhatsAppIcon sx={{ fontSize: 30, color: "#fff" }} />
               </a>
             </div>
           </div>

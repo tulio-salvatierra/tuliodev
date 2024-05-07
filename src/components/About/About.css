@@ -1,8 +1,10 @@
 .about-text-image-mask {
-  font-weight: bold;
-  font-size: 3rem;
+  padding-top: 1rem;
+  font-weight: 500;
+  font-size: 4rem;
   color: #fff;
-  letter-spacing: 2.5px;
+  -webkit-text-stroke: 3px currentColor;
+  word-spacing: 10px;
 }
 
 .about-container {

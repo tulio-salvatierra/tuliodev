@@ -1,13 +1,11 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
+import { Navbar, NavbarBrand } from "reactstrap";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Logo2 from "../../assets/images/_logo.svg";
+import { GITHUB_URL, LINKEDIN_URL, MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Navbar, NavbarBrand } from "reactstrap";
-
-import Logo2 from "../../assets/images/_logo.svg";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,81 +13,63 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="header">
-      <div className="container">
-        <Navbar light expand="lg" style={{ maxWidth: "1200px" }}>
-          <NavbarBrand href="/">
-            <img src={Logo2} alt="headerLogo" height={20}></img>
-          </NavbarBrand>
+    <div className="header-container">
+      <Navbar expand="lg">
+        <NavbarBrand href="/">
+          <img src={Logo2} alt="headerLogo" height={20}></img>
+        </NavbarBrand>
 
-          <nav className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="list">
-              <li className="listItem">
-                <a href="#projects" onClick={toggleMenu}>
-                  Projects
+        <nav className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="list">
+            {MENU_ITEMS.map((item, index) => (
+              <li className="listItem" key={`header-${index}`}>
+                <a href={item.url} onClick={toggleMenu} className="nav-link">
+                  {item.title}
                 </a>
               </li>
-              <li className="listItem">
-                <a href="#experience" onClick={toggleMenu}>
-                  Experience
-                </a>
-              </li>
-              <li className="listItem">
-                <a href="#tech" onClick={toggleMenu}>
-                  Technologies
-                </a>
-              </li>
-              <li className="listItem">
-                <a href="#about" onClick={toggleMenu}>
-                  About
-                </a>
-              </li>
-            </ul>
+            ))}
+          </ul>
 
-            <div className="dropdown-footer">
-              <footer className="footer">
-                <a
-                  href="https://tuliosalvatierra.com"
-                  style={{
-                    color: "grey",
-                    fontSize: "10px",
-                    fontWeight: "thin",
-                  }}
-                >
-                  {" "}
-                  2024 Tulio Salvatierra
-                </a>
-              </footer>
-            </div>
-          </nav>
-
-          <div className="social-icons">
-            <a href="https://www.linkedin.com/in/tulio-salvatierra/">
-              <LinkedInIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
-            </a>
-
-            <a href="https://www.github.com/T00lio">
-              <GitHubIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
-            </a>
-            <a href="https://wa.me/17863146121">
-              <WhatsAppIcon sx={{ fontSize: 30, color: "#6f6f6f" }} />
-            </a>
+          <div className="dropdown-footer">
+            <footer className="footer">
+              <a
+                href="https://tuliosalvatierra.com"
+                style={{
+                  color: "grey",
+                  fontSize: "10px",
+                  fontWeight: "thin",
+                }}
+              >
+                {" "}
+                2024 Tulio Salvatierra
+              </a>
+            </footer>
           </div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            onClick={toggleMenu}
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </Navbar>
-      </div>
-    </header>
+        </nav>
+
+        <div className="social-icons">
+          <a href={LINKEDIN_URL}>
+            <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
+          </a>
+
+          <a href={GITHUB_URL}>
+            <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
+          </a>
+        </div>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={toggleMenu}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      </Navbar>
+    </div>
   );
 }
 

@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Geostar&display=swap");
-
 @font-face {
   font-family: "Geist";
-  src: url("../public/Geist-Regular.otf") format("truetype");
+  src: url("../src/assets/fonts/Geist-Regular.otf") format("truetype");
 }
 
 #root,
 html {
   font-family: "Geist", sans-serif;
-
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -18,15 +15,25 @@ html {
     rgba(40, 69, 121, 1) 26%,
     rgba(112, 112, 112, 0.9360337885154062) 100%
   );
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Navbar {
-  position: fixed;
-  display: flex;
-  background-color: "#fff";
+.top {
+  grid-row: 1;
 }
 
-section {
+.footer {
+  width: 100%;
+}
+
+.content {
+  grid-row: 2;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
