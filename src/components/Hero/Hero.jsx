@@ -2,7 +2,6 @@ import React from "react";
 import "./Hero.css";
 import portrait from "../../assets/images/portrait.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import RESUME from "../../assets/resume.pdf";
 
