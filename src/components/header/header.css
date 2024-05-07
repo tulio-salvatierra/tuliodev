@@ -91,6 +91,8 @@
 
 .list a:hover {
   color: #2a098c;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
