@@ -31,6 +31,7 @@ export default function Contact() {
         .then(() => {
           console.log("Message sent!");
           alert("Message sent!");
+          setError(null);
           formRef.current.reset();
         });
     } catch (error) {
@@ -40,7 +41,7 @@ export default function Contact() {
 
   return (
     <div className="contact-parent">
-      <h1 className="contact-text-image-mask">Contact me</h1>
+      <h1 className="section-title">Contact me</h1>
       <div className="padder1"></div>
       <div className="form">
         <form ref={formRef} onSubmit={sendEmail} id="form">
