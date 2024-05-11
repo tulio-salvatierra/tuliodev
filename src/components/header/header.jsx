@@ -3,7 +3,12 @@ import { Navbar, NavbarBrand } from "reactstrap";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Logo2 from "../../assets/images/_logo.svg";
-import { GITHUB_URL, LINKEDIN_URL, MENU_ITEMS } from "../../Constants";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  MENU_ITEMS,
+  PORTFOLIO_URL,
+} from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 
@@ -16,7 +21,7 @@ function Header() {
     <div className="header-container">
       <Navbar expand="lg">
         <NavbarBrand href="/">
-          <img src={Logo2} alt="headerLogo" height={20}></img>
+          <img src={Logo2} alt="headerLogo" height={17}></img>
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,31 +34,20 @@ function Header() {
               </li>
             ))}
           </ul>
-
           <div className="dropdown-footer">
             <footer className="footer">
-              <a
-                href="https://tuliosalvatierra.com"
-                style={{
-                  color: "grey",
-                  fontSize: "10px",
-                  fontWeight: "thin",
-                }}
-              >
-                {" "}
-                2024 Tulio Salvatierra
-              </a>
+              <a href={PORTFOLIO_URL}> 2024 Tulio Salvatierra</a>
             </footer>
           </div>
         </nav>
 
         <div className="social-icons">
           <a href={LINKEDIN_URL}>
-            <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <LinkedInIcon sx={{ fontSize: 30, color: "#000" }} />
           </a>
 
           <a href={GITHUB_URL}>
-            <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
+            <GitHubIcon sx={{ fontSize: 30, color: "#000" }} />
           </a>
         </div>
         <button

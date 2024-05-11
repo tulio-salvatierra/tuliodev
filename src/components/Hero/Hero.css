@@ -29,8 +29,7 @@
 }
 
 .padleft .padright {
-  padding: 2rem;
-  min-height: 3rem;
+  display: none;
 }
 
 .link {
