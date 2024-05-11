@@ -1,4 +1,4 @@
-import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header";
 import Footer from "./components/Footer";
@@ -10,20 +10,20 @@ import ContactPage from "./pages/ContactPage";
 function App() {
   return (
     <>
-      <React.Suspense fallback={<div>Loading...</div>}>
-        <div className="top">
-          <Header />
-        </div>{" "}
-        <main className="content">
-          <HomePage />
-          <ProjectsPage />
-          <AboutPage />
-          <ContactPage />
-        </main>
-        <div className="footer">
-          <Footer />
-        </div>
-      </React.Suspense>
+      <div className="top">
+        <Header />
+      </div>{" "}
+      <main className="content">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </main>
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   );
 }

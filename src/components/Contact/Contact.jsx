@@ -1,38 +1,51 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import photo from "../../assets/images/portrait.jpg";
 
 export default function Contact() {
+  const [error, setError] = useState(null);
   const formRef = useRef();
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_isyf2b9",
-        "template_84llydk",
-        formRef.current,
-        "lRQEHERgGdBoUqxEY"
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
-    alert("Message sent!");
-    formRef.current.reset();
+    if (!formRef.current.name.value) {
+      setError("Name is required");
+      return;
+    }
+    if (!formRef.current.email.value) {
+      setError("Email is required");
+      return;
+    }
+    if (!formRef.current.message.value) {
+      setError("Message is required");
+      return;
+    }
+    try {
+      await emailjs
+        .sendForm(
+          "service_isyf2b9",
+          "template_84llydk",
+          formRef.current,
+          "lRQEHERgGdBoUqxEY"
+        )
+        .then(() => {
+          console.log("Message sent!");
+          alert("Message sent!");
+          formRef.current.reset();
+        });
+    } catch (error) {
+      console.log("Form submission error!");
+    }
   };
 
   return (
     <div className="contact-parent">
       <h1 className="contact-text-image-mask">Contact me</h1>
-      <div className="2"></div>
+      <div className="padder1"></div>
       <div className="form">
         <form ref={formRef} onSubmit={sendEmail} id="form">
           <div className="mb-3">
+            {error && <div className="error">{error}</div>}
             <label htmlFor="name" className="form-label">
               Name
             </label>
@@ -42,6 +55,7 @@ export default function Contact() {
               id="name"
               name="name"
               autoComplete="true"
+              placeholder="Name"
             />
           </div>
           <div className="mb-3">
@@ -54,6 +68,7 @@ export default function Contact() {
               id="last-name"
               name="last-name"
               autoComplete="true"
+              placeholder="Last Name"
             />
           </div>
 
@@ -67,6 +82,7 @@ export default function Contact() {
               id="email"
               name="email"
               autoComplete="true"
+              placeholder="example@email.com"
             />
           </div>
 
@@ -80,6 +96,7 @@ export default function Contact() {
               name="message"
               rows="4"
               autoComplete="false"
+              placeholder="Write your message here..."
             ></textarea>
           </div>
 
