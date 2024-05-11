@@ -42,3 +42,12 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
+.section-title {
+  font-weight: ultra-bold;
+  font-size: 3rem;
+  color: #fff;
+  padding: 2rem;
+  -webkit-text-stroke: 3px currentColor;
+  word-spacing: 10px;
+}

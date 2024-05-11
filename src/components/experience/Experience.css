@@ -1,12 +1,3 @@
-.about-text-image-mask {
-  font-weight: bold;
-  font-size: 3rem;
-  color: #fff;
-  padding: 2rem;
-  -webkit-text-stroke: 3px currentColor;
-  word-spacing: 10px;
-}
-
 .li {
   list-style: inside;
 }

@@ -33,13 +33,13 @@
 }
 
 .link {
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 1rem;
   justify-content: center;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 2rem;
   background: transparent;
   backdrop-filter: blur(10px);
@@ -157,7 +157,6 @@
 .hero-content {
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 8rem;
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
