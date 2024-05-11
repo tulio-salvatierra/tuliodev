@@ -4,9 +4,7 @@ export const EXPERIENCE_URL = "/experience";
 
 export const ABOUT_URL = "/about";
 
-export const CONTACT_URL = "/contact";
-
-export const TECH_URL = "/tech";
+export const CONTACT_URL = "/#contact";
 
 export const GITHUB_URL = "https://www.github.com/T00lio";
 
@@ -30,10 +28,6 @@ export const MENU_ITEMS = [
   {
     title: "Contact",
     url: CONTACT_URL,
-  },
-  {
-    title: "Technologies",
-    url: TECH_URL,
   },
   {
     title: "About",

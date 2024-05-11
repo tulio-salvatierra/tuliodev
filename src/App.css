@@ -9,12 +9,12 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background: rgb(40, 69, 121);
-  background: radial-gradient(
+  background: black;
+  /* background: radial-gradient(
     circle,
     rgba(40, 69, 121, 1) 26%,
     rgba(112, 112, 112, 0.9360337885154062) 100%
-  );
+  ); */
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: auto;
