@@ -27,7 +27,7 @@ function Footer() {
         </a>
       </div>
       <div className="col">
-        <h3>Find me:</h3>
+        <h3>Socials:</h3>
         <div className="horizontal-icon">
           <a
             href={LINKEDIN_URL}
@@ -60,7 +60,7 @@ function Footer() {
       </div>
       <div className="separator"></div>
       <div className="row">
-        <p style={{ color: "white" }}> Tulio Salvatierra</p>
+        <p style={{ color: "white" }}>Made by Tulio Salvatierra</p>
       </div>
     </footer>
   );
