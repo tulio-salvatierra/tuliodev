@@ -7,7 +7,7 @@ function ProjectsComp() {
   return (
     <>
       <div className="project-container">
-        <h1 className="projects-text-image-mask">Projects</h1>
+        <h1 className="section-title">Projects</h1>
         <h5 className="title">
           These are some of the projects I developed as study projects:
         </h5>

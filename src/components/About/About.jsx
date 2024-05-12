@@ -6,7 +6,7 @@ import Skills from "../Skills/Skills";
 function About() {
   return (
     <div className="about-container">
-      <h1 className="about-text-image-mask">About</h1>
+      <h1 className="section-title">About</h1>
       <div className="row">
         <div className="row-about">
           <img src={pic} alt="landingPic" className="image"></img>

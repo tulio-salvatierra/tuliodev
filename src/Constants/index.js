@@ -1,7 +1,5 @@
 export const PROJECTS_URL = "/projects";
 
-export const EXPERIENCE_URL = "/experience";
-
 export const ABOUT_URL = "/about";
 
 export const CONTACT_URL = "/#contact";
@@ -20,10 +18,6 @@ export const MENU_ITEMS = [
   {
     title: "Projects",
     url: PROJECTS_URL,
-  },
-  {
-    title: "Experience",
-    url: EXPERIENCE_URL,
   },
   {
     title: "Contact",

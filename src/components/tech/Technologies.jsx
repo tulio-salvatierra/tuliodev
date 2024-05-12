@@ -8,7 +8,7 @@ function Technologies() {
       <section className="tech-container" id="tech">
         <div className="sep"></div>
         <br />
-        <h1 className="tech-text-image-mask">Tech</h1>
+        <h1 className="section-title">Tech</h1>
         <div className="tech-content">
           <div className="tech-content-left">
             <h3 className="tech-text">
