@@ -34,6 +34,15 @@ function Header() {
               </li>
             ))}
           </ul>
+          <div className="social-icons">
+            <a href={LINKEDIN_URL}>
+              <LinkedInIcon sx={{ fontSize: 30, color: "#000" }} />
+            </a>
+
+            <a href={GITHUB_URL}>
+              <GitHubIcon sx={{ fontSize: 30, color: "#000" }} />
+            </a>
+          </div>
           <div className="dropdown-footer">
             <footer className="footer">
               <a href={PORTFOLIO_URL}> 2024 Tulio Salvatierra</a>
@@ -41,15 +50,6 @@ function Header() {
           </div>
         </nav>
 
-        <div className="social-icons">
-          <a href={LINKEDIN_URL}>
-            <LinkedInIcon sx={{ fontSize: 30, color: "#000" }} />
-          </a>
-
-          <a href={GITHUB_URL}>
-            <GitHubIcon sx={{ fontSize: 30, color: "#000" }} />
-          </a>
-        </div>
         <button
           className="navbar-toggler"
           type="button"
