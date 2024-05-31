@@ -29,6 +29,7 @@ function Header() {
             {MENU_ITEMS.map((item, index) => (
               <li className="listItem" key={`header-${index}`}>
                 <a href={item.url} onClick={toggleMenu} className="nav-link">
+                  <img src={item.icon} alt={item.title} className="icon" />
                   {item.title}
                 </a>
               </li>

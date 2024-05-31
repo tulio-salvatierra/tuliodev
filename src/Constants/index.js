@@ -1,3 +1,7 @@
+import aboutIcon from "../assets/icons/about.png";
+import contactIcon from "../assets/icons/contact.png";
+import projectsIcon from "../assets/icons/projects.png";
+
 export const PROJECTS_URL = "/projects";
 
 export const ABOUT_URL = "/about";
@@ -18,13 +22,16 @@ export const MENU_ITEMS = [
   {
     title: "Projects",
     url: PROJECTS_URL,
+    icon: projectsIcon,
   },
   {
     title: "Contact",
     url: CONTACT_URL,
+    icon: contactIcon,
   },
   {
     title: "About",
     url: ABOUT_URL,
+    icon: aboutIcon,
   },
 ];

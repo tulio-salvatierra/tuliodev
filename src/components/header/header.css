@@ -19,9 +19,15 @@
 .dropdown-footer {
   display: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   flex-direction: column;
   justify-content: center;
+}
+
+.icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.25rem;
 }
 
 .footer {
