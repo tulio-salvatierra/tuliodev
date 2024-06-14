@@ -103,7 +103,13 @@
   transition: 0.3s;
   text-decoration: underline;
 }
+.custom-toggler {
+  border-color: #fff;
+}
 
+.navbar-toggler-icon {
+  background-color: #fff;
+}
 @media screen and (max-width: 768px) {
   .list {
     justify-content: flex-start;
