@@ -37,11 +37,11 @@ function Header() {
           </ul>
           <div className="social-icons">
             <a href={LINKEDIN_URL}>
-              <LinkedInIcon sx={{ fontSize: 30, color: "#000" }} />
+              <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
             </a>
 
             <a href={GITHUB_URL}>
-              <GitHubIcon sx={{ fontSize: 30, color: "#000" }} />
+              <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
             </a>
           </div>
           <div className="dropdown-footer">

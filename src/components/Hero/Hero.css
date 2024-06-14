@@ -2,7 +2,7 @@
   padding-top: 1rem;
   font-weight: 500;
   font-size: 4rem;
-  color: #fff;
+  color: #f5f4f7;
   -webkit-text-stroke: 3px currentColor;
   word-spacing: 10px;
 }
@@ -14,7 +14,7 @@
 }
 
 .hero-button {
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 1rem;
   box-sizing: border-box;
   width: fit-content;
@@ -24,7 +24,7 @@
   background: transparent;
   backdrop-filter: blur(10px);
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   margin-right: auto;
 }
 
@@ -44,14 +44,14 @@
   background: transparent;
   backdrop-filter: blur(10px);
   color: #fff;
-  border: 2px solid #fff;
+  border: 0.2px solid #fff;
 }
 
 .hero-description {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 200;
-  color: #fff;
+  color: #f5f4f7;
 }
 
 @media screen and (max-width: 768px) {

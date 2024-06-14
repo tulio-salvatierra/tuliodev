@@ -11,7 +11,7 @@
 }
 .form {
   color: grey;
-  border: thick solid #fff;
+  border: thin solid #fff;
   margin: 0;
   padding: 2rem;
   height: 100%;
@@ -64,7 +64,6 @@ label {
   object-fit: cover;
   border-radius: 50%;
   width: 40%;
-
   box-sizing: border-box;
   max-height: 500px;
   margin-left: auto;

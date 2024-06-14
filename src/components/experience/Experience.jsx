@@ -68,7 +68,6 @@ function Experience() {
             </li>
           </ul>
         </div>
-        <div className="separator"></div>
       </div>
     </section>
   );

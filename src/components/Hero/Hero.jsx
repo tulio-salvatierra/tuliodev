@@ -13,18 +13,15 @@ function Hero() {
         <div className="padright"></div>
         <div className="right">
           <div className="right-div">
-            <p className="hero-button" href="#about">
-              Full Stack Developer
-            </p>
             <h1 className="hero-title">Tulio Salvatierra</h1>
 
-            <h2 className="hero-text">Web development portfolio</h2>
+            <h3 className="hero-text">Full Stack Developer</h3>
 
-            <h4 className="hero-description">
+            <h3 className="hero-description">
               I'm a <strong className="strong">Full Stack Developer</strong>{" "}
               passionate for providing solutions with a strong base in HTML, CSS
               and Javascript
-            </h4>
+            </h3>
             <div className="socialhero-icons">
               <a href="https://www.linkedin.com/in/tulio-salvatierra/">
                 <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />

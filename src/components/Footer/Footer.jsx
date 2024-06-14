@@ -50,13 +50,6 @@ function Footer() {
       <div className="col">
         <h3>Location:</h3>
         <p>Chicago, IL</p>
-        <p>
-          Born in
-          <span role="img" aria-label="venezuela">
-            {" "}
-            🇻🇪
-          </span>
-        </p>
       </div>
       <div className="separator"></div>
       <div className="row">
