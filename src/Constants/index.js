@@ -6,11 +6,13 @@ export const PROJECTS_URL = "/projects";
 
 export const ABOUT_URL = "/about";
 
-export const CONTACT_URL = "/#contact";
+export const CONTACT_URL = "/contact";
 
 export const GITHUB_URL = "https://www.github.com/T00lio";
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/tulio-salvatierra/";
+
+export const UPWORK_URL = "https://www.upwork.com/freelancers/tulio";
 
 export const PORTFOLIO_URL = "https://tuliosalvatierra.com";
 

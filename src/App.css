@@ -10,11 +10,6 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background: #282627;
-  /* background: radial-gradient(
-    circle,
-    rgba(40, 69, 121, 1) 26%,
-    rgba(112, 112, 112, 0.9360337885154062) 100%
-  ); */
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: auto;
@@ -48,9 +43,15 @@ html {
 
 .section-title {
   font-weight: ultra-bold;
-  font-size: 3rem;
+  font-size: 6rem;
   color: #fff;
   padding: 2rem;
-  -webkit-text-stroke: 3px currentColor;
   word-spacing: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
 }

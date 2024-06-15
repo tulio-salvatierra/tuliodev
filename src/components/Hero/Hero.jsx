@@ -1,8 +1,9 @@
-import React from "react";
 import "./Hero.css";
 import portrait from "../../assets/images/portrait.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import UpworkIcon from "../../assets/icons/upwork.png";
+import { LINKEDIN_URL, GITHUB_URL, UPWORK_URL } from "../../Constants";
 import RESUME from "../../assets/resume.pdf";
 
 function Hero() {
@@ -18,17 +19,24 @@ function Hero() {
             <h3 className="hero-text">Full Stack Developer</h3>
 
             <h3 className="hero-description">
-              I'm a <strong className="strong">Full Stack Developer</strong>{" "}
-              passionate for providing solutions with a strong base in HTML, CSS
-              and Javascript
+              I am dedicated to deliver effective solutions, with a solid
+              foundation in HTML, CSS, and JavaScript.
             </h3>
             <div className="socialhero-icons">
-              <a href="https://www.linkedin.com/in/tulio-salvatierra/">
+              <a href={LINKEDIN_URL}>
                 <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
               </a>
 
-              <a href="https://www.github.com/T00lio">
+              <a href={GITHUB_URL}>
                 <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
+              </a>
+              <a href={UPWORK_URL}>
+                <img
+                  src={UpworkIcon}
+                  alt="upwork"
+                  className="upwork"
+                  style={{ height: 32 }}
+                />
               </a>
             </div>
           </div>

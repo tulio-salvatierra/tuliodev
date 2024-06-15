@@ -1,40 +1,9 @@
-.form {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  color: grey;
-}
-
-:placeholder-shown {
-  color: #6f6f6f;
-  opacity: 0.5;
-}
-.form {
-  color: grey;
-  border: thin solid #fff;
-  margin: 0;
-  padding: 2rem;
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem;
-  background: transparent; /* Adjust transparency as needed */
-  backdrop-filter: blur(10px); /* Creates the frosted glass effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #fff;
-}
-
 .contact-parent {
   display: grid;
   column-gap: 1rem;
   row-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.5fr 1.75fr 0.25fr;
+  grid-template-rows: 0.25fr 0.25fr 1.75fr 0.25fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 2rem;
@@ -83,6 +52,41 @@ label {
   background-color: #c3ff38;
   width: 48%;
 }
+
+/* form css */
+
+.form {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: grey;
+}
+
+:placeholder-shown {
+  color: #6f6f6f;
+  opacity: 0.2;
+}
+.form {
+  color: grey;
+  border: thin solid #fff;
+  margin: 0;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  background: rgb(112, 112, 112, 0.8);
+  backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* media queries */
 
 @media (max-width: 768px) {
   .contact-content {
