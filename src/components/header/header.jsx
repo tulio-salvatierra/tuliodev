@@ -52,7 +52,7 @@ function Header() {
         </nav>
 
         <button
-          className="navbar-toggler custom-toggler"
+          className="navbar-toggler custom-toggler flex"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"

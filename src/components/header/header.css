@@ -2,16 +2,16 @@
   display: flex;
   grid-template-columns: 1fr;
   padding-top: 0;
-  margin-left: auto;
-  margin-right: auto;
   top: 0;
   max-width: 1200px;
   z-index: 1000;
   backdrop-filter: blur(10px);
   position: sticky;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dropdown-footer {
@@ -59,7 +59,7 @@
 }
 
 .social-icons {
-  display: flex;
+  display: none;
   margin-left: auto;
   padding: 1rem;
   color: #fff;
@@ -72,9 +72,6 @@
 
 .list {
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
   color: #fff;
   font-size: large;
@@ -82,8 +79,8 @@
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  margin-right: auto;
   margin-left: auto;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .list a {
@@ -99,9 +96,8 @@
 }
 
 .list a:hover {
-  color: #2a098c;
-  transition: 0.3s;
-  text-decoration: underline;
+  text-decoration: none;
+  transform: translate(3px, -3px);
 }
 .custom-toggler {
   border-color: #fff;
@@ -111,18 +107,10 @@
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
-  .list {
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  .social-icons {
+  .list-item {
     display: flex;
   }
-  .list {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-  }
+
   .header-container {
     margin-left: 2rem;
     margin-right: 2rem;
