@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import photo from "../../assets/images/portrait.jpg";
