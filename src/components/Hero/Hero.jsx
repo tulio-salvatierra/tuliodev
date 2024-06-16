@@ -19,8 +19,8 @@ function Hero() {
             <h3 className="hero-text">Full Stack Developer</h3>
 
             <h3 className="hero-description">
-              I am dedicated to deliver effective solutions, with a solid
-              foundation in HTML, CSS, and JavaScript.
+              I enjoy delivering effective solutions, with a solid foundation in
+              HTML, CSS, and JavaScript.
             </h3>
             <div className="socialhero-icons">
               <a href={LINKEDIN_URL}>

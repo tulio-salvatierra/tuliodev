@@ -18,7 +18,7 @@ function ProjectsComp() {
               alt={project.title}
               className="project-image"
             />
-            <h3>
+            <h3 className="card-subtitle">
               {" "}
               <img
                 src={projectIcon}

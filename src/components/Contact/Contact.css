@@ -59,7 +59,7 @@
   margin: 0;
   height: 100%;
   width: 100%;
-  color: grey;
+  color: #000;
 }
 
 :placeholder-shown {
@@ -67,14 +67,13 @@
   opacity: 0.2;
 }
 .form {
-  color: grey;
+  background-color: #000;
   border: thin solid #fff;
   margin: 0;
   padding: 2rem;
   height: 100%;
   width: 100%;
   border-radius: 1rem;
-  background: rgb(112, 112, 112, 0.8);
   backdrop-filter: blur(10px); /* Creates the frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

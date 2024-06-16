@@ -13,10 +13,9 @@
 }
 
 .logo {
-  height: 1.5rem;
+  height: 1rem;
   width: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
 }
 
 .project-icon {
@@ -38,6 +37,10 @@
   color: #282626;
 }
 
+.project-card h3 {
+  margin-top: 0.25rem;
+}
+
 @media screen and (max-width: 768px) {
   .project-card {
     width: 80%;
@@ -48,7 +51,6 @@
 .project-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .project-description {
