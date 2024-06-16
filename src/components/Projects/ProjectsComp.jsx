@@ -1,55 +1,52 @@
 import React from "react";
 import { projectsData } from "./projectsData";
+import projectIcon from "../../assets/icons/project-blk.png";
+import logo from "../../assets/images/_logo.svg";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProjectsComp() {
   return (
     <>
-      <div className="project-container">
-        <h1 className="section-title">Projects</h1>
-        <h5 className="title">
-          These are some of the projects I developed as study projects:
-        </h5>
+      <h1 className="section-title">Projects</h1>
+      <div className="container">
         {projectsData.map((project, index) => (
-          <div key={index}>
-            <div className="parent" key={project.id}>
-              <div className="div1">
-                {" "}
-                <img
-                  src={project.image}
-                  className="img-top"
-                  alt={project.alt}
-                />
-              </div>
-              <div className="div2">
-                <p className="project-title">{project.title}</p>{" "}
-              </div>
-              <div className="div3">
-                <div className="btn-row">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-btn"
-                  >
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-btn"
-                  >
-                    GitHub
-                  </a>
-                </div>{" "}
-              </div>
-              <div className="div4">
-                <p className="project-info">{project.description}</p>{" "}
-              </div>
+          <div key={index} className="project-card">
+            <img src={logo} alt="logo" className="logo" />
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+            <h3>
+              {" "}
+              <img
+                src={projectIcon}
+                alt="project-icon"
+                className="project-icon"
+                style={{ height: "1.2rem", width: "1.2rem" }}
+              />
+              {project.title}
+            </h3>
+            <p className="project-description">{project.description}</p>
+            <div className="project-links">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-dark"
+              >
+                GitHub
+              </a>
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-dark "
+              >
+                Live
+              </a>
             </div>
-            <div class="separator"></div>
           </div>
         ))}
       </div>
