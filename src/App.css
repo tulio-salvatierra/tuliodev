@@ -41,6 +41,10 @@ html {
   margin-right: auto;
 }
 
+section {
+  height: auto;
+}
+
 .section-title {
   font-weight: ultra-bold;
   font-size: 5rem;

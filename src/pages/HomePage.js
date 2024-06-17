@@ -7,13 +7,23 @@ import CTA from "../components/CTA";
 
 function HomePage() {
   return (
-    <>
-      <Hero />
-      <Projects />
-      <CTA />
-      <ExperienceComponent />
-      <Contact />
-    </>
+    <main id="home">
+      <section className="section">
+        <Hero />
+      </section>
+      <section id="about" className="section">
+        <Projects />
+      </section>
+      <section id="experience" className="section">
+        <CTA />
+      </section>
+      <section id="experience" className="section">
+        <ExperienceComponent />
+      </section>
+      <section id="contact" className="section">
+        <Contact />
+      </section>
+    </main>
   );
 }
 
