@@ -1,4 +1,7 @@
-.header-container {
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   grid-template-columns: 1fr;
   padding-top: 0;
   top: 0;
@@ -9,6 +12,10 @@
   color: #fff;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 .icon {
@@ -44,6 +51,7 @@
   text-decoration: none;
   padding: 1rem;
   font-weight: 100;
+  margin-left: auto;
 }
 
 .list a:hover {
