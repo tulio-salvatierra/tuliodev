@@ -1,5 +1,4 @@
 .about-container {
-  background-color: black;
   padding: 2rem;
   border-radius: 2rem;
 }
@@ -10,26 +9,39 @@
   font-size: 1.5rem;
 }
 
+.row-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
 .about-sub {
   font-size: 2rem;
-  color: #fff;
+  color: #000;
   padding: 2rem;
   margin-left: auto;
   font-weight: bolder;
-  -webkit-text-stroke: 3px currentColor;
-  letter-spacing: 2.5px;
+  text-align: center;
 }
 
 .btn {
+  margin-top: 1rem;
   font-size: 1rem;
   padding: 1rem;
-  margin: 1rem;
   border-radius: 1rem;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
   height: auto;
+  width: 100%;
+}
+
+.btn:hover {
+  color: #000;
+  border: grey 4px solid;
 }
 
 .listTitle,
@@ -44,11 +56,13 @@ ul {
   list-style: none;
 }
 
-.image {
-  max-width: 500px;
-  min-width: 80%;
+.about-pic {
+  max-width: 350px;
+  min-width: 30%;
   height: auto;
   border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-row {
@@ -61,7 +75,7 @@ ul {
   font-size: 1.25rem;
   line-height: 1.5;
   padding: 2rem;
-  color: grey;
+  color: #000;
   text-align: left;
   font-weight: 500;
   background-color: #c3ff38;

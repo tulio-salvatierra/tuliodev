@@ -3,12 +3,7 @@ import { Navbar, NavbarBrand } from "reactstrap";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Logo2 from "../../assets/images/_logo.svg";
-import {
-  GITHUB_URL,
-  LINKEDIN_URL,
-  MENU_ITEMS,
-  PORTFOLIO_URL,
-} from "../../Constants";
+import { GITHUB_URL, LINKEDIN_URL, MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 
@@ -25,7 +20,7 @@ function Header() {
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="list">
+          <ul className="navbar-nav">
             {MENU_ITEMS.map((item, index) => (
               <li className="listItem" key={`header-${index}`}>
                 <a href={item.url} onClick={toggleMenu} className="nav-link">
@@ -43,11 +38,6 @@ function Header() {
             <a href={GITHUB_URL}>
               <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
             </a>
-          </div>
-          <div className="dropdown-footer">
-            <footer className="footer">
-              <a href={PORTFOLIO_URL}> 2024 Tulio Salvatierra</a>
-            </footer>
           </div>
         </nav>
 
