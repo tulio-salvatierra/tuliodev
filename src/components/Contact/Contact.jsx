@@ -74,7 +74,6 @@ export default function Contact() {
             <div className="form">
               <form ref={formRef} onSubmit={sendEmail} id="form">
                 <div className="mb-3">
-                  {error && <div className="error">{error}</div>}
                   <label htmlFor="name" className="form-label">
                     Name
                   </label>

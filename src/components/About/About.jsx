@@ -21,8 +21,10 @@ function About() {
             new technologies and improve my skills to help solve problems and
             create solutions. I am a quick learner and have a strong work ethic.
             <br></br>
-            <button className="btn">Let's Collaborate!</button>
           </p>
+          <div className="button-container">
+            <button className="btn">Let's Collaborate!</button>
+          </div>
         </div>
         <div className="about-list" id="tech">
           <h1 className="section-title">Tech Stack</h1>
