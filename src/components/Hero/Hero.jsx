@@ -38,12 +38,14 @@ function Hero() {
                   />
                 </a>
               </div>
-              <button className="btn btn-dark" onClick={RESUME}>
-                Get CV
-              </button>
-              <button className="btn btn-dark" onClick="#contact">
-                Let's Collaborate!
-              </button>
+              <div className="hero-buttons">
+                <button className="btn btn-dark" onClick={RESUME}>
+                  Get CV
+                </button>
+                <button className="btn btn-dark" href="#contact">
+                  Let's Collaborate!
+                </button>
+              </div>
             </div>
 
             <img src={portrait} alt="portrait" className="landing-pic"></img>

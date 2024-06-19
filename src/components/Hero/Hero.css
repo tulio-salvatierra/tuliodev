@@ -23,6 +23,14 @@
   box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
+.left-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 2rem;
+}
+
 .parent {
   height: 80dvh;
   display: grid;
