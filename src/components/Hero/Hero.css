@@ -13,13 +13,18 @@
 }
 
 .landing-pic {
-  width: 50%;
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  max-height: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 .parent {
   height: 80dvh;
-  padding-top: 200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
