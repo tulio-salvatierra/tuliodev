@@ -25,7 +25,7 @@ function About() {
           </p>
         </div>
         <div className="about-list" id="tech">
-          <h1 className="about-text-image-mask">Tech Stack</h1>
+          <h1 className="section-title">Tech Stack</h1>
         </div>
         <Skills />
       </div>

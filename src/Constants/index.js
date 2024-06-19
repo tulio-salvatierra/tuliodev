@@ -1,6 +1,7 @@
 import aboutIcon from "../assets/icons/about.png";
 import contactIcon from "../assets/icons/contact.png";
 import projectsIcon from "../assets/icons/projects.png";
+import homeIcon from "../assets/icons/home.png";
 
 export const PROJECTS_URL = "/projects";
 
@@ -21,6 +22,11 @@ export const TELEPHONE = "7863146121";
 export const EMAIL = "salvacorp@gmail.com";
 
 export const MENU_ITEMS = [
+  {
+    title: "Home",
+    url: "/",
+    icon: homeIcon,
+  },
   {
     title: "Projects",
     url: PROJECTS_URL,

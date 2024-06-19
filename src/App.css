@@ -47,7 +47,7 @@ section {
 
 .section-title {
   font-weight: ultra-bold;
-  font-size: 5rem;
+  font-size: clamp(3rem, 5vw, 5rem);
   color: #fff;
   padding: 2rem;
   word-spacing: 10px;

@@ -48,25 +48,24 @@ function Skills() {
   console.log(skills);
 
   return (
-    <div className="skill-container">
-      <ul className="skills-list">
-        {skills.map((skillCategory, index) => (
-          <li key={index}>
-            <h2 style={{ color: "#fff", marginBottom: "1rem" }}>
-              {skillCategory.title}
-            </h2>
-            <ul
-              style={{ display: "flex", alignItems: "start", flexWrap: "wrap" }}
-            >
-              {skillCategory.content.map((skill, index) => (
-                <li key={index} style={{ margin: "0.5rem" }}>
-                  <img src={skill} alt="skill" style={{ width: "50px" }} />
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
+    <div className="container">
+      {skills.map((skillCategory, index) => (
+        <div key={index} className="card">
+          <h2 style={{ color: "#fff", marginBottom: "1rem" }}>
+            {skillCategory.title}
+          </h2>
+          <div className="card-body">
+            {skillCategory.content.map((skill, index) => (
+              <img
+                key={index}
+                src={skill}
+                alt="skill"
+                style={{ width: "60px", margin: "0.5rem" }}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

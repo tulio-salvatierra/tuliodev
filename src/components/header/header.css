@@ -22,6 +22,7 @@
   height: 1rem;
   width: 1rem;
   margin-right: 0.25rem;
+  display: none;
 }
 
 .Navbar {
@@ -49,7 +50,7 @@
 .navbar-nav a {
   color: #fff;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
   font-weight: 100;
   margin-left: auto;
 }
@@ -84,5 +85,16 @@
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  .navbar-nav a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: 100;
+    margin-left: auto;
+  }
+  .icon {
+    display: block;
   }
 }
