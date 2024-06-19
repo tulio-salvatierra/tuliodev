@@ -39,12 +39,12 @@ function Hero() {
                 </a>
               </div>
               <div className="hero-buttons">
-                <button className="btn btn-dark" onClick={RESUME}>
+                <a className="btn btn-dark" download href={RESUME}>
                   Get CV
-                </button>
-                <button className="btn btn-dark" href="#contact">
+                </a>
+                <a className="btn btn-dark" href="/contact">
                   Let's Collaborate!
-                </button>
+                </a>
               </div>
             </div>
 

@@ -46,27 +46,29 @@ export default function Contact() {
     <section className="section" id="contact">
       <div className="container-xl">
         <h1 className="section-title">Contact me</h1>
-
+        <h4 className="contact-text">
+          I'll be happy to help you with your project or answer any questions,
+          reach out!
+        </h4>
         <div className="contact-parent">
           <div className="contact-info">
-            <h5 className="contact-text">
+            {/* <h4 className="contact-text">
               I'll be happy to help you with your project or answer any
               questions, reach out!
-            </h5>
+            </h4> */}
             <div className="contact-item">
-              <h2>
+              <h3>
                 <EmailIcon sx={{ color: "white", height: "2rem" }} /> Email:
                 <a href={`mailto:${EMAIL}`} className="contact-tem">
                   {EMAIL}
                 </a>
-              </h2>
-
-              <h2>
+              </h3>
+              <h3>
                 <PhoneIcon sx={{ color: "white" }} /> Phone:
                 <a href={`tel:${TELEPHONE}`} className="contact-tem">
                   {TELEPHONE}
                 </a>
-              </h2>
+              </h3>
             </div>
           </div>
 

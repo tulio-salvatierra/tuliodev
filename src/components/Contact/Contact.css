@@ -15,12 +15,20 @@
   }
 }
 
-.contact-item,
-.contact-link {
+.contact-text {
+  padding: 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 1rem;
+  padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
@@ -49,6 +57,7 @@
 
 .error {
   color: red;
+  margin-top: 10px;
   font-size: 0.75rem;
   font-weight: 500;
 }

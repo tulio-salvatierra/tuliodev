@@ -29,23 +29,23 @@ function ProjectsComp() {
               </h3>
               <p className="project-description">{project.description}</p>
               <div className="project-links">
-                <button
+                <a
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-dark"
                 >
                   GitHub
-                </button>
+                </a>
 
-                <button
+                <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-dark "
                 >
                   Visit Site
-                </button>
+                </a>
               </div>
             </div>
           ))}
