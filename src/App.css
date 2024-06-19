@@ -36,13 +36,13 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   height: fit-content;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 section {
   height: auto;
+  width: 100dvw;
 }
 
 .section-title {

@@ -152,12 +152,18 @@
   animation-duration: infinite;
 }
 
-.hero-content {
+.hero {
   background-image: url("../../assets/images/bg/hero-bg.svg");
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   background-size: cover;
+  background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(10px);
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 2rem;

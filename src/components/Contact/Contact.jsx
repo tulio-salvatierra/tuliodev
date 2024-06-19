@@ -40,85 +40,87 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <h1 className="section-title">Contact me</h1>
-      <div className="contact-parent">
-        <div className="padder1">
-          <div className="form">
-            <form ref={formRef} onSubmit={sendEmail} id="form">
-              <div className="mb-3">
-                {error && <div className="error">{error}</div>}
-                <label htmlFor="name" className="form-label">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  autoComplete="true"
-                  placeholder="Name"
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="last-name" className="form-label">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="last-name"
-                  name="last-name"
-                  autoComplete="true"
-                  placeholder="Last Name"
-                />
-              </div>
+    <section className="section" id="contact">
+      <div className="container-xl">
+        <h1 className="section-title">Contact me</h1>
+        <div className="contact-parent">
+          <div className="padder1">
+            <div className="form">
+              <form ref={formRef} onSubmit={sendEmail} id="form">
+                <div className="mb-3">
+                  {error && <div className="error">{error}</div>}
+                  <label htmlFor="name" className="form-label">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    name="name"
+                    autoComplete="true"
+                    placeholder="Name"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="last-name" className="form-label">
+                    Last Name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="last-name"
+                    name="last-name"
+                    autoComplete="true"
+                    placeholder="Last Name"
+                  />
+                </div>
 
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  name="email"
-                  autoComplete="true"
-                  placeholder="example@email.com"
-                />
-              </div>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    autoComplete="true"
+                    placeholder="example@email.com"
+                  />
+                </div>
 
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
-                <textarea
-                  className="form-control"
-                  id="message"
-                  name="message"
-                  rows="4"
-                  autoComplete="false"
-                  placeholder="Write your message here..."
-                ></textarea>
-              </div>
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label">
+                    Message
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    autoComplete="false"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
 
-              <button className="btn btn-dark" type="submit">
-                Send message
-              </button>
-            </form>
+                <button className="btn btn-dark" type="submit">
+                  Send message
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div className="photo">
-          <img src={photo} className="contact-photo" alt="portrait" />
-          <h5 className="contact-text">
-            I'll be happy to help you with your project or answer any questions,
-            reach out, be a friend!
-          </h5>
-        </div>
+          <div className="photo">
+            <img src={photo} className="contact-photo" alt="portrait" />
+            <h5 className="contact-text">
+              I'll be happy to help you with your project or answer any
+              questions, reach out, be a friend!
+            </h5>
+          </div>
 
-        <div className="padder5"></div>
-        <div className="padder6"></div>
+          <div className="padder5"></div>
+          <div className="padder6"></div>
+        </div>
       </div>
-    </>
+    </section>
   );
 }
