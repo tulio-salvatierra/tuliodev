@@ -19,7 +19,7 @@
 .contact-link {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 1rem;
   margin-left: auto;
   margin-right: auto;
