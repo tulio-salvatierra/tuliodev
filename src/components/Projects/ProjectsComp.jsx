@@ -13,7 +13,6 @@ function ProjectsComp() {
         <div className="container">
           {projectsData.map((project, index) => (
             <div key={index} className="project-card">
-              <img src={logo} alt="logo" className="logo" />
               <img
                 src={project.image}
                 alt={project.title}

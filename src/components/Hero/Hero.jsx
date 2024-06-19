@@ -10,11 +10,9 @@ function Hero() {
   return (
     <>
       <section className="hero" id="hero">
-        <div className="hero-content">
-          <div className="padleft"></div>
-          <div className="padright"></div>
-          <div className="right">
-            <div className="right-div">
+        <div className="container-xl">
+          <div className="parent">
+            <div className="left-hero">
               <h1 className="hero-title">Tulio Salvatierra</h1>
 
               <h3 className="hero-text">Full Stack Developer</h3>
@@ -23,7 +21,7 @@ function Hero() {
                 I enjoy delivering effective solutions, with a solid foundation
                 in HTML, CSS, and JavaScript.
               </h3>
-              <div className="socialhero-icons">
+              <div className="hero-icons">
                 <a href={LINKEDIN_URL}>
                   <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
                 </a>
@@ -40,21 +38,11 @@ function Hero() {
                   />
                 </a>
               </div>
+              <button className="btn btn-dark">Get CV</button>
+              <button className="btn btn-dark">Let's Collaborate!</button>
             </div>
-          </div>
-          <div className="hero-image">
-            <img src={portrait} alt="portrait" className="portrait"></img>
-          </div>
 
-          <div className="lowerL">
-            <a type="button" className="link" href={RESUME} download>
-              download resume
-            </a>
-          </div>
-          <div className="lowerR">
-            <a type="button" className="link" href="#contact">
-              contact me
-            </a>
+            <img src={portrait} alt="portrait" className="landing-pic"></img>
           </div>
         </div>
       </section>

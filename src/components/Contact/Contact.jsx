@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import photo from "../../assets/images/portrait.jpg";
 
 export default function Contact() {
   const [error, setError] = useState(null);
@@ -59,6 +58,7 @@ export default function Contact() {
                   autoComplete="true"
                   placeholder="Name"
                 />
+                {error && <div className="error">{error}</div>}
               </div>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
@@ -72,6 +72,7 @@ export default function Contact() {
                   autoComplete="true"
                   placeholder="example@email.com"
                 />
+                {error && <div className="error">{error}</div>}
               </div>
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">
@@ -85,6 +86,7 @@ export default function Contact() {
                   autoComplete="false"
                   placeholder="Write your message here..."
                 ></textarea>
+                {error && <div className="error">{error}</div>}
               </div>
 
               <button className="btn btn-dark" type="submit">

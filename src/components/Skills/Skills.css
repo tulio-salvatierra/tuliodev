@@ -48,3 +48,10 @@ svg {
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
 }
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 80%;
+    height: auto;
+  }
+}
