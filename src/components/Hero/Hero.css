@@ -23,6 +23,12 @@
   box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
+@media screen and (max-width: 768px) {
+  .landing-pic {
+    max-height: 150px;
+  }
+}
+
 .left-hero {
   display: flex;
   flex-direction: column;
