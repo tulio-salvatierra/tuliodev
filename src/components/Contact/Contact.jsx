@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { EMAIL, TELEPHONE } from "../../Constants";
+
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 
@@ -42,7 +44,11 @@ export default function Contact() {
     <section className="section" id="contact">
       <div className="container-xl">
         <h1 className="section-title">Contact me</h1>
-        <div className="parent">
+        <h5 className="contact-text">
+          I'll be happy to help you with your project or answer any questions,
+          reach out, be a friend!
+        </h5>
+        <div className="contact-parent">
           <div className="form">
             <form ref={formRef} onSubmit={sendEmail} id="form">
               <div className="mb-3">
@@ -95,11 +101,17 @@ export default function Contact() {
             </form>
           </div>
 
-          <div className="photo">
-            <h5 className="contact-text">
-              I'll be happy to help you with your project or answer any
-              questions, reach out, be a friend!
-            </h5>
+          <div className="container">
+            <div className="contact-info">
+              <div className="contact-item">
+                <i className="fas fa-envelope"></i>
+                <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              </div>
+              <div className="contact-item">
+                <i className="fas fa-phone"></i>
+                <a href={`tel:${TELEPHONE}`}>{TELEPHONE}</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
