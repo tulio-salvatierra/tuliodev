@@ -54,18 +54,39 @@ html {
 }
 
 section {
+  position: relative;
   height: auto;
   width: 100dvw;
+  min-height: auto;
+  display: flex;
+  z-index: 100;
 }
 
 .section-title {
-  font-weight: ultra-bold;
+  font-weight: ultra-black;
   font-size: clamp(3rem, 5vw, 5rem);
   color: #fff;
   padding: 2rem;
   word-spacing: 10px;
   overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.section-watermark {
+  position: absolute;
+  display: flex;
+  font-size: 10rem;
+  font-weight: ultra-black;
+  opacity: 0.3;
+  color: #fff;
+  padding: 2rem;
+  height: 300px;
+  word-spacing: 15px;
+  overflow: visible;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 768px) {

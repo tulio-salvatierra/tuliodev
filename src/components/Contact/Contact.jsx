@@ -46,6 +46,7 @@ export default function Contact() {
     <section className="section" id="contact">
       <div className="container-xl">
         <h1 className="section-title">Contact me</h1>
+        <h1 className="section-watermark">Contact me</h1>
         <h4 className="contact-text">
           I'll be happy to help you with your project or answer any questions,
           reach out!

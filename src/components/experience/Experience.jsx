@@ -6,6 +6,7 @@ function Experience() {
     <section>
       <div className="container-xl">
         <h1 className="section-title">Experience</h1>
+        <h1 className="section-watermark">Experience</h1>
 
         <div className="card-exp">
           <div className="experience-item">
