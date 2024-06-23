@@ -18,7 +18,7 @@ export const projectsData = [
     title: "React Quiz App",
     image: Quiz,
     alt: "Quiz",
-    url: "https://quiz-app-772a7.web.app/",
+    url: "https://quiz-git-vercel-deploy-t00lio-s-team.vercel.app",
     repo: "https://github.com/T00lio/quiz",
     description:
       "A full stack app made using React and Tailwind for frontend, and Node and express for backend and postgresSQL for databse. It has a login system, a quiz with multiple choice questions",
