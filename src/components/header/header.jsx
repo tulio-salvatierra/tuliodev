@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand } from "reactstrap";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Logo2 from "../../assets/images/_logo.svg";
+import Menu from "../../assets/icons/menu.png";
 import { GITHUB_URL, LINKEDIN_URL, MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
@@ -51,7 +52,9 @@ function Header() {
           aria-label="Toggle navigation"
           onClick={toggleMenu}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon">
+            <image src={Menu}></image>
+          </span>
         </button>
       </Navbar>
     </div>
