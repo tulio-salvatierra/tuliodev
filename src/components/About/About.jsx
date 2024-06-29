@@ -24,7 +24,9 @@ function About() {
             <br></br>
           </p>
           <div className="button-container">
-            <button className="btn">Let's Collaborate!</button>
+            <a className="btn" href="/contact">
+              Let's Collaborate!
+            </a>
           </div>
         </div>
         <div className="about-list" id="tech">
