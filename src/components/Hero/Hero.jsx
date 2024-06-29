@@ -1,5 +1,5 @@
 import "./Hero.css";
-import portrait from "../../assets/images/hero.webp";
+import portrait from "../../assets/images/hero.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import UpworkIcon from "../../assets/icons/upwork.png";

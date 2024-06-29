@@ -45,12 +45,9 @@ function Skills() {
     },
   ];
 
-  console.log(skills);
-
   return (
     <>
       <div className="container-xl">
-        <h1 className="section-watermark">Skills</h1>
         <div className="title">
           <h1 className="section-title">Skills</h1>
         </div>
