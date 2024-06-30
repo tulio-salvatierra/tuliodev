@@ -18,8 +18,8 @@ function Hero() {
               <h3 className="hero-text">Tulio Salvatierra</h3>
 
               <h3 className="hero-description">
-                Delivering effective solutions, with a solid foundation in HTML,
-                CSS, and JavaScript.
+                Delivering effective software solutions, with a solid foundation
+                in HTML, CSS, and JavaScript.
               </h3>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>

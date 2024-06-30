@@ -53,10 +53,6 @@ export default function Contact() {
         </h4>
         <div className="contact-parent">
           <div className="contact-info">
-            {/* <h4 className="contact-text">
-              I'll be happy to help you with your project or answer any
-              questions, reach out!
-            </h4> */}
             <div className="contact-item">
               <h3>
                 <EmailIcon sx={{ color: "white", height: "2rem" }} /> Email:
