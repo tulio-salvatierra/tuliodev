@@ -13,13 +13,13 @@ function Hero() {
         <div className="container-xl">
           <div className="parent">
             <div className="left-hero">
-              <h1 className="hero-title">Tulio Salvatierra</h1>
+              <h1 className="hero-title">Freelance web developer</h1>
 
-              <h3 className="hero-text">Full Stack Developer</h3>
+              <h3 className="hero-text">Tulio Salvatierra</h3>
 
               <h3 className="hero-description">
-                I enjoy delivering effective solutions, with a solid foundation
-                in HTML, CSS, and JavaScript.
+                Delivering effective solutions, with a solid foundation in HTML,
+                CSS, and JavaScript.
               </h3>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>
