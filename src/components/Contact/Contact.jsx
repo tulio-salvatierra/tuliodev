@@ -48,8 +48,9 @@ export default function Contact() {
         <h1 className="section-title">Contact me</h1>
         <h1 className="section-watermark">Contact me</h1>
         <h4 className="contact-text">
-          I'll be happy to help you with your project or answer any questions,
-          reach out!
+          You can get in touch with me through the form below. I'll be happy to
+          discuss your project or answer any questions about freelancing
+          services, don't hesitate to reach out!
         </h4>
         <div className="contact-parent">
           <div className="contact-info">
