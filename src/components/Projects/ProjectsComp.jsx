@@ -34,7 +34,7 @@ function ProjectsComp() {
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn"
+                  className="custom-btn"
                 >
                   GitHub
                 </a>
@@ -43,7 +43,7 @@ function ProjectsComp() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn "
+                  className="custom-btn "
                 >
                   Visit Site
                 </a>

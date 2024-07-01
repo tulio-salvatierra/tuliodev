@@ -25,6 +25,28 @@ html {
   grid-row: 1;
 }
 
+.custom-btn {
+  background-color: rgb(88, 90, 88);
+  color: lime;
+  font-size: 1rem;
+  font-weight: 900;
+  max-inline-size: auto;
+  padding: 1rem;
+  margin: 1rem;
+  border: lime 3px solid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 1rem;
+}
+
+.custom-btn:hover {
+  background-color: lime;
+  color: rgb(88, 90, 88);
+  font-weight: 700;
+  border: rgb(88, 90, 88) 3px solid;
+}
+
 .content {
   grid-row: 2;
   overflow: auto;

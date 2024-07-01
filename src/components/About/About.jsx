@@ -14,17 +14,19 @@ function About() {
             <div className="row-about">
               <img src={pic} alt="landingPic" className="about-pic"></img>
             </div>
-            <h2 className="about-sub">I'm Tulio Salvatierra</h2>
-            <strong className="bold">Full Stack Developer</strong> with strong
-            foundation on the basics:{" "}
-            <strong className="bold">HTML, CSS & JS.</strong>I have experience
-            working with a wide range of technologies and a passion for learning
-            new technologies and improve my skills to help solve problems and
-            create solutions. I am a quick learner and have a strong work ethic.
+            <h2 className="about-sub">I'm Tulio Salvatierra</h2>a{" "}
+            <strong className="bold">Full Stack Developer</strong>,contantly
+            learning to build a strong foundation on the basics:{" "}
+            <strong className="bold">HTML, CSS & JS.</strong>I begun developing
+            with focus on front end, such as react,react native but new
+            technologies come everyday. I am learning now back end to have a
+            full stack skills, which I think will suit my entrepreneurial spirit
+            and will make me able to provide real world solutions to real world
+            problems.
             <br></br>
           </p>
           <div className="button-container">
-            <a className="btn" href="/contact">
+            <a className="custom-btn" href="/contact">
               Let's Collaborate!
             </a>
           </div>

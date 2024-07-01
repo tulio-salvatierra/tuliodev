@@ -38,11 +38,11 @@ function Hero() {
                   />
                 </a>
               </div>
-              <div className="hero-buttons">
-                <a className="btn" download href={RESUME}>
+              <div className="button-container">
+                <a className="custom-btn" download href={RESUME}>
                   Get CV
                 </a>
-                <a className="btn" href="/contact">
+                <a className="custom-btn" href="/contact">
                   Let's Collaborate!
                 </a>
               </div>
