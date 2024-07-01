@@ -27,20 +27,20 @@ html {
 
 .custom-btn {
   background-color: rgb(88, 90, 88);
-  color: lime;
+  color: #c3ff38;
   font-size: 1rem;
   font-weight: 900;
   max-inline-size: auto;
   padding: 1rem;
   margin: 1rem;
-  border: lime 3px solid;
+  border: #c3ff38 3px solid;
   border-radius: 10px;
 
   margin-right: 1rem;
 }
 
 .custom-btn:hover {
-  background-color: lime;
+  background-color: #c3ff38;
   color: rgb(88, 90, 88);
   font-weight: 700;
   border: rgb(88, 90, 88) 3px solid;

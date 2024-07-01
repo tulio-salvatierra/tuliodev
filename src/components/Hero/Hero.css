@@ -1,6 +1,6 @@
 .hero-title {
   padding-top: 1rem;
-  font-weight: 500;
+  font-weight: 900;
   font-size: clamp(6rem, 5vw, 3rem);
   color: #f5f4f7;
   word-spacing: 10px;

@@ -97,7 +97,9 @@ function Footer() {
         </div>
         <div className="separator"></div>
         <div className="row">
-          <p style={{ color: "white" }}>Made by Tulio Salvatierra</p>
+          <p style={{ color: "white", fontWeight: "bold", fontSize: "1rem" }}>
+            💻 by Tulio Salvatierra
+          </p>
         </div>
       </div>
     </section>
