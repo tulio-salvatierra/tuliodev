@@ -1,23 +1,23 @@
 .footer-div {
   display: flex;
-  padding: 2rem;
   flex-direction: row;
   font-family: "Geist";
   font-size: 1rem;
   font-weight: 400;
+  width: 100%;
+  padding: 1rem;
   z-index: 0;
   bottom: 0;
   justify-content: center;
   text-align: center;
   border-radius: 10px;
-
   margin-right: auto;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background-image: url("../../assets/images/bg/cta-bg.png");
+  border: 0.25px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
 }
 
 .horizontal-icon {

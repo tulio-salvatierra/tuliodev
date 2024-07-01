@@ -18,7 +18,7 @@ import RESUME from "../../assets/resume.pdf";
 function Footer() {
   return (
     <section className="container-xl" id="footer">
-      <footer className="footer-div">
+      <div className="footer-div">
         <nav className="col">
           <h3>Menu:</h3>
           <ul className="navbar-nav">
@@ -46,15 +46,15 @@ function Footer() {
           <h3 className="left">Reach out:</h3>
           <a href={TELEPHONE}>
             {" "}
-            <PhoneIcon />
+            <PhoneIcon sx={{ marginRight: "5px" }} /> Call me
           </a>
 
           <a href={`mailto:${EMAIL}`}>
-            <EmailIcon />
+            <EmailIcon sx={{ marginRight: "5px" }} /> Contact me
           </a>
 
           <a href={RESUME} download style={{ color: "white" }}>
-            <AssignmentIndIcon /> Get CV
+            <AssignmentIndIcon sx={{ marginRight: "5px" }} /> Get CV
           </a>
         </div>
         <div className="col">
@@ -99,7 +99,7 @@ function Footer() {
         <div className="row">
           <p style={{ color: "white" }}>Made by Tulio Salvatierra</p>
         </div>
-      </footer>
+      </div>
     </section>
   );
 }
