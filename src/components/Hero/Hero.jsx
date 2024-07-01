@@ -1,5 +1,5 @@
 import "./Hero.css";
-import portrait from "../../assets/images/hero.png";
+import heroPicture from "../../assets/images/hero.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import UpworkIcon from "../../assets/icons/upwork.png";
@@ -13,7 +13,7 @@ function Hero() {
         <div className="container-xl">
           <div className="parent">
             <div className="left-hero">
-              <h1 className="hero-title">Freelance web developer</h1>
+              <h1 className="hero-title">Freelance developer</h1>
 
               <h3 className="hero-text">Tulio Salvatierra</h3>
 
@@ -48,7 +48,7 @@ function Hero() {
               </div>
             </div>
 
-            <img src={portrait} alt="portrait" className="landing-pic"></img>
+            <img src={heroPicture} alt="portrait" className="landing-pic"></img>
           </div>
         </div>
       </section>
