@@ -2,7 +2,7 @@ import "./CTA.css";
 
 function CTA() {
   return (
-    <div className="full-width-section">
+    <section id="cta" className="cta">
       <div className="callToAction">
         <div className="container-xl">
           <h1 className="display-1">
@@ -15,7 +15,7 @@ function CTA() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

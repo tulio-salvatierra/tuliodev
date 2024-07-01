@@ -56,14 +56,14 @@ export default function Contact() {
           <div className="contact-info">
             <div className="contact-item">
               <h3>
-                <EmailIcon sx={{ color: "white", height: "2rem" }} /> Email:
-                <a href={`mailto:${EMAIL}`} className="contact-tem">
+                <EmailIcon sx={{ color: "white" }} />
+                <a href={`mailto:${EMAIL}`} className="contact-item">
                   {EMAIL}
                 </a>
               </h3>
               <h3>
-                <PhoneIcon sx={{ color: "white" }} /> Phone:
-                <a href={`tel:${TELEPHONE}`} className="contact-tem">
+                <PhoneIcon sx={{ color: "white" }} />
+                <a href={`tel:${TELEPHONE}`} className="contact-item">
                   {TELEPHONE}
                 </a>
               </h3>
