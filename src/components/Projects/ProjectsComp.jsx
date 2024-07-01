@@ -45,7 +45,7 @@ function ProjectsComp() {
                   rel="noopener noreferrer"
                   className="custom-btn "
                 >
-                  Visit Site
+                  Site
                 </a>
               </div>
             </div>
