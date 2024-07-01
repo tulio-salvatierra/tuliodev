@@ -8,7 +8,7 @@ function CTA() {
           <h1 className="display-1">
             Need help with a project? Reach out and let me help!
           </h1>
-          <a href="/contact" className="btn btn-dark">
+          <a href="/contact" className="btn">
             Let's Collaborate!
           </a>
         </div>

@@ -25,10 +25,6 @@ html {
   grid-row: 1;
 }
 
-.footer {
-  width: 100%;
-}
-
 .content {
   grid-row: 2;
   overflow: auto;
@@ -38,19 +34,6 @@ html {
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-}
-
-.btn {
-  background-color: #fff;
-  color: #282627;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 section {

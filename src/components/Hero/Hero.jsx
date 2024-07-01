@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroPicture from "../../assets/images/hero.png";
+import heroPicture from "../../assets/images/hero/hero.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import UpworkIcon from "../../assets/icons/upwork.png";
@@ -39,10 +39,10 @@ function Hero() {
                 </a>
               </div>
               <div className="hero-buttons">
-                <a className="btn btn-dark" download href={RESUME}>
+                <a className="btn" download href={RESUME}>
                   Get CV
                 </a>
-                <a className="btn btn-dark" href="/contact">
+                <a className="btn" href="/contact">
                   Let's Collaborate!
                 </a>
               </div>

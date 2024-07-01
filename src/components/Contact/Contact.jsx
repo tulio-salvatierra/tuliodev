@@ -116,7 +116,7 @@ export default function Contact() {
                   {error && <div className="error">{error}</div>}
                 </div>
 
-                <button className="btn btn-dark" type="submit">
+                <button className="btn" type="submit">
                   Send message
                 </button>
               </form>
