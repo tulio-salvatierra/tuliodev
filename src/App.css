@@ -35,8 +35,7 @@ html {
   margin: 1rem;
   border: lime 3px solid;
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
+
   margin-right: 1rem;
 }
 
@@ -70,7 +69,7 @@ section {
 .section-title {
   font-weight: ultra-black;
   font-size: clamp(3rem, 5vw, 5rem);
-  color: #fff;
+  color: #aeaeae;
   padding: 2rem;
   word-spacing: 10px;
   overflow: hidden;
