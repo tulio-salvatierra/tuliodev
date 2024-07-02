@@ -26,6 +26,7 @@
 @media screen and (max-width: 768px) {
   .landing-pic {
     max-height: 150px;
+    margin-top: 2rem;
   }
 }
 
