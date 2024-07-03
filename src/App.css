@@ -28,7 +28,7 @@ html {
 .custom-btn {
   background-color: rgb(88, 90, 88);
   color: #c3ff38;
-  font-size: clamp(0.75rem, 2vw, 2rem);
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
   font-weight: 900;
   max-inline-size: auto;
   padding: 1rem;
