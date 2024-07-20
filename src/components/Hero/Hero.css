@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 768px) {
   .hero-title {
-    font-size: 3.45rem;
+    font-size: 3.25rem;
     letter-spacing: -8px;
     padding: 0;
     margin: 0;
@@ -102,13 +102,7 @@
     border-radius: 0.5rem;
     height: 75px;
     width: 60px;
-    justify-content: center;
-  }
-  svg,
-  path {
-    width: 32px;
-    height: 32px;
-    color: #fefefe;
+    display: none;
   }
 }
 
