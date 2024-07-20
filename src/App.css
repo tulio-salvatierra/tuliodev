@@ -9,7 +9,8 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../src/assets/images/bg/contact.svg");
+  background-image: url("../src/assets/images/bg/hero-bg.svg");
+  background-color: #000;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: auto;
@@ -26,16 +27,17 @@ html {
 }
 
 .custom-btn {
-  background-color: rgb(88, 90, 88);
-  color: #c3ff38;
+  background-color: #c3ff38;
+  color: #000;
   font-size: clamp(0.75rem, 2vw, 1.5rem);
-  font-weight: 900;
-  max-inline-size: auto;
-  padding: 1rem;
-  margin: 1rem;
+  font-weight: 400;
+  padding: 0.5rem;
   border: #c3ff38 3px solid;
-  border-radius: 10px;
-  margin-right: 1rem;
+  border-radius: 40px;
+
+  padding: 0.5rem;
+  text-align: center;
+  width: fit-content;
 }
 
 .custom-btn:hover {
@@ -67,10 +69,10 @@ html {
 
 .section-title {
   font-weight: ultra-black;
-  font-size: clamp(3rem, 5vw, 5rem);
-  color: #aeaeae;
-  padding: 2rem;
-  word-spacing: 10px;
+  font-size: clamp(6rem, 5vw, 10rem);
+  letter-spacing: -8px;
+  color: #fff;
+  padding: 1rem;
   overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }

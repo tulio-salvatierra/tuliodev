@@ -15,9 +15,9 @@ function Header() {
 
   return (
     <div className="header-container">
-      <Navbar expand="lg">
-        <NavbarBrand href="/">
-          <img src={Logo2} alt="headerLogo" height={17}></img>
+      <Navbar expand="lg" className="p-4">
+        <NavbarBrand href="/" className="text-white">
+          Tulio S
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
