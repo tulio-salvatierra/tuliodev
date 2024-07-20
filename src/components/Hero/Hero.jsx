@@ -12,11 +12,11 @@ function Hero() {
         <h1 className="hero-title">Tulio Salvatierra</h1>
         <div className="container-fluids">
           <div className="row">
-            <div className="col">
+            <div className="col p-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width=".75em"
-                height=".75em"
+                width="30"
+                height="30"
                 viewBox="0 0 256 256"
               >
                 <path
@@ -30,22 +30,23 @@ function Hero() {
                 Get in touch
               </a>
             </div>
-            <div className="col">
+            <div className="col p-0">
               <img
                 src={profile_pic}
                 alt="tulio_salvatierra"
                 className="hero-image"
               />
             </div>
-            <div className="col">
+            <div className="col p-0">
+              <h1 className="hero-text">
+                I have a passion for building beautiful and functional websites,
+                with solid foundations on fundamentals.
+              </h1>
               <div className="hero-icons">
-                <h1 className="hero-text">
-                  I have a passion for building beautiful and functional
-                  websites, with solid foundations on fundamentals.
-                </h1>
-
                 <a href={LINKEDIN_URL}>
-                  <LinkedInIcon sx={{ fontSize: 30, color: "#fefefe" }} />
+                  <LinkedInIcon
+                    sx={{ fontSize: 30, color: "#fefefe", width: "auto" }}
+                  />
                 </a>
 
                 <a href={GITHUB_URL}>
@@ -62,21 +63,23 @@ function Hero() {
               </div>
             </div>
           </div>
-          <svg
-            className="hero-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20px"
-            height="20px"
-            viewBox="0 0 21 21"
-          >
-            <path
-              fill="none"
-              stroke="white"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m6.5 13.499l4 4.001l4-4.001m-4 4.001v-13"
-            />
-          </svg>
+          <div className="arrow">
+            <svg
+              className="scroll-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 0 21 21"
+            >
+              <path
+                fill="none"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m6.5 13.499l4 4.001l4-4.001m-4 4.001v-13"
+              />
+            </svg>
+          </div>
         </div>
       </section>
     </>

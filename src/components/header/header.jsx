@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Logo2 from "../../assets/images/_logo.svg";
 import Menu from "../../assets/icons/menu.png";
 import { GITHUB_URL, LINKEDIN_URL, MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,8 +15,8 @@ function Header() {
   return (
     <div className="header-container">
       <Navbar expand="lg" className="p-4">
-        <NavbarBrand href="/" className="text-white">
-          Tulio S
+        <NavbarBrand href="/">
+          <h1 className="navbar-title">tuliosalvatierra.com</h1>
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">

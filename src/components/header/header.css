@@ -5,13 +5,27 @@
   grid-template-columns: 1fr;
   padding-top: 0;
   top: 0;
-
   z-index: 1000;
   backdrop-filter: blur(10px);
   position: sticky;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 1rem;
+  color: #c3ff38;
+}
+@media screen and (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-left: 1rem;
+    color: #c3ff38;
+  }
 }
 
 .navbar-collapse {
@@ -51,8 +65,16 @@
   color: #fff;
   text-decoration: none;
   padding: 0.5rem;
-  font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: 700;
   margin-left: auto;
+  text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+  color: #c3ff38;
+  text-decoration: none;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .list a:hover {
