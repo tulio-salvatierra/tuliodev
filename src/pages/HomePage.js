@@ -10,10 +10,12 @@ function HomePage() {
   return (
     <main id="home">
       <Hero />
-      <Projects />
-      <CTA />
-      <ExperienceComponent />
-      <Skills />
+      <div className="white-bg">
+        <Projects />
+        <CTA />
+        <ExperienceComponent />
+        <Skills />
+      </div>
       <Contact />
     </main>
   );

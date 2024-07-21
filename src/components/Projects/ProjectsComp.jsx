@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProjectsComp() {
   return (
-    <section className="section" id="projects">
+    <section className="project-section" id="projects">
       <div className="container-xl">
         <h1 className="section-watermark">Projects</h1>
         <h1 className="section-title">Projects</h1>

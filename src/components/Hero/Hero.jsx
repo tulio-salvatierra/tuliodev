@@ -40,7 +40,7 @@ function Hero() {
             <div className="col p-0">
               <h1 className="hero-text">
                 I have a passion for building beautiful and functional websites,
-                with solid foundations on fundamentals.
+                with solid foundations on fundamentals of HTML, CSS & JS
               </h1>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>
