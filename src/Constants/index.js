@@ -3,13 +3,13 @@ import contactIcon from "../assets/icons/contact.png";
 import projectsIcon from "../assets/icons/projects.png";
 import homeIcon from "../assets/icons/home.png";
 
-export const PROJECTS_URL = "/projects";
+export const PROJECTS_URL = "#projects";
 
 export const HOME_URL = "/";
 
-export const ABOUT_URL = "/about";
+export const ABOUT_URL = "#about";
 
-export const CONTACT_URL = "/contact";
+export const CONTACT_URL = "#contact";
 
 export const GITHUB_URL = "https://www.github.com/T00lio";
 
@@ -34,14 +34,15 @@ export const MENU_ITEMS = [
     url: PROJECTS_URL,
     icon: projectsIcon,
   },
-  {
-    title: "Contact",
-    url: CONTACT_URL,
-    icon: contactIcon,
-  },
+
   {
     title: "About",
     url: ABOUT_URL,
     icon: aboutIcon,
+  },
+  {
+    title: "Contact",
+    url: CONTACT_URL,
+    icon: contactIcon,
   },
 ];

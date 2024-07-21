@@ -3,7 +3,7 @@ import "./Experience.css";
 
 function Experience() {
   return (
-    <section className="row">
+    <section className="container">
       <h1 className="section-title">Experience</h1>
       <div className="card-exp">
         <div className="experience-item">
@@ -16,7 +16,7 @@ function Experience() {
             e-commerce platform's development, showcasing my ability to apply
             academic knowledge to practical tech industry challenges.
           </p>
-          <h4 className="exp-sub">Key Contributions:</h4>
+          <h2>Key Contributions:</h2>
           <ol className="exp-item ">
             <li>
               Developed an e-commerce site using SCRUM, focusing on React, React
@@ -48,7 +48,7 @@ function Experience() {
             </li>
             <li>Adopted CI/CD practices with GitHub Actions.</li>
           </ol>
-          <h4 className="exp-sub">Back-end Contributions:</h4>
+          <h2>Back-end Contributions:</h2>
           <ul className="exp-item">
             <li>Utilized Express.js for server-side development.</li>
             <li>
