@@ -63,23 +63,6 @@ function Hero() {
               </div>
             </div>
           </div>
-          {/* <div className="arrow">
-            <svg
-              className="scroll-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 21 21"
-            >
-              <path
-                fill="none"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m6.5 13.499l4 4.001l4-4.001m-4 4.001v-13"
-              />
-            </svg>
-          </div> */}
         </div>
       </section>
     </>
