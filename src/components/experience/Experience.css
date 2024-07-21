@@ -4,8 +4,9 @@
 
 .card-exp {
   margin: 2rem;
-
-  color: #fff;
+  text-align: left;
+  padding: 1rem;
+  color: #000;
   font-size: 1.5rem;
 }
 
@@ -19,30 +20,30 @@
 .card-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #000;
 }
 
 .exp-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #000;
 }
 
 .exp-range {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #fff;
+  color: #000;
 }
 
 .exp-role {
   font-size: 1.25rem;
   font-weight: italic;
-  color: #fff;
+  color: #000;
 }
 
 .exp-sub {
   font-size: 1rem;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 

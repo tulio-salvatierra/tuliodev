@@ -19,6 +19,29 @@ html {
   margin-right: auto;
 }
 
+.exp-title {
+  color: #000;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+
+  place-items: center;
+}
+
 .top {
   position: sticky;
   top: 0;
@@ -82,8 +105,7 @@ html {
   font-size: 10rem;
   font-weight: ultra-black;
   opacity: 0.09;
-  color: #000;
-  padding: 2rem;
+  color: #c3ff38;
   height: 300px;
   word-spacing: 15px;
   overflow: visible;
