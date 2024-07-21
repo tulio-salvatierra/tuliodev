@@ -1,4 +1,4 @@
-import Ecommerce from "../../assets/images/meli gif.gif";
+import Ecommerce from "../../assets/images/meli.webm";
 import Quiz from "../../assets/images/quiz.gif";
 import CSC from "../../assets/images/csc.png";
 
@@ -8,7 +8,7 @@ export const projectsData = [
     title: "Ecommerce",
     image: Ecommerce,
     alt: "Ecommerce",
-    url: "https://react---ecomm.web.app/",
+    url: "https://ecommerce-hazel-nine-52.vercel.app/",
     repo: "https://github.com/T00lio/mlchallenge",
     description:
       "A frontend ecommerce app that has cart and checkout functionalities, authentication routes, Context API for state management, working with Mercadolibre.com real world API",
