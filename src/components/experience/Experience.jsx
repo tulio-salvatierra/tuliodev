@@ -5,8 +5,6 @@ function Experience() {
   return (
     <section className="row">
       <h1 className="section-title">Experience</h1>
-      <h1 className="section-watermark">Experience</h1>
-
       <div className="card-exp">
         <div className="experience-item">
           <h1 className="exp-title">Full Stack Developer</h1>

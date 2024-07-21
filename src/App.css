@@ -101,6 +101,7 @@ html {
 
 .section-watermark {
   position: absolute;
+  overflow: hidden;
   display: flex;
   font-size: 10rem;
   font-weight: ultra-black;
