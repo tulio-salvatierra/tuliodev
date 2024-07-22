@@ -1,8 +1,7 @@
 .cta {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #e3e4e2;
   background-image: url("../../assets/images/bg/cta-bg.png");
   padding: 20px;
   justify-content: center;

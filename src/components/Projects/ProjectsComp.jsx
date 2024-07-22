@@ -10,6 +10,13 @@ function ProjectsComp() {
       <div className="project-header">
         <h1 className="section-title">Projects</h1>
       </div>
+      <div className="project-intro">
+        <h4>
+          Here are some of the projects I have worked on. Click on the links to
+          view the code on GitHub or the live site.
+        </h4>
+      </div>
+
       {projectsData.map((project, index) => (
         <div key={index} className="project-card">
           <img
@@ -17,16 +24,7 @@ function ProjectsComp() {
             alt={project.title}
             className="project-image"
           />
-          <h3 className="card-subtitle">
-            {" "}
-            <img
-              src={projectIcon}
-              alt="project-icon"
-              className="project-icon"
-              style={{ height: "1.2rem", width: "1.2rem" }}
-            />
-            {project.title}
-          </h3>
+          <h3 className="card-subtitle m-0">{project.title}</h3>
           <p className="project-description">{project.description}</p>
           <div className="project-links">
             <a

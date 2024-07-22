@@ -17,14 +17,15 @@
   font-size: 2rem;
   font-weight: 900;
   margin-left: 1rem;
-  color: #c3ff38;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
     font-size: 1.5rem;
     font-weight: 900;
     margin-left: 1rem;
-    color: #c3ff38;
+    background-color: #8aff85;
+    background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   }
 }
 
@@ -72,7 +73,8 @@
 }
 
 .navbar-nav a:hover {
-  color: #c3ff38;
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   text-decoration: none;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -86,7 +88,7 @@
 }
 
 .navbar-toggler-icon {
-  background-color: #fff;
+  background-color: #e3e4e2;
 }
 @media screen and (max-width: 768px) {
   .list-item {

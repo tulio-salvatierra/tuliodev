@@ -46,14 +46,20 @@ function Skills() {
   ];
 
   return (
-    <>
+    <section className="container">
       <div className="title">
         <h1 className="section-title">Skills</h1>
       </div>
       <div className="row">
         {skills.map((skillCategory, index) => (
           <div key={index} className="card">
-            <h2 style={{ color: "#fff", marginBottom: "1rem" }}>
+            <h2
+              style={{
+                color: "#e3e4e2",
+                fontWeight: "900",
+                marginBottom: "1rem",
+              }}
+            >
               {skillCategory.title}
             </h2>
             <div className="card-body">
@@ -69,7 +75,7 @@ function Skills() {
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 }
 

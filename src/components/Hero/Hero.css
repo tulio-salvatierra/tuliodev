@@ -6,7 +6,7 @@
   padding: 2rem;
   margin-left: 2rem;
   text-transform: uppercase;
-  color: #f5f4f7;
+  color: #e3e4e2;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -81,7 +81,7 @@
   font-weight: 200;
   line-height: 1.5;
   overflow: visible;
-  color: #fff;
+  color: #e3e4e2;
   margin-left: auto;
   margin-right: auto;
 }
@@ -92,7 +92,7 @@
 
 .hero-image :hover {
   border-radius: 0.5rem;
-  background-color: #c3ff38;
+  background-color: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   transform: scale(1.1);
   shadow: 0 0 10px rgba(f, 0, 0, 0.5);
 }
@@ -118,7 +118,8 @@
 
 .hero-icons :hover {
   border-radius: 0.5rem;
-  background-color: #c3ff38;
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
 }
 
 .scroll-icon {
@@ -126,12 +127,13 @@
   center: 100%;
   transform: translateX(-50%);
   font-size: 2rem;
-  color: #fff;
+  color: #e3e4e2;
   cursor: pointer;
 }
 
 .scroll-icon :hover {
-  color: #c3ff38;
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
 }
 
 .arrow {

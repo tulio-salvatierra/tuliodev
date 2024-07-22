@@ -6,21 +6,11 @@
   margin-bottom: 100px;
 }
 
-.project-section {
-  background-color: #fff;
-  border-radius: 10px 10px 0 0;
-}
 @media screen and (max-width: 768px) {
   .container {
     height: auto;
     display: flex;
   }
-}
-
-.logo {
-  height: 1rem;
-  width: auto;
-  margin-right: auto;
 }
 
 .project-icon {
@@ -32,11 +22,13 @@
 }
 
 .project-card {
+  color: #e3e4e2;
+  display: flex;
   padding: 1rem;
-  width: 375px;
-  height: 525px;
+  width: 400px;
+  height: auto;
   margin: 10px;
-  background: #c3ff38;
+  background: #211c1c;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -77,7 +69,7 @@
   margin-top: 10px;
   font-weight: 500;
   font-size: 1rem;
-  color: #000;
+  color: #e3e4e2;
 }
 
 .project-image {
@@ -85,7 +77,6 @@
   height: 200px;
   border-radius: 0.5rem;
   object-fit: cover;
-  border: #000 0.25px solid;
 }
 
 .project-card h3 {

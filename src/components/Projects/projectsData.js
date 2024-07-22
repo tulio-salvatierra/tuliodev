@@ -11,7 +11,7 @@ export const projectsData = [
     url: "https://ecommerce-hazel-nine-52.vercel.app/",
     repo: "https://github.com/T00lio/mlchallenge",
     description:
-      "A frontend ecommerce app that has cart and checkout functionalities, authentication routes, Context API for state management, working with Mercadolibre.com real world API",
+      "React | Tailwind CSS | Node | Express | PostgreSQL | JWT | Mercado Libre API | Vercel. A full stack app that uses the Mercado Libre API to display products. It has a login system, a shopping cart, and a checkout page.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const projectsData = [
     url: "https://quiz-2nlyl6im1-t00lio-s-team.vercel.app/",
     repo: "https://github.com/T00lio/quiz",
     description:
-      "A full stack app made using React and Tailwind for frontend, and Node and express for backend and postgresSQL for databse. It has a login system, a quiz with multiple choice questions",
+      "Vite | React | TypeScript | Tailwind CSS | NodeJS | Express | Vercel. A quiz app that fetches questions from the Open Trivia API. It has a timer, a score counter, and a responsive",
   },
   {
     id: 3,
@@ -31,6 +31,6 @@ export const projectsData = [
     url: "https://csc-two.vercel.app/",
     repo: "https://github.com/T00lio/csc",
     description:
-      "Landing page for a dermatology clinic. It was made using React, Tailwind CSS, and Vercel for deployment. It has a responsive design and a contact form that sends an email to the clinic's email address.",
+      "React | Tailwind CSS | Node | Express | PostgreSQL | JWT | Vercel. A full stack app for a dermatology clinic. It has a login system, a patient portal, and a blog.",
   },
 ];

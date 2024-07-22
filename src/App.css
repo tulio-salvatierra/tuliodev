@@ -10,17 +10,13 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-image: url("../src/assets/images/bg/hero-bg.svg");
-  background-color: #000;
+  background-color: #211c1c;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.exp-title {
-  color: #000;
 }
 
 .row {
@@ -38,7 +34,6 @@ html {
   display: grid;
   height: 100%;
   width: 100%;
-
   place-items: center;
 }
 
@@ -50,23 +45,25 @@ html {
 }
 
 .custom-btn {
-  background-color: #c3ff38;
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   color: #000;
   font-size: clamp(0.75rem, 2vw, 1.5rem);
   font-weight: 400;
-  padding: 0.5rem;
-  border: #c3ff38 3px solid;
-  border-radius: 40px;
-  padding: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%) 3px solid;
+  border-radius: 15px;
   text-align: center;
   width: fit-content;
+  text-transform: uppercase;
 }
 
 .custom-btn:hover {
-  background-color: #c3ff38;
-  color: rgb(88, 90, 88);
-  font-weight: 700;
-  border: rgb(88, 90, 88) 3px solid;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%) 3px solid;
+  color: #000;
+  background-color: #8aff85;
 }
 
 .content {
@@ -93,36 +90,37 @@ html {
   font-weight: ultra-black;
   font-size: clamp(7rem, 5vw, 13rem);
   letter-spacing: -8px;
-  color: rgb(88, 90, 88);
+  color: #211c11;
   padding: 1rem;
   overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.section-watermark {
-  position: absolute;
-  overflow: hidden;
-  display: flex;
-  font-size: 10rem;
+.contact-title {
   font-weight: ultra-black;
-  opacity: 0.09;
-  color: #c3ff38;
-  height: 300px;
-  word-spacing: 15px;
-  overflow: visible;
+  font-size: clamp(7rem, 5vw, 13rem);
+  letter-spacing: -8px;
+  color: #e3e4e2;
+  padding: 1rem;
+  overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  bottom: 0;
-  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    letter-spacing: -4px;
+  }
 }
 
 .white-bg {
-  background-color: #fff;
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   border-radius: 2rem;
 }
 
 @media screen and (max-width: 768px) {
   .section-title {
     font-size: 3.5rem;
+    letter-spacing: -4px;
   }
 }

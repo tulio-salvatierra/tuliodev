@@ -1,49 +1,52 @@
-.li {
-  list-style: inside;
+li {
+  color: #e3e4e2;
+  list-style: none;
 }
 
 .card-exp {
   margin: 2rem;
   text-align: left;
   padding: 1rem;
-  color: #000;
+  color: #e3e4e2;
+  background: #211c1c;
   font-size: 1.5rem;
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 768px) {
   .card-exp {
     font-size: 1rem;
-    padding: 0;
+    padding: 1;
   }
 }
 
 .card-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #000;
+  color: #e3e4e2;
 }
 
 .exp-title {
   font-size: 3rem;
   font-weight: bold;
-  color: #000;
+  color: #e3e4e2;
 }
 
 .exp-range {
   font-size: 1rem;
   font-weight: bolder;
-  color: #000;
+  color: #e3e4e2;
 }
 
 .exp-role {
   font-size: 2rem;
   font-weight: 100;
-  color: #000;
+  color: #e3e4e2;
 }
 
 .exp-sub {
   font-size: 1rem;
-  color: #000;
+  color: #e3e4e2;
   font-weight: bold;
 }
 
@@ -57,11 +60,4 @@
   font-size: 1rem;
   line-height: 1.5;
   list-style: square;
-}
-
-.separator {
-  height: 0.25px;
-  background-color: #ccc;
-  margin: 20px 0;
-  margin-top: 2rem;
 }

@@ -28,7 +28,8 @@
   width: 100%;
 }
 .svg-bg {
-  background-color: #001;
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   height: 3rem;
   width: 3rem;
   border-radius: 0.5rem;
@@ -54,9 +55,8 @@
   flex-direction: row;
   padding: 1rem;
   width: 80%;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.47);
-  backdrop-filter: blur(10.5px);
+  color: #;
+  background: #211c1c;
   border-radius: 1rem;
 }
 
@@ -66,36 +66,11 @@
   background-repeat: no-repeat;
 }
 
-.photo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
-}
-
 .error {
   color: red;
   margin-top: 10px;
   font-size: 0.75rem;
   font-weight: 500;
-}
-
-.contact-btn {
-  display: flex;
-  padding: 1rem;
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: grey;
-  border-radius: 1rem;
-  cursor: pointer;
-  font-weight: bolder;
-  border: 2px solid grey;
-  justify-content: center;
-  background-color: #c3ff38;
-  width: 48%;
 }
 
 /* form css */
@@ -110,17 +85,15 @@
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: #e3e4e2;
   color: #fff;
   font-size: 1rem;
 }
 
 :placeholder-shown {
-  color: #fff;
+  color: #e3e4e2;
 }
 .form {
-  border: #fff 0.25 solid;
-  background-color: transparent;
   margin: 0;
   padding: 2rem;
   height: 100%;
@@ -131,7 +104,7 @@
 label {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #e3e4e2;
 }
 
 .contact-text {
@@ -140,12 +113,10 @@ label {
   justify-content: space-evenly;
   padding: 2rem;
   margin: 0;
-  color: #fff;
-  font-size: 2rem;
+  color: #e3e4e2;
+  font-size: 1.5rem;
   font-weight: 500;
 }
-
-/* media queries */
 
 @media (max-width: 768px) {
   .contact-content {
