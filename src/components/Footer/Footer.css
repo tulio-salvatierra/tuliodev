@@ -66,11 +66,18 @@ a {
   padding-top: 1rem;
   wrap: wrap;
   font-weight: 900;
-  letter-spacing: -15px;
-  font-size: 13rem;
+  font-size: clamp(6rem, 80vw, 10rem);
   padding: 2rem;
-
   text-transform: uppercase;
   color: #e3e4e2;
   text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-title {
+    font-size: 5rem;
+    letter-spacing: -5px;
+    padding: 0;
+    margin: 0;
+  }
 }

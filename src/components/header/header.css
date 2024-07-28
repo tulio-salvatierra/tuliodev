@@ -18,6 +18,9 @@
   font-weight: 900;
   margin-left: 1rem;
   text-transform: uppercase;
+  color: #8aff85;
+  background: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
+  -webkit-background-clip: text;
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
