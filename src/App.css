@@ -88,6 +88,7 @@ html {
 
 .section-title {
   font-weight: ultra-black;
+  text-transform: uppercase;
   font-size: clamp(7rem, 5vw, 13rem);
   letter-spacing: -8px;
   color: #211c11;
@@ -98,6 +99,7 @@ html {
 
 .contact-title {
   font-weight: ultra-black;
+  text-transform: uppercase;
   font-size: clamp(7rem, 5vw, 13rem);
   letter-spacing: -8px;
   color: #e3e4e2;

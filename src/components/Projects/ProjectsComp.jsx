@@ -1,6 +1,5 @@
 import React from "react";
 import { projectsData } from "./projectsData";
-import projectIcon from "../../assets/icons/project-blk.png";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
