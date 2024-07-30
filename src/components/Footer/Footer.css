@@ -16,6 +16,19 @@
   background: #211c1c;
   border: 0.25px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(10px);
+  color: #e3e4e2;
+  text-transform: uppercase;
+}
+
+.separator {
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background-color: #e3e4e2;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25px;
 }
 
 .horizontal-icon {
@@ -66,7 +79,7 @@ a {
   padding-top: 1rem;
   wrap: wrap;
   font-weight: 900;
-  font-size: clamp(6rem, 80vw, 10rem);
+  font-size: 10rem;
   padding: 2rem;
   text-transform: uppercase;
   color: #e3e4e2;

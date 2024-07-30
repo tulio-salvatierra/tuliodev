@@ -18,78 +18,76 @@ import RESUME from "../../assets/resume.pdf";
 function Footer() {
   return (
     <section id="footer">
-      <div className="container-xl" style={{ marginRight: "auto" }}>
-        <div className="footer-div">
-          <nav className="col">
-            <h3>Navigation</h3>
-            <ul className="navbar-nav">
-              {MENU_ITEMS.map((item, index) => (
-                <li className="listItem" key={`header-${index}`}>
-                  <a href={item.url} className="nav-link">
-                    {item.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="separator"></div>
-          <div className="col">
-            <h3 className="left">Reach out:</h3>
-            <a href={TELEPHONE}>
-              {" "}
-              <PhoneIcon sx={{ marginRight: "5px" }} /> Call me
-            </a>
+      <div className="footer-div">
+        <nav className="col">
+          <h3>Navigation</h3>
+          <ul className="navbar-nav">
+            {MENU_ITEMS.map((item, index) => (
+              <li className="listItem" key={`header-${index}`}>
+                <a href={item.url} className="nav-link">
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="separator"></div>
+        <div className="col">
+          <h3 className="left">Reach out:</h3>
+          <a href={TELEPHONE}>
+            {" "}
+            <PhoneIcon sx={{ marginRight: "5px" }} /> Call me
+          </a>
 
-            <a href={`mailto:${EMAIL}`}>
-              <EmailIcon sx={{ marginRight: "5px" }} /> Contact me
-            </a>
+          <a href={`mailto:${EMAIL}`}>
+            <EmailIcon sx={{ marginRight: "5px" }} /> Contact me
+          </a>
 
-            <a href={RESUME} download style={{ color: "white" }}>
-              <AssignmentIndIcon sx={{ marginRight: "5px" }} /> Get CV
+          <a href={RESUME} download style={{ color: "white" }}>
+            <AssignmentIndIcon sx={{ marginRight: "5px" }} /> Get CV
+          </a>
+        </div>
+        <div className="col">
+          <h3>Socials:</h3>
+          <div className="horizontal-icon">
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="60px"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="60px"
+            >
+              <GitHubIcon />
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/tulio"
+              target="_blank"
+              rel="noopener noreferrer"
+              size="60px"
+            >
+              <img
+                src={UpworkIcon}
+                alt="upwork"
+                className="upwork"
+                style={{ height: 28 }}
+              />
             </a>
           </div>
-          <div className="col">
-            <h3>Socials:</h3>
-            <div className="horizontal-icon">
-              <a
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                size="60px"
-              >
-                <LinkedInIcon />
-              </a>
-              <a
-                href={GITHUB_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                size="60px"
-              >
-                <GitHubIcon />
-              </a>
-              <a
-                href="https://www.upwork.com/freelancers/tulio"
-                target="_blank"
-                rel="noopener noreferrer"
-                size="60px"
-              >
-                <img
-                  src={UpworkIcon}
-                  alt="upwork"
-                  className="upwork"
-                  style={{ height: 28 }}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col">
-            <h3>Location:</h3>
-            <p>Chicago, IL</p>
-          </div>
-          <div className="separator"></div>
-          <div className="row">
-            <h1 className="footer-title">TULIO SALVATIERRA</h1>
-          </div>
+        </div>
+        <div className="col">
+          <h3>Location:</h3>
+          <p>Chicago, IL</p>
+        </div>
+        <div className="separator"></div>
+        <div className="row">
+          <h1 className="footer-title">TULIO SALVATIERRA</h1>
         </div>
       </div>
     </section>
