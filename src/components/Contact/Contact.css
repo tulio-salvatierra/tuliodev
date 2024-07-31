@@ -18,7 +18,7 @@
 .contact-title {
   font-weight: ultra-black;
   text-transform: uppercase;
-  font-size: 13rem;
+  font-size: clamp(13rem, 8vw, 7rem);
   letter-spacing: -8px;
   color: #e3e4e2;
   padding: 1rem;
@@ -70,7 +70,6 @@
   flex-direction: row;
   padding: 1rem;
   width: 80%;
-  color: #;
   background: #211c1c;
   border-radius: 1rem;
 }
@@ -101,9 +100,10 @@
 
 input::placeholder,
 textarea::placeholder {
-  color: #e3e4e2;
+  font-weight: 100;
+  opacity: 0.5;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  color: #3e3e3e;
 }
 .form {
   margin: 0;
@@ -111,6 +111,7 @@ textarea::placeholder {
   height: 100%;
   width: 100%;
   border-radius: 1rem;
+  color: #211c1c;
 }
 
 label {

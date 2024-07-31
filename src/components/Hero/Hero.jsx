@@ -11,7 +11,7 @@ function Hero() {
       <section className="hero" id="hero">
         <h1 className="hero-title">TULIO SALVATIERRA</h1>
         <div className="container-xl">
-          <div className="container-fluid">
+          <div className="container-fluid flex">
             <div className="col">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
