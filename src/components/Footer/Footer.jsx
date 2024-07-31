@@ -27,7 +27,7 @@ function Footer() {
             />
           </svg>
           <img src={profilePic} alt="profile-pic" className="profile-footer" />
-          <p className="text-start w-50">
+          <p className="text-start w-75">
             I am a full-stack web developer with a passion for building
             beautiful and functional websites. I have a solid foundation in
             HTML, CSS, and JavaScript.
@@ -35,7 +35,7 @@ function Footer() {
         </div>
         <div className="col d-flex flex-row">
           <div className="col">
-            <h3 className="left">Contact</h3>
+            <h5 className="left">Contact</h5>
             <div className="separator"></div>
             <a href={TELEPHONE}> Call me</a>
 
@@ -46,7 +46,7 @@ function Footer() {
             </a>
           </div>
           <div className="col">
-            <h3>Socials:</h3>
+            <h5>Socials</h5>
             <div className="separator"></div>
 
             <a
@@ -75,7 +75,7 @@ function Footer() {
             </a>
           </div>
           <div className="col">
-            <h3>NAVIGATION</h3>
+            <h5>NAVIGATION</h5>
             <div className="separator"></div>
             {MENU_ITEMS.map((item, index) => (
               <a

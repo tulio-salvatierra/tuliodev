@@ -1,4 +1,4 @@
-import Ecommerce from "../../assets/images/meli.webm";
+import Ecommerce from "../../assets/images/meli.gif";
 import Quiz from "../../assets/images/quiz.gif";
 import CSC from "../../assets/images/csc.png";
 

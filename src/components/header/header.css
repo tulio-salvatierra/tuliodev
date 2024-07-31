@@ -1,16 +1,5 @@
-.container-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  grid-template-columns: 1fr;
-  padding-top: 0;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
-  position: sticky;
-  color: #fff;
-  margin-left: auto;
-  margin-right: auto;
+.header-container {
+  width: 100vw;
 }
 
 .navbar-title {

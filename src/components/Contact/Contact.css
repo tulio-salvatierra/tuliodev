@@ -15,9 +15,25 @@
   }
 }
 
-.contact-text {
-  padding: 0;
+.contact-title {
+  font-weight: ultra-black;
+  text-transform: uppercase;
+  font-size: 13rem;
+  letter-spacing: -8px;
+  color: #e3e4e2;
+  padding: 1rem;
+  overflow: hidden;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 768px) {
+  .contact-title {
+    font-size: 3.25rem;
+    letter-spacing: -4px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .svg {
   align-items: center;
   display: flex;
@@ -57,12 +73,6 @@
   color: #;
   background: #211c1c;
   border-radius: 1rem;
-}
-
-.section {
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .error {
