@@ -7,56 +7,55 @@ import {
   MENU_ITEMS,
 } from "../../Constants";
 import "./Footer.css";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import UpworkIcon from "../../assets/icons/upwork.png";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
-import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import RESUME from "../../assets/resume.pdf";
+import profilePic from "../../assets/images/hero/profile.jpeg";
 
 function Footer() {
   return (
-    <section id="footer">
-      <div className="footer-div">
-        <nav className="col">
-          <h3>Navigation</h3>
-          <ul className="navbar-nav">
-            {MENU_ITEMS.map((item, index) => (
-              <li className="listItem" key={`header-${index}`}>
-                <a href={item.url} className="nav-link">
-                  {item.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="separator"></div>
+    <section id="footer" className="container-fluid text-start border-1">
+      <div className="container">
         <div className="col">
-          <h3 className="left">Reach out:</h3>
-          <a href={TELEPHONE}>
-            {" "}
-            <PhoneIcon sx={{ marginRight: "5px" }} /> Call me
-          </a>
-
-          <a href={`mailto:${EMAIL}`}>
-            <EmailIcon sx={{ marginRight: "5px" }} /> Contact me
-          </a>
-
-          <a href={RESUME} download style={{ color: "white" }}>
-            <AssignmentIndIcon sx={{ marginRight: "5px" }} /> Get CV
-          </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="currentColor"
+              d="M229.18 173a6 6 0 0 1-2.16 8.2l-96 56a6 6 0 0 1-6 0l-96-56a6 6 0 0 1 6-10.36l93 54.23l93-54.23a6 6 0 0 1 8.16 2.16M221 122.82l-93 54.23l-93-54.23a6 6 0 0 0-6 10.36l96 56a6 6 0 0 0 6 0l96-56a6 6 0 0 0-6-10.36M26 80a6 6 0 0 1 3-5.18l96-56a6 6 0 0 1 6 0l96 56a6 6 0 0 1 0 10.36l-96 56a6 6 0 0 1-6 0l-96-56A6 6 0 0 1 26 80m17.91 0L128 129.05L212.09 80L128 31Z"
+            />
+          </svg>
+          <img src={profilePic} alt="profile-pic" className="profile-footer" />
+          <p className="text-start w-50">
+            I am a full-stack web developer with a passion for building
+            beautiful and functional websites. I have a solid foundation in
+            HTML, CSS, and JavaScript.
+          </p>
         </div>
-        <div className="col">
-          <h3>Socials:</h3>
-          <div className="horizontal-icon">
+        <div className="col d-flex flex-row">
+          <div className="col">
+            <h3 className="left">Contact</h3>
+            <div className="separator"></div>
+            <a href={TELEPHONE}> Call me</a>
+
+            <a href={`mailto:${EMAIL}`}>Contact me</a>
+
+            <a href={RESUME} download style={{ color: "white" }}>
+              Get CV
+            </a>
+          </div>
+          <div className="col">
+            <h3>Socials:</h3>
+            <div className="separator"></div>
+
             <a
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               size="60px"
             >
-              <LinkedInIcon />
+              LinkedIn
             </a>
             <a
               href={GITHUB_URL}
@@ -64,7 +63,7 @@ function Footer() {
               rel="noopener noreferrer"
               size="60px"
             >
-              <GitHubIcon />
+              GitHub
             </a>
             <a
               href="https://www.upwork.com/freelancers/tulio"
@@ -72,22 +71,29 @@ function Footer() {
               rel="noopener noreferrer"
               size="60px"
             >
-              <img
-                src={UpworkIcon}
-                alt="upwork"
-                className="upwork"
-                style={{ height: 28 }}
-              />
+              Upwork
             </a>
           </div>
+          <div className="col">
+            <h3>NAVIGATION</h3>
+            <div className="separator"></div>
+            {MENU_ITEMS.map((item, index) => (
+              <a
+                href={item.url}
+                key={index}
+                style={{ color: "white", display: "block" }}
+              >
+                {item.title}
+              </a>
+            ))}
+          </div>
         </div>
-        <div className="col">
-          <h3>Location:</h3>
-          <p>Chicago, IL</p>
-        </div>
-        <div className="separator"></div>
+
         <div className="row">
+          <div className="separator"></div>
           <h1 className="footer-title">TULIO SALVATIERRA</h1>
+          <h3>LOCATION</h3>
+          <p>CHICAGO, IL</p>
         </div>
       </div>
     </section>

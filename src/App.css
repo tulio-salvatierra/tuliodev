@@ -30,13 +30,6 @@ html {
   padding: 1rem;
 }
 
-.container {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-}
-
 .top {
   position: sticky;
   top: 0;

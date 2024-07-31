@@ -5,20 +5,20 @@
   font-size: 12vw;
   padding: 2rem;
   margin-left: 2rem;
-  text-transform: uppercase;
   color: #e3e4e2;
   text-align: center;
 }
+
 @media screen and (max-width: 768px) {
   .hero-title {
     font-size: 3.25rem;
-    letter-spacing: -8px;
+    letter-spacing: -4px;
     padding: 0;
     margin: 0;
   }
 }
 
-.container-fluids {
+.container-fluid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -27,6 +27,7 @@
   width: 100%;
   height: auto;
   background: transparent;
+  color: #e3e4e2;
 }
 
 .row {
@@ -38,6 +39,7 @@
   width: 100dvw;
   height: 60dvh;
   background: transparent;
+  color: #e3e4e2;
 }
 
 @media screen and (max-width: 768px) {
@@ -76,6 +78,7 @@
 
 .hero-text {
   font-size: clamp(1.5rem, 5vw, 1rem);
+  text-align: left;
   width: 100%;
   font-family: "Geist";
   font-weight: 200;
@@ -88,6 +91,7 @@
 
 .hero-image {
   border-radius: 0.5rem;
+  height: 375px;
 }
 
 .hero-image :hover {
@@ -100,9 +104,7 @@
 @media screen and (max-width: 768px) {
   .hero-image {
     border-radius: 0.5rem;
-    height: 75px;
-    width: 60px;
-    display: none;
+    height: 300px;
   }
 }
 

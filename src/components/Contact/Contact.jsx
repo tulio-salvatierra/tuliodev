@@ -44,29 +44,29 @@ export default function Contact() {
 
   return (
     <section className="section" id="contact">
-      <div className="container-xl">
+      <div className="container-xl w-100 flex">
         <h1 className="contact-title">Contact me</h1>
-        <h4 className="contact-text">
+        <h3 className="contact-text">
           You can get in touch with me through the form below. I'll be happy to
           discuss your project or answer any questions about freelancing
           services, don't hesitate to reach out!
-        </h4>
+        </h3>
         <div className="contact-parent">
           <div className="contact-info">
             <div className="contact-item">
               <div className="svg-bg">
-                <EmailIcon className="svg" />
+                <EmailIcon className="svg" fontSize="large" />
               </div>
-              <a href={`mailto:${EMAIL}`} className="contact-detail">
-                {EMAIL}
+              <a href={`mailto:${EMAIL}`}>
+                <h3>{EMAIL}</h3>
               </a>
             </div>
             <div className="contact-item">
               <div className="svg-bg">
-                <PhoneIcon className="svg" />
+                <PhoneIcon className="svg" fontSize="large" />
               </div>
-              <a href={`tel:${TELEPHONE}`} className="contact-detail">
-                {TELEPHONE}
+              <a href={`tel:${TELEPHONE}`}>
+                <h3>{TELEPHONE}</h3>
               </a>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control p-4"
                     id="name"
                     name="name"
                     autoComplete="true"
@@ -94,7 +94,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control p-4"
                     id="email"
                     name="email"
                     autoComplete="true"
@@ -107,7 +107,7 @@ export default function Contact() {
                     Message
                   </label>
                   <textarea
-                    className="form-control"
+                    className="form-control p-4"
                     id="message"
                     name="message"
                     rows="4"
