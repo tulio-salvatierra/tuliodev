@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section className="section" id="contact">
       <div className="container-xl w-100 flex">
-        <h1 className="contact-title">Contact me</h1>
+        <h1 className="contact-title">Contact</h1>
         <h3 className="contact-text">
           You can get in touch with me through the form below. I'll be happy to
           discuss your project or answer any questions about freelancing
@@ -58,7 +58,7 @@ export default function Contact() {
                 <EmailIcon className="svg" fontSize="large" />
               </div>
               <a href={`mailto:${EMAIL}`}>
-                <h3>{EMAIL}</h3>
+                <h4>{EMAIL}</h4>
               </a>
             </div>
             <div className="contact-item">

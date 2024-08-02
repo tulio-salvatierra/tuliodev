@@ -103,7 +103,7 @@ textarea::placeholder {
   font-weight: 100;
   opacity: 0.5;
   font-size: 1.5rem;
-  color: #3e3e3e;
+  color: #fff;
 }
 .form {
   margin: 0;

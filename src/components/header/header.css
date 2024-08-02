@@ -13,9 +13,8 @@
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 900;
-    margin-left: 1rem;
     background-color: #8aff85;
     background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   }

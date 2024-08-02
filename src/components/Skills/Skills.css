@@ -1,5 +1,7 @@
 .skill-container {
   display: flex;
+  min-height: auto;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 2rem;

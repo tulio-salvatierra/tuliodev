@@ -12,7 +12,7 @@ function Hero() {
         <h1 className="hero-title">TULIO SALVATIERRA</h1>
         <div className="container-xl">
           <div className="container-fluid flex">
-            <div className="col">
+            <div className="col1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -29,18 +29,18 @@ function Hero() {
                 Get in touch
               </a>
             </div>
-            <div className="col p-0">
+            <div className="col2 p-0">
               <img
                 src={profile_pic}
                 alt="tulio_salvatierra"
                 className="hero-image"
               />
             </div>
-            <div className="col p-0">
-              <h1 className="hero-text">
+            <div className="col3 p-0">
+              <p className="hero-text">
                 I have a passion for building beautiful and functional websites,
                 with solid foundations on fundamentals of HTML, CSS & JS
-              </h1>
+              </p>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>
                   <LinkedInIcon

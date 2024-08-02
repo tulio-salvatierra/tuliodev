@@ -35,27 +35,32 @@
   flex-wrap: wrap;
   place-content: center;
   margin: 0;
-  padding: 2rem;
-  width: 100dvw;
+  padding: 1rem;
+  width: 100%;
   height: 60dvh;
   background: transparent;
   color: #e3e4e2;
 }
 
-@media screen and (max-width: 768px) {
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    place-content: center;
-    margin: 0;
-    padding: 1rem;
-    width: 100dvw;
-    height: 60%;
-    background: transparent;
-  }
+.col1 {
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 2rem;
+  background-color: transparent;
+  width: 1/3;
 }
 
-.col {
+.col2 {
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 2rem;
+  background-color: transparent;
+  width: 1/3;
+}
+
+.col3 {
   flex: 1;
   justify-content: space-between;
   padding: 0 1rem;
@@ -65,14 +70,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .col {
-    flex: 1;
+  .row {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    place-content: center;
+    margin: 0;
     padding: 1rem;
-    margin: 2rem;
-    background-color: transparent;
-    width: 100%;
+    width: 100dvw;
+    height: 60%;
+    background: transparent;
+  }
+  .col1 {
+    text-align: center;
+  }
+  .col2 {
+    display: none;
   }
 }
 
@@ -81,7 +94,7 @@
   text-align: left;
   width: 100%;
   font-family: "Geist";
-  font-weight: 200;
+  font-weight: 100;
   line-height: 1.5;
   overflow: visible;
   color: #e3e4e2;
