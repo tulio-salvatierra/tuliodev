@@ -3,14 +3,31 @@
   flex-direction: column;
   color: #e3e4e2;
   background-image: url("../../assets/images/bg/cta-bg.png");
-  padding: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   align-content: center;
-  width: 100%;
+  height: 100vh;
   min-height: auto;
 }
+.cta h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
+.cta h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  font-weight: 500;
+  width: 50%;
+  margin-bottom: 3rem;
+}
 .callToAction {
   min-height: 100vh;
   min-width: 70%;
@@ -22,6 +39,8 @@
 .button-container {
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .full-width-section {

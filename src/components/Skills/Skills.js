@@ -50,7 +50,7 @@ function Skills() {
       <div className="title">
         <h1 className="section-title">Skills</h1>
       </div>
-      <div className="row">
+      <div className="container">
         {skills.map((skillCategory, index) => (
           <div key={index} className="card">
             <h2
