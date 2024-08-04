@@ -46,7 +46,7 @@ function Skills() {
   ];
 
   return (
-    <section className="container">
+    <section className="container p-5">
       <div className="title">
         <h1 className="section-title">Skills</h1>
       </div>

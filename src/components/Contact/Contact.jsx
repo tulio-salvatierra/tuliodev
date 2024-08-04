@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="section" id="contact">
+    <section className="section p-5" id="contact">
       <div className="container-xl w-100 flex">
         <h1 className="contact-title">Contact</h1>
         <h3 className="contact-text">

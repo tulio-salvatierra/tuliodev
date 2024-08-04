@@ -64,6 +64,8 @@
   align-items: center;
   padding: 1rem;
   margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .info-col {

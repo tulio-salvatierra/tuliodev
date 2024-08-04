@@ -98,7 +98,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="separator2 d-block"></div>
+      <div className="separator2"></div>
       <div className="w-100 h-auto flex-wrap">
         <h1 className="footer-title">TULIO SALVATIERRA</h1>
         <p className="text-center">LOCATION: CHICAGO, IL</p>
