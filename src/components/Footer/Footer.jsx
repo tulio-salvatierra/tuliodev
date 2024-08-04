@@ -13,7 +13,7 @@ import profilePic from "../../assets/images/hero/profile.jpeg";
 function Footer() {
   return (
     <section id="footer" className="footer-div">
-      <div className="flex-row sm-flex-col"></div>
+      <div className="flex-row sm-flex-col p-3"></div>
       <div className="col w-100 sm-w-100 p-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ function Footer() {
         </p>
       </div>
 
-      <div className="footer-menu">
+      <div className="footer-menu p-3">
         <div className="footer-col">
           <p className="footer-nav">Contact</p>
           <div className="separator"></div>
@@ -98,7 +98,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="separator2"></div>
+      <div className="separator2 d-block"></div>
       <div className="w-100 h-auto flex-wrap">
         <h1 className="footer-title">TULIO SALVATIERRA</h1>
         <p className="text-center">LOCATION: CHICAGO, IL</p>
