@@ -13,8 +13,8 @@ import profilePic from "../../assets/images/hero/profile.jpeg";
 function Footer() {
   return (
     <section id="footer" className="footer-div">
-      <div className="flex-row sm-flex-col p-3">
-        <div className="col w-50 sm-w-100 p-5">
+      <div className="container p-0 flex">
+        <div className="left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -34,9 +34,9 @@ function Footer() {
           </p>
         </div>
 
-        <div className="footer-menu w-50">
+        <div className="right">
           <div className="footer-col">
-            <p className="footer-nav">Contact</p>
+            <h1 className="footer-nav">Contact</h1>
             <div className="separator"></div>
             <a href={TELEPHONE} className="footer-item">
               {" "}
@@ -57,7 +57,7 @@ function Footer() {
             </a>
           </div>
           <div className="footer-col">
-            <p className="footer-nav">Socials</p>
+            <h1 className="footer-nav">Socials</h1>
             <div className="separator"></div>
 
             <a
@@ -90,7 +90,7 @@ function Footer() {
           </div>
 
           <div className="footer-col">
-            <p className="footer-nav">NAVIGATION</p>
+            <h1 className="footer-nav">NAVIGATION</h1>
             <div className="separator"></div>
             {MENU_ITEMS.map((item, index) => (
               <a href={item.url} className="footer-item" key={index}>
