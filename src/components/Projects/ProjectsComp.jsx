@@ -10,21 +10,21 @@ function ProjectsComp() {
         <h1 className="section-title">Projects</h1>
       </div>
       <div className="project-intro">
-        <h4>
+        <h1>
           Here are some of the projects I have worked on. Click on the links to
           view the code on GitHub or the live site.
-        </h4>
+        </h1>
       </div>
 
       {projectsData.map((project, index) => (
-        <div key={index} className="project-card">
+        <div key={index} className="project-card w-100 h-25">
           <img
             src={project.image}
             alt={project.title}
-            className="project-image"
+            className="project-image h-100"
           />
-          <h3 className="card-subtitle m-0">{project.title}</h3>
-          <p className="project-description">{project.description}</p>
+          <h1 className="mt-4">{project.title}</h1>
+          <h3>{project.description}</h3>
           <div className="project-links">
             <a
               href={project.repo}
