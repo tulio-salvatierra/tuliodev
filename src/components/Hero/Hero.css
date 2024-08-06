@@ -124,7 +124,7 @@
 .hero-icons {
   justify-items: left;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
   padding: 0%;

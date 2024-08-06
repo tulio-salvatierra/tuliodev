@@ -90,7 +90,7 @@ a {
 .footer-menu {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: left;
   align-content: center;
   padding: 1rem;
@@ -113,7 +113,7 @@ a {
 .footer-col {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 1rem;
 }
 
@@ -121,7 +121,7 @@ a {
   .footer-col {
     width: 70%;
     padding: 2rem;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
