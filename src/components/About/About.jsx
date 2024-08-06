@@ -6,7 +6,7 @@ import Skills from "../Skills/Skills";
 function About() {
   return (
     <section id="about" className="section">
-      <div className="container-xl">
+      <div className="container-xxl">
         <h1 className="section-title">About</h1>
         <div className="row">
           <p className="about-row">

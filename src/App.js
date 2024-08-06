@@ -16,9 +16,9 @@ function App() {
       <main className="content">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/#projects" element={<ProjectsPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <div className="footer">

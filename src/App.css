@@ -3,20 +3,26 @@
   src: url("../src/assets/fonts/Geist-Regular.otf") format("truetype");
 }
 
+html,
+body {
+  margin: 0; /* Ensure no default margins */
+  padding: 0; /* Ensure no default padding */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
 #root,
-html {
+main {
   font-family: "Geist", sans-serif;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-image: url("../src/assets/images/bg/hero-bg.svg");
   background-color: #211c1c;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: auto;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height coverage */
+  width: 100%; /* Use 100% to avoid scrollbar issues */
+  margin: 0 auto; /* Centers main content */
 }
 
 .top {
@@ -60,13 +66,10 @@ html {
 }
 
 section {
-  min-width: auto;
-  min-height: 100%;
   margin-left: auto;
   margin-right: auto;
   z-index: 100;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  width: 100dvw;
   padding: 0;
 }
 
@@ -102,19 +105,12 @@ section {
   background-color: #8aff85;
   background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   border-radius: 2rem;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .section-title {
     font-size: 3.5rem;
     letter-spacing: -4px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0;
-    margin: 0;
-    min-width: auto;
   }
 }
