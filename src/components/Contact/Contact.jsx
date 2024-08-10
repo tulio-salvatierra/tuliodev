@@ -54,7 +54,7 @@ export default function Contact() {
         <div className="contact-info">
           <div className="contact-item">
             <div className="svg-bg">
-              <EmailIcon className="svg" fontSize="large" />
+              <EmailIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`mailto:${EMAIL}`}>
               <h4 className="contact-detail">{EMAIL}</h4>
@@ -62,7 +62,7 @@ export default function Contact() {
           </div>
           <div className="contact-item">
             <div className="svg-bg">
-              <PhoneIcon className="svg" fontSize="large" />
+              <PhoneIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`tel:${TELEPHONE}`}>
               <h4 className="contact-detail">{TELEPHONE}</h4>

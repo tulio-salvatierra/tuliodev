@@ -3,16 +3,14 @@
   font-weight: 900;
   margin-left: 1rem;
   text-transform: uppercase;
-  color: #8aff85;
-  background: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
+  color: #e3e4e2;
   -webkit-background-clip: text;
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 900;
-    background-color: #8aff85;
-    background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
+    background-color: e3e4e2;
   }
 }
 
@@ -65,6 +63,7 @@ Navbar {
   background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   text-decoration: none;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
 }
 
 .list a:hover {
