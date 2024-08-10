@@ -87,7 +87,7 @@ section {
 .contact-title {
   font-weight: ultra-black;
   text-transform: uppercase;
-  font-size: clamp(7rem, 5vw, 13rem);
+  font-size: 13rem;
   letter-spacing: -8px;
   color: #e3e4e2;
   padding: 1rem;
@@ -98,6 +98,7 @@ section {
 @media screen and (max-width: 768px) {
   .section-title {
     letter-spacing: -4px;
+    font-size: 5.5rem;
   }
 }
 
