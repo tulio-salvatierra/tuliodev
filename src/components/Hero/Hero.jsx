@@ -14,6 +14,7 @@ function Hero() {
           <div className="container-fluid flex">
             <div className="col1">
               <svg
+                className="stack"
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
                 height="30"
@@ -24,7 +25,7 @@ function Hero() {
                   d="M229.18 173a6 6 0 0 1-2.16 8.2l-96 56a6 6 0 0 1-6 0l-96-56a6 6 0 0 1 6-10.36l93 54.23l93-54.23a6 6 0 0 1 8.16 2.16M221 122.82l-93 54.23l-93-54.23a6 6 0 0 0-6 10.36l96 56a6 6 0 0 0 6 0l96-56a6 6 0 0 0-6-10.36M26 80a6 6 0 0 1 3-5.18l96-56a6 6 0 0 1 6 0l96 56a6 6 0 0 1 0 10.36l-96 56a6 6 0 0 1-6 0l-96-56A6 6 0 0 1 26 80m17.91 0L128 129.05L212.09 80L128 31Z"
                 />
               </svg>
-              <h3>Full Stack Developer</h3>
+              <h1>Full Stack Developer</h1>
               <a className="custom-btn" href="/contact">
                 Get in touch
               </a>
@@ -38,8 +39,9 @@ function Hero() {
             </div>
             <div className="col3 p-0">
               <p className="hero-text">
-                I have a passion for building beautiful and functional websites,
-                with solid foundations on fundamentals of HTML, CSS & JS
+                I enjoy learning about building beautiful and functional
+                websites, with solid foundations on fundamentals of HTML, CSS &
+                JS
               </p>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>

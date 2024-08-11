@@ -7,7 +7,7 @@ export const PROJECTS_URL = "#projects";
 
 export const HOME_URL = "/";
 
-export const ABOUT_URL = "#about";
+export const ABOUT_URL = "/about";
 
 export const CONTACT_URL = "#contact";
 
@@ -19,7 +19,7 @@ export const UPWORK_URL = "https://www.upwork.com/freelancers/tulio";
 
 export const PORTFOLIO_URL = "https://tuliosalvatierra.com";
 
-export const TELEPHONE = "786-3146-121";
+export const TELEPHONE = "786-314-6121";
 
 export const EMAIL = "salvacorp@gmail.com";
 

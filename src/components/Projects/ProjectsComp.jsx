@@ -9,8 +9,8 @@ function ProjectsComp() {
       <div className="project-header">
         <h1 className="section-title p-4">Projects</h1>
         <h2 className="p-4">
-          Here are some of the projects I have worked on. Click on the links to
-          view the code on GitHub or the live site.
+          Here are some of the projects I work on. Click on the links to view
+          the code on GitHub or the live site.
         </h2>
       </div>
       <div className="project-container">

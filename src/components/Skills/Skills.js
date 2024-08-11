@@ -10,19 +10,19 @@ function Skills() {
         <h1 className="section-title">Skills</h1>
       </div>
 
-      <p className="p-4">
+      <h3 className="p-4">
         I am currently learning and improving my skills in the following areas:
         <ul className="skill-list">
           <li>React</li>
           <li>Node.js</li>
           <li>Express</li>
-          <li>Rubt</li>
+          <li>Ruby</li>
           <li>AWS</li>
         </ul>
-      </p>
+      </h3>
       <div className="skill w-100 ">
         {skills.map((category, index) => (
-          <div key={index} className="card">
+          <div key={index + category} className="card">
             <h1 className="category">{category.title}</h1>
             <div className="card-body flex">
               {category.content.map((skill, index) => (

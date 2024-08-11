@@ -3,7 +3,7 @@ import "./CTA.css";
 function CTA() {
   return (
     <section id="cta" className="cta">
-      <div className="container p-3">
+      <div className="container p-3 rounded">
         <div className="cta-text">
           <h1>Need help with a project?</h1>
           <h2>Reach out and let me know how I can help!</h2>
