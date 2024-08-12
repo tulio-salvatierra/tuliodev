@@ -6,32 +6,51 @@ import Skills from "../Skills/Skills";
 function About() {
   return (
     <section id="about" className="section">
-      <div className="container-xxl">
-        <h1 className="section-title">About</h1>
-        <div className="row">
-          <p className="about-row">
-            <div className="row-about">
-              <img src={pic} alt="landingPic" className="about-pic"></img>
-            </div>
-            <h2 className="about-sub">I'm Tulio Salvatierra</h2>a{" "}
-            <strong className="bold">Full Stack Developer</strong>,contantly
-            learning to build a strong foundation on the basics:{" "}
-            <strong className="bold">HTML, CSS & JS.</strong>I begun developing
-            with focus on front end, such as react,react native but new
-            technologies come everyday. I am learning now back end to have a
-            full stack skills, which I think will suit my entrepreneurial spirit
-            and will make me able to provide real world solutions to real world
-            problems.
-            <br></br>
-          </p>
-          <div className="button-container">
+      <h1 className="contact-title">About</h1>
+      <div className="container h-75">
+        <div className="parent">
+          <div className="div1">
+            <img src={pic} alt="landingPic" className="about-pic"></img>
+          </div>
+          <div className="div2">
+            <h1>EXPERIENCE</h1>{" "}
+            <p>
+              I have a degree in Business Administration and worked in the
+              consulting & finance fields r 10 years, but I have always been
+              interested in technology. I started learning to code in 2019 and I
+              have been working as a freelance developer since 2020. I am
+              currently working on my own projects and looking for new
+              opportunities to grow as a developer.
+            </p>
+          </div>
+          <div className="div3">
+            <h1>BACKGROUND</h1>{" "}
+            <p>
+              I am a full-stack developer with a background in business
+              administration and finance. I have experience working in the
+              consulting and finance fields, but I have always been interested
+              in technology. I started learning to code in 2019 and I have been
+              working as a freelance developer since 2020. I am currently
+              working on my own projects and looking for new opportunities to
+              grow as a developer.
+            </p>
+          </div>
+          <div className="div4">
             <a className="custom-btn" href="/contact">
               Let's Collaborate!
             </a>
           </div>
-        </div>
-        <div className="about-list" id="tech">
-          <Skills />
+          <div className="div5">
+            <h1>OTHER INTEREST</h1>{" "}
+            <p>
+              Outside of work, I enjoy traveling, hiking, and playing sports. I
+              am also a big fan of music and movies. I am always looking for new
+              experiences and challenges to grow as a person. I attend meetups
+              and conferences to learn new technologies and meet other
+              developers. I am always looking for new opportunities to grow as a
+              developer. Also I play drums!
+            </p>
+          </div>
         </div>
       </div>
     </section>
