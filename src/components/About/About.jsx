@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 import pic from "../../assets/images/profile.jpeg";
-import Skills from "../Skills/Skills";
 
 function About() {
   return (
