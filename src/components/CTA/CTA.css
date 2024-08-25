@@ -3,6 +3,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   color: #e3e4e2;
+  background-image: url("../../assets/images/cta/cta.png");
+  background-size: cover;
   background-color: #211c1c;
   margin-top: 2rem;
   justify-content: flex-end;
