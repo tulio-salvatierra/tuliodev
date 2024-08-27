@@ -1,5 +1,5 @@
 import "./CTA.css";
-import BG from "../../assets/images/bg/owl.jpg";
+import BG from "../../assets/images/owl.jpg";
 
 function CTA() {
   return (
@@ -8,12 +8,11 @@ function CTA() {
       className="cta"
       style={{
         backgroundImage: `url(${BG})`,
-        backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="container p-3 rounded">
+      <div className="container pt-3 rounded">
         <div className="cta-text">
           <h1>Need help with a project?</h1>
           <h2>Reach out and let me know how I can help!</h2>
