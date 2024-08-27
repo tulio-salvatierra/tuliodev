@@ -1,8 +1,17 @@
 import "./CTA.css";
+import BG from "../../assets/images/bg/owl.jpg";
 
 function CTA() {
   return (
-    <section id="cta" className="cta">
+    <section
+      id="cta"
+      className="cta"
+      style={{
+        backgroundImage: `url(${BG})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="container p-3 rounded">
         <div className="cta-text">
           <h1>Need help with a project?</h1>
