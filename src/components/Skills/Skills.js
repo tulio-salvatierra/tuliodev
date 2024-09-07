@@ -3,7 +3,6 @@ import "./Skills.css";
 import { skills } from "./skill-list";
 
 function Skills() {
-  console.log(skills);
   return (
     <section>
       <div className="title">

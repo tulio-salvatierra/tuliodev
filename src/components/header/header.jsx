@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div className="header-container">
-      <Navbar expand="lg" className="p-4">
+      <Navbar expand="lg" className="logo">
         <NavbarBrand href="/">
           <h1 className="navbar-title">tuliosalvatierra.com</h1>
         </NavbarBrand>

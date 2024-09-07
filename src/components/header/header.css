@@ -8,9 +8,10 @@
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
-    font-size: 1rem;
-    font-weight: 900;
+    font-size: 0.75rem;
+    font-weight: 500;
     background-color: e3e4e2;
+    margin: 0;
   }
 }
 
@@ -107,5 +108,9 @@ Navbar {
   }
   .icon {
     display: block;
+  }
+  .logo {
+    padding: 0;
+    margin: 0;
   }
 }

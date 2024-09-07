@@ -38,7 +38,7 @@ function Hero() {
               />
             </div>
             <div className="col3 p-0">
-              <p className="hero-text">
+              <p>
                 I enjoy learning about building beautiful and functional
                 websites, with solid foundations on fundamentals of HTML, CSS &
                 JS
