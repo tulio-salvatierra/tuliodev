@@ -1,6 +1,5 @@
 import Ecommerce from "../../assets/images/projects/meli.gif";
 import Quiz from "../../assets/images/projects/quiz.gif";
-import TAMM from "./../../assets/images/projects/tamm-clip-ezgif.com-video-to-gif-converter.gif";
 
 export const projectsData = [
   {
