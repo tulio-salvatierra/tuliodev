@@ -1,6 +1,5 @@
 @font-face {
-  font-family: "Geist";
-  src: url("../src/assets/fonts/Geist-Regular.otf") format("truetype");
+  font-family: "";
 }
 
 html,
@@ -12,7 +11,6 @@ body {
 
 #root,
 main {
-  font-family: "Geist", sans-serif;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

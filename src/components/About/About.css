@@ -48,7 +48,6 @@ ul {
 }
 
 .about-row {
-  font-family: "Geist";
   max-width: 650px;
   display: inline;
   flex-direction: column;

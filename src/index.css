@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Geist", sans-serif;
+  font-family: sans-serif;
   height: 100vh;
   width: 100vw;
   z-index: 0;
@@ -20,13 +20,9 @@ main {
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Geist", sans-serif;
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
-}
-@font-face {
-  font-family: "Geist";
-  src: url(../src/assets/fonts/Geist-Regular.otf);
 }

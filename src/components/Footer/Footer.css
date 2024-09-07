@@ -1,7 +1,6 @@
 .footer-div {
   display: flex;
   flex-direction: column;
-  font-family: "Geist";
   min-width: 100dvw;
   min-height: auto;
   margin: 0;
