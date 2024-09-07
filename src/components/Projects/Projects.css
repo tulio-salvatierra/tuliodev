@@ -47,11 +47,9 @@
 .project-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .project-description {
@@ -73,7 +71,7 @@
   font-weight: 700;
 }
 
-.project-container {
+.project {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

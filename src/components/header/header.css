@@ -4,13 +4,11 @@
   margin-left: 1rem;
   text-transform: uppercase;
   color: #e3e4e2;
-  -webkit-background-clip: text;
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
-    font-size: 0.75rem;
-    font-weight: 500;
-    background-color: e3e4e2;
+    font-size: 1rem;
+    font-weight: 700;
     margin: 0;
   }
 }
@@ -26,15 +24,14 @@
   display: none;
 }
 
-Navbar {
-  background-color: #fff;
+.header {
+  background: rgba(227, 228, 226, 0.25);
   padding: 1rem;
-  border-radius: 0.5rem;
-  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12.3px);
 }
 
 .social-icons {

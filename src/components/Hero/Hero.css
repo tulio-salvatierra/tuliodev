@@ -44,7 +44,7 @@
 
 .col1 {
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 0 1rem;
   margin: 2rem;
   background-color: transparent;
@@ -150,7 +150,7 @@
   background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
 }
 
-.arrow {
+.stack {
   justify-content: center;
   align-items: center;
   display: flex;

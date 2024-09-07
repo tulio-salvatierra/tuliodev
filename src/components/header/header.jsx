@@ -13,7 +13,7 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="header-container">
+    <div className="header">
       <Navbar expand="lg" className="logo">
         <NavbarBrand href="/">
           <h1 className="navbar-title">tuliosalvatierra.com</h1>
