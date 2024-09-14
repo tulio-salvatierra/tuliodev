@@ -11,26 +11,39 @@ function About() {
             <img src={pic} alt="landingPic" className="about-pic"></img>
           </div>
           <div className="div2">
-            <h1>EXPERIENCE</h1>{" "}
+            <h1>ABOUT</h1>{" "}
             <p>
-              I have a degree in Business Administration and worked in the
-              consulting & finance fields r 10 years, but I have always been
-              interested in technology. I started learning to code in 2019 and I
-              have been working as a freelance developer since 2020. I am
-              currently working on my own projects and looking for new
-              opportunities to grow as a developer.
+              I am originally from Venezuela 🇻🇪. I've been in the US for almost
+              8 years now. I have a bachelors degree in business administration
+              from UNE in Caracas (Venezuela) and had different professional
+              roles in family business, entreprenurail ventures and big 4 firms
+              (Accenture & EY). Technology has always been a passion of mine in
+              many ways like innovation, computer science, video games, etc. So,
+              I decided to persue this long time passion with intent and here I
+              am learning and creating web interfaces. It's been an amazing
+              challenge that I embrace fully and want to keep growing in this
+              area. <hr />I also enjoy making music and been a self taught
+              drummer for many years and being in bands was always a way to
+              connect with other and{" "}
+              <a className="text-bold">
+                I hope tech will make that possible too!
+              </a>
             </p>
           </div>
           <div className="div3">
-            <h1>BACKGROUND</h1>{" "}
+            <h1>MISSION</h1>{" "}
             <p>
-              I am a full-stack developer with a background in business
-              administration and finance. I have experience working in the
-              consulting and finance fields, but I have always been interested
-              in technology. I started learning to code in 2019 and I have been
-              working as a freelance developer since 2020. I am currently
-              working on my own projects and looking for new opportunities to
-              grow as a developer.
+              I am a full-stack developer that began my journey in front-end,
+              then evolved into backend, and now learning full stack
+              applications, and my latest endeavor is to learn cloud
+              infrastructure. Every guru says find a niche and stick with it...
+              but in reality you find many niches.. and things change along the
+              way, but all systems will needs a management of its systems and
+              will be in some sort of cloud, hence that's why I am learning
+              Cloud infrastructure. This is not a home, but rather a comfy place
+              you find in your journey. Thing is journey is not a destination
+              but a process, so I am gonna try to enjoy it as much as possible
+              while learning all of this technologies.
             </p>
           </div>
           <div className="div4">
@@ -41,12 +54,12 @@ function About() {
           <div className="div5">
             <h1>OTHER INTEREST</h1>{" "}
             <p>
-              Outside of work, I enjoy traveling, hiking, and playing sports. I
-              am also a big fan of music and movies. I am always looking for new
-              experiences and challenges to grow as a person. I attend meetups
-              and conferences to learn new technologies and meet other
-              developers. I am always looking for new opportunities to grow as a
-              developer. Also I play drums!
+              I am a drummer since Ican remember. that when I first learned that
+              languages are a natural skill that I can learn and imitate. Here a
+              link a video of me playing to my latest band. Enjoy!
+              <a href="https://www.youtube.com/watch?v=O_Xp23eDOR0&pp=ygUSd3JhdGhlb24gdGhlIGhvcmRl">
+                The Horde by Wratheon
+              </a>
             </p>
           </div>
         </div>
