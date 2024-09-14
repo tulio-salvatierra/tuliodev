@@ -62,7 +62,7 @@
 
 .col3 {
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 1rem;
   margin: 2rem;
   background-color: transparent;

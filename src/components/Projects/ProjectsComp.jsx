@@ -8,9 +8,9 @@ function ProjectsComp() {
       <div className="project-header">
         <h1 className="section-title p-4">Projects</h1>
       </div>
-      <div className="container-fluid flex">
+      <div className="container-fluid">
         {projectsData.map((project, index) => (
-          <div key={index} className="project-card h-25">
+          <div key={index} className="project-card h-50 w-25">
             <img
               src={project.image}
               alt={project.title}
