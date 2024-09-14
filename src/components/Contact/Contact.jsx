@@ -43,13 +43,13 @@ export default function Contact() {
   };
 
   return (
-    <section className="section p-5" id="contact">
+    <section className="contact-section" id="contact">
       <h1 className="contact-title">Contact</h1>
-      <h3 className="contact-text">
+      <h4 className="contact-text">
         You can get in touch with me through the form below. I'll be happy to
         discuss your project or answer any questions about freelancing services,
         don't hesitate to reach out!
-      </h3>
+      </h4>
       <div className="contact-parent">
         <div className="contact-info">
           <div className="contact-item">
@@ -57,7 +57,7 @@ export default function Contact() {
               <EmailIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`mailto:${EMAIL}`}>
-              <h4 className="contact-detail">{EMAIL}</h4>
+              <p className="contact-detail">{EMAIL}</p>
             </a>
           </div>
           <div className="contact-item">
@@ -65,7 +65,7 @@ export default function Contact() {
               <PhoneIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`tel:${TELEPHONE}`}>
-              <h4 className="contact-detail">{TELEPHONE}</h4>
+              <p className="contact-detail">{TELEPHONE}</p>
             </a>
           </div>
         </div>

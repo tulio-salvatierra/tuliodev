@@ -27,7 +27,7 @@ function Footer() {
             />
           </svg>
           <img src={profilePic} alt="profile-pic" className="profile-footer" />
-          <p className="text-start w-50 pb-5">
+          <p className="footer-profile-text">
             I am a full-stack web developer with a passion for building
             beautiful and functional websites. I have a solid foundation in
             HTML, CSS, and JavaScript.

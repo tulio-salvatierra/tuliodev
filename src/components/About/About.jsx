@@ -1,12 +1,11 @@
-import React from "react";
 import "./About.css";
-import pic from "../../assets/images/profile.jpeg";
+import pic from "../../assets/images/hero/profile.jpeg";
 
 function About() {
   return (
     <section id="about" className="section">
       <h1 className="contact-title">About</h1>
-      <div className="container h-75">
+      <div className="container">
         <div className="parent">
           <div className="div1">
             <img src={pic} alt="landingPic" className="about-pic"></img>
