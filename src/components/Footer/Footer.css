@@ -121,11 +121,12 @@ a {
   }
 }
 
-.footer-col {
+.footer-col a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 1rem;
+  font-size: 1.75rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,7 +146,7 @@ a {
 .footer-item {
   font-weight: 100;
   padding: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 1.75rem;
 }
 
 .footer-title {
