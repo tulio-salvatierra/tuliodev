@@ -167,13 +167,14 @@ a {
 .footer-nav {
   color: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
   font-weight: 900;
+  letter-spacing: -4px;
   text-transform: uppercase;
 }
 
 .footer-title {
   padding-top: 1rem;
   font-weight: 900;
-  letter-spacing: -15px;
+  letter-spacing: -11px;
   font-size: 12vw;
   color: #e3e4e2;
   text-align: center;

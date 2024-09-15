@@ -19,11 +19,9 @@ function Experience() {
       </div>
       <div className="card-exp">
         <div className="experience-item exp-item pt-4">
-          <h5>Learner to professional</h5>
+          <h5>Full Stack Dev - Learner to professional</h5>
 
-          <h5>Full Stack Developer</h5>
-
-          <p>Front end Contributions:</p>
+          <h5>Front end Contributions:</h5>
 
           <li>
             Developed an e-commerce site using SCRUM, focusing on React, React
