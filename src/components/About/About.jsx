@@ -49,11 +49,11 @@ function About() {
           </div>
           <div className="div5">
             <h1>OTHER INTEREST</h1>{" "}
-            <p className="mb-4">
-              I am a drummer since Ican remember. that when I first learned that
-              languages are a natural skill that I can learn and imitate. Here a
-              link a video of me playing to my latest band. Enjoy!
-            </p>
+            <div className="p-2 mb-5">
+              <h4>
+                Here a link a video of me playing to my latest band. Enjoy!
+              </h4>
+            </div>
             <YouTubeEmbed />
             <h4 className="p-4"> Here's a playlist I use when I code:</h4>
             <Spotify />

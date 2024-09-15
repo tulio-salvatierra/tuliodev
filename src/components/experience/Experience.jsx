@@ -19,64 +19,58 @@ function Experience() {
       </div>
       <div className="card-exp">
         <div className="experience-item exp-item pt-4">
-          <h2 className="exp-title">IT Experience:</h2>
-          <ol>
-            <li>
-              <h3>1. Learner to professional, Remote (2022 - present)</h3>
+          <h5>Learner to professional</h5>
 
-              <h5>Full Stack Developer</h5>
+          <h5>Full Stack Developer</h5>
 
-              <h2>Front end Contributions:</h2>
+          <p>Front end Contributions:</p>
 
-              <li>
-                Developed an e-commerce site using SCRUM, focusing on React,
-                React Router Dom, React Query, and Material-UI
-              </li>
-              <li>
-                Implemented secure user authentication and permissions,
-                enhancing user experience and security.
-              </li>
-              <li>
-                Created an intuitive shopping cart, improving the online
-                shopping process.
-              </li>
-              <li>
-                Integrated RESTful APIs and utilized Firebase for data storage
-                and management.
-              </li>
-              <li>
-                Used tools like VSCode, Slack, Trello, and GitHub for team
-                collaboration and version control.
-              </li>
-              <li>
-                Translated bootcamp skills into practical applications,
-                preparing for a professional environment.
-              </li>
-              <li>
-                Designed a responsive front-end using ES6 JavaScript, HTML, and
-                CSS.
-              </li>
-              <li>Adopted CI/CD practices with GitHub Actions.</li>
+          <li>
+            Developed an e-commerce site using SCRUM, focusing on React, React
+            Router Dom, React Query, and Material-UI
+          </li>
+          <li>
+            Implemented secure user authentication and permissions, enhancing
+            user experience and security.
+          </li>
+          <li>
+            Created an intuitive shopping cart, improving the online shopping
+            process.
+          </li>
+          <li>
+            Integrated RESTful APIs and utilized Firebase for data storage and
+            management.
+          </li>
+          <li>
+            Used tools like VSCode, Slack, Trello, and GitHub for team
+            collaboration and version control.
+          </li>
+          <li>
+            Translated bootcamp skills into practical applications, preparing
+            for a professional environment.
+          </li>
+          <li>
+            Designed a responsive front-end using ES6 JavaScript, HTML, and CSS.
+          </li>
+          <li>Adopted CI/CD practices with GitHub Actions.</li>
 
-              <h2>Back end Contributions:</h2>
+          <h2>Back end Contributions:</h2>
 
-              <li>Utilized Express.js for server-side development.</li>
-              <li>
-                Employed body-parser, cookie-session, cors, and csv-parser for
-                enhanced functionality.
-              </li>
-              <li>
-                Managed environment variables with dotenv and streamlined
-                development with nodemon.
-              </li>
-              <li>Implemented Passport.js for OAuth authentication.</li>
-              <li>Used PostgreSQL and Sequelize for database management.</li>
-              <li>
-                Ensured a robust and scalable back-end infrastructure, catering
-                to diverse application needs.
-              </li>
-            </li>
-          </ol>
+          <li>Utilized Express.js for server-side development.</li>
+          <li>
+            Employed body-parser, cookie-session, cors, and csv-parser for
+            enhanced functionality.
+          </li>
+          <li>
+            Managed environment variables with dotenv and streamlined
+            development with nodemon.
+          </li>
+          <li>Implemented Passport.js for OAuth authentication.</li>
+          <li>Used PostgreSQL and Sequelize for database management.</li>
+          <li>
+            Ensured a robust and scalable back-end infrastructure, catering to
+            diverse application needs.
+          </li>
         </div>
       </div>
     </section>

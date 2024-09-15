@@ -172,11 +172,10 @@ ul {
   grid-area: 4 / 1 / 7 / 4;
   border-radius: 1rem;
   padding: 2rem;
-  background-color: rgba(33, 28, 28, 0.5);
+  background-color: rgba(188, 255, 133, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12.3px);
-  color: #8aff85;
-  border: #8aff85 0.25px;
+  color: #212529;
 }
 
 @media (max-width: 768px) {
