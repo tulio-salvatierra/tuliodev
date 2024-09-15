@@ -9,11 +9,11 @@ function About() {
       <h1 className="contact-title">About</h1>
       <div className="container">
         <div className="parent">
-          <div className="div1">
+          <div className="div1" style={{ backgroundImage: `url={${pic}}` }}>
             <img src={pic} alt="landingPic" className="about-pic"></img>
           </div>
           <div className="div2">
-            <h1>ABOUT</h1> eslint-disable-next-line
+            <h1>ABOUT</h1>
             <p>
               I am originally from Venezuela 🇻🇪. I've been in the US for almost
               8 years now. I have a bachelors degree in business administration

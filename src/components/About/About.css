@@ -46,8 +46,8 @@ ul {
 }
 
 .about-pic {
-  width: 100%;
-  height: 100%;
+  width: 80dvw;
+  height: auto;
   object-fit: cover; /* This makes the image cover the entire container */
   position: absolute; /* Positioning the image absolutely within the container */
   top: 0;
@@ -128,8 +128,6 @@ ul {
 
 .div1 {
   grid-area: 1 / 1 / 4 / 5;
-  width: 100%; /* Set the desired width of the container */
-  height: 600px; /* Set the desired height of the container */
   position: relative; /* Needed for absolute positioning of the image */
   overflow: hidden; /* Hide any overflow */
   border-radius: 2rem;
@@ -162,8 +160,6 @@ ul {
   display: flex;
   justify-content: center; /* Centers the button horizontally */
   align-items: center; /* Centers the button vertically */
-  height: 100%; /* Set the desired height of the container */
-  width: 100%; /* Set the desired width of the container */
   border: 1px solid #000; /* Optional: for visual reference */
   padding: 4rem;
   border-radius: 2rem;
