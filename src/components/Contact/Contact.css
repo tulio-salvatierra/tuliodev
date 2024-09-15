@@ -25,7 +25,7 @@
 }
 
 .contact-title {
-  font-weight: ultra-black;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: clamp(12rem, 8vw, 7rem);
   letter-spacing: -8px;

@@ -1,5 +1,4 @@
 import "./About.css";
-import pic from "../../assets/images/hero/profile.jpeg";
 import Spotify from "../Spotify/Spotify";
 import YouTubeEmbed from "../Youtube";
 
@@ -9,9 +8,7 @@ function About() {
       <h1 className="contact-title">About</h1>
       <div className="container">
         <div className="parent">
-          <div className="div1" style={{ backgroundImage: `url={${pic}}` }}>
-            <img src={pic} alt="landingPic" className="about-pic"></img>
-          </div>
+          <div className="div1"></div>
           <div className="div2">
             <h1>ABOUT</h1>
             <p>
