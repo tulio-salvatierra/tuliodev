@@ -1,5 +1,7 @@
 import "./About.css";
 import pic from "../../assets/images/hero/profile.jpeg";
+import Spotify from "../Spotify/Spotify";
+import YouTubeEmbed from "../Youtube";
 
 function About() {
   return (
@@ -11,7 +13,7 @@ function About() {
             <img src={pic} alt="landingPic" className="about-pic"></img>
           </div>
           <div className="div2">
-            <h1>ABOUT</h1>{" "}
+            <h1>ABOUT</h1> eslint-disable-next-line
             <p>
               I am originally from Venezuela 🇻🇪. I've been in the US for almost
               8 years now. I have a bachelors degree in business administration
@@ -24,10 +26,7 @@ function About() {
               challenge that I embrace fully and want to keep growing in this
               area. <hr />I also enjoy making music and been a self taught
               drummer for many years and being in bands was always a way to
-              connect with other and{" "}
-              <a className="text-bold">
-                I hope tech will make that possible too!
-              </a>
+              connect with other and I hope tech will make that possible too! 🚀
             </p>
           </div>
           <div className="div3">
@@ -53,14 +52,14 @@ function About() {
           </div>
           <div className="div5">
             <h1>OTHER INTEREST</h1>{" "}
-            <p>
+            <p className="mb-4">
               I am a drummer since Ican remember. that when I first learned that
               languages are a natural skill that I can learn and imitate. Here a
               link a video of me playing to my latest band. Enjoy!
-              <a href="https://www.youtube.com/watch?v=O_Xp23eDOR0&pp=ygUSd3JhdGhlb24gdGhlIGhvcmRl">
-                The Horde by Wratheon
-              </a>
             </p>
+            <YouTubeEmbed />
+            <h4 className="p-4"> Here's a playlist I use when I code:</h4>
+            <Spotify />
           </div>
         </div>
       </div>

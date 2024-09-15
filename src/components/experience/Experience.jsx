@@ -6,18 +6,18 @@ function Experience() {
   return (
     <section>
       <h1 className="section-title">Experience</h1>
+      <div className="disclaimer">
+        <h1>Read me:</h1>
+        <p>
+          For full professional experiences detail visit my{" "}
+          <a href={LINKEDIN_URL}>LinkedIn profile 🔗</a>. I have experience in
+          different fields, I have a business administration bachelors and have
+          worked in Finance Consuting companies, Tax accounting roles and
+          trucking. I am currently seeking a Software Development Associates
+          degree from Richard J. Daley College in Chicago, IL.
+        </p>
+      </div>
       <div className="card-exp">
-        <div className="disclaimer">
-          <h1>Read me:</h1>
-          <p>
-            For full professional experiences detail visit my{" "}
-            <a href={LINKEDIN_URL}>LinkedIn profile 🔗</a>. I have experience in
-            different fields, I have a business administration bachelors and
-            have worked in Finance Consuting companies, Tax accounting roles and
-            trucking. I am currently seeking a Software Development Associates
-            degree from Richard J. Daley College in Chicago, IL.
-          </p>
-        </div>
         <div className="experience-item exp-item pt-4">
           <h2 className="exp-title">IT Experience:</h2>
           <ol>

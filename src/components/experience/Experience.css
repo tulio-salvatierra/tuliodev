@@ -31,7 +31,10 @@ a {
   text-align: left;
   padding: 1rem;
   color: #e3e4e2;
-  background: #211c1c;
+  background-color: rgba(33, 28, 28, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12.3px);
+
   font-size: 1.5rem;
   border-radius: 1rem;
 }

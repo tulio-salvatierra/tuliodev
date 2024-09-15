@@ -174,11 +174,11 @@ ul {
   grid-area: 4 / 1 / 7 / 4;
   border-radius: 1rem;
   padding: 2rem;
-  background-color: #211c1c;
+  background-color: rgba(33, 28, 28, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12.3px);
-  border: 1px solid #8aff85;
   color: #8aff85;
+  border: #8aff85 0.25px;
 }
 
 @media (max-width: 768px) {

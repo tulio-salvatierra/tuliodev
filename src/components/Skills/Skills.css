@@ -50,7 +50,9 @@
   height: auto;
   flex-wrap: wrap;
   align-items: center;
-  background: transparent;
+  background-color: rgba(33, 28, 28, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12.3px);
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
