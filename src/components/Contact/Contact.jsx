@@ -111,7 +111,7 @@ export default function Contact() {
                   name="message"
                   rows="4"
                   autoComplete="false"
-                  placeholder="Write your message here..."
+                  placeholder="I need a website..."
                 ></textarea>
                 {error && <div className="error">{error}</div>}
               </div>
