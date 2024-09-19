@@ -8,44 +8,17 @@ import {
 } from "../../Constants";
 import "./Footer.css";
 import RESUME from "../../assets/resume.pdf";
-import profilePic from "../../assets/images/hero/profile.jpeg";
+import profilePic from "../../assets/tulio.svg";
 
 function Footer() {
   return (
     <section id="footer" className="footer-div">
       <div className="container p-0 flex">
         <div className="left">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 256 256"
-          >
-            <defs>
-              <linearGradient
-                id="myGradient"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" style={{ stopColor: "#8aff85" }} />
-                <stop offset="100%" style={{ stopColor: "#d0ff7d" }} />
-              </linearGradient>
-            </defs>
-
-            <path
-              fill="url(#myGradient)"
-              d="M229.18 173a6 6 0 0 1-2.16 8.2l-96 56a6 6 0 0 1-6 0l-96-56a6 6 0 0 1 6-10.36l93 54.23l93-54.23a6 6 0 0 1 8.16 2.16M221 122.82l-93 54.23l-93-54.23a6 6 0 0 0-6 10.36l96 56a6 6 0 0 0 6 0l96-56a6 6 0 0 0-6-10.36M26 80a6 6 0 0 1 3-5.18l96-56a6 6 0 0 1 6 0l96 56a6 6 0 0 1 0 10.36l-96 56a6 6 0 0 1-6 0l-96-56A6 6 0 0 1 26 80m17.91 0L128 129.05L212.09 80L128 31Z"
-            />
-          </svg>
-          <img src={profilePic} alt="profile-pic" className="profile-footer" />
+          <img src={profilePic} alt="profile-pic" className="stack" />
           <p className="footer-profile-text">
-            I build dynamic, responsive websites and provide tailored digital
-            solutions to help local businesses and professionals thrive online.
-            From custom design to the latest web technologies, I create
-            user-friendly experiences that drive growth and enhance your online
-            presence.
+            I build websites and provide digital solutions to help businesses
+            and professionals drive growth and enhance your online presence.
           </p>
         </div>
 
