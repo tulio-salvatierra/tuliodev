@@ -41,7 +41,7 @@ function Hero() {
                 />
               </svg>
 
-              <h1>Full Stack Developer</h1>
+              <h1>Web Solutions</h1>
               <a className="custom-btn" href="/contact">
                 Get in touch
               </a>
@@ -55,11 +55,10 @@ function Hero() {
             </div>
             <div className="col3 d-flex flex-column align-content-center p-0">
               <h5>
-                I build dynamic, responsive websites and provide tailored
-                digital solutions to help local businesses and professionals
-                thrive online. From custom design to the latest web
-                technologies, I create user-friendly experiences that drive
-                growth and enhance your online presence.
+                I build websites and provide digital solutions to help
+                businesses and professionals thrive online. I create
+                user-friendly experiences that drive growth and enhance your
+                online presence.
               </h5>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>

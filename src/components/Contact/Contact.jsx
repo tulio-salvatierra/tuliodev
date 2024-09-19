@@ -57,7 +57,7 @@ export default function Contact() {
               <EmailIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`mailto:${EMAIL}`}>
-              <p className="contact-detail">{EMAIL}</p>
+              <p className="contact-detail align-items-center">{EMAIL}</p>
             </a>
           </div>
           <div className="contact-item">
@@ -65,7 +65,7 @@ export default function Contact() {
               <PhoneIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`tel:${TELEPHONE}`}>
-              <p className="contact-detail">{TELEPHONE}</p>
+              <p className="contact-detail align-items-center">{TELEPHONE}</p>
             </a>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   autoComplete="true"
-                  placeholder="example@email.com"
+                  placeholder="example@mail.com"
                 />
                 {error && <div className="error">{error}</div>}
               </div>
