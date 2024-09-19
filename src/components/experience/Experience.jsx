@@ -4,7 +4,7 @@ import { LINKEDIN_URL } from "./../../Constants/index";
 
 function Experience() {
   return (
-    <section>
+    <section className="exp-section">
       <h1 className="section-title">Experience</h1>
       <div className="disclaimer">
         <h1>Read me:</h1>

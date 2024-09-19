@@ -4,7 +4,7 @@ import { skills } from "./skill-list";
 
 function Skills() {
   return (
-    <section>
+    <section className="skill-section">
       <div className="title">
         <h1 className="section-title">Skills</h1>
       </div>

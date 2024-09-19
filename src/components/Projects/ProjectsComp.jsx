@@ -4,11 +4,11 @@ import "./Projects.css";
 
 function ProjectsComp() {
   return (
-    <section id="projects">
+    <section id="projects" className="project-section">
       <div className="project-header">
         <h1 className="section-title p-4">Projects</h1>
       </div>
-      <div className="projectDiv container  p-3">
+      <div className="projectDiv container flex p-3">
         {projectsData.map((project, index) => (
           <div key={index} className="project-card">
             <img

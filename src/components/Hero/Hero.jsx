@@ -8,9 +8,9 @@ import profile_pic from "../../assets/images/hero/profile.jpeg";
 function Hero() {
   return (
     <>
-      <section className="hero" id="hero">
-        <h1 className="hero-title">TULIO SALVATIERRA</h1>
+      <section className="hero-section" id="hero">
         <div className="container-xl">
+          <h1 className="hero-title">TULIO SALVATIERRA</h1>
           <div className="container-fluid flex">
             <div className="col1 d-flex flex-column align-content-center">
               <svg
@@ -20,11 +20,27 @@ function Hero() {
                 height="30"
                 viewBox="0 0 256 256"
               >
+                {/* Define the linear gradient */}
+                <defs>
+                  <linearGradient
+                    id="myGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" style={{ stopColor: "#8aff85" }} />
+                    <stop offset="100%" style={{ stopColor: "#d0ff7d" }} />
+                  </linearGradient>
+                </defs>
+
+                {/* Apply the gradient to the path */}
                 <path
-                  fill="#e3e4e2"
+                  fill="url(#myGradient)"
                   d="M229.18 173a6 6 0 0 1-2.16 8.2l-96 56a6 6 0 0 1-6 0l-96-56a6 6 0 0 1 6-10.36l93 54.23l93-54.23a6 6 0 0 1 8.16 2.16M221 122.82l-93 54.23l-93-54.23a6 6 0 0 0-6 10.36l96 56a6 6 0 0 0 6 0l96-56a6 6 0 0 0-6-10.36M26 80a6 6 0 0 1 3-5.18l96-56a6 6 0 0 1 6 0l96 56a6 6 0 0 1 0 10.36l-96 56a6 6 0 0 1-6 0l-96-56A6 6 0 0 1 26 80m17.91 0L128 129.05L212.09 80L128 31Z"
                 />
               </svg>
+
               <h1>Full Stack Developer</h1>
               <a className="custom-btn" href="/contact">
                 Get in touch
@@ -38,11 +54,13 @@ function Hero() {
               />
             </div>
             <div className="col3 d-flex flex-column align-content-center p-0">
-              <h3>
-                I enjoy learning about building beautiful and functional
-                websites, with solid foundations on fundamentals of HTML, CSS &
-                JS
-              </h3>
+              <h5>
+                I build dynamic, responsive websites and provide tailored
+                digital solutions to help local businesses and professionals
+                thrive online. From custom design to the latest web
+                technologies, I create user-friendly experiences that drive
+                growth and enhance your online presence.
+              </h5>
               <div className="hero-icons">
                 <a href={LINKEDIN_URL}>
                   <LinkedInIcon

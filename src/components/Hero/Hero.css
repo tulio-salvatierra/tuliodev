@@ -1,10 +1,15 @@
 .hero-title {
   padding-top: 1rem;
   font-weight: 900;
-  letter-spacing: -12px;
-  font-size: 12vw;
+  letter-spacing: -10px;
+  font-size: 8vw;
   color: #e3e4e2;
   text-align: center;
+}
+
+.hero-section {
+  display: grid;
+  place-content: center;
 }
 
 @media screen and (max-width: 768px) {
