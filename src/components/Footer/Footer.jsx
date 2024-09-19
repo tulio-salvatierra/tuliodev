@@ -92,6 +92,9 @@ function Footer() {
       <div className="w-100 h-auto flex-wrap">
         <div className="separator2"></div>
         <h1 className="footer-title">TULIO SALVATIERRA</h1>
+        <div className="title-sub">
+          <p>websites - ux/ui - design</p>
+        </div>
         <footer className="footer-location">LOCATION: CHICAGO, IL</footer>
       </div>
     </section>
