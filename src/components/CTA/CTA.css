@@ -5,6 +5,7 @@
   color: #e3e4e2;
   background-image: url("../../assets/images/cta/cta.png");
   background-size: cover;
+  background-position: center;
   margin-top: 2rem;
   justify-content: space-around;
   text-align: left;

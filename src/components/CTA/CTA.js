@@ -10,6 +10,7 @@ function CTA() {
         backgroundImage: `url(${BG})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     >
       <div className="container pt-3 rounded">
