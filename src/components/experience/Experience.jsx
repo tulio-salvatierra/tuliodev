@@ -19,7 +19,7 @@ function Experience() {
       </div>
       <div className="card-exp">
         <div className="experience-item exp-item pt-4">
-          <h5>Full Stack Dev - Learner to professional</h5>
+          <h2>Full Stack Dev - Learner to professional</h2>
 
           <h5>Front end Contributions:</h5>
 
@@ -52,7 +52,7 @@ function Experience() {
           </li>
           <li>Adopted CI/CD practices with GitHub Actions.</li>
 
-          <h2>Back end Contributions:</h2>
+          <h5>Back end Contributions:</h5>
 
           <li>Utilized Express.js for server-side development.</li>
           <li>
