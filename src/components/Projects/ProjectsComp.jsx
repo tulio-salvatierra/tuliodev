@@ -7,10 +7,9 @@ function ProjectsComp() {
     <section id="projects" className="project-section">
       <div className="project-header">
         <h1 className="section-title p-4">Projects</h1>
-        <h5 className="p-4">
-          See projects that I created below and get a glimpse of what Ican do
-          for your business
-        </h5>
+        <h3 className="p-4 text-center">
+          See projects that I created below ⤵️
+        </h3>
       </div>
       <div className="projectDiv container flex p-3">
         {projectsData.map((project, index) => (

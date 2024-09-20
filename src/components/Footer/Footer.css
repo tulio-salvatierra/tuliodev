@@ -169,6 +169,7 @@ a {
   font-weight: 900;
   letter-spacing: -4px;
   text-transform: uppercase;
+  margin: 1rem;
 }
 
 .footer-title {
@@ -176,8 +177,13 @@ a {
   font-weight: 900;
   letter-spacing: -11px;
   font-size: 12vw;
-  color: #e3e4e2;
+  color: #c6d1ba;
   text-align: center;
+  margin: 1rem;
+}
+
+.footer-item {
+  margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -19,7 +19,7 @@ function Hero() {
             <div className="col1 d-flex flex-column align-content-center">
               <img src={Owl} alt="hero-icon" className="stack" />
 
-              <h1>Web Solutions</h1>
+              <h1 className="text-center">Web Solutions</h1>
               <a className="custom-btn" href="/contact">
                 Get in touch
               </a>

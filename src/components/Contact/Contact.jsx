@@ -50,14 +50,14 @@ export default function Contact() {
         discuss your project or answer any questions about freelancing services,
         don't hesitate to reach out!
       </h4>
-      <div className="contact-parent">
+      <div className="contact-parent m-3 m-sm-0">
         <div className="contact-info">
           <div className="contact-item">
             <div className="svg-bg">
               <EmailIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`mailto:${EMAIL}`}>
-              <p className="contact-detail align-items-center">{EMAIL}</p>
+              <p className="contact-detail">{EMAIL}</p>
             </a>
           </div>
           <div className="contact-item">
@@ -65,7 +65,7 @@ export default function Contact() {
               <PhoneIcon className="contact-svg" fontSize="large" />
             </div>
             <a href={`tel:${TELEPHONE}`}>
-              <p className="contact-detail align-items-center">{TELEPHONE}</p>
+              <p className="contact-detail">{TELEPHONE}</p>
             </a>
           </div>
         </div>

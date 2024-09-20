@@ -30,7 +30,7 @@
   text-transform: uppercase;
   font-size: clamp(7rem, 5vw, 13rem);
   letter-spacing: -11px;
-  color: #e3e4e2;
+  color: #c6d1ba;
   padding: 1rem;
   overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -70,10 +70,6 @@
   width: 100%;
 }
 
-.contact-detail {
-  align-text: center;
-}
-
 .contact-item {
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
@@ -84,7 +80,7 @@
   background: #211c1c;
   border-radius: 1rem;
   align-content: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .contact-item:hover {
@@ -96,6 +92,11 @@
   margin-top: 10px;
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.contact-detail {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 
 /* form css */
@@ -117,7 +118,7 @@ input::placeholder,
 textarea::placeholder {
   font-weight: 100;
   opacity: 0.9;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #e3e4e2;
 }
 
@@ -152,7 +153,8 @@ label {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2rem;
-  margin: 0;
+  margin: 1rem;
+  width: 50%;
   color: #e3e4e2;
   font-weight: 500;
 }

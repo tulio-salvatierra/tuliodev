@@ -15,7 +15,7 @@ function Footer() {
     <section id="footer" className="footer-div">
       <div className="container p-0 flex">
         <div className="left">
-          <img src={profilePic} alt="profile-pic" className="stack" />
+          <img src={profilePic} alt="profile-pic" className="stack m-4" />
           <p className="footer-profile-text">
             I build websites and provide digital solutions to help businesses
             and professionals drive growth and enhance your online presence.
