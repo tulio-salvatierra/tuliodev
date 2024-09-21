@@ -9,6 +9,8 @@ import {
 import "./Footer.css";
 import RESUME from "../../assets/resume.pdf";
 import profilePic from "../../assets/tulio.svg";
+import MenuItem from "../MenuItem/MenuItem";
+import { Menu } from "@mui/material";
 
 function Footer() {
   return (
@@ -26,21 +28,15 @@ function Footer() {
           <div className="footer-col">
             <h1 className="footer-nav">Contact</h1>
             <div className="separator"></div>
-            <a href={TELEPHONE} className="footer-item">
-              {" "}
-              Call me
-            </a>
+            <MenuItem name={"Call"} url={TELEPHONE} className="p-2" />
 
-            <a href={`mailto:${EMAIL}`} className="footer-item">
-              Contact me
-            </a>
+            <MenuItem
+              name={"Contact me"}
+              url={`mailto:${EMAIL}`}
+              onClick={`mailto:${EMAIL}`}
+            />
 
-            <a
-              href={RESUME}
-              download
-              style={{ color: "white" }}
-              className="footer-item"
-            >
+            <a href={RESUME} download className="custom-btn w-50">
               Get CV
             </a>
           </div>
@@ -48,42 +44,43 @@ function Footer() {
             <h1 className="footer-nav">Socials</h1>
             <div className="separator"></div>
 
-            <a
-              href={LINKEDIN_URL}
+            <MenuItem
+              url={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              name={"LinkedIn"}
+              className="footer-item"
+            />
+
+            <MenuItem
+              url={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               size="60px"
+              name={"GitHub"}
               className="footer-item"
-            >
-              LinkedIn
-            </a>
-            <a
-              href={GITHUB_URL}
+            />
+
+            <MenuItem
+              url="https://www.upwork.com/freelancers/tulio"
               target="_blank"
               rel="noopener noreferrer"
               size="60px"
+              name={"Upwork"}
               className="footer-item"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.upwork.com/freelancers/tulio"
-              target="_blank"
-              rel="noopener noreferrer"
-              size="60px"
-              className="footer-item"
-            >
-              Upwork
-            </a>
+            />
           </div>
 
           <div className="footer-col">
             <h1 className="footer-nav">NAVIGATION</h1>
             <div className="separator"></div>
             {MENU_ITEMS.map((item, index) => (
-              <a href={item.url} className="footer-item" key={index}>
-                {item.title}
-              </a>
+              <MenuItem
+                name={item.title}
+                url={item.url}
+                className="footer-item"
+                key={index}
+              />
             ))}
           </div>
         </div>
@@ -95,7 +92,6 @@ function Footer() {
         <div className="title-sub">
           <p>websites - ux/ui - design</p>
         </div>
-        <footer className="footer-location">LOCATION: CHICAGO, IL</footer>
       </div>
     </section>
   );
