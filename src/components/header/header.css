@@ -25,13 +25,14 @@
 }
 
 .header {
-  background: rgba(227, 228, 226, 0.25);
   padding: 1rem;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12.3px);
+  background-color: transparent;
+  border: 0.25px solid rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(10px);
+  color: #e3e4e2;
 }
 
 .social-icons {
@@ -41,40 +42,6 @@
   color: #fff;
 }
 
-.social-icons a {
-  padding-left: 10px;
-  color: #fff;
-}
-
-.navbar-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem;
-  font-size: 1.75rem;
-  font-weight: 100;
-  margin-left: auto;
-  text-transform: uppercase;
-}
-
-.navbar-nav a:hover {
-  background-color: #8aff85;
-  text-decoration: none;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
-  border-color: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
-}
-
-.list a:hover {
-  text-decoration: none;
-  transform: translate(3px, -3px);
-}
-.custom-toggler {
-  border-color: grey;
-}
-
-.navbar-toggler-icon {
-  background-color: #e3e4e2;
-}
 @media screen and (max-width: 768px) {
   .list-item {
     display: flex;
@@ -95,17 +62,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .navbar-nav a {
-    display: flex;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem;
-    font-weight: 100;
-    margin-left: auto;
-  }
-  .icon {
-    display: block;
-  }
+
   .logo {
     padding: 0;
     margin: 0;

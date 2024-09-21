@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Menu from "../../assets/icons/menu.png";
-import { GITHUB_URL, LINKEDIN_URL, MENU_ITEMS } from "../../Constants";
+import { MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
+import MenuItem from "../MenuItem/MenuItem";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  console.log(MENU_ITEMS);
 
   return (
     <div className="header">
@@ -22,23 +22,9 @@ function Header() {
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             {MENU_ITEMS.map((item, index) => (
-              <li className="listItem" key={`header-${index}`}>
-                <a href={item.url} onClick={toggleMenu} className="nav-link">
-                  <img src={item.icon} alt={item.title} className="icon" />
-                  {item.title}
-                </a>
-              </li>
+              <MenuItem name={item.title} url={item.url} />
             ))}
           </ul>
-          <div className="social-icons">
-            <a href={LINKEDIN_URL}>
-              <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }} />
-            </a>
-
-            <a href={GITHUB_URL}>
-              <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
-            </a>
-          </div>
         </nav>
 
         <button

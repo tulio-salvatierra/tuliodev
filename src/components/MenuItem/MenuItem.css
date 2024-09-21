@@ -1,0 +1,36 @@
+.list-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  height: 50px;
+}
+
+.link-container {
+  height: 50px;
+  color: #e3e4e2;
+  text-decoration: none;
+}
+
+.menuItem-container {
+  padding: o;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 50px;
+  overflow: hidden;
+  color: #e3e4e2;
+  font-weight: 100;
+}
+
+.primary {
+  font-size: 1.75rem;
+  color: #e3e4e2;
+}
+
+.secondary {
+  font-size: 1.75rem;
+  color: #e3e4e2;
+}

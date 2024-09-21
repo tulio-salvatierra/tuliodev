@@ -1,8 +1,3 @@
-li {
-  color: #969695;
-  list-style: none;
-}
-
 .exp-section {
   height: auto;
 }
@@ -25,11 +20,6 @@ p {
   font-size: 1rem;
 }
 
-a {
-  display: inline;
-  link-decoration: underline;
-}
-
 .card-exp {
   margin: 2rem;
   text-align: left;
@@ -38,15 +28,24 @@ a {
   background-color: rgba(33, 28, 28, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12.3px);
-
+  width: 75%;
   font-size: 1.5rem;
   border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exp-list {
+  color: #969695;
 }
 
 @media screen and (max-width: 768px) {
   .card-exp {
     font-size: 1rem;
     padding: 1;
+    width: 100%;
+    margin: 0;
+    margin-top: 2rem;
   }
 }
 
@@ -89,5 +88,4 @@ a {
 .exp-item {
   font-size: 1rem;
   line-height: 1.5;
-  list-style: square;
 }

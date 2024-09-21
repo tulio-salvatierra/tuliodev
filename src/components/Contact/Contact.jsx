@@ -56,16 +56,16 @@ export default function Contact() {
             <div className="svg-bg">
               <EmailIcon className="contact-svg" fontSize="large" />
             </div>
-            <a href={`mailto:${EMAIL}`}>
-              <p className="contact-detail">{EMAIL}</p>
+            <a href={`mailto:${EMAIL}`} className="contact-text">
+              <h4>{EMAIL}</h4>
             </a>
           </div>
-          <div className="contact-item">
+          <div className="contact-item ju">
             <div className="svg-bg">
               <PhoneIcon className="contact-svg" fontSize="large" />
             </div>
-            <a href={`tel:${TELEPHONE}`}>
-              <p className="contact-detail">{TELEPHONE}</p>
+            <a href={`tel:${TELEPHONE}`} className="contact-text">
+              <h4>{TELEPHONE}</h4>
             </a>
           </div>
         </div>

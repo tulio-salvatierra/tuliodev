@@ -111,8 +111,7 @@
   padding: 1rem;
 }
 
-.footer-container,
-a {
+.footer-container {
   color: #e3e4e2;
   text-decoration: none;
   padding: 0.5rem;

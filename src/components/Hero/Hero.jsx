@@ -5,6 +5,7 @@ import UpworkIcon from "../../assets/icons/upwork.png";
 import { LINKEDIN_URL, GITHUB_URL, UPWORK_URL } from "../../Constants";
 import profile_pic from "../../assets/images/hero/profile.jpeg";
 import Owl from "./../../assets/tulio.svg";
+import MenuItem from "../MenuItem";
 
 function Hero() {
   return (
@@ -14,6 +15,7 @@ function Hero() {
           <h1 className="hero-title">TULIO SALVATIERRA</h1>
           <div className="title-sub">
             <p>websites - ux/ui - design</p>
+            <MenuItem />
           </div>
           <div className="container-fluid flex">
             <div className="col1 d-flex flex-column align-content-center">
@@ -37,7 +39,7 @@ function Hero() {
                 businesses and professionals drive growth and enhance your
                 online presence.
               </h5>
-              <div className="hero-icons">
+              <div className="hero-icons w-50 justify-content-between">
                 <a href={LINKEDIN_URL}>
                   <LinkedInIcon
                     sx={{ fontSize: 30, color: "#fefefe", width: "auto" }}
