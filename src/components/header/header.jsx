@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import MenuItem from "../MenuItem/MenuItem";
 
-function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -45,5 +45,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;

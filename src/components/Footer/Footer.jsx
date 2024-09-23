@@ -28,60 +28,64 @@ function Footer() {
           <div className="footer-col">
             <h1 className="footer-nav">Contact</h1>
             <div className="separator"></div>
-            <MenuItem name={"Call"} url={TELEPHONE} className="p-2" />
+            <div className="footer-item">
+              <MenuItem name={"Call"} url={TELEPHONE} className="p-2" />
 
-            <MenuItem
-              name={"Contact me"}
-              url={`mailto:${EMAIL}`}
-              onClick={`mailto:${EMAIL}`}
-            />
+              <MenuItem
+                name={"Contact me"}
+                url={`mailto:${EMAIL}`}
+                onClick={`mailto:${EMAIL}`}
+              />
 
-            <a href={RESUME} download className="custom-btn w-50">
-              Get CV
-            </a>
+              <a href={RESUME} download className="custom-btn w-50">
+                Get CV
+              </a>
+            </div>
           </div>
           <div className="footer-col">
             <h1 className="footer-nav">Socials</h1>
             <div className="separator"></div>
+            <div className="footer-item">
+              <MenuItem
+                url={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                name={"LinkedIn"}
+              />
 
-            <MenuItem
-              url={LINKEDIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              name={"LinkedIn"}
-              className="footer-item"
-            />
+              <MenuItem
+                url={GITHUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                size="60px"
+                name={"GitHub"}
+                className="footer-item"
+              />
 
-            <MenuItem
-              url={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              size="60px"
-              name={"GitHub"}
-              className="footer-item"
-            />
-
-            <MenuItem
-              url="https://www.upwork.com/freelancers/tulio"
-              target="_blank"
-              rel="noopener noreferrer"
-              size="60px"
-              name={"Upwork"}
-              className="footer-item"
-            />
+              <MenuItem
+                url="https://www.upwork.com/freelancers/tulio"
+                target="_blank"
+                rel="noopener noreferrer"
+                size="60px"
+                name={"Upwork"}
+                className="footer-item"
+              />
+            </div>
           </div>
 
           <div className="footer-col">
             <h1 className="footer-nav">NAVIGATION</h1>
             <div className="separator"></div>
-            {MENU_ITEMS.map((item, index) => (
-              <MenuItem
-                name={item.title}
-                url={item.url}
-                className="footer-item"
-                key={index}
-              />
-            ))}
+            <div className="footer-item">
+              {MENU_ITEMS.map((item, index) => (
+                <MenuItem
+                  name={item.title}
+                  url={item.url}
+                  className="footer-item"
+                  key={index}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -90,7 +94,7 @@ function Footer() {
         <div className="separator2"></div>
         <h1 className="footer-title">TULIO SALVATIERRA</h1>
         <div className="title-sub">
-          <p>websites - ux/ui - design</p>
+          <p>websites - ux/ui - IT solutions</p>
         </div>
       </div>
     </section>

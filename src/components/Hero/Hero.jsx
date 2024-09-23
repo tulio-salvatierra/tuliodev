@@ -14,14 +14,14 @@ function Hero() {
         <div className="container-xl">
           <h1 className="hero-title">TULIO SALVATIERRA</h1>
           <div className="title-sub">
-            <p>websites - ux/ui - design</p>
+            <p>websites - ux/ui - IT solutions</p>
             <MenuItem />
           </div>
           <div className="container-fluid flex">
             <div className="col1 d-flex flex-column align-content-center">
               <img src={Owl} alt="hero-icon" className="stack" />
 
-              <h1 className="text-center">Web Solutions</h1>
+              <h1 className="text-center">Software Developer</h1>
               <a className="custom-btn" href="/contact">
                 Get in touch
               </a>

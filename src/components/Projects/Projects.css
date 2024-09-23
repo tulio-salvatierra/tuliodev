@@ -32,7 +32,7 @@
 
   .project-card {
     width: 80%; /* Width for smaller screens */
-    margin: 0 auto; /* Center the card */
+    margin: 1 auto; /* Center the card */
   }
 }
 

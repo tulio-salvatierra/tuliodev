@@ -16,8 +16,8 @@
   padding: o;
   display: grid;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   width: 140px;
   height: 50px;
   overflow: hidden;
