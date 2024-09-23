@@ -1,0 +1,34 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: "Inter", sans-serif;
+  font-size: 0.7em;
+}
+
+li {
+  position: relative;
+}
+
+span {
+  opacity: 0;
+}
+
+.reveal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.title-sub {
+  display: grid;
+  place-content: center;
+}

@@ -5,7 +5,7 @@ import UpworkIcon from "../../assets/icons/upwork.png";
 import { LINKEDIN_URL, GITHUB_URL, UPWORK_URL } from "../../Constants";
 import profile_pic from "../../assets/images/hero/profile.jpeg";
 import Owl from "./../../assets/tulio.svg";
-import MenuItem from "../MenuItem";
+import HeroSub from "../HeroSub1/HeroSub";
 
 function Hero() {
   return (
@@ -13,10 +13,9 @@ function Hero() {
       <section className="hero-section" id="hero">
         <div className="container-xl">
           <h1 className="hero-title">TULIO SALVATIERRA</h1>
-          <div className="title-sub">
-            <p>websites - ux/ui - IT solutions</p>
-            <MenuItem />
-          </div>
+
+          <HeroSub />
+
           <div className="container-fluid flex">
             <div className="col1 d-flex flex-column align-content-center">
               <img src={Owl} alt="hero-icon" className="stack" />
