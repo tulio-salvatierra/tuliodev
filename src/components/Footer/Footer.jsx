@@ -10,7 +10,6 @@ import "./Footer.css";
 import RESUME from "../../assets/resume.pdf";
 import profilePic from "../../assets/tulio.svg";
 import MenuItem from "../MenuItem/MenuItem";
-import { Menu } from "@mui/material";
 
 function Footer() {
   return (

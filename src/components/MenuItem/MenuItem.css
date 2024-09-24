@@ -2,12 +2,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 140px;
+  width: auto;
   height: 50px;
+  margin-right: 2rem;
 }
 
 .link-container {
   height: 50px;
+  width: auto;
   color: #e3e4e2;
   text-decoration: none;
 }
@@ -18,7 +20,7 @@
   flex-direction: column;
   align-items: left;
   justify-content: left;
-  width: 140px;
+  width: auto;
   height: 50px;
   overflow: hidden;
   color: #e3e4e2;
