@@ -25,62 +25,47 @@ function Experience() {
           <h2 className="pb-4">Full Stack Dev - Learner to professional</h2>
 
           <h3 className="pb-2">Front end Contributions:</h3>
-          <ul className="exp-list">
-            <li className="exp-list">
-              Developed an e-commerce site using SCRUM, focusing on React, React
-              Router Dom, React Query, and Material-UI
-            </li>
-            <li className="exp-list">
-              Implemented secure user authentication and permissions, enhancing
-              user experience and security.
-            </li>
-            <li className="exp-list">
-              Created an intuitive shopping cart, improving the online shopping
-              process.
-            </li>
-            <li className="exp-list">
-              Integrated RESTful APIs and utilized Firebase for data storage and
-              management.
-            </li>
-            <li className="exp-list">
-              Used tools like VSCode, Slack, Trello, and GitHub for team
-              collaboration and version control.
-            </li>
-            <li className="exp-list">
-              Translated bootcamp skills into practical applications, preparing
-              for a professional environment.
-            </li>
-            <li className="exp-list">
-              Designed a responsive front-end using ES6 JavaScript, HTML, and
-              CSS.
-            </li>
-            <li className="exp-list">
-              Adopted CI/CD practices with GitHub Actions.
-            </li>
-          </ul>
+          <p className="exp-list">
+            Developed an e-commerce site using SCRUM, focusing on React, React
+            Router Dom, React Query, and Material-UI.
+            <br />
+            Implemented secure user authentication and permissions, enhancing
+            user experience and security.
+            <br />
+            Created an intuitive shopping cart, improving the online shopping
+            process.
+            <br />
+            Integrated RESTful APIs and utilized Firebase for data storage and
+            management.
+            <br />
+            Used tools like VSCode, Slack, Trello, and GitHub for team
+            collaboration and version control.
+            <br />
+            Translated bootcamp skills into practical applications, preparing
+            for a professional environment.
+            <br />
+            Designed a responsive front-end using ES6 JavaScript, HTML, and CSS.
+            <br />
+            Adopted CI/CD practices with GitHub Actions.
+          </p>
 
           <h3 className="pb-2 pt-4">Back end Contributions:</h3>
-          <ul className="exp-list">
-            <li className="exp-list">
-              Utilized Express.js for server-side development.
-            </li>
-            <li>
-              Employed body-parser, cookie-session, cors, and csv-parser for
-              enhanced functionality.
-            </li>
-            <li className="exp-list">
-              Managed environment variables with dotenv and streamlined
-              development with nodemon.
-            </li>
-            <li className="exp-list">
-              Implemented Passport.js for OAuth authentication.
-            </li>
-            <li>Used PostgreSQL and Sequelize for database management.</li>
-            <li className="exp-list">
-              Ensured a robust and scalable back-end infrastructure, catering to
-              diverse application needs.
-            </li>
-          </ul>
+          <p className="exp-list">
+            Utilized Express.js for server-side development.
+            <br />
+            Employed body-parser, cookie-session, cors, and csv-parser for
+            enhanced functionality.
+            <br />
+            Managed environment variables with dotenv and streamlined
+            development with nodemon.
+            <br />
+            Implemented Passport.js for OAuth authentication.
+            <br />
+            Used PostgreSQL and Sequelize for database management.
+            <br />
+            Ensured a robust and scalable back-end infrastructure, catering to
+            diverse application needs.
+          </p>
         </div>
       </div>
     </section>
