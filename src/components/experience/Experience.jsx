@@ -24,53 +24,59 @@ function Experience() {
         <div className="experience-item exp-item pt-4">
           <h2 className="pb-4">Full Stack Dev - Learner to professional</h2>
 
-          <h5 className="pb-2">Front end Contributions:</h5>
+          <h3 className="pb-2">Front end Contributions:</h3>
           <ul className="exp-list">
-            <li>
+            <li className="exp-list">
               Developed an e-commerce site using SCRUM, focusing on React, React
               Router Dom, React Query, and Material-UI
             </li>
-            <li>
+            <li className="exp-list">
               Implemented secure user authentication and permissions, enhancing
               user experience and security.
             </li>
-            <li>
+            <li className="exp-list">
               Created an intuitive shopping cart, improving the online shopping
               process.
             </li>
-            <li>
+            <li className="exp-list">
               Integrated RESTful APIs and utilized Firebase for data storage and
               management.
             </li>
-            <li>
+            <li className="exp-list">
               Used tools like VSCode, Slack, Trello, and GitHub for team
               collaboration and version control.
             </li>
-            <li>
+            <li className="exp-list">
               Translated bootcamp skills into practical applications, preparing
               for a professional environment.
             </li>
-            <li>
+            <li className="exp-list">
               Designed a responsive front-end using ES6 JavaScript, HTML, and
               CSS.
             </li>
-            <li>Adopted CI/CD practices with GitHub Actions.</li>
+            <li className="exp-list">
+              Adopted CI/CD practices with GitHub Actions.
+            </li>
           </ul>
 
-          <h5 className="pb-2 pt-4">Back end Contributions:</h5>
+          <h3 className="pb-2 pt-4">Back end Contributions:</h3>
           <ul className="exp-list">
-            <li>Utilized Express.js for server-side development.</li>
+            <li className="exp-list">
+              Utilized Express.js for server-side development.
+            </li>
             <li>
               Employed body-parser, cookie-session, cors, and csv-parser for
               enhanced functionality.
             </li>
-            <li>
+            <li className="exp-list">
               Managed environment variables with dotenv and streamlined
               development with nodemon.
             </li>
-            <li>Implemented Passport.js for OAuth authentication.</li>
+            <li className="exp-list">
+              Implemented Passport.js for OAuth authentication.
+            </li>
             <li>Used PostgreSQL and Sequelize for database management.</li>
-            <li>
+            <li className="exp-list">
               Ensured a robust and scalable back-end infrastructure, catering to
               diverse application needs.
             </li>

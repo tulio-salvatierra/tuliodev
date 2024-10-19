@@ -12,18 +12,15 @@
   margin-left: auto;
   margin-right: auto;
   margin-buttom: 2rem;
-}
-
-p {
-  display: inline;
-  color: #969695;
-  font-size: 1rem;
+  font-size: 1.75rem;
+  color: #8aff85;
+  text-decoration: none;
 }
 
 .card-exp {
   margin: 2rem;
   text-align: left;
-  padding: 1rem;
+  padding: 2rem;
   color: #e3e4e2;
   background-color: rgba(33, 28, 28, 0.75);
   backdrop-filter: blur(12px);
@@ -88,4 +85,11 @@ p {
 .exp-item {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  text-transform: downcase;
 }
