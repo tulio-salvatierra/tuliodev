@@ -54,9 +54,8 @@ function HomePage() {
           <CTA />
           <ExperienceComponent />
           <Skills />
-
-          <Contact />
         </div>
+        <Contact />
       </div>
     </main>
   );
