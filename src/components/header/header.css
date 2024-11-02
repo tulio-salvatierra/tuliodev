@@ -68,3 +68,8 @@
     margin: 0;
   }
 }
+
+.custom-toogler {
+  color: #211c1c;
+  border: 2px solid #211c1c;
+}

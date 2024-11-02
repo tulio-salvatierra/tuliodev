@@ -11,6 +11,8 @@ import FloatingCallButton from "../components/FloatingCallButton";
 
 function HomePage() {
   const panelRef = useRef(null);
+  const contentRef = useRef(null);
+  const contactRef = useRef(null);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -51,12 +53,14 @@ function HomePage() {
           <div className="panel" ref={panelRef}>
             <Hero />
           </div>{" "}
-          <div className="white-bg panel" useRef={panelRef}>
+          <div className="white-bg panel" ref={contentRef}>
             <Projects />
             <CTA />
             <ExperienceComponent />
             <Skills />
           </div>
+        </div>
+        <div ref={contactRef} className="panel">
           <Contact />
         </div>
       </main>
