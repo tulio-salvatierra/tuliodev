@@ -5,7 +5,7 @@ function CTA() {
   return (
     <section
       id="cta"
-      className="cta"
+      className="cta z-0"
       style={{
         backgroundImage: `url(${BG})`,
         backgroundSize: "cover",
@@ -13,7 +13,8 @@ function CTA() {
         backgroundPosition: "center",
       }}
     >
-      <div className="container pt-3 rounded">
+      <div className="overlay z-3"></div>
+      <div className="container pt-3 rounded z-1">
         <div className="cta-text">
           <h1>Need help with a project?</h1>
           <h2>Reach out and let me know how I can help!</h2>

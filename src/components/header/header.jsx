@@ -10,7 +10,6 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-  console.log(MENU_ITEMS);
 
   return (
     <div className="header">
@@ -22,7 +21,11 @@ export default function Header() {
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             {MENU_ITEMS.map((item, index) => (
-              <MenuItem name={item.title} url={item.url} />
+              <MenuItem
+                name={item.title}
+                url={item.url}
+                key={`${item}+${index}`}
+              />
             ))}
           </ul>
         </nav>

@@ -19,7 +19,7 @@ function ProjectsComp() {
               className="project-image"
             />
             <h3 className="mt-4">{project.title}</h3>
-            <p>{project.description}</p>
+            <p className="project-description">{project.description}</p>
             <div className="project-links">
               <a
                 href={project.repo}

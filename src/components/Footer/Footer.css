@@ -35,6 +35,8 @@
 
 .footer-profile-text {
   width: 100%;
+  font-weight: 100;
+  color: #e3e4e2;
 }
 
 @media screen and (max-width: 768px) {

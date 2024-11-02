@@ -13,7 +13,7 @@ import MenuItem from "../MenuItem/MenuItem";
 
 function Footer() {
   return (
-    <section id="footer" className="footer-div">
+    <section id="footer" className="footer-div z-0">
       <div className="container p-0 flex">
         <div className="left">
           <img src={profilePic} alt="profile-pic" className="stack m-4" />
@@ -28,7 +28,11 @@ function Footer() {
             <h1 className="footer-nav">Contact</h1>
             <div className="separator"></div>
             <div className="footer-item">
-              <MenuItem name={"Call"} url={TELEPHONE} className="p-2" />
+              <MenuItem
+                name={"Call"}
+                url={`callto:${TELEPHONE}`}
+                className="p-2"
+              />
 
               <MenuItem
                 name={"Contact me"}

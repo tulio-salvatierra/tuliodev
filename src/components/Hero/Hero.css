@@ -7,6 +7,15 @@
   text-align: center;
 }
 
+.hero-welcome {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1.5rem, 4vw, 1rem);
+  font-weight: 100;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
 .title-sub {
   text-align: center;
   font-weight: 100;

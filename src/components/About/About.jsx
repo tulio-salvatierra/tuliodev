@@ -4,7 +4,7 @@ import YouTubeEmbed from "../Youtube";
 
 function About() {
   return (
-    <section id="about" className="section">
+    <section id="about" className="section z-0">
       <h1 className="contact-title">About</h1>
       <div className="container">
         <div className="parent">

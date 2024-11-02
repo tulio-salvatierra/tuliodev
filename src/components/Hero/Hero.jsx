@@ -11,7 +11,7 @@ function Hero() {
   return (
     <>
       <section className="hero-section" id="hero">
-        <div className="container-xl">
+        <div className="container-xl h-100">
           <h1 className="hero-title">TULIO SALVATIERRA</h1>
 
           <HeroSub />
@@ -20,7 +20,7 @@ function Hero() {
             <div className="col1 d-flex flex-column align-content-center">
               <img src={Owl} alt="hero-icon" className="stack" />
 
-              <h1 className="text-center">Software Developer</h1>
+              <h1 className="text-center">Full Stack Developer</h1>
               <a className="custom-btn" href="/contact">
                 Get in touch
               </a>
@@ -33,7 +33,7 @@ function Hero() {
               />
             </div>
             <div className="col3 d-flex flex-column align-content-center p-0">
-              <h5>
+              <h5 className="hero-welcome">
                 I build websites and provide digital solutions to help
                 businesses and professionals drive growth and enhance your
                 online presence.

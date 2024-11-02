@@ -50,21 +50,6 @@ main {
   text-decoration: none;
 }
 
-.custom-btn:hover {
-  background-color: #d0ff7d;
-  color: #fff;
-  font-size: clamp(1rem, 4vw, 1.5rem);
-  font-weight: 900;
-  padding: 1rem;
-  border: #8aff85;
-  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%) 3px solid;
-  border-radius: 15px;
-  text-align: center;
-  width: fit-content;
-  text-transform: uppercase;
-  width: 100%;
-}
-
 section {
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +63,7 @@ section {
   text-transform: uppercase;
   font-size: clamp(7rem, 5vw, 13rem);
   letter-spacing: -11px;
-  color: #c6d1ba;
+  color: #211c1c;
   padding: 1rem;
   overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);

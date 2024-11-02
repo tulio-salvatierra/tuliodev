@@ -1,5 +1,5 @@
 .navbar-title {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 900;
   margin-left: 1rem;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  background-color: transparent;
+  background-color: #211c1c;
   border: 0.25px solid rgba(255, 255, 255, 0.48);
   backdrop-filter: blur(10px);
   color: #e3e4e2;

@@ -34,6 +34,7 @@
 
 .exp-list {
   color: #969695;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 768px) {
