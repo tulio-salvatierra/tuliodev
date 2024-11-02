@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section z-0" id="contact">
+    <section className="contact-section z-0 h-100" id="contact">
       <h1 className="contact-title">Contact</h1>
       <h4 className="contact-text">
         You can get in touch with me through the form below. I'll be happy to
