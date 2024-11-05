@@ -5,21 +5,23 @@ function CTA() {
   return (
     <section
       id="cta"
-      className="cta z-0"
+      className="cta"
       style={{
         backgroundImage: `url(${BG})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        position: "relative", // Ensures the overlay and content are positioned relative to this section
       }}
     >
-      <div className="overlay z-3"></div>
-      <div className="container pt-3 rounded z-1">
+      <div className="overlay"></div>{" "}
+      {/* Overlay for darkening the background */}
+      <div className="content">
         <div className="cta-text">
           <h1>Need help with a project?</h1>
           <h2>Reach out and let me know how I can help!</h2>
         </div>
-        <div className="button-container w-50 justify-content-center">
+        <div className="button-container">
           <a href="/contact" className="custom-btn">
             Let's Collaborate!
           </a>

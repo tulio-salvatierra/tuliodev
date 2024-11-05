@@ -19,7 +19,7 @@ export default function Header() {
         </NavbarBrand>
 
         <nav className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav h-50">
             {MENU_ITEMS.map((item, index) => (
               <MenuItem
                 name={item.title}

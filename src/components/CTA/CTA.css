@@ -1,20 +1,38 @@
 .cta {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: #e3e4e2;
-  background-image: url("../../assets/images/cta/cta.png");
-  background-size: cover;
-  background-position: center;
-  margin-top: 2rem;
-  justify-content: space-around;
-  text-align: left;
-  align-content: center;
-  height: 100vh;
+  position: relative;
   width: 100%;
-  min-height: auto;
-  position: relativel;
-  overflow: hidden;
+  height: 100vh; /* Adjust as needed for your layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust opacity for desired darkening */
+  z-index: 1; /* Ensures overlay sits above background but below content */
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Content sits above overlay */
+  text-align: center;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .overlay {
@@ -27,10 +45,6 @@
   z-index: 1;
 }
 
-.container {
-  position: relative;
-  z-index: 2;
-}
 .cta-text h1 {
   font-size: clamp(10rem, 7vw, 5rem);
   font-weight: 900;
@@ -73,6 +87,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
 }
 
 .full-width-section {

@@ -59,7 +59,7 @@ section {
 }
 
 .section-title {
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: clamp(7rem, 5vw, 13rem);
   letter-spacing: -11px;

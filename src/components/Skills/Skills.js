@@ -21,7 +21,7 @@ function Skills() {
                   <img
                     src={skill.icon}
                     alt="skill"
-                    style={{ width: "80px", margin: "0.5rem" }}
+                    style={{ width: "50px", margin: "0.5rem" }}
                   />
                   <p className="text-center ">{skill.name}</p>
                 </div>
