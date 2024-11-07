@@ -10,8 +10,8 @@ function About() {
         <div className="parent">
           <div className="div1"></div>
           <div className="div2">
-            <h1>ABOUT</h1>
-            <p>
+            <h1 className="text-bento-title">THE STORY...</h1>
+            <p className="about-text">
               I am originally from Venezuela 🇻🇪. I've been in the US for almost
               8 years now. I have a bachelors degree in business administration
               from UNE in Caracas (Venezuela) and had different professional
@@ -28,7 +28,7 @@ function About() {
           </div>
           <div className="div3">
             <h1>MISSION</h1>{" "}
-            <p>
+            <p className="about-text">
               I am a full-stack developer that began my journey in front-end,
               then evolved into backend, and now learning full stack
               applications, and my latest endeavor is to learn cloud
@@ -50,12 +50,15 @@ function About() {
           <div className="div5">
             <h1>OTHER INTEREST</h1>{" "}
             <div className="p-2 mb-5">
-              <h4>
+              <h4 className="about-text">
                 Here a link a video of me playing to my latest band. Enjoy!
               </h4>
             </div>
             <YouTubeEmbed />
-            <h4 className="p-4"> Here's a playlist I use when I code:</h4>
+            <h4 className="about-text">
+              {" "}
+              Here's a playlist I use when I code:
+            </h4>
             <Spotify />
           </div>
         </div>

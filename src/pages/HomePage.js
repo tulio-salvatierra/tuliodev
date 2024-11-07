@@ -19,14 +19,20 @@ function HomePage() {
     var panels = gsap.utils.toArray(".panel");
 
     panels.forEach((panel, i) => {
-      let tl = gsap.timeline({
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: panel,
           start: "bottom bottom",
           pinSpacing: false,
           pin: true,
           scrub: true,
-
+          anticipatePin: 1, // Helps prevent jerky pin behavior
+          onEnter: (self) => {
+            gsap.set(panel, { zIndex: 10 });
+          },
+          onLeave: (self) => {
+            gsap.set(panel, { zIndex: 1 });
+          },
           onRefresh: () =>
             gsap.set(panel, {
               transformOrigin:
@@ -45,7 +51,12 @@ function HomePage() {
         0
       ).to(panel, 0.1, { opacity: 0 });
     });
-  });
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.killAll();
+    };
+  }, []);
   return (
     <>
       <main id="home">
