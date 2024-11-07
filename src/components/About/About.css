@@ -1,6 +1,6 @@
 .about-text {
   font-size: 1.5rem;
-  color: e3e4e2;
+  color: #e3e4e2;
   font-weight: 200;
   text-align: left;
   width: 100%;
@@ -104,9 +104,9 @@ ul {
     margin: 0;
   }
 
-  .image {
+  .div2 {
     max-width: 100%;
-    height: auto;
+    min-height: 250px;
     border-radius: 1rem;
   }
 }
@@ -115,10 +115,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
   margin-top: 2rem;
-  padding: 0;
+  padding: 4rem;
 }
 
 .div1 {
@@ -126,11 +126,9 @@ ul {
   position: relative;
   overflow: hidden;
   border-radius: 2rem;
-  background-image: url("./../../assets/images/about/profile.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.1s;
+  padding: 2rem;
+  border: 0.5px solid #e3e4e2;
+  line: 1.5;
 }
 
 .div2 {
@@ -141,6 +139,10 @@ ul {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12.3px);
   transition: transform 0.1s;
+  background-image: url("./../../assets/images/about/profile.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .div3 {
@@ -165,23 +167,13 @@ ul {
   -webkit-backdrop-filter: blur(12.3px);
   transition: transform 0.1s;
 }
-.div1:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-}
+
 .div2:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }
-.div3:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-}
+
 .div4:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-}
-.div5:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }

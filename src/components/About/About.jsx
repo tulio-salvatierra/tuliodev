@@ -6,10 +6,10 @@ function About() {
   return (
     <section id="about" className="section ">
       <h1 className="contact-title">About</h1>
-      <div className="container mb-4">
+      <div className="mb-4">
         <div className="parent">
-          <div className="div1"></div>
-          <div className="div2">
+          <div className="div2"></div>
+          <div className="div1">
             <h1 className="text-bento-title">THE STORY...</h1>
             <p className="about-text">
               I am originally from Venezuela 🇻🇪. I've been in the US for almost

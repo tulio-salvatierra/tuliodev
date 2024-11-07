@@ -22,9 +22,9 @@ function Experience() {
       </div>
       <div className="card-exp">
         <div className="experience-item exp-item pt-4">
-          <h2 className="pb-4">Full Stack Dev - Learner to professional</h2>
+          <h3 className="pb-4">Full Stack Dev - Learner to professional</h3>
 
-          <h3 className="pb-2">Front end Contributions:</h3>
+          <h4 className="pb-2">Front end Contributions:</h4>
           <p className="exp-list">
             Developed an e-commerce site using SCRUM, focusing on React, React
             Router Dom, React Query, and Material-UI.
