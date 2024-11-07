@@ -41,7 +41,7 @@ function HomePage() {
         panel,
         1,
         { y: 0, rotate: 0, scale: 1, opacity: 1 },
-        { y: 0, rotateX: 0, scale: 0.5, opacity: 0.005 },
+        { y: 0, rotateX: 0, scale: 0.5, opacity: 0 },
         0
       ).to(panel, 0.1, { opacity: 0 });
     });
