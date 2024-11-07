@@ -10,6 +10,7 @@ import "./Footer.css";
 import RESUME from "../../assets/resume.pdf";
 import profilePic from "../../assets/tulio.svg";
 import MenuItem from "../MenuItem/MenuItem";
+import HeroSub from "../HeroSub1/HeroSub";
 
 function Footer() {
   return (
@@ -95,10 +96,10 @@ function Footer() {
 
       <div className="w-100 h-auto flex-wrap">
         <div className="separator2"></div>
-        <h1 className="footer-title">TULIO SALVATIERRA</h1>
         <div className="title-sub">
-          <p>websites - ux/ui - IT solutions</p>
+          <HeroSub />
         </div>
+        <h1 className="footer-title">TULIO SALVATIERRA</h1>
       </div>
     </section>
   );

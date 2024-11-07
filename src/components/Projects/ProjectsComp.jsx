@@ -1,14 +1,22 @@
 import { projectsData } from "./projectsData";
+import Arrow from "../../assets/images/projects/projects-icon.png";
 import "./Projects.css";
 
 function ProjectsComp() {
   return (
-    <section id="projects" className="project-section">
+    <section id="projects" className="project-section h-screen">
       <div className="project-header">
-        <h1 className="section-title p-4">Projects</h1>
-        <h3 className="p-4 text-center">
-          See projects that I created below ⤵️
-        </h3>
+        <h2 className="section-title p-4">Projects</h2>
+        <div className="">
+          <h3 className="welcome">
+            Find a sample of personal projects, focused on frontend and
+            fullstack development
+          </h3>
+          <img
+            scr={Arrow}
+            alt="arrow icon poiting website for business chicago"
+          ></img>
+        </div>
       </div>
       <div className="projectDiv container flex p-3">
         {projectsData.map((project, index) => (

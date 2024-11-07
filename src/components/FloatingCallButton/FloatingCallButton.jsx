@@ -25,7 +25,7 @@ export default function FloatingCallButton() {
 
     // ScrollTrigger animation for config.strength
     gsap.to(config, {
-      strength: 10,
+      strength: 5,
       ease: "none",
       scrollTrigger: {
         scrub: true,

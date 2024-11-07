@@ -66,7 +66,7 @@ export default function HeroSub() {
           <div className="reveal"></div>
         </li>
         <li>
-          <span>IT solutions</span>
+          <span>IT</span>
           <div className="reveal"></div>
         </li>
       </ul>

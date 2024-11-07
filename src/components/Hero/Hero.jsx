@@ -18,7 +18,11 @@ function Hero() {
 
           <div className="container-fluid flex">
             <div className="col1 d-flex flex-column align-content-center">
-              <img src={Owl} alt="hero-icon" className="stack" />
+              <img
+                src={Owl}
+                alt="logo icon of web development services chicago"
+                className="stack"
+              />
 
               <h1 className="text-center">Full Stack Developer</h1>
               <a className="custom-btn" href="/contact">
@@ -32,12 +36,12 @@ function Hero() {
                 className="hero-image"
               />
             </div>
-            <div className="col3 d-flex flex-column align-content-center p-0">
-              <h5 className="hero-welcome">
+            <div className="col3 d-flex flex-column align-content-left p-0">
+              <h3 className="hero-welcome">
                 I build websites and provide digital solutions to help
                 businesses and professionals drive growth and enhance your
                 online presence.
-              </h5>
+              </h3>
               <div className="hero-icons w-50 justify-content-between">
                 <a href={LINKEDIN_URL}>
                   <LinkedInIcon

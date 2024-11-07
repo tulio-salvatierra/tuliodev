@@ -1,8 +1,8 @@
 .hero-title {
   padding-top: 1rem;
-  font-weight: 900;
-  letter-spacing: -9px;
-  font-size: 8vw;
+  font-weight: 700;
+  letter-spacing: -11px;
+  font-size: clamp(12rem, 80vw, 15rem);
   color: #c6d1ba;
   text-align: center;
 }
@@ -10,9 +10,9 @@
 .hero-welcome {
   margin-left: auto;
   margin-right: auto;
-  font-size: clamp(1.5rem, 4vw, 1rem);
+  font-size: clamp(1.5rem, 5vw, 1rem);
   font-weight: 100;
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 2rem;
 }
 
@@ -38,6 +38,9 @@
     letter-spacing: -4px;
     padding: 0;
     margin: 0;
+  }
+  .hero-welcome {
+    text-align: left;
   }
 }
 
@@ -119,14 +122,17 @@
   .col2 {
     display: none;
   }
+  .col3 {
+    margin-bottom: 0;
+  }
 }
 
 .hero-text {
-  font-size: clamp(1.5rem, 5vw, 1rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   text-align: left;
   width: 100%;
-  font-weight: 100;
-  line-height: 1.5;
+  font-weight: 200;
+  line-height: 1.75;
   overflow: visible;
   color: #e3e4e2;
   margin-left: auto;
