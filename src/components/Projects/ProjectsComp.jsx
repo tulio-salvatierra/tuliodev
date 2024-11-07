@@ -4,7 +4,7 @@ import "./Projects.css";
 
 function ProjectsComp() {
   return (
-    <section id="projects" className="project-section h-screen">
+    <section id="projects" className="project-section">
       <div className="project-header">
         <h2 className="section-title p-4">Projects</h2>
         <div className="">
