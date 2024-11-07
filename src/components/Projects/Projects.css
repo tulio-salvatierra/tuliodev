@@ -21,7 +21,7 @@
   justify-contact: center;
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
+  width: 100%;
   text-align: left;
 }
 
@@ -30,6 +30,11 @@
     padding: 1rem;
     font-size: 1rem;
   }
+}
+
+.subtitle-box {
+  margin: auto;
+  width: 100%;
 }
 
 .projectDiv {
@@ -78,7 +83,7 @@
 .project-description {
   margin-top: 10px;
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #e3e4e2;
 }
 

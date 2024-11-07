@@ -18,8 +18,8 @@ function CTA() {
       {/* Overlay for darkening the background */}
       <div className="content">
         <div className="cta-text">
-          <h1>Need help with a project?</h1>
-          <h2>Reach out and let me know how I can help!</h2>
+          <h1 className="w-100 flex-wrap">Need help with a project?</h1>
+          <h2 className="w-50">Reach out and let me know how I can help!</h2>
         </div>
         <div className="button-container">
           <a href="/contact" className="custom-btn">

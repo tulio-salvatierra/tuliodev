@@ -1,5 +1,5 @@
 import { projectsData } from "./projectsData";
-import Arrow from "../../assets/images/projects/projects-icon.png";
+import Arrow from "../../assets/icons/arrow.svg";
 import "./Projects.css";
 
 function ProjectsComp() {
@@ -7,18 +7,19 @@ function ProjectsComp() {
     <section id="projects" className="project-section">
       <div className="project-header">
         <h2 className="section-title p-4">Projects</h2>
-        <div className="">
+        <div className="d-flex w-50 subtitle-box">
           <h3 className="welcome">
             Find a sample of personal projects, focused on frontend and
             fullstack development
           </h3>
           <img
-            scr={Arrow}
-            alt="arrow icon poiting website for business chicago"
+            src={Arrow}
+            alt="web development small businesses in Chicago"
+            className=""
           ></img>
         </div>
       </div>
-      <div className="projectDiv container flex p-3">
+      <div className="projectDiv flex p-3">
         {projectsData.map((project, index) => (
           <div key={index} className="project-card">
             <img
