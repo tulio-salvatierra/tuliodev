@@ -28,21 +28,25 @@ export const MENU_ITEMS = [
     title: "Home",
     url: HOME_URL,
     icon: homeIcon,
+    className: "home-link",
   },
   {
     title: "Projects",
     url: PROJECTS_URL,
     icon: projectsIcon,
+    className: "link",
   },
 
   {
     title: "About",
     url: ABOUT_URL,
     icon: aboutIcon,
+    className: "link",
   },
   {
     title: "Contact",
     url: CONTACT_URL,
     icon: contactIcon,
+    className: "link",
   },
 ];

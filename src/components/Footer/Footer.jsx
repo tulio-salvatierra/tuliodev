@@ -15,7 +15,7 @@ import HeroSub from "../HeroSub1/HeroSub";
 function Footer() {
   return (
     <section id="footer" className="footer-div z-0">
-      <div className="container p-0 flex">
+      <div className="p-0 flex">
         <div className="left">
           <img src={profilePic} alt="profile-pic" className="stack m-4" />
           <p className="footer-profile-text">

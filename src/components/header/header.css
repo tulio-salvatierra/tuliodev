@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
   }
@@ -15,6 +15,10 @@
 
 .navbar-collapse {
   flex-grow: 0;
+}
+
+.logo-owl {
+  height: 1.5rem;
 }
 
 .icon {
@@ -25,14 +29,14 @@
 }
 
 .header {
-  padding: 1rem;
+  padding: 3rem;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   background-color: #211c1c;
-  border: 0.25px solid rgba(255, 255, 255, 0.48);
   backdrop-filter: blur(10px);
   color: #e3e4e2;
+  top: 0;
 }
 
 .social-icons {
@@ -47,13 +51,10 @@
     display: flex;
     flex-direction: column;
   }
-
-  .header-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .header {
+    padding: 1rem;
   }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -72,4 +73,12 @@
 .custom-toogler {
   color: #fff;
   border: 2px solid #fff;
+}
+
+.home-link p {
+  font-weight: 900;
+}
+
+.link {
+  font-weight: 700;
 }

@@ -7,7 +7,7 @@ function ProjectsComp() {
     <section id="projects" className="project-section">
       <div className="project-header">
         <h2 className="section-title p-4">Projects</h2>
-        <div className="d-flex w-50 subtitle-box">
+        <div className="d-flex subtitle-box">
           <h3 className="welcome">
             Find a sample of personal projects, focused on frontend and
             fullstack development
