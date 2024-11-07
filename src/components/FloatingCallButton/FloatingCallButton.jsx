@@ -34,7 +34,7 @@ export default function FloatingCallButton() {
   }, []);
   return (
     <div
-      className="position-fixed bottom-0 end-0 mb-2 me-2 z-1000000"
+      className="position-fixed bottom-0 end-0 mb-3 me-2 z-1000000"
       ref={buttonRef}
     >
       <a href={`tel:${TELEPHONE}`} className="floating-btn">
