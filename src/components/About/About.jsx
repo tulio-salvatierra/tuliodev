@@ -4,9 +4,9 @@ import YouTubeEmbed from "../Youtube";
 
 function About() {
   return (
-    <section id="about" className="section z-0">
+    <section id="about" className="section ">
       <h1 className="contact-title">About</h1>
-      <div className="container">
+      <div className="container mb-4">
         <div className="parent">
           <div className="div1"></div>
           <div className="div2">
@@ -27,7 +27,7 @@ function About() {
             </p>
           </div>
           <div className="div3">
-            <h1>MISSION</h1>{" "}
+            <h1>THE MISSION</h1>{" "}
             <p className="about-text">
               I am a full-stack developer that began my journey in front-end,
               then evolved into backend, and now learning full stack
@@ -48,7 +48,7 @@ function About() {
             </a>
           </div>
           <div className="div5">
-            <h1>OTHER INTEREST</h1>{" "}
+            <h1>ALSO</h1>{" "}
             <div className="p-2 mb-5">
               <h4 className="about-text">
                 Here a link a video of me playing to my latest band. Enjoy!

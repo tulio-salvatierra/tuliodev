@@ -7,9 +7,11 @@ import FloatingCallButton from "../components/FloatingCallButton";
 function AboutPage() {
   return (
     <>
-      <About />
-      <CTA />
-      <Contact />
+      <main id="about">
+        <About />
+        <CTA />
+        <Contact />
+      </main>
       <FloatingCallButton />
     </>
   );

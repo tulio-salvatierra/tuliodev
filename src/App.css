@@ -14,7 +14,7 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../src/assets/images/bg/hero-bg.svg");
+  background-image: url("../src/assets/images/bg/cta-bg.png");
   background-color: #211c1c;
   display: flex;
   flex-direction: column;
@@ -48,6 +48,12 @@ main {
   justify-content: center;
   letter-spacing: 0px;
   text-decoration: none;
+  transition: transform 0.1s;
+}
+
+.custom-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }
 
 section {
