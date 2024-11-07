@@ -9,7 +9,7 @@ export default function FloatingCallButton() {
     const config = { strength: 1 };
 
     // Set initial position and xPercent
-    gsap.set(buttonRef.current, { xPercent: -50, x: -1 });
+    gsap.set(buttonRef.current, { xPercent: -0.8, x: -1 });
 
     // Tween animation
     gsap.to(buttonRef.current, {
@@ -25,7 +25,7 @@ export default function FloatingCallButton() {
 
     // ScrollTrigger animation for config.strength
     gsap.to(config, {
-      strength: 5,
+      strength: 2,
       ease: "none",
       scrollTrigger: {
         scrub: true,
@@ -34,7 +34,7 @@ export default function FloatingCallButton() {
   }, []);
   return (
     <div
-      className="position-fixed bottom-0 end-0 mb-5 me-4 z-1000000"
+      className="position-fixed bottom-0 end-0 mb-2 me-2 z-1000000"
       ref={buttonRef}
     >
       <a href={`tel:${TELEPHONE}`} className="floating-btn">
