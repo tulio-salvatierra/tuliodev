@@ -2,6 +2,11 @@
   font-family: "Roboto";
 }
 
+#home {
+  position: relative;
+  overflow: hidden;
+}
+
 html,
 body {
   margin: 0; /* Ensure no default margins */

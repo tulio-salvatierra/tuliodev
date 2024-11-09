@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experience.css";
-import { LINKEDIN_URL } from "./../../Constants/index";
+import { LINKEDIN_URL } from "../../Constants/index";
 
 function Experience() {
   return (

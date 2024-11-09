@@ -12,7 +12,7 @@
   margin-right: auto;
   margin-left: auto;
   flex-wrap: wrap;
-  background-color: transparent;
+  background-color: #211c1c;
   border: 0.25px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(10px);
   color: #e3e4e2;

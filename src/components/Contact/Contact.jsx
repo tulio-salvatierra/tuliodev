@@ -43,14 +43,14 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section z-0 h-100" id="contact">
+    <section className="contact-section h-100" id="contact">
       <h1 className="contact-title">Contact</h1>
       <h4 className="contact-text">
         You can get in touch with me through the form below. I'll be happy to
         discuss your project or answer any questions about freelancing services,
         don't hesitate to reach out!
       </h4>
-      <div className="contact-parent m-3 m-sm-0">
+      <div className="contact-parent h-50 m-3 m-sm-0">
         <div className="contact-info">
           <div className="contact-item">
             <div className="svg-bg">
@@ -70,7 +70,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="">
           <div className="form">
             <form ref={formRef} onSubmit={sendEmail} id="form">
               <div className="mb-3">
