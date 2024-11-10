@@ -11,7 +11,7 @@ export const ABOUT_URL = "/about";
 
 export const CONTACT_URL = "#contact";
 
-export const GITHUB_URL = "https://www.github.com/T00lio";
+export const GITHUB_URL = "https://www.github.com/tulio-salvatierra";
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/tulio-salvatierra/";
 
