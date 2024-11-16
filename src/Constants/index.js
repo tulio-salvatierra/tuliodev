@@ -5,7 +5,7 @@ import homeIcon from "../assets/icons/home.png";
 
 export const PROJECTS_URL = "/projects-web-development-freelance-chicago";
 
-export const HOME_URL = "/chicago-web-development-services";
+export const HOME_URL = "/";
 
 export const ABOUT_URL =
   "/about-tulio-salvatierra-web-development-services-chicago";
