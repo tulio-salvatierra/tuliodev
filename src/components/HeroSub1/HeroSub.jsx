@@ -12,8 +12,8 @@ export default function HeroSub() {
     let tagShow = gsap.to("span", {
       opacity: 1,
       stagger: 0.2,
-      duration: 0.3,
-      paused: true,
+      duration: 0.1,
+      paused: false,
     });
 
     let tagReveal = gsap.to(".reveal", {
@@ -25,9 +25,9 @@ export default function HeroSub() {
       onComplete: () => {
         gsap.to(".reveal", {
           scaleX: 0,
-          stagger: 0.1,
-          duration: 0.3,
-          ease: "power4.out",
+          stagger: 0.2,
+          duration: 0.2,
+          ease: "power3.out",
           transformOrigin: "right",
         });
       },
