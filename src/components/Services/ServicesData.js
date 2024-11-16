@@ -9,7 +9,7 @@ export const servicesData = [
     image: Web,
     alt: "Web development services in Chicago icon",
     description:
-      "Build dynamic, responsive websites tailored to your business needs. Landing page, e-commerce store, or a custom web application, I ensure your site looks great and performs seamlessly.",
+      "Dynamic, responsive websites tailored to your business needs. Landing page, e-commerce store, or a custom web application, I ensure your site looks great and performs seamlessly.",
     CTA: "Book a free consultation",
   },
 
@@ -29,7 +29,6 @@ export const servicesData = [
     image: SEO,
     alt: "SEO optimization icon for web development services in Chicago",
     CTA: "Request an SEO Audit",
-
     description:
       "Boost your visibility online with expert SEO services. Improve your search engine rankings and attract more traffic to your website effortlessly.",
   },

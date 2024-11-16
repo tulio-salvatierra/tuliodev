@@ -29,10 +29,14 @@ main {
 }
 
 .top {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  grid-row: 1;
+}
+.content {
+  margin-top: [header-height]; /* Adjust to match header's height */
 }
 
 .custom-btn {
