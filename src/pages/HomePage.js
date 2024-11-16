@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import ExperienceComponent from "../components/experience/index";
 import Services from "./../components/Services";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
@@ -16,9 +15,9 @@ function HomePage() {
             <Hero />
           </div>{" "}
           <div className="white-bg panel">
-            <Services /> <CTA />
+            <Services />
+            <CTA />
             <Projects />
-            <ExperienceComponent />
             <Skills />
           </div>
         </div>

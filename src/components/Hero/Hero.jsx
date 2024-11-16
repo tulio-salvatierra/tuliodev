@@ -11,8 +11,8 @@ function Hero() {
   return (
     <>
       <section className="hero-section" id="hero">
-        <h1 className="hero-title">TULIO SALVATIERRA</h1>
         <HeroSub />
+        <h1 className="hero-title">TULIO SALVATIERRA</h1>
         <div className="container-fluid flex">
           <div className="col1 d-flex flex-column align-content-center">
             <img
