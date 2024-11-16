@@ -18,7 +18,8 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/tulio-salvatierra/";
 
 export const UPWORK_URL = "https://www.upwork.com/freelancers/tulio";
 
-export const PORTFOLIO_URL = "https://tuliosalvatierra.com";
+export const PORTFOLIO_URL =
+  "https://tuliosalvatierra.com/chicago-web-development-services";
 
 export const TELEPHONE = "786-314-6121";
 
