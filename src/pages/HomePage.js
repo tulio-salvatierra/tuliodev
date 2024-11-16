@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import ExperienceComponent from "../components/experience/index";
+import Services from "./../components/Services";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import CTA from "../components/CTA";
@@ -15,8 +16,8 @@ function HomePage() {
             <Hero />
           </div>{" "}
           <div className="white-bg panel">
+            <Services /> <CTA />
             <Projects />
-            <CTA />
             <ExperienceComponent />
             <Skills />
           </div>

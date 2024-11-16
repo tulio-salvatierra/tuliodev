@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import Contact from "./components/Contact";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import NotFound from "./components/Resume/NotFound";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/#projects" element={<ProjectsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <div className="footer">
