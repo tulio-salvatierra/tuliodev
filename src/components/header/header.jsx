@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
 import Menu from "../../assets/icons/menu.png";
 import { MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,9 +11,24 @@ import Owl from "./../../assets/tulio.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    const showHeader = gsap
+      .from(".top", {
+        yPercent: -100,
+        paused: true,
+        duration: 0.2,
+      })
+      .progress(1);
 
+    ScrollTrigger.create({
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => {
+        self.direction === -1 ? showHeader.play() : showHeader.reverse();
+      },
+    });
+  }, []);
   return (
     <div className="header">
       <Navbar expand="lg" className="logo">
