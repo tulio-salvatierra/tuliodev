@@ -10,7 +10,7 @@ export const HOME_URL = "/";
 export const ABOUT_URL =
   "/about-tulio-salvatierra-web-development-services-chicago";
 
-export const CONTACT_URL = "/chicago-web-development-services#contact";
+export const CONTACT_URL = "/#contact";
 
 export const GITHUB_URL = "https://www.github.com/tulio-salvatierra";
 
