@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "../../assets/icons/menu.png";
-import { MENU_ITEMS } from "../../Constants";
+import { HOME_URL, MENU_ITEMS } from "../../Constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import MenuItem from "../MenuItem/MenuItem";
@@ -9,13 +9,12 @@ import Owl from "./../../assets/tulio.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <div className="header">
       <Navbar expand="lg" className="logo">
-        <NavbarBrand href="/" className="d-flex">
+        <NavbarBrand href={HOME_URL} className="d-flex">
           <img
             src={Owl}
             className="logo-owl"

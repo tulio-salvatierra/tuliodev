@@ -1,7 +1,7 @@
 .project-card {
   color: #e3e4e2;
   display: flex;
-  width: 30%;
+  width: 20%;
   height: auto;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +56,7 @@
   }
 
   .project-card {
-    width: 80%; /* Width for smaller screens */
+    width: 40%; /* Width for smaller screens */
     margin: 1 auto; /* Center the card */
   }
 }
@@ -83,13 +83,13 @@
 .project-description {
   margin-top: 10px;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   color: #e3e4e2;
 }
 
 .project-image {
   width: 100%;
-  height: 370px;
+  height: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
 }

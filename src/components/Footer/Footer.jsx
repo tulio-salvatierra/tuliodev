@@ -28,11 +28,11 @@ function Footer() {
           <div className="footer-col">
             <h1 className="footer-nav">Contact</h1>
             <div className="separator"></div>
-            <div className="footer-item">
+            <div className="footer-item .align-content-around">
               <MenuItem
                 name={"Call"}
                 url={`callto:${TELEPHONE}`}
-                className="p-2"
+                className="p-8"
               />
 
               <MenuItem
@@ -41,7 +41,7 @@ function Footer() {
                 onClick={`mailto:${EMAIL}`}
               />
 
-              <a href={RESUME} download className="custom-btn w-50">
+              <a href={RESUME} download className="custom-btn w-50 mt-2">
                 Get CV
               </a>
             </div>

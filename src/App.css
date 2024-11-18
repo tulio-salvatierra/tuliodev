@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: helvetica;
 }
 
 #home {
@@ -18,9 +18,11 @@ body {
 main {
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-image: url("../src/assets/images/bg/cta-bg.png");
   background-color: #211c1c;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure full height coverage */
@@ -29,10 +31,14 @@ main {
 }
 
 .top {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-  grid-row: 1;
+}
+.content {
+  margin-top: [header-height]; /* Adjust to match header's height */
 }
 
 .custom-btn {
@@ -72,7 +78,7 @@ section {
 .section-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(10rem, 75vw, 15rem);
+  font-size: clamp(8rem, 50vw, 10rem);
   letter-spacing: -11px;
   color: #211c1c;
   padding: 1rem;

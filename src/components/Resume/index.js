@@ -1,2 +1,2 @@
-import Resume from "./Resume";
+import Resume from "./Services";
 export default Resume;

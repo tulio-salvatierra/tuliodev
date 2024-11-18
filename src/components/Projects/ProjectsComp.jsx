@@ -29,7 +29,7 @@ function ProjectsComp() {
             />
             <h3 className="mt-4">{project.title}</h3>
             <p className="project-description">{project.description}</p>
-            <div className="project-links">
+            {/* <div className="project-links">
               <a
                 href={project.repo}
                 target="_blank"
@@ -46,7 +46,7 @@ function ProjectsComp() {
               >
                 Site
               </a>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

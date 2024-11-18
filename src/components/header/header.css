@@ -29,7 +29,7 @@
 }
 
 .header {
-  padding: 1rem;
+  padding: 2rem;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
@@ -37,6 +37,10 @@
   backdrop-filter: blur(10px);
   color: #e3e4e2;
   top: 0;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 40px;
+  }
 }
 
 .social-icons {

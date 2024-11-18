@@ -3,36 +3,36 @@
   margin: 0;
   padding: 0;
   width: auto;
-  height: 50px;
-  margin-right: 2rem;
+
+  margin-right: 1rem;
 }
 
 .link-container {
-  height: 50px;
+  height: 25px;
   width: auto;
   color: #e3e4e2;
   text-decoration: none;
 }
 
 .menuItem-container {
-  padding: o;
+  padding: 0;
   display: grid;
   flex-direction: column;
   align-items: left;
   justify-content: left;
   width: auto;
-  height: 50px;
+  height: 20px;
   overflow: hidden;
   color: #e3e4e2;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .primary {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #e3e4e2;
 }
 
 .secondary {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #e3e4e2;
 }
