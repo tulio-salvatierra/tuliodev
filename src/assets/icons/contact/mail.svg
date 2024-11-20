@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="64px" height="64px" fill-rule="nonzero"><defs>
+    <linearGradient id="gradient" gradientTransform="rotate(225)">
+      <stop offset="0%" stop-color="#8aff85" />
+      <stop offset="100%" stop-color="#d0ff7d" />
+    </linearGradient>
+  </defs><g fill="url(#gradient)" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.55556,3.55556)"><path d="M42.16,38.64l16.01,16.02c-1.45,0.89 -3.24,1.34 -5.39,1.34h-33.56c-2.15,0 -3.94,-0.45 -5.39,-1.34l16.01,-16.02c3.39,3.11 4.32,3.35 6.16,3.35c1.84,0 2.77,-0.24 6.16,-3.35zM61.99,25.24v21.55c0,1.7 -0.28,3.19 -0.85,4.45l-15.72,-15.72l15.43,-15.31c0.76,1.38 1.14,3.06 1.14,5.03zM26.58,35.52l-15.72,15.72c-0.57,-1.26 -0.85,-2.75 -0.85,-4.45v-21.55c0,-1.97 0.38,-3.65 1.14,-5.03zM32.69,35.42c-4.97,-4.76 -18.36,-18.32 -18.36,-18.32c1.35,-0.72 2.98,-1.07 4.89,-1.07h33.56c1.91,0 3.54,0.35 4.89,1.07c0,0 -13.39,13.56 -18.36,18.32c-1.25,1.21 -2.12,1.91 -3.31,1.73c-1.19,0.18 -2.06,-0.52 -3.31,-1.73z"></path></g></g></svg>

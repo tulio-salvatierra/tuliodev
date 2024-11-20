@@ -18,7 +18,7 @@
 .contact-section {
   padding: 2rem;
   height: 50%;
-  background: #000;
+  background: #000 0.5;
 }
 @media screen and (max-width: 768px) {
   .contact-section {
@@ -27,7 +27,7 @@
 }
 
 .contact-title {
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: clamp(10rem, 75vw, 15rem);
   letter-spacing: -11px;
@@ -83,6 +83,7 @@
   border-radius: 1rem;
   align-content: center;
   font-size: 1.75rem;
+  font-weight: 200;
 }
 
 .contact-item:hover {
@@ -148,6 +149,7 @@ label {
   font-size: 1.5rem;
   font-weight: bold;
   color: #e3e4e2;
+  text-align: left;
 }
 
 .contact-text {
@@ -158,8 +160,9 @@ label {
   margin: 1rem;
   width: 50%;
   color: #e3e4e2;
-  font-weight: 100;
+  font-weight: 200;
   text-decoration: none;
+  text-align: left;
 }
 
 @media (max-width: 768px) {

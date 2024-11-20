@@ -28,11 +28,12 @@
 .service-icon {
   width: 25%;
   color: #212c1c;
+  padding: 0.5rem;
 }
 
 .services-description {
   text-align: left;
-  font-size: 200;
+  font-size: 1.75;
   color: #969695;
 }
 
@@ -61,4 +62,8 @@
   letter-spacing: 0px;
   text-decoration: none;
   transition: transform 0.1s;
+}
+.welcome {
+  color: #211c1c;
+  text-align: left;
 }

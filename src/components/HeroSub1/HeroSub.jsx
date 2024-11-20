@@ -19,7 +19,7 @@ export default function HeroSub() {
     let tagReveal = gsap.to(".reveal", {
       scaleX: 1,
       stagger: 0.1,
-      duration: 0.3,
+      duration: 0.2,
       paused: true,
       transformOrigin: "left",
       onComplete: () => {
@@ -27,7 +27,7 @@ export default function HeroSub() {
           scaleX: 0,
           stagger: 0.2,
           duration: 0.2,
-          ease: "power3.out",
+          ease: "power4.out",
           transformOrigin: "right",
         });
       },

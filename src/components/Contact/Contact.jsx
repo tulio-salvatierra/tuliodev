@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { EMAIL, TELEPHONE } from "../../Constants";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "./../../assets/icons/contact/phone.svg";
+import EmailIcon from "./../../assets/icons/contact/mail.svg";
 
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
@@ -53,17 +53,19 @@ export default function Contact() {
       <div className="contact-parent h-50 m-3 m-sm-0">
         <div className="contact-info">
           <div className="contact-item">
-            <div className="svg-bg">
-              <EmailIcon className="contact-svg" fontSize="large" />
-            </div>
+            <img
+              src={EmailIcon}
+              alt="email icon for web develoment services in chicago"
+            ></img>
             <a href={`mailto:${EMAIL}`} className="contact-text">
               <h4>{EMAIL}</h4>
             </a>
           </div>
           <div className="contact-item ju">
-            <div className="svg-bg">
-              <PhoneIcon className="contact-svg" fontSize="large" />
-            </div>
+            <img
+              src={PhoneIcon}
+              alt="phone icon for web develoment services in chicago"
+            ></img>
             <a href={`tel:${TELEPHONE}`} className="contact-text">
               <h4>{TELEPHONE}</h4>
             </a>
