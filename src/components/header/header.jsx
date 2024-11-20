@@ -11,6 +11,7 @@ import MenuItem from "../MenuItem/MenuItem";
 import Owl from "./../../assets/tulio.svg";
 
 gsap.registerPlugin(ScrollTrigger);
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -29,7 +30,7 @@ export default function Header() {
 
       ScrollTrigger.create({
         start: "top top",
-        end: "max",
+        end: "bottom 80%",
         markers: false,
         onUpdate: (self) => {
           self.direction === -1 ? showAnim.play() : showAnim.reverse();

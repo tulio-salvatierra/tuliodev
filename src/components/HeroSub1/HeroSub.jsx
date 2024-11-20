@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 export default function HeroSub() {
-  const container = useRef();
+  const container = useRef(null);
   useGSAP(
     () => {
       const section = document.querySelector("section");
@@ -25,7 +25,7 @@ export default function HeroSub() {
         scaleX: 1,
         stagger: 0.1,
         duration: 0.2,
-        paused: true,
+        paused: false,
         transformOrigin: "left",
         onComplete: () => {
           gsap.to(".reveal", {
