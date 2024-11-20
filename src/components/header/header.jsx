@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Navbar, NavbarBrand } from "reactstrap";
@@ -8,32 +9,38 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import MenuItem from "../MenuItem/MenuItem";
 import Owl from "./../../assets/tulio.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  useEffect(() => {
-    const showAnim = gsap
-      .from(".header", {
-        yPercent: -100,
-        paused: true,
-        duration: 0.2,
-      })
-      .progress(1);
+  const header = useRef();
 
-    ScrollTrigger.create({
-      start: "top top",
-      end: "max",
-      markers: false,
-      onUpdate: (self) => {
-        self.direction === -1 ? showAnim.play() : showAnim.reverse();
-      },
-    });
-  });
+  useGSAP(
+    () => {
+      const showAnim = gsap
+        .from(".header", {
+          yPercent: -100,
+          paused: false,
+          duration: 0.2,
+        })
+        .progress(1);
+
+      ScrollTrigger.create({
+        start: "top top",
+        end: "max",
+        markers: false,
+        onUpdate: (self) => {
+          self.direction === -1 ? showAnim.play() : showAnim.reverse();
+        },
+      });
+    },
+    { scope: header }
+  );
 
   return (
-    <div className="header">
+    <div className="header" ref={header}>
       <Navbar expand="lg" className="logo">
         <NavbarBrand href={HOME_URL} className="d-flex">
           <img
