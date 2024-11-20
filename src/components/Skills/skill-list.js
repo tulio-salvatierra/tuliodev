@@ -20,6 +20,7 @@ import ts from "../../assets/images/skill-icons/ts.svg";
 
 export const skills = [
   {
+    id: 1,
     title: "FrontEnd",
     content: [
       { name: "Bootstrap", icon: Bootstrap },
@@ -33,6 +34,7 @@ export const skills = [
     ],
   },
   {
+    id: 2,
     title: "BackEnd",
     content: [
       { name: "Node.js", icon: node },
@@ -44,6 +46,7 @@ export const skills = [
     ],
   },
   {
+    id: 3,
     title: "Tools",
     content: [
       { name: "VS Code", icon: code },

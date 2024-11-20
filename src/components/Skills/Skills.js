@@ -9,26 +9,26 @@ function Skills() {
         <h1 className="section-title">Skills</h1>
       </div>
 
-      <div className="skill">
-        {skills.map((category, index) => (
-          <div key={index + category} className="card">
-            <div className="card-body">
-              <h3 className="card-title w-100" key={index + category}>
-                {category.title}
-              </h3>
-              {category.content.map((skill, index) => (
-                <div className="skill" key={skill + index}>
-                  <img
-                    src={skill.icon}
-                    alt="skill"
-                    style={{ width: "50px", margin: "0.5rem" }}
-                  />
-                  <p className="text-center ">{skill.name}</p>
-                </div>
-              ))}
+      <div className="marquee">
+        <div className="marquee-content">
+          {skills.map((category, index) => (
+            <div key={index + category.id} className="marquee-category">
+              <h3 className="category-title">{category.id.title}</h3>
+              <div className="skills-row">
+                {category.content.map((skill, index) => (
+                  <div className="skill-item" key={skill.name + index}>
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="skill-icon"
+                    />
+                    <p>{skill.name}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -21,8 +21,6 @@ main {
   background-position: center;
   background-size: cover;
   background-image: url("../src/assets/images/bg/cta-bg.png");
-  background-color: #211c1c;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure full height coverage */
