@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,7 +16,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const header = useRef();
+  const header = useRef(null);
 
   useGSAP(
     () => {
@@ -30,8 +30,9 @@ export default function Header() {
 
       ScrollTrigger.create({
         start: "top top",
-        end: "bottom 80%",
+        end: "bottom top",
         markers: false,
+        anticipatePin: true,
         onUpdate: (self) => {
           self.direction === -1 ? showAnim.play() : showAnim.reverse();
         },
@@ -73,7 +74,7 @@ export default function Header() {
           onClick={toggleMenu}
         >
           <span className="navbar-toggler-icon">
-            <image src={Menu}></image>
+            <image src={Menu} alt="menu toggle"></image>
           </span>
         </button>
       </Navbar>
