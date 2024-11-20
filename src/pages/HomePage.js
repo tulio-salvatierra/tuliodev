@@ -11,7 +11,7 @@ function HomePage() {
     <>
       <main id="home">
         <div className="panel-wrapper">
-          <div className="panel">
+          <div className="panel mt-5 pt-5">
             <Hero />
           </div>{" "}
           <div className="white-bg panel">

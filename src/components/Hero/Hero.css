@@ -3,7 +3,7 @@
   letter-spacing: -11px;
   font-size: clamp(10rem, 80vw, 12rem);
   color: #c6d1ba;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-welcome {
