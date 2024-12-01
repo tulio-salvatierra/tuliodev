@@ -7,9 +7,9 @@ function About() {
     <section id="about" className="section ">
       <h1 className="contact-title">About</h1>
       <div className="mb-4">
-        <div className="parent">
-          <div className="div2"></div>
-          <div className="div1">
+        <div className="parent-about">
+          <div className="div22"></div>
+          <div className="div11">
             <h1 className="text-bento-title">THE STORY...</h1>
             <p className="about-text">
               I am originally from Venezuela 🇻🇪. I've been in the US for almost
@@ -26,7 +26,7 @@ function About() {
               connect with other and I hope tech will make that possible too! 🚀
             </p>
           </div>
-          <div className="div3">
+          <div className="div33">
             <h1>THE MISSION</h1>{" "}
             <p className="about-text">
               I am a full-stack developer that began my journey in front-end,
@@ -42,7 +42,7 @@ function About() {
               while learning all of this technologies.
             </p>
           </div>
-          <div className="div4">
+          <div className="div44">
             <a className="custom-btn" href="/contact">
               Let's Collaborate!
             </a>

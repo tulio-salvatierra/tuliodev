@@ -35,7 +35,7 @@ export default function ServicesComp() {
             {
               <div className="project-links">
                 <a
-                  href={project.alt}
+                  href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="services-btn  services"

@@ -1,6 +1,6 @@
 .about-text {
   font-size: 1.5rem;
-  color: #e3e4e2;
+  color: #211c1c;
   font-weight: 200;
   text-align: left;
   width: 100%;
@@ -104,14 +104,14 @@ ul {
     margin: 0;
   }
 
-  .div2 {
+  .div22 {
     max-width: 100%;
     min-height: 250px;
     border-radius: 1rem;
   }
 }
 
-.parent {
+.parent-about {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -121,7 +121,7 @@ ul {
   padding: 4rem;
 }
 
-.div1 {
+.div11 {
   grid-area: 1 / 1 / 4 / 5;
   position: relative;
   overflow: hidden;
@@ -129,9 +129,16 @@ ul {
   padding: 2rem;
   border: 0.5px solid #e3e4e2;
   line: 1.5;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
 }
 
-.div2 {
+.div22 {
   grid-area: 1 / 5 / 4 / 7;
   background-color: rgba(138, 255, 133, 0.05);
   border-radius: 2rem;
@@ -145,9 +152,20 @@ ul {
   background-position: center;
 }
 
-.div3 {
+.div33 {
   grid-area: 4 / 4 / 6 / 7;
-  background: rgba(227, 228, 226, 0.05);
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12.3px);
   border-radius: 1rem;
@@ -155,7 +173,7 @@ ul {
   transition: transform 0.1s;
 }
 
-.div4 {
+.div44 {
   grid-area: 6 / 4 / 7 / 7;
   display: flex;
   justify-content: center;
@@ -182,10 +200,10 @@ ul {
   grid-area: 4 / 1 / 7 / 4;
   border-radius: 1rem;
   padding: 2rem;
-  background-color: rgba(188, 255, 133, 0.5);
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12.3px);
-  color: #212529;
+  color: #211c1c;
   transition: transform 0.1s;
 }
 

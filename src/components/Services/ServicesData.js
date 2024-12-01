@@ -2,6 +2,7 @@ import Animation from "./../../assets/icons/services/animation.svg";
 import SEO from "./../../assets/icons/services/seo.svg";
 import UX from "./../../assets/icons/services/ux.svg";
 import Web from "./../../assets/icons/services/web.svg";
+import { TELEPHONE } from "../../Constants";
 
 export const servicesData = [
   {
@@ -13,6 +14,7 @@ export const servicesData = [
     description:
       "I create dynamic, responsive websites tailored to your business needs. Whether you require a landing page, an e-commerce store, or a custom web application, I ensure your site is visually appealing and functions flawlessly.",
     CTA: "Book a Free Consultation",
+    href: `tel:${TELEPHONE}`,
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ export const servicesData = [
     description:
       "I craft stunning, user-friendly designs that captivate your customers. By focusing on intuitive layouts and seamless user experiences, I help elevate your brand's digital presence.",
     CTA: "Let’s Design Together",
+    href: `tel:${TELEPHONE}`,
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const servicesData = [
     description:
       "Enhance your online presence with professional SEO services. I improve your search engine rankings, driving more organic traffic to your website and increasing your business's reach.",
     CTA: "Request an SEO Audit",
+    href: `tel:${TELEPHONE}`,
   },
   {
     id: 4,
@@ -40,5 +44,6 @@ export const servicesData = [
     description:
       "Bring your website to life with captivating animations. Utilizing GSAP and modern libraries, I create scroll-triggered effects and dynamic interactions that enhance user engagement.",
     CTA: "Add Animation to Your Site",
+    href: `tel:${TELEPHONE}`,
   },
 ];
