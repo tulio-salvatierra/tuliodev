@@ -4,42 +4,34 @@ import YouTubeEmbed from "../Youtube";
 
 function About() {
   return (
-    <section id="about" className="section ">
+    <section id="about" className="section">
       <h1 className="contact-title">About</h1>
       <div className="mb-4">
         <div className="parent-about">
           <div className="div22"></div>
           <div className="div11">
-            <h1 className="text-bento-title">THE STORY...</h1>
+            <h1 className="text-bento-title">MY JOURNEY</h1>
             <p className="about-text">
-              I am originally from Venezuela 🇻🇪. I've been in the US for almost
-              8 years now. I have a bachelors degree in business administration
-              from UNE in Caracas (Venezuela) and had different professional
-              roles in family business, entreprenurail ventures and big 4 firms
-              (Accenture & EY). Technology has always been a passion of mine in
-              many ways like innovation, computer science, video games, etc. So,
-              I decided to persue this long time passion with intent and here I
-              am learning and creating web interfaces. It's been an amazing
-              challenge that I embrace fully and want to keep growing in this
-              area. <hr />I also enjoy making music and been a self taught
-              drummer for many years and being in bands was always a way to
-              connect with other and I hope tech will make that possible too! 🚀
+              Originally from Venezuela 🇻🇪, I've called the U.S. home for nearly
+              8 years. Holding a bachelor's degree in Business Administration
+              from UNE in Caracas, my career has spanned family businesses,
+              entrepreneurial ventures, and roles at firms like Accenture and
+              EY. My passion for technology—spanning innovation, computer
+              science, and video games—led me to pursue web development. This
+              journey has been a rewarding challenge, and I'm committed to
+              continuous growth in this field.
             </p>
           </div>
           <div className="div33">
-            <h1>THE MISSION</h1>{" "}
+            <h1>MY MISSION</h1>
             <p className="about-text">
-              I am a full-stack developer that began my journey in front-end,
-              then evolved into backend, and now learning full stack
-              applications, and my latest endeavor is to learn cloud
-              infrastructure. Every guru says find a niche and stick with it...
-              but in reality you find many niches.. and things change along the
-              way, but all systems will needs a management of its systems and
-              will be in some sort of cloud, hence that's why I am learning
-              Cloud infrastructure. This is not a home, but rather a comfy place
-              you find in your journey. Thing is journey is not a destination
-              but a process, so I am gonna try to enjoy it as much as possible
-              while learning all of this technologies.
+              As a full-stack developer, I began with front-end technologies,
+              expanded into back-end development, and now specialize in
+              comprehensive web solutions. Recognizing the importance of cloud
+              infrastructure, I'm dedicated to mastering it to provide scalable
+              and efficient services. I believe in embracing the journey of
+              learning and aim to enjoy every step while integrating diverse
+              technologies.
             </p>
           </div>
           <div className="div44">
@@ -48,17 +40,15 @@ function About() {
             </a>
           </div>
           <div className="div5">
-            <h1>ALSO</h1>{" "}
+            <h1>BEYOND WORK</h1>
             <div className="p-2 mb-5">
               <h4 className="about-text">
-                Here a link a video of me playing to my latest band. Enjoy!
+                Music is a significant part of my life. Here's a video of me
+                performing with my latest band—enjoy!
               </h4>
             </div>
             <YouTubeEmbed />
-            <h4 className="about-text">
-              {" "}
-              Here's a playlist I use when I code:
-            </h4>
+            <h4 className="about-text">Here's a playlist I use when coding:</h4>
             <Spotify />
           </div>
         </div>
