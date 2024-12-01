@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import CTA from "../components/CTA";
 import Skills from "../components/Skills/Skills";
 import FloatingCallButton from "../components/FloatingCallButton";
+import ProductsComp from "../components/Products/Products";
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
           </div>{" "}
           <div className="white-bg panel">
             <Services />
+            <ProductsComp />
             <CTA />
             <Projects />
             <Skills />
