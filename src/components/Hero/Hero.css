@@ -1,7 +1,7 @@
 .hero-title {
   font-weight: 700;
   letter-spacing: -11px;
-  font-size: clamp(10rem, 80vw, 12rem);
+  font-size: clamp(6rem, 80vw, 8rem);
   color: #c6d1ba;
   text-align: center;
 }
@@ -38,7 +38,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
   width: 100%;
   height: auto;
@@ -79,7 +79,7 @@
 
 .hero-image {
   display: block;
-  height: 200px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2rem;

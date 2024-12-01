@@ -13,6 +13,13 @@
   margin: 2rem;
 }
 
+.project-section {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
   .service-card {
     width: 100%;

@@ -2,43 +2,43 @@ import Animation from "./../../assets/icons/services/animation.svg";
 import SEO from "./../../assets/icons/services/seo.svg";
 import UX from "./../../assets/icons/services/ux.svg";
 import Web from "./../../assets/icons/services/web.svg";
+
 export const servicesData = [
   {
     id: 1,
-    title: "Web Development",
+    title:
+      "Professional Web Development Services for Small Businesses in Chicago",
     image: Web,
     alt: "Web development services in Chicago icon",
     description:
-      "Dynamic, responsive websites tailored to your business needs. Landing page, e-commerce store, or a custom web application, I ensure your site looks great and performs seamlessly.",
-    CTA: "Book a free consultation",
+      "I create dynamic, responsive websites tailored to your business needs. Whether you require a landing page, an e-commerce store, or a custom web application, I ensure your site is visually appealing and functions flawlessly.",
+    CTA: "Book a Free Consultation",
   },
-
   {
     id: 2,
-    title: "UI/UX Design",
+    title: "User-Centric UI/UX Design Services to Enhance Customer Engagement",
     image: UX,
     alt: "UI/UX design for small business websites in Chicago icon",
     description:
-      "Deliver stunning and user-friendly designs that keep your customers engaged. I focus on creating intuitive layouts and experiences that elevate your brand.",
+      "I craft stunning, user-friendly designs that captivate your customers. By focusing on intuitive layouts and seamless user experiences, I help elevate your brand's digital presence.",
     CTA: "Let’s Design Together",
   },
-
   {
     id: 3,
-    title: "SEO Optimization",
+    title: "Expert SEO Optimization Services to Increase Online Visibility",
     image: SEO,
     alt: "SEO optimization icon for web development services in Chicago",
-    CTA: "Request an SEO Audit",
     description:
-      "Boost your visibility online with expert SEO services. Improve your search engine rankings and attract more traffic to your website effortlessly.",
+      "Enhance your online presence with professional SEO services. I improve your search engine rankings, driving more organic traffic to your website and increasing your business's reach.",
+    CTA: "Request an SEO Audit",
   },
   {
     id: 4,
-    title: "Custom Animations",
+    title: "Engaging Custom Animations to Enliven Your Website",
     image: Animation,
-    alt: "custom animations for web development services in Chicago",
-    CTA: "Add Animation to Your Site",
+    alt: "Custom animations for web development services in Chicago",
     description:
-      "Enhance your website with eye-catching animations using GSAP and other modern libraries. I bring your site to life with scroll-triggered effects and dynamic interactions.",
+      "Bring your website to life with captivating animations. Utilizing GSAP and modern libraries, I create scroll-triggered effects and dynamic interactions that enhance user engagement.",
+    CTA: "Add Animation to Your Site",
   },
 ];

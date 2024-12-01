@@ -12,18 +12,18 @@ function Hero() {
     <>
       <section className="hero-section" id="hero">
         <HeroSub />
-        <h1 className="hero-title">TULIO SALVATIERRA</h1>
-        <div className="container-fluid flex">
+        <h1 className="hero-title">
+          Empowering Your Business with Custom Web Solutions
+        </h1>
+        <div className="container-fluid flex mb-5">
           <div className="col1 d-flex flex-column align-content-center">
             <img
               src={Owl}
               alt="logo icon of web development services chicago"
               className="stack"
             />
-
-            <h1 className="text-center">Full Stack Developer</h1>
             <a className="custom-btn" href="/contact">
-              Get in touch
+              Start Your Project Today
             </a>
           </div>
           <div className="col2 ">
@@ -35,8 +35,9 @@ function Hero() {
           </div>
           <div className="col3 d-flex flex-column p-0">
             <h3 className="hero-welcome">
-              I build websites and provide digital solutions to help businesses
-              and professionals drive growth and enhance your online presence.
+              Specializing in responsive website development, user-friendly
+              interfaces, and seamless user experiences to elevate your online
+              presence and drive business growth.
             </h3>
             <div className="hero-icons w-50 justify-content-between">
               <a href={LINKEDIN_URL}>
