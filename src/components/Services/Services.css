@@ -1,7 +1,7 @@
 .service-card {
   color: #e3e4e2;
   display: flex;
-  width: 20%;
+  min-width: 30%;
   height: auto;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +33,7 @@
 }
 
 .service-icon {
-  width: 25%;
+  width: 15%;
   color: #212c1c;
   padding: 0.5rem;
 }

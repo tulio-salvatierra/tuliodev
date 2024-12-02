@@ -11,7 +11,7 @@ export default function ProductsComp() {
       <div className="projectDiv flex p-3">
         {productsData.map((product, index) => (
           <div key={index} className="product-card">
-            <div className="product-title">
+            <div className="product-title p-4">
               <h3 className="product-subtitle">{product.title}</h3>
               <p className="product-description">{product.description}</p>
               <a className="product-price" href="/products">
@@ -25,7 +25,7 @@ export default function ProductsComp() {
                 </li>
               ))}
             </div>
-            <p className="ideal">
+            <p className="ideal mt-5">
               <strong>Ideal for: {product.idealFor}</strong>
             </p>
           </div>

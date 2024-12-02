@@ -1,7 +1,7 @@
 .product-card {
   color: #e3e4e2;
   display: flex;
-  width: 35%;
+  min-width: 35dvw;
   height: auto;
   flex-direction: column;
   justify-content: space-between;
@@ -15,35 +15,46 @@
 
 @media screen and (max-width: 768px) {
   .product-card {
-    width: 7s5%;
+    width: 75dvw;
     display: flex;
   }
 }
 
 .product-title {
   display: flex;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .product-price {
   text-decoration: none;
   color: #e3e4e2;
-  font-weight: bold;
-
-  border-radius: 2rem;
-  width: 25%;
-
+  font-weight: 700;
+  font-size: 2rem;
   margin-left: auto;
-  margin-right: auto;
+}
+
+.product-feature {
+  font-weight: 200;
+  list-style: disc;
+  margin-left: 1rem;
+  font-size: 1.75rem;
+}
+
+.ideal {
+  font-size: 1.75rem;
+  width: 75%;
 }
 
 @media screen and (max-width: 768px) {
-  .service-card {
+  .product-card {
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin: 2rem 0;
   }
-  .service-icon {
-    width: 15%;
+  .ideal {
+    width: 100%;
   }
 }

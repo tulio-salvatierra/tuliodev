@@ -28,7 +28,7 @@
 
 .ctaTitle {
   font-weight: 700;
-  font-size: clamp(7rem, 2vw, 4rem);
+  font-size: clamp(6rem, 2vw, 3rem);
   letter-spacing: -7px;
   color: #211c1c;
   overflow: hidden;
@@ -98,7 +98,7 @@
     grid-template-rows: auto;
     justify-items: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
-    padding: 2rem; /* Adjust padding for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
 
   .div1,
@@ -106,12 +106,13 @@
   .div3,
   .div4 {
     grid-area: auto;
-    width: 100%; /* Ensure full width on mobile */
-    margin-bottom: 16px; /* Space between items */
+    width: 100%;
+    margin-bottom: 16px;
   }
 
   .ctaTitle {
-    font-size: clamp(5rem, 5vw, 3rem); /* Adjust font size for readability */
+    font-size: clamp(4rem, 5vw, 3rem);
+    letter-spacing: -4px;
   }
 
   .ctaSub {
