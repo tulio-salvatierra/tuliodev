@@ -15,7 +15,7 @@ function Hero() {
         <h1 className="hero-title">
           Empowering Your Business with Custom Web Solutions
         </h1>
-        <div className="container-fluid flex mb-5">
+        <div className="hero flex mb-5">
           <div className="col1 d-flex flex-column align-content-center">
             <img
               src={Owl}
