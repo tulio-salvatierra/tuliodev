@@ -162,6 +162,8 @@
 }
 
 .footer-item {
+  text-transform: uppercase;
+  font-size: 1.75rem;
   margin-top: 2rem;
   height: 100%;
   display: flex;
