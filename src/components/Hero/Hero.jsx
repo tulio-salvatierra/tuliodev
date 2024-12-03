@@ -1,3 +1,6 @@
+import { useRef, useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
 import "./Hero.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -7,16 +10,35 @@ import profile_pic from "../../assets/images/hero/profile.jpeg";
 import Owl from "./../../assets/tulio.svg";
 import HeroSub from "../HeroSub1/HeroSub";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Hero() {
+  const panelsBottomRef = useRef([]);
+
+  useEffect(() => {
+    gsap.from(panelsBottomRef.current, {
+      y: 50, // Start position (below)
+      opacity: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      stagger: 0.3,
+    });
+  }, []);
   return (
     <>
       <section className="hero-section" id="hero">
         <HeroSub />
-        <h1 className="hero-title">
+        <h1
+          className="hero-title"
+          ref={(el) => (panelsBottomRef.current[0] = el)}
+        >
           Empowering Your Business with Custom Web Solutions
         </h1>
         <div className="hero flex mb-5">
-          <div className="col1 d-flex flex-column align-content-center">
+          <div
+            className="col1 d-flex flex-column align-content-center"
+            ref={(el) => (panelsBottomRef.current[1] = el)}
+          >
             <img
               src={Owl}
               alt="logo icon of web development services chicago"
@@ -26,14 +48,17 @@ function Hero() {
               Start Your Project Today
             </a>
           </div>
-          <div className="col2 ">
+          <div className="col2" ref={(el) => (panelsBottomRef.current[2] = el)}>
             <img
               src={profile_pic}
               alt="tulio_salvatierra"
               className="hero-image"
             />
           </div>
-          <div className="col3 d-flex flex-column p-0">
+          <div
+            className="col3 d-flex flex-column p-0"
+            ref={(el) => (panelsBottomRef.current[3] = el)}
+          >
             <h3 className="hero-welcome">
               Specializing in responsive website development, user-friendly
               interfaces, and seamless user experiences to elevate your online

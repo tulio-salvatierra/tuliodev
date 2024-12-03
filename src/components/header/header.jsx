@@ -21,7 +21,7 @@ export default function Header() {
   useGSAP(
     () => {
       const showAnim = gsap
-        .from(".header", {
+        .from(header, {
           yPercent: -100,
           paused: false,
           duration: 0.2,
@@ -30,7 +30,7 @@ export default function Header() {
 
       ScrollTrigger.create({
         start: "top top",
-        end: "bottom top",
+        end: "bottom bottom",
         markers: false,
         anticipatePin: true,
         onUpdate: (self) => {
