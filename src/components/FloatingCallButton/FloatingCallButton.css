@@ -1,6 +1,6 @@
 .floating-btn {
   background-color: #fff;
-  border: 2px solid;
+  border: 2px #000 solid;
   border-radius: 20rem;
   padding: 1rem;
 }

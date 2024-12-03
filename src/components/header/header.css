@@ -80,15 +80,16 @@
   }
 }
 
-.custom-toogler {
-  color: #fff;
-  border: 2px solid #fff;
-}
-
 .home-link p {
   font-weight: 900;
 }
 
 .link p {
   font-weight: 100;
+}
+.navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler {
+  background-color: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
 }
