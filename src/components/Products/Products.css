@@ -1,7 +1,7 @@
 .product-card {
   color: #e3e4e2;
   display: flex;
-  min-width: 35dvw;
+  width: 40dvw;
   height: auto;
   flex-direction: column;
   justify-content: space-between;
@@ -30,7 +30,7 @@
   text-decoration: none;
   color: #e3e4e2;
   font-weight: 700;
-  font-size: 2rem;
+  ont-size: calc(1.3rem + 0.6vw);
   margin-left: auto;
 }
 
@@ -38,12 +38,12 @@
   font-weight: 200;
   list-style: disc;
   margin-left: 1rem;
-  font-size: 1.75rem;
+  ont-size: calc(1.3rem + 0.6vw);
 }
 
 .ideal {
-  font-size: 1.75rem;
   width: 75%;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,5 +56,13 @@
   }
   .ideal {
     width: 100%;
+    font-size: 1rem;
+  }
+  .product-feature {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .product-price {
+    font-size: 1rem;
   }
 }

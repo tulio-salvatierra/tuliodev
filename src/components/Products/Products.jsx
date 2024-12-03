@@ -5,7 +5,7 @@ export default function ProductsComp() {
   return (
     <section id="products" className="product-section">
       <div className="project-header">
-        <h2 className="section-title">Services</h2>
+        <h2 className="section-title">Products</h2>
         <div className="d-flex subtitle-box"></div>
       </div>
       <div className="projectDiv flex p-3">
@@ -25,9 +25,7 @@ export default function ProductsComp() {
                 </li>
               ))}
             </div>
-            <p className="ideal mt-5">
-              <strong>Ideal for: {product.idealFor}</strong>
-            </p>
+            <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
           </div>
         ))}
       </div>

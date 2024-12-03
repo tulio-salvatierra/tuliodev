@@ -1,10 +1,11 @@
 .floating-btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #000;
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 20rem;
   padding: 1rem;
-  border-radius: 50px;
-  color: #fff;
-  border: 4px solid limeGreen;
-  font-weight: 900;
+}
+
+.phoneButton {
+  height: 1.75rem;
+  width: auto;
 }

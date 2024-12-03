@@ -29,7 +29,7 @@
 .contact-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(10rem, 75vw, 15rem);
+  font-size: clamp(8rem, 50vw, 10rem);
   letter-spacing: -11px;
   color: #c6d1ba;
   padding: 1rem;

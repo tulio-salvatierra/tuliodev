@@ -1,10 +1,10 @@
 .service-card {
   color: #e3e4e2;
   display: flex;
-  min-width: 30%;
+  width: 30%;
   height: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
   background-color: rgba(33, 28, 28, 0.85);
   border-radius: 10px;
@@ -28,12 +28,12 @@
     margin-right: auto;
   }
   .service-icon {
-    width: 15%;
+    width: 50%;
   }
 }
 
 .service-icon {
-  width: 15%;
+  width: 30%;
   color: #212c1c;
   padding: 0.5rem;
 }
