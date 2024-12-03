@@ -1,11 +1,11 @@
 .floating-btn {
   background-color: #fff;
   border: 2px #000 solid;
-  border-radius: 20rem;
+  border-radius: 50%;
   padding: 1rem;
 }
 
 .phoneButton {
-  height: 1.75rem;
+  height: 1.6rem;
   width: auto;
 }
