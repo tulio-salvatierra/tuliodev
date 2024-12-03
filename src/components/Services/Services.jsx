@@ -48,7 +48,11 @@ export default function ServicesComp() {
       </div>
       <div className="projectDiv flex p-3">
         {servicesData.map((project, index) => (
-          <div key={index} className="service-card">
+          <div
+            key={index}
+            className="service-card"
+            ref={(el) => (eased.current[2 + index] = el)}
+          >
             <img
               src={project.image}
               alt={project.title}
