@@ -51,7 +51,7 @@ export default function ServicesComp() {
           <div
             key={index}
             className="service-card"
-            ref={(el) => (eased.current[2 + index] = el)}
+            ref={(el) => (eased.current[3 + index] = el)}
           >
             <img
               src={project.image}

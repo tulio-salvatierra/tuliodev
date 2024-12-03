@@ -28,7 +28,7 @@
 
 .ctaTitle {
   font-weight: 700;
-  font-size: clamp(6rem, 2vw, 3rem);
+  font-size: clamp(8rem, 2vw, 3rem);
   letter-spacing: -7px;
   color: #211c1c;
   overflow: hidden;

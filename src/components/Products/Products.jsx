@@ -37,7 +37,7 @@ export default function ProductsComp() {
           <div
             key={index}
             className="product-card"
-            ref={(el) => (eased.current[0 + 1] = el)}
+            ref={(el) => (eased.current[index + 1] = el)}
           >
             <div className="product-title p-4">
               <h3 className="product-subtitle">{product.title}</h3>
