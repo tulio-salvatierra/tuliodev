@@ -1,6 +1,6 @@
 import Contact from "../components/Contact";
 import ProjectsComp1 from "../components/Projects";
-import React from "react";
+import "./../App.css";
 
 function ProjectsPage() {
   return (
