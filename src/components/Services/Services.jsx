@@ -11,20 +11,31 @@ export default function ServicesComp() {
   const eased = useRef([]);
 
   useEffect(() => {
-    gsap.from(eased.current, {
-      y: 50, // Start position (below)
-      opacity: 0, // Start fully transparent
-      duration: 1, // Animation duration
-      ease: "power2.out", // Smooth easing
-      stagger: 0.3, // Stagger animations for a cascading effect
-      scrollTrigger: {
-        trigger: eased.current, // Trigger animation when elements come into view
-        start: "top 80%", // Start animation when top of element is 80% of viewport height
-        end: "bottom 20%", // Animation ends when bottom of element is 20% of viewport height
-        scrub: false, // Set to true for a smoother experience when scrolling
-      },
+    const mm = gsap.matchMedia();
+
+    // Define animations for screens wider than 800 pixels
+    mm.add("(min-width: 801px)", () => {
+      gsap.from(eased.current, {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: eased.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: false,
+        },
+      });
     });
+
+    // Cleanup function to revert any changes when the component unmounts
+    return () => {
+      mm.revert();
+    };
   }, []);
+
   return (
     <section id="projects" className="project-section">
       <div className="project-header">
