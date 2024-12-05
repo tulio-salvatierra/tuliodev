@@ -2,7 +2,6 @@
   display: grid;
   place-content: center;
   height: auto;
-  margin-top: 4rem;
 }
 
 .hero {
@@ -33,7 +32,7 @@
 
 .hero-welcome {
   padding: 1rem;
-  font-size: clamp(1.75rem, 5vw, 1rem);
+  font-size: 1rem;
   font-weight: 100;
   line-height: 1.5;
   text-align: left;
@@ -95,6 +94,7 @@
 
   .hero-welcome {
     text-align: left;
+    font-size: 1.5rem;
   }
 
   .hero-image {
