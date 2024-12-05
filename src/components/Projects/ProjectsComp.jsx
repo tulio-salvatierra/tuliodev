@@ -29,24 +29,6 @@ function ProjectsComp() {
             />
             <h3 className="mt-4">{project.title}</h3>
             <p className="project-description">{project.description}</p>
-            {/* <div className="project-links">
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="custom-btn w-50 "
-              >
-                GitHub
-              </a>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="custom-btn w-50 m-1"
-              >
-                Site
-              </a>
-            </div> */}
           </div>
         ))}
       </div>
