@@ -3,6 +3,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { productsData } from "./ProductsData";
 import "./Products.css";
+import Support from "../Support";
+import Google from "../Google";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +43,8 @@ export default function ProductsComp() {
         <div className="d-flex subtitle-box"></div>
       </div>
       <div className="projectDiv flex p-3">
+        <Support />
+        <Google />
         {productsData.map((product, index) => (
           <div
             key={index}
@@ -61,6 +65,7 @@ export default function ProductsComp() {
                 </li>
               ))}
             </div>
+            <a className="custom-btn">{product.CTA}</a>
             <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
           </div>
         ))}

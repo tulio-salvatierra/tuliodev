@@ -1,0 +1,44 @@
+.support-box {
+  color: #e4e3e5;
+  background-color: rgba(33, 28, 28, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  list-style: disc;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.support-feature {
+  padding: 1rem;
+  display: block;
+  font-weight: 200;
+  list-style: disc;
+  margin-left: 1rem;
+  ont-size: calc(1.3rem + 0.6vw);
+}
+
+.note {
+  font-weight: 700;
+}
+
+.custom-btn {
+  background-color: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%);
+  color: #211c11;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  font-weight: 700;
+  padding: 1rem;
+  border: #8aff85;
+  background-image: linear-gradient(225deg, #8aff85 0%, #d0ff7d 100%) 3px solid;
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0rem;
+  justify-content: center;
+  letter-spacing: 0px;
+  text-decoration: none;
+  transition: transform 0.1s;
+}
