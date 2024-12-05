@@ -8,7 +8,7 @@
 }
 
 .cta {
-  margin: 15rem 15rem;
+  margin: 15rem 0rem;
 }
 
 .div1 {
@@ -96,7 +96,7 @@
   padding: 1rem;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 800px) {
   .parent-cta {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
