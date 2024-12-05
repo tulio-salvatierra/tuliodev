@@ -9,6 +9,7 @@ export const productsData = [
     ],
     idealFor:
       "Individuals or small businesses seeking an online presence without extensive functionality.",
+    CTA: "BUY NOW",
   },
   {
     title: "Standard Website Package",
@@ -22,6 +23,7 @@ export const productsData = [
     ],
     idealFor:
       "Businesses desiring a professional and customized online presence with ongoing support.",
+    CTA: "BUY NOW",
   },
   {
     title: "Premium Website Package",
@@ -36,5 +38,6 @@ export const productsData = [
     ],
     idealFor:
       "Businesses aiming for a robust online platform with e-commerce capabilities and extensive customization.",
+    CTA: "BUY NOW",
   },
 ];

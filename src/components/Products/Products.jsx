@@ -3,6 +3,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { productsData } from "./ProductsData";
 import "./Products.css";
+import Support from "../Support";
+import Google from "../Google";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,19 +12,27 @@ export default function ProductsComp() {
   const eased = useRef([]);
 
   useEffect(() => {
-    gsap.from(eased.current, {
-      y: 50, // Start position (below)
-      opacity: 0, // Start fully transparent
-      duration: 1, // Animation duration
-      ease: "power2.out", // Smooth easing
-      stagger: 0.3, // Stagger animations for a cascading effect
-      scrollTrigger: {
-        trigger: eased.current, // Trigger animation when elements come into view
-        start: "top 80%", // Start animation when top of element is 80% of viewport height
-        end: "bottom 20%", // Animation ends when bottom of element is 20% of viewport height
-        scrub: false, // Set to true for a smoother experience when scrolling
-      },
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 801px)", () => {
+      gsap.from(eased.current, {
+        y: 50, // Start position (below)
+        opacity: 0, // Start fully transparent
+        duration: 1, // Animation duration
+        ease: "power2.out", // Smooth easing
+        stagger: 0.3, // Stagger animations for a cascading effect
+        scrollTrigger: {
+          trigger: eased.current, // Trigger animation when elements come into view
+          start: "top 80%", // Start animation when top of element is 80% of viewport height
+          end: "bottom 20%", // Animation ends when bottom of element is 20% of viewport height
+          scrub: false, // Set to true for a smoother experience when scrolling
+        },
+      });
     });
+
+    return () => {
+      mm.revert();
+    };
   }, []);
   return (
     <section id="products" className="product-section">
@@ -33,6 +43,8 @@ export default function ProductsComp() {
         <div className="d-flex subtitle-box"></div>
       </div>
       <div className="projectDiv flex p-3">
+        <Support />
+        <Google />
         {productsData.map((product, index) => (
           <div
             key={index}
@@ -53,6 +65,7 @@ export default function ProductsComp() {
                 </li>
               ))}
             </div>
+            <a className="custom-btn">{product.CTA}</a>
             <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
           </div>
         ))}
