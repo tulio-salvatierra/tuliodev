@@ -19,7 +19,7 @@ export default function Header() {
 
   useEffect(() => {
     const showAnim = gsap
-      .from(header, {
+      .from(".header", {
         yPercent: -100,
         paused: false,
         duration: 0.2,

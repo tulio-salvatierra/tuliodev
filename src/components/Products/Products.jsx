@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { productsData } from "./ProductsData";
+import { TELEPHONE } from "../../Constants";
 import "./Products.css";
 import Support from "../Support";
 import Google from "../Google";
@@ -65,7 +66,9 @@ export default function ProductsComp() {
                 </li>
               ))}
             </div>
-            <a className="custom-btn">{product.CTA}</a>
+            <a className="custom-btn" href={`tel:${TELEPHONE}`}>
+              {product.CTA}
+            </a>
             <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
           </div>
         ))}

@@ -1,4 +1,5 @@
 import "./Google.css";
+import { TELEPHONE } from "../../Constants";
 
 export default function Google() {
   return (
@@ -45,7 +46,9 @@ export default function Google() {
             <h4 className="text-xl font-semibold">Additional Services:</h4>
           </div>
         </div>
-        <a className="custom-btn">Book Now</a>
+        <a className="custom-btn" href={`tel:${TELEPHONE}`}>
+          Book Now
+        </a>
         <p className="note">
           Note: Prices are indicative and can be adjusted based on project
           complexity and specific client requirements.
