@@ -5,7 +5,12 @@ import "./Hero.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import UpworkIcon from "../../assets/icons/upwork.png";
-import { LINKEDIN_URL, GITHUB_URL, UPWORK_URL } from "../../Constants";
+import {
+  TELEPHONE,
+  LINKEDIN_URL,
+  GITHUB_URL,
+  UPWORK_URL,
+} from "../../Constants";
 import profile_pic from "../../assets/images/hero/profile.jpeg";
 import Owl from "./../../assets/tulio.svg";
 import HeroSub from "../HeroSub1/HeroSub";
@@ -44,7 +49,7 @@ function Hero() {
               alt="logo icon of web development services chicago"
               className="stack"
             />
-            <a className="custom-btn" href="/contact">
+            <a className="custom-btn" href={`tel:${TELEPHONE}`}>
               Start Your Project Today
             </a>
           </div>

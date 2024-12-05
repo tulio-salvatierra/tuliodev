@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import { useGSAP } from "@gsap/react";
+import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Navbar, NavbarBrand } from "reactstrap";
@@ -18,28 +17,25 @@ export default function Header() {
 
   const header = useRef(null);
 
-  useGSAP(
-    () => {
-      const showAnim = gsap
-        .from(header, {
-          yPercent: -100,
-          paused: false,
-          duration: 0.2,
-        })
-        .progress(1);
+  useEffect(() => {
+    const showAnim = gsap
+      .from(header, {
+        yPercent: -100,
+        paused: false,
+        duration: 0.2,
+      })
+      .progress(1);
 
-      ScrollTrigger.create({
-        start: "top top",
-        end: "bottom bottom",
-        markers: false,
-        anticipatePin: true,
-        onUpdate: (self) => {
-          self.direction === -1 ? showAnim.play() : showAnim.reverse();
-        },
-      });
-    },
-    { scope: header }
-  );
+    ScrollTrigger.create({
+      start: "top top",
+      end: "bottom bottom",
+      markers: false,
+      anticipatePin: true,
+      onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse();
+      },
+    });
+  }, []);
 
   return (
     <div className="header" ref={header}>

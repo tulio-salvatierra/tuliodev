@@ -15,7 +15,7 @@ function App() {
       <div className="top">
         <Header />
       </div>
-      <main className="content">
+      <main className="content mt-5">
         <Routes>
           <Route path={HOME_URL} element={<HomePage />} />
           <Route path={PROJECTS_URL} element={<ProjectsPage />} />
