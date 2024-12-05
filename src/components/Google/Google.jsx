@@ -5,7 +5,7 @@ export default function Google() {
     <>
       <div className="support-box">
         <h3 className="support-subtitle">Digital Marketing Audit Services</h3>
-        <div className="p-5">
+        <div className="">
           <div>
             <h4 className="text-xl font-semibold">
               Google Business Profile Audit – $300
