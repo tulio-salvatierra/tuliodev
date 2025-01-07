@@ -28,6 +28,8 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
   }
   .service-icon {
     width: 50%;
