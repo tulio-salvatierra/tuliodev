@@ -1,27 +1,18 @@
 import "./CTA.css";
 import { TELEPHONE } from "../../Constants";
+import CustomButton from "../CustomButtom";
 import BG from "../../assets/images/owl.jpg";
 
 function CTA() {
   return (
-    <section id="cta" className="cta">
-      <div className="parent-cta">
-        <div className="div1">
-          <h2 className="ctaTitle">¡Hagamos crecer su negocio juntos!</h2>
-        </div>
-        <div className="div2">
-          <p className="ctaSub">
-            Contáctenos hoy para una solución web personalizada y gratuita.
-          </p>
-        </div>
-        <div className="div3">
-          <img src={BG} alt="owl" className="ctaImage" />
-        </div>
-        <div className="div4">
-          <a className="custom-btn" href={`tel:${TELEPHONE}`}>
-            Free consultation
-          </a>
-        </div>
+    <section id="cta" className="cta p-4 w-100">
+      <div
+        className="rounded-2 justify-content-around d-flex flex-column align-items-center cta-container p-2"
+        style={{ backgroundImage: `url(${BG})` }}
+      >
+        <h3 className=" cta-welcome text-center">(Ready to get started?)</h3>
+        <h2 className="cta-title">Let's talk about your project</h2>
+        <CustomButton name="Contact Me" link={`tel:${TELEPHONE}`} />
       </div>
     </section>
   );
