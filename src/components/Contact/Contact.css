@@ -4,12 +4,13 @@
   grid-template-areas: "info picture"; /* Assign areas for better structure */
   gap: 1rem; /* Space between columns */
   align-items: center; /* Vertically align content */
-  height: 100%; /* Ensure full height usage */
+  height: 100dvh; /* Ensure full height usage */
 }
 
 .contact-text {
   font-size: 1.25rem;
   line-height: 1.5;
+  font-weight: 200;
   margin: 0;
   color: #e3e4e2;
 }
@@ -50,7 +51,7 @@
 .contact-title {
   font-size: clamp(8rem, 50vw, 10rem);
   letter-spacing: -4px;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
 }
 
