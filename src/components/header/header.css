@@ -7,8 +7,8 @@
 }
 @media screen and (max-width: 768px) {
   .navbar-title {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.15rem;
+    font-weight: 900;
     margin: 0;
   }
 }
@@ -18,7 +18,7 @@
 }
 
 .logo-owl {
-  height: 1.5rem;
+  height: 1.25rem;
 }
 
 .icon {
@@ -85,7 +85,7 @@
 }
 
 .link p {
-  font-weight: 200;
+  font-weight: 300;
 }
 .navbar-toggler-icon {
   background-image: none;

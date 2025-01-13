@@ -44,11 +44,7 @@ export default function ServicesComp() {
         </h2>
         <div className="d-flex subtitle-box">
           <h3 className="welcome" ref={(el) => (eased.current[1] = el)}>
-            I specialize in delivering tailored solutions to elevate your
-            digital presence. Whether you need a stunning website, impactful
-            marketing strategies, or eye-catching animations, I’ve got you
-            covered. Explore my services below and take the first step toward
-            transforming your business online
+            How can I help you?
           </h3>
           <img
             src={Arrow}
@@ -71,18 +67,6 @@ export default function ServicesComp() {
             />
             <h3 className="services-subtitle">{project.title}</h3>
             <p className="services-description">{project.description}</p>
-            {
-              <div className="project-links">
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="services-btn  services"
-                >
-                  {project.CTA}
-                </a>
-              </div>
-            }
           </div>
         ))}
       </div>

@@ -1,0 +1,60 @@
+.list-item1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 1rem;
+  border: 2px #fff;
+  height: 96px;
+  padding: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.button-container1 {
+  height: 2rem;
+  color: #e3e4e2;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+}
+
+.menuItem-container1 {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #211c1c;
+  font-weight: 700;
+  place-items: center;
+  text-decoration: none;
+  border: 2px #fff;
+}
+
+.primary1 {
+  font-size: 1.25rem;
+  color: #c6d1ba;
+  background: #757873;
+  justify-content: center;
+  width: auto;
+  height: 80px;
+  text-decoration: none;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.secondary1 {
+  font-size: 1.25rem;
+  color: #211c1c;
+  background: #c6d1ba;
+  z-index: 100;
+  height: 80px;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  text-decoration: none;
+}

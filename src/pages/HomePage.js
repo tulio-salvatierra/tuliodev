@@ -12,12 +12,12 @@ function HomePage() {
     <>
       <main id="home">
         <div className="panel-wrapper">
-          <div className="panel mt-5 pt-5">
+          <div className="panel mt-5">
             <Hero />
           </div>{" "}
           <div className="white-bg panel">
-            <Services />
             <ProductsComp />
+            <Services />
             <CTA />
             <Projects />
             <Skills />
