@@ -16,7 +16,7 @@ const DynamicArrow = ({ fillColor }) => (
   </svg>
 );
 
-export default function CustomButton({ name, url }) {
+export default function CustomButton({ name, url, download }) {
   const navItemRef1 = useRef(null);
   const linkRef1 = useRef(null);
 

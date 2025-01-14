@@ -1,4 +1,3 @@
-import React from "react";
 import {
   EMAIL,
   GITHUB_URL,
@@ -38,13 +37,8 @@ function Footer() {
 
               <MenuItem
                 name={"Contact me"}
-                url={`mailto:${EMAIL}`}
-                onClick={`mailto:${EMAIL}`}
-              />
-              <CustomButton
-                name="Email"
-                link={`mailto:${EMAIL}`}
-                className=" w-100 mt-2"
+                url="./../assets/resume.pdf"
+                download="Resume.pdf"
               />
             </div>
           </div>
