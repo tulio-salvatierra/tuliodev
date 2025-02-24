@@ -2,10 +2,9 @@ import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import "./Hero.css";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 import CustomButton from "../CustomButtom";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import UpworkIcon from "../../assets/icons/upwork.png";
+
 import {
   TELEPHONE,
   LINKEDIN_URL,
@@ -50,7 +49,7 @@ function Hero() {
 
         <div className="hero flex mb-5">
           <div
-            className="col1 d-flex flex-column align-content-center"
+            className="col1 d-flex flex-column align-content-start justify-content-between"
             ref={(el) => (panelsBottomRef.current[1] = el)}
           >
             <h3 className="hero-welcome">
@@ -74,23 +73,22 @@ function Hero() {
             className="col3 d-flex flex-column p-0"
             ref={(el) => (panelsBottomRef.current[3] = el)}
           >
-            <div className="hero-icons w-50 justify-content-between">
-              <a href={LINKEDIN_URL}>
-                <LinkedInIcon
-                  sx={{ fontSize: 30, color: "#fefefe", width: "auto" }}
-                />
+            <div className="hero-icons p-2 justify-content-between">
+              <a className="fs-2 text-decoration-none" href={LINKEDIN_URL}>
+                LINKEDIN<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 032 32">
+	<path fill="none" stroke="#e3e4e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19L19 6m0 0v12.48M19 6H6.52" />
+</svg>
               </a>
 
-              <a href={GITHUB_URL}>
-                <GitHubIcon sx={{ fontSize: 30, color: "#fff" }} />
+              <a className="fs-2 text-decoration-none"  href={GITHUB_URL}>
+                GITHUB<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 032 32">
+	<path fill="none" stroke="#e3e4e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19L19 6m0 0v12.48M19 6H6.52" />
+</svg>
               </a>
-              <a href={UPWORK_URL}>
-                <img
-                  src={UpworkIcon}
-                  alt="upwork"
-                  className="upwork"
-                  style={{ height: 32 }}
-                />
+              <a className="fs-2 text-decoration-none"  href={UPWORK_URL}>
+                UPWORK<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 032 32">
+	<path fill="none" stroke="#e3e4e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19L19 6m0 0v12.48M19 6H6.52" />
+</svg>
               </a>
             </div>
           </div>

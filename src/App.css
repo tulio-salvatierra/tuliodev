@@ -76,11 +76,10 @@ section {
 }
 
 .section-title {
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 7rem;
   text-transform: uppercase;
-  font-size: clamp(8rem, 50vw, 10rem);
-  letter-spacing: -11px;
-  color: #211c1c;
+  color: #e3e4e2;
   padding: 1rem;
   overflow: hidden;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
@@ -106,6 +105,7 @@ section {
 
 .white-bg {
   background: rgb(0,212,255);
+  color: #211c1c;
 background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(20,121,9,1) 52%, rgba(2,0,36,1) 89%);
   border-radius: 0.5rem;
   width: 100%;

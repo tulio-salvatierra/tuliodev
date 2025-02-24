@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
-import { productsData } from "./ProductsData";
 import { TELEPHONE } from "../../Constants";
 import "./Products.css";
 import Support from "../Support";
 import Google from "../Google";
+import Websites from "../Websites";
 import CustomButton from "../CustomButtom";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -18,11 +18,11 @@ export default function ProductsComp() {
 
     mm.add("(min-width: 801px)", () => {
       gsap.from(eased.current, {
-        y: 50, // Start position (below)
-        opacity: 0, // Start fully transparent
-        duration: 1, // Animation duration
-        ease: "power2.out", // Smooth easing
-        stagger: 0.3, // Stagger animations for a cascading effect
+        y: 25, 
+        opacity: 0, 
+        duration: 0.5, 
+        ease: "power4.out", // Smooth easing
+        stagger: 0.15, // Stagger animations for a cascading effect
         scrollTrigger: {
           trigger: eased.current, // Trigger animation when elements come into view
           start: "top 80%", // Start animation when top of element is 80% of viewport height
@@ -38,46 +38,27 @@ export default function ProductsComp() {
   }, []);
   return (
     <section id="products" className="product-section">
-      <div className="project-header">
-        <h2 className="section-title" ref={(el) => (eased.current[0] = el)}>
-          Products
+    
+        <h2 className="product-title" ref={(el) => (eased.current[0] = el)}>
+          PRODUCTS
         </h2>
-        <div className="d-flex subtitle-box"></div>
-      </div>
+    
 
-      <section className="product-section">
-        <h3 className="welcome">SUPPORT</h3>
-        <Support />
-
-        <h3 className="welcome">MARKETING</h3>
-        <Google />
-      </section>
-
-      <h3 className="welcome">WEBSITES</h3>
-      {productsData.map((product, index) => (
-        <div
-          key={index}
-          className="product-card"
-          ref={(el) => (eased.current[index + 1] = el)}
-        >
-          <div className="product-title p-4">
-            <h3 className="product-subtitle">{product.title}</h3>
-            <p className="product-description">{product.description}</p>
-            <a className="product-price" href="/products">
-              {product.price}
-            </a>
-          </div>
-          <div>
-            {product.features.map((feature, index) => (
-              <li key={index} className="product-feature">
-                {feature}
-              </li>
-            ))}
-          </div>
-          <CustomButton name={product.CTA} url={`tel:${TELEPHONE}`} />
-          <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
+      <div className="row gx-1 p-4">
+        <div className="col-lg-3 col-md-6">
+          <h3 className="welcomepr">01.WEBSITES</h3>
+          <Websites/>
         </div>
-      ))}
+        <div className="col-lg-3 col-md-6" ref={(el) => (eased.current[4] = el)}>
+          <h3 className="welcomepr">02.SUPPORT</h3>
+          <Support />
+        </div>
+        <div className="col-lg-3 col-md-6" ref={(el) => (eased.current[5] = el)}>
+          <h3 className="welcomepr">03.MARKETING</h3>
+          <Google />
+        </div>
+      </div>
+      <CustomButton name={"Book Now"} url={`tel:${TELEPHONE}`} />
     </section>
   );
 }

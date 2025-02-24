@@ -80,9 +80,4 @@
   transition: transform 0.1s;
   grid-area: 1 / 5 / 3 / 6;
 }
-.welcome {
-  color: #211c1c;
-  text-align: left;
-  font-weight: 700;
-  font-size: 3rem;
-}
+

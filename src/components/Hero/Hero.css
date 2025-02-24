@@ -1,9 +1,11 @@
 .hero-section {
   display: grid;
   place-content: center;
-  height: auto;
-  margin-top: 5rem;
+  height: 100vh;
+  margin-top: 2rem;
+  color: #e3e4e2;
 }
+
 
 .hero {
   display: grid;
@@ -19,12 +21,12 @@
 .col2,
 .col3 {
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem;
   background-color: transparent;
 }
 
 .hero-title {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -5px;
   font-size: 12rem;
   color: #c6d1ba;
@@ -32,8 +34,7 @@
 }
 
 .hero-welcome {
-  padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 200;
   line-height: 1.5;
   text-align: left;
@@ -41,18 +42,19 @@
 
 .hero-image {
   display: block;
-  height: 350px;
+  height: 100%;
+  width: auto;
   margin: 0 auto;
   border-radius: 0.5rem;
   object-fit: cover;
 }
 
-.hero-icons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  padding: 1rem;
-  width: auto;
+.hero-icons a  {
+  
+  flex-wrap: row;
+  color: #e3e4e2;
+  text-decoration: none;
+  
 }
 
 .stack {
@@ -67,6 +69,11 @@
   .hero {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .hero-section {
+    margin-top: 3rem;
+    height: auto;
   }
 
   .col1,
