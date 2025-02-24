@@ -47,7 +47,7 @@
 .services-description {
   text-align: left;
   font-size: 1.75;
-  font-weight: 200;
+  font-weight: 300;
   color: #969695;
   grid-area: 2 / 2 / 3 / 5;
 }
@@ -83,5 +83,6 @@
 .welcome {
   color: #211c1c;
   text-align: left;
-  font-weight: 200;
+  font-weight: 700;
+  font-size: 3rem;
 }

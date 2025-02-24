@@ -21,7 +21,7 @@ export default function MenuItem({ name, url }) {
     // Ensure elements are selected and animate properly
     linkTL
       .to(headingStart, { yPercent: -100 })
-      .to(headingEnd, { yPercent: -160 }, "<");
+      .to(headingEnd, { yPercent: -100 }, "<");
 
     linkTL.pause();
 

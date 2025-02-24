@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.css";
 import { skills } from "./skill-list";
 
-function Skills() {
+export default function Skills() {
   return (
     <section className="skill-section">
       <div className="title">
@@ -22,7 +22,7 @@ function Skills() {
                       alt={skill.name}
                       className="skill-icon"
                     />
-                    <p>{skill.name}</p>
+                    <p className="skill-name">{skill.name}</p>
                   </div>
                 ))}
               </div>
@@ -33,5 +33,3 @@ function Skills() {
     </section>
   );
 }
-
-export default Skills;

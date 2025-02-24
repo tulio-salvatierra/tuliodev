@@ -1,12 +1,12 @@
 import "./Google.css";
 import { TELEPHONE } from "../../Constants";
+import CustomButton from "../CustomButtom";
 
 export default function Google() {
   return (
     <>
       <div className="support-box">
-        <h3 className="support-subtitle">Digital Marketing Audit Services</h3>
-        <div className="">
+        <div className="mt-5">
           <div>
             <h4 className="text-xl font-semibold">
               Google Business Profile Audit – $300
@@ -42,14 +42,9 @@ export default function Google() {
               for enhanced digital marketing performance.
             </p>
           </div>
-          <div className="mt-4">
-            <h4 className="text-xl font-semibold">Additional Services:</h4>
-          </div>
         </div>
-        <a className="custom-btn" href={`tel:${TELEPHONE}`}>
-          Book Now
-        </a>
-        <p className="note">
+        <CustomButton name="Book Now" url={`tel:${TELEPHONE}`} />
+        <p className="note mt-4">
           Note: Prices are indicative and can be adjusted based on project
           complexity and specific client requirements.
         </p>

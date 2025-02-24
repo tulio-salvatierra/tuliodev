@@ -1,7 +1,7 @@
 export const productsData = [
   {
     title: "Basic Website Package",
-    price: "$200",
+    price: "$300",
     features: [
       "Single-page website with three sections (e.g., Home, About, Contact)",
       "Responsive design for optimal viewing on all devices",

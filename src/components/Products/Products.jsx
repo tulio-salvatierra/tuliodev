@@ -6,6 +6,7 @@ import { TELEPHONE } from "../../Constants";
 import "./Products.css";
 import Support from "../Support";
 import Google from "../Google";
+import CustomButton from "../CustomButtom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,36 +44,40 @@ export default function ProductsComp() {
         </h2>
         <div className="d-flex subtitle-box"></div>
       </div>
-      <div className="projectDiv flex p-3">
+
+      <section className="product-section">
+        <h3 className="welcome">SUPPORT</h3>
         <Support />
+
+        <h3 className="welcome">MARKETING</h3>
         <Google />
-        {productsData.map((product, index) => (
-          <div
-            key={index}
-            className="product-card"
-            ref={(el) => (eased.current[index + 1] = el)}
-          >
-            <div className="product-title p-4">
-              <h3 className="product-subtitle">{product.title}</h3>
-              <p className="product-description">{product.description}</p>
-              <a className="product-price" href="/products">
-                {product.price}
-              </a>
-            </div>
-            <div>
-              {product.features.map((feature, index) => (
-                <li key={index} className="product-feature">
-                  {feature}
-                </li>
-              ))}
-            </div>
-            <a className="custom-btn" href={`tel:${TELEPHONE}`}>
-              {product.CTA}
+      </section>
+
+      <h3 className="welcome">WEBSITES</h3>
+      {productsData.map((product, index) => (
+        <div
+          key={index}
+          className="product-card"
+          ref={(el) => (eased.current[index + 1] = el)}
+        >
+          <div className="product-title p-4">
+            <h3 className="product-subtitle">{product.title}</h3>
+            <p className="product-description">{product.description}</p>
+            <a className="product-price" href="/products">
+              {product.price}
             </a>
-            <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
           </div>
-        ))}
-      </div>
+          <div>
+            {product.features.map((feature, index) => (
+              <li key={index} className="product-feature">
+                {feature}
+              </li>
+            ))}
+          </div>
+          <CustomButton name={product.CTA} url={`tel:${TELEPHONE}`} />
+          <p className="ideal mt-4">Ideal for: {product.idealFor}</p>
+        </div>
+      ))}
     </section>
   );
 }

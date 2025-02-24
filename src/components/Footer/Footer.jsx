@@ -1,4 +1,3 @@
-import React from "react";
 import {
   EMAIL,
   GITHUB_URL,
@@ -8,16 +7,17 @@ import {
 } from "../../Constants";
 import "./Footer.css";
 import RESUME from "../../assets/resume.pdf";
-import profilePic from "../../assets/tulio.svg";
+import profilePic from "../../assets//images/hero/profile.jpeg";
 import MenuItem from "../MenuItem/MenuItem";
 import HeroSub from "../HeroSub1/HeroSub";
+import CustomButton from "../CustomButtom";
 
 function Footer() {
   return (
     <section id="footer" className="footer-div z-0">
       <div className="p-0 flex">
         <div className="left">
-          <img src={profilePic} alt="profile-pic" className="stack m-4" />
+          <img src={profilePic} alt="profile-pic" className="stack" />
           <p className="footer-profile-text">
             I build websites and provide digital solutions to help businesses
             and professionals drive growth and enhance your online presence.
@@ -37,13 +37,9 @@ function Footer() {
 
               <MenuItem
                 name={"Contact me"}
-                url={`mailto:${EMAIL}`}
-                onClick={`mailto:${EMAIL}`}
+                url="./../assets/resume.pdf"
+                download="Resume.pdf"
               />
-
-              <a href={RESUME} download className="custom-btn w-50 mt-2">
-                Get CV
-              </a>
             </div>
           </div>
           <div className="footer-col">

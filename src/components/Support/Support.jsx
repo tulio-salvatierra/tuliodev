@@ -1,14 +1,14 @@
 import "./Support.css";
 import { TELEPHONE } from "../../Constants";
+import CustomButton from "../CustomButtom";
 
 export default function Support() {
   return (
     <>
       <div className="support-box">
-        <h3 className="support-subtitle">Maintenance and Support Services</h3>
         <div className="mt-5">
           <div>
-            <h4 className="mt-4">Monthly Maintenance Plan – $100/month:</h4>
+            <h3 className="mt-4">Monthly Maintenance Plan – $100/month:</h3>
             <ol className="support-feature">
               <li>Regular updates and backups</li>
               <li>Security monitoring</li>
@@ -32,10 +32,9 @@ export default function Support() {
             </ol>
           </div>
         </div>
-        <a className="custom-btn" href={`tel:${TELEPHONE}`}>
-          Book Now
-        </a>
-        <p className="note">
+
+        <CustomButton name="Book Now" url={`tel:${TELEPHONE}`} />
+        <p className="note mt-4">
           Note: Prices are indicative and can be adjusted based on project
           complexity and specific client requirements.
         </p>
