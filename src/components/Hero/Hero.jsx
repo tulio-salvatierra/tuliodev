@@ -39,16 +39,16 @@ function Hero() {
   }, []);
   return (
     <>
-      <section className="hero-section" id="hero">
+      <section className="hero-section mt-5" id="hero">
         <HeroSub />
         <h1
-          className="hero-title"
+          className="hero-title d-block"
           ref={(el) => (panelsBottomRef.current[0] = el)}
         >
           TULIO SALVATIERRA
         </h1>
 
-        <div className="hero flex p-5">
+        <div className="hero flex p-1 p-sm-5">
           <div
             className="col1 d-flex flex-column align-content-start justify-content-start"
             ref={(el) => (panelsBottomRef.current[1] = el)}
@@ -75,7 +75,7 @@ function Hero() {
             ref={(el) => (panelsBottomRef.current[3] = el)}
           >
             <div className="hero-icons justify-content-between d-none d-sm-flex">
-              <a className="fs-2 text-decoration-none" href={LINKEDIN_URL}>
+              <a className="fs-3 text-decoration-none" href={LINKEDIN_URL}>
                 LINKEDIN
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ function Hero() {
                 </svg>
               </a>
 
-              <a className="fs-2 text-decoration-none" href={GITHUB_URL}>
+              <a className="fs-3 text-decoration-none" href={GITHUB_URL}>
                 GITHUB
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ function Hero() {
                   />
                 </svg>
               </a>
-              <a className="fs-2 text-decoration-none" href={UPWORK_URL}>
+              <a className="fs-3 text-decoration-none" href={UPWORK_URL}>
                 UPWORK
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ function Hero() {
             </div>
             <svg className="scroll-down d-none d-md-block mr-auto"
               xmlns="http://www.w3.org/2000/svg"
-              width="70%"
+              width="50%"
               height="auto"
               viewBox="0 0 24 24"
             >

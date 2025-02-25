@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 
 import "./Products.css";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ProductsComp() {
@@ -19,12 +18,12 @@ export default function ProductsComp() {
         opacity: 0,
         duration: 0.5,
         ease: "power4.out",
-        stagger: 0.15, 
+        stagger: 0.15,
         scrollTrigger: {
-          trigger: eased.current, 
-          start: "top 70%", 
-          end: "bottom 20%", 
-          scrub: false, 
+          trigger: eased.current,
+          start: "top 70%",
+          end: "bottom 20%",
+          scrub: false,
         },
       });
     });
@@ -34,14 +33,18 @@ export default function ProductsComp() {
     };
   }, []);
   return (
-    <section id="products" className="product-section col-12">
+    <section id="products" className="product-section white-bg">
+      <h1 className="section-title">WHAT I CAN DO</h1>
       <div className="product-grid">
-        <div className="title section-title">PRODUCTS</div>
+        <div className="title display-1">WEBSITES</div>
+        <div className="separator"></div>
         <div className="number">01</div>
         <div className="category">WEB DEVELOPMENT</div>
-        <div className="description">
-          I offer multiple options for all size and need, landing pages, product
-          pages, websites, ecommerce
+        <div className="decor"></div>
+        <div className="desc">
+          I build responsive, user-friendly interfaces and seamless user-centric
+          experiences. Custom tailored to fit any business needs and size, from
+          small business to large corporations.
         </div>
       </div>
     </section>
