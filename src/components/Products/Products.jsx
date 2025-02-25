@@ -1,9 +1,9 @@
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
-import { TELEPHONE } from "../../Constants";
+
 import "./Products.css";
-import CustomButton from "../CustomButtom";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
