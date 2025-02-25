@@ -48,7 +48,7 @@ function Hero() {
           TULIO SALVATIERRA
         </h1>
 
-        <div className="hero flex p-5">
+        <div className="hero flex pt-5">
           <div
             className="col1 d-flex flex-column align-content-start justify-content-start"
             ref={(el) => (panelsBottomRef.current[1] = el)}
