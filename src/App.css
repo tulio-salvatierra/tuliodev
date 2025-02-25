@@ -9,9 +9,9 @@
 
 html,
 body {
-  margin: 0; /* Ensure no default margins */
-  padding: 0; /* Ensure no default padding */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden;
 }
 
 #root,
@@ -24,9 +24,9 @@ main {
   background-color: #211c1c;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure full height coverage */
-  width: 100%; /* Use 100% to avoid scrollbar issues */
-  margin: 0 auto; /* Centers main content */
+  min-height: 100vh;
+  width: 100%; 
+  margin: 0 auto; 
 }
 
 .top {
@@ -37,7 +37,7 @@ main {
   z-index: 1000;
 }
 .content {
-  margin-top: [header-height]; /* Adjust to match header's height */
+  margin-top: [header-height];
 }
 
 .custom-btn {
