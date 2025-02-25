@@ -1,10 +1,10 @@
 .contact-parent {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  grid-template-areas: "info picture"; /* Assign areas for better structure */
-  gap: 1rem; /* Space between columns */
-  align-items: center; /* Vertically align content */
-  height: 100dvh; /* Ensure full height usage */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas: "info picture"; 
+  gap: 1rem; 
+  align-items: center;
+  height: 100dvh; 
 }
 
 .contact-text {
@@ -16,7 +16,7 @@
 }
 
 .contact-info {
-  grid-area: info; /* Reference the 'info' grid area */
+  grid-area: info; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,15 +24,15 @@
 }
 
 .contact-picture {
-  grid-area: picture; /* Reference the 'picture' grid area */
-  text-align: right; /* Align the image to the right */
+  grid-area: picture; 
+  text-align: right; 
   padding: 1rem;
 }
 
 .contact-picture img {
-  max-width: 100%; /* Make the image responsive */
+  max-width: 100%; 
   height: auto;
-  border-radius: 10px; /* Optional: rounded corners */
+  border-radius: 10px; 
   object-fit: cover;
   margin-right: 10rem;
 }
@@ -57,15 +57,15 @@
 
 @media screen and (max-width: 768px) {
   .contact-parent {
-    grid-template-columns: 1fr; /* Single column for mobile */
-    grid-template-rows: auto auto; /* Stack rows */
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
     grid-template-areas:
       "info"
-      "picture"; /* Stack info above picture */
+      "picture"; 
   }
 
   .contact-picture {
-    text-align: center; /* Center image on mobile */
+    text-align: center; 
   }
 
   .contact-section {
