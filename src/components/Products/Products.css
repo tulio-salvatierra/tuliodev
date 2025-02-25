@@ -1,12 +1,10 @@
 .product-section {
+  padding: 6rem 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100dvw;
   margin: 0;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,8 +18,8 @@
   padding: 2rem;
   color: #b2b3b1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .25fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   gap: 16px 0px;
   grid-auto-flow: row;
@@ -37,13 +35,13 @@
 @media screen and (max-width: 768px) {
   .product-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr 1fr 1fr .5fr .5fr;
     grid-template-areas:
       "title"
       "number"
       "category"
-      "Descripction"
-      "Descripction";
+      "description"
+      ;
   }
   .product-grid > * {
     padding: 1rem;
@@ -66,7 +64,7 @@
 .title {
   grid-area: title;
   color: #e3e4e2;
-  font-size: calc(5rem + 1vw);
+  font-size: calc(6rem + 1vw);
 }
 
 .number {

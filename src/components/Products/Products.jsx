@@ -3,9 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import { TELEPHONE } from "../../Constants";
 import "./Products.css";
-import Support from "../Support";
-import Google from "../Google";
-import Websites from "../Websites";
 import CustomButton from "../CustomButtom";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,13 +18,13 @@ export default function ProductsComp() {
         y: 25,
         opacity: 0,
         duration: 0.5,
-        ease: "power4.out", // Smooth easing
-        stagger: 0.15, // Stagger animations for a cascading effect
+        ease: "power4.out",
+        stagger: 0.15, 
         scrollTrigger: {
-          trigger: eased.current, // Trigger animation when elements come into view
-          start: "top 70%", // Start animation when top of element is 80% of viewport height
-          end: "bottom 20%", // Animation ends when bottom of element is 20% of viewport height
-          scrub: false, // Set to true for a smoother experience when scrolling
+          trigger: eased.current, 
+          start: "top 70%", 
+          end: "bottom 20%", 
+          scrub: false, 
         },
       });
     });
@@ -47,11 +44,6 @@ export default function ProductsComp() {
           pages, websites, ecommerce
         </div>
       </div>
-      <CustomButton
-        text="Contact Me"
-        url={`tel:${TELEPHONE}`}
-        className="contact-button"
-      />
     </section>
   );
 }
