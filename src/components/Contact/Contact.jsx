@@ -10,7 +10,7 @@ export default function Contact() {
 
       <div className="contact-parent">
         {" "}
-        {/* Text and Buttons on the Left */}
+        
         <div className="contact-info">
           <h4 className="contact-text">
             You can get in touch with me through the form below. I'll be happy
@@ -20,7 +20,7 @@ export default function Contact() {
           <CustomButton name="Email" link={`mailto:${EMAIL}`} />
           <CustomButton name="Phone" link={`tel:${TELEPHONE}`} />
         </div>
-        {/* Picture on the Right */}
+        
         <div className="contact-picture">
           <img src={owl} alt="Contact" />
         </div>
