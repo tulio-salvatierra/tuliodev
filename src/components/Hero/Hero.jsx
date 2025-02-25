@@ -74,7 +74,7 @@ function Hero() {
             className="col3 d-flex flex-column align-content-between justify-content-between"
             ref={(el) => (panelsBottomRef.current[3] = el)}
           >
-            <div className="hero-icons justify-content-between">
+            <div className="hero-icons justify-content-between d-none d-sm-flex">
               <a className="fs-2 text-decoration-none" href={LINKEDIN_URL}>
                 LINKEDIN
                 <svg
