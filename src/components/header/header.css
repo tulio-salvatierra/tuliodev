@@ -1,5 +1,5 @@
 .navbar-title {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 900;
   margin-left: 1rem;
   text-transform: uppercase;
@@ -29,13 +29,12 @@
 }
 
 .header {
-  padding: 2rem;
+  
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
 
-  background-blend-mode: multiply;
-  backdrop-filter: blur(10px);
+  
   color: #e3e4e2;
   top: 0;
   transition: ease 0.4s;

@@ -20,21 +20,22 @@ function Hero() {
   const panelsBottomRef = useRef([]);
 
   useEffect(() => {
-    const handleMouseEnter = () => {
-      gsap.to(".custom-btn", {
-        scale: 1.1,
-        duration: 0.5,
-        ease: "power2.out",
+    const easeFromBelow = gsap.matchMedia();
+    easeFromBelow.add("(min-width: 801px)", () => {
+      gsap.from(panelsBottomRef.current, {
+        y: 25,
+        opacity: 0,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.4,
+        scrollTrigger: {
+          trigger: panelsBottomRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: false,
+        },
       });
-    };
-
-    const handleMouseLeave = () => {
-      gsap.to(".custom-btn", {
-        scale: 1,
-        duration: 0.5,
-        ease: "power2.out",
-      });
-    };
+    });   
   }, []);
   return (
     <>
@@ -47,9 +48,9 @@ function Hero() {
           TULIO SALVATIERRA
         </h1>
 
-        <div className="hero flex mb-5">
+        <div className="hero flex p-5">
           <div
-            className="col1 d-flex flex-column align-content-start justify-content-between"
+            className="col1 d-flex flex-column align-content-start justify-content-start"
             ref={(el) => (panelsBottomRef.current[1] = el)}
           >
             <h3 className="hero-welcome">
@@ -70,27 +71,81 @@ function Hero() {
             />
           </div>
           <div
-            className="col3 d-flex flex-column p-0"
+            className="col3 d-flex flex-column align-content-between justify-content-between"
             ref={(el) => (panelsBottomRef.current[3] = el)}
           >
-            <div className="hero-icons p-2 justify-content-between">
+            <div className="hero-icons justify-content-between">
               <a className="fs-2 text-decoration-none" href={LINKEDIN_URL}>
-                LINKEDIN<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 032 32">
-	<path fill="none" stroke="#e3e4e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19L19 6m0 0v12.48M19 6H6.52" />
-</svg>
+                LINKEDIN
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 032 32"
+                >
+                  <path
+                    fill="none"
+                    stroke="#e3e4e2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6 19L19 6m0 0v12.48M19 6H6.52"
+                  />
+                </svg>
               </a>
 
-              <a className="fs-2 text-decoration-none"  href={GITHUB_URL}>
-                GITHUB<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 032 32">
-	<path fill="none" stroke="#e3e4e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19L19 6m0 0v12.48M19 6H6.52" />
-</svg>
+              <a className="fs-2 text-decoration-none" href={GITHUB_URL}>
+                GITHUB
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 032 32"
+                >
+                  <path
+                    fill="none"
+                    stroke="#e3e4e2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6 19L19 6m0 0v12.48M19 6H6.52"
+                  />
+                </svg>
               </a>
-              <a className="fs-2 text-decoration-none"  href={UPWORK_URL}>
-                UPWORK<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 032 32">
-	<path fill="none" stroke="#e3e4e2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 19L19 6m0 0v12.48M19 6H6.52" />
-</svg>
+              <a className="fs-2 text-decoration-none" href={UPWORK_URL}>
+                UPWORK
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 032 32"
+                >
+                  <path
+                    fill="none"
+                    stroke="#e3e4e2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6 19L19 6m0 0v12.48M19 6H6.52"
+                  />
+                </svg>
               </a>
             </div>
+            <svg className="scroll-down d-none d-md-block mr-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              width="70%"
+              height="auto"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#e3e4e2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="m6 6l13 13m0 0V6.52M19 19H6.52"
+              />
+            </svg>
           </div>
         </div>
       </section>

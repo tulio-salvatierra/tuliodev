@@ -5,7 +5,7 @@ export default function Support() {
   return (
     <>
       {productsData.map((product, index) => (
-        <div key={index} className="support-box">
+        <div key={index} className="websites-box">
           <div className="p-4">
             <h3>
               {product.title} -{" "}

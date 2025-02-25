@@ -18,14 +18,14 @@ export default function ProductsComp() {
 
     mm.add("(min-width: 801px)", () => {
       gsap.from(eased.current, {
-        y: 25, 
-        opacity: 0, 
-        duration: 0.5, 
+        y: 25,
+        opacity: 0,
+        duration: 0.5,
         ease: "power4.out", // Smooth easing
         stagger: 0.15, // Stagger animations for a cascading effect
         scrollTrigger: {
           trigger: eased.current, // Trigger animation when elements come into view
-          start: "top 80%", // Start animation when top of element is 80% of viewport height
+          start: "top 70%", // Start animation when top of element is 80% of viewport height
           end: "bottom 20%", // Animation ends when bottom of element is 20% of viewport height
           scrub: false, // Set to true for a smoother experience when scrolling
         },
@@ -37,28 +37,21 @@ export default function ProductsComp() {
     };
   }, []);
   return (
-    <section id="products" className="product-section">
-    
-        <h2 className="product-title" ref={(el) => (eased.current[0] = el)}>
-          PRODUCTS
-        </h2>
-    
-
-      <div className="row gx-1 p-4">
-        <div className="col-lg-3 col-md-6">
-          <h3 className="welcomepr">01.WEBSITES</h3>
-          <Websites/>
-        </div>
-        <div className="col-lg-3 col-md-6" ref={(el) => (eased.current[4] = el)}>
-          <h3 className="welcomepr">02.SUPPORT</h3>
-          <Support />
-        </div>
-        <div className="col-lg-3 col-md-6" ref={(el) => (eased.current[5] = el)}>
-          <h3 className="welcomepr">03.MARKETING</h3>
-          <Google />
+    <section id="products" className="product-section col-12">
+      <div className="product-grid">
+        <div className="title section-title">PRODUCTS</div>
+        <div className="number">01</div>
+        <div className="category">WEB DEVELOPMENT</div>
+        <div className="description">
+          I offer multiple options for all size and need, landing pages, product
+          pages, websites, ecommerce
         </div>
       </div>
-      <CustomButton name={"Book Now"} url={`tel:${TELEPHONE}`} />
+      <CustomButton
+        text="Contact Me"
+        url={`tel:${TELEPHONE}`}
+        className="contact-button"
+      />
     </section>
   );
 }

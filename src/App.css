@@ -71,7 +71,7 @@ section {
   margin-right: auto;
   z-index: 100;
   width: 100dvw;
-  height: auto;
+  height: 100%;
   padding: 0;
 }
 

@@ -1,16 +1,14 @@
 import {
-  EMAIL,
   GITHUB_URL,
   LINKEDIN_URL,
   TELEPHONE,
   MENU_ITEMS,
 } from "../../Constants";
 import "./Footer.css";
-import RESUME from "../../assets/resume.pdf";
+
 import profilePic from "../../assets//images/hero/profile.jpeg";
 import MenuItem from "../MenuItem/MenuItem";
 import HeroSub from "../HeroSub1/HeroSub";
-import CustomButton from "../CustomButtom";
 
 function Footer() {
   return (
