@@ -75,7 +75,7 @@ function Hero() {
             ref={(el) => (panelsBottomRef.current[3] = el)}
           >
             <div className="hero-icons justify-content-between d-none d-sm-flex">
-              <a className="fs-2 text-decoration-none" href={LINKEDIN_URL}>
+              <a className="fs-4 text-decoration-none" href={LINKEDIN_URL}>
                 LINKEDIN
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ function Hero() {
                 </svg>
               </a>
 
-              <a className="fs-2 text-decoration-none" href={GITHUB_URL}>
+              <a className="fs-4 text-decoration-none" href={GITHUB_URL}>
                 GITHUB
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ function Hero() {
                   />
                 </svg>
               </a>
-              <a className="fs-2 text-decoration-none" href={UPWORK_URL}>
+              <a className="fs-4 text-decoration-none" href={UPWORK_URL}>
                 UPWORK
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -131,21 +131,6 @@ function Hero() {
                 </svg>
               </a>
             </div>
-            <svg className="scroll-down d-none d-md-block mr-auto"
-              xmlns="http://www.w3.org/2000/svg"
-              width="70%"
-              height="auto"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="#e3e4e2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
-                d="m6 6l13 13m0 0V6.52M19 19H6.52"
-              />
-            </svg>
           </div>
         </div>
       </section>
