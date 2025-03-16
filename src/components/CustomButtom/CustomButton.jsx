@@ -63,7 +63,7 @@ export default function CustomButton({ name, url, download }) {
         <div className="menuItem-container1">
           <p className="primary1 d-flex align-items-center m-0 rounded-pill p-4">
             {name}
-            <DynamicArrow fillColor="#c6d1ba" alt="arrow" />
+            <DynamicArrow fillColor="#282222" alt="arrow" />
           </p>
           <p className="secondary1 d-flex align-items-center m-0 rounded-pill p-4">
             {name}

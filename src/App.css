@@ -2,10 +2,18 @@
 
 p {
   color: #aeb3aa;
+  font-family: Raleway;
+}
+
+a {
+  color: #84ff85;
+  font-family: Raleway;
+  
 }
 
 h1, h2, h3, h4, h5 {
   color: #84ff85;
+  font-family: Ubuntu;
 }
 
 @font-face {

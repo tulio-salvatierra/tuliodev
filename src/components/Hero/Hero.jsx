@@ -27,7 +27,7 @@ function Hero() {
         opacity: 0,
         duration: 1.2,
         ease: "power4.out",
-        stagger: 0.6,
+        stagger: 0.3,
         scrollTrigger: {
           trigger: panelsBottomRef.current,
           start: "top 80%",
@@ -69,7 +69,7 @@ function Hero() {
 
           <div
             className="row justify-content-between"
-            ref={(el) => (panelsBottomRef.current[4] = el)}
+            
           >
             <div
               className="right"
@@ -84,8 +84,8 @@ function Hero() {
               <CustomButton name="Let's talk!" url={`tel:${TELEPHONE}`} />
             </div>
 
-            <div className="links">
-              <a className="fs-5 text-decoration-none" href={LINKEDIN_URL}>
+            <div className="links" ref={(el) => (panelsBottomRef.current[4])}>
+              <a className="" href={LINKEDIN_URL}>
                 LINKEDIN
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ function Hero() {
                 </svg>
               </a>
 
-              <a className="fs-5 text-decoration-none" href={GITHUB_URL}>
+              <a className="" href={GITHUB_URL}>
                 GITHUB
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ function Hero() {
                   />
                 </svg>
               </a>
-              <a className="fs-5 text-decoration-none" href={UPWORK_URL}>
+              <a className="" href={UPWORK_URL}>
                 UPWORK
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

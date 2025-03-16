@@ -3,14 +3,13 @@
   margin: 0;
   padding: 0;
   width: auto;
-
   margin-right: 1rem;
 }
 
 .link-container {
   height: 35px;
   width: auto;
-  color: #e3e4e2;
+  color: #84ff85;
   text-decoration: none;
 }
 
@@ -24,7 +23,7 @@
   height: 32px;
   overflow: hidden;
   color: #e3e4e2;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .primary {

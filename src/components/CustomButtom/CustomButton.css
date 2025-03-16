@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  color: #211c1c;
+  color: #8aff85;
   font-weight: 700;
   place-items: center;
   text-decoration: none;
@@ -34,8 +34,8 @@
 
 .primary1 {
   font-size: 1.25rem;
-  color: #c6d1ba;
-  background: #757873;
+  color: #282222;
+  background: #8aff85;
   justify-content: center;
   width: auto;
   height: 80px;
