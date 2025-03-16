@@ -3,6 +3,7 @@
 p {
   color: #aeb3aa;
   font-family: Raleway;
+  font-weight: 500;
 }
 
 a {
@@ -14,6 +15,7 @@ a {
 h1, h2, h3, h4, h5 {
   color: #84ff85;
   font-family: Ubuntu;
+  font-weight: 900;
 }
 
 @font-face {
@@ -106,10 +108,10 @@ main {
   font-weight: 900;
   font-size: 7rem;
   text-transform: uppercase;
-  color: #e3e4e2;
+  color: #8aff85;
   padding: 1rem;
   overflow: hidden;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+  text-align: left;
 }
 
 .contact-title {

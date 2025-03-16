@@ -1,7 +1,7 @@
-import Hero from "../components/Hero";
+
 import CTA from "../components/CTA";
 import Contact from "../components/Contact";
-import ProjectsComp from "../components/Projects";
+import ProjectDetail from "../components/ProjectDetail/ProjectDetail";
 
 import FloatingCallButton from "../components/FloatingCallButton";
 
@@ -10,8 +10,7 @@ function HomePage() {
   return (
     <>
       <main id="home">
-        <Hero />
-        <ProjectsComp />
+        <ProjectDetail />
         <CTA />
         <Contact />
       </main>

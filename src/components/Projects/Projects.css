@@ -1,5 +1,4 @@
 .project-card {
-  color: #e3e4e2;
   display: flex;
   width: 30vw;
   height: auto;
@@ -25,12 +24,6 @@
   text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-  custom-btncome {
-    padding: 1rem;
-    font-size: 1rem;
-  }
-}
 
 .subtitle-box {
   margin: auto;
@@ -101,16 +94,20 @@
   object-fit: cover;
 }
 
-.project-card p {
-  color: #969695;
-}
 
-.project-card h3 {
+
+.project-card {
   margin-top: 0.25rem;
   margin-bottom: 10px;
   font-weight: 700;
-}
+  color: #8aff85;
+} 
 
 .project-section {
   height: auto;
+  background-color: #282222;
+  padding: 1rem;
+  margin: 20px;
+  border: 1px solid #8aff85;
+  border-radius: 10px;
 }

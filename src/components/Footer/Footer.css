@@ -3,15 +3,18 @@
   place-content: center;
   min-width: auto;
   height: auto;
-  margin: 0;
+  background-color: #282222;
+  margin: 20px 10px 20px 10px;
+  padding: 1rem;
   bottom: 0;
   justify-content: center;
   text-align: start;
   margin-right: auto;
   margin-left: auto;
   flex-wrap: wrap;
-  border: 0.25px solid rgba(255, 255, 255, 0.18);
+  border: 0.25px solid #8aff85;
   color: #e3e4e2;
+  border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
   .footer-div {
@@ -30,16 +33,14 @@ img.stack  {
   padding: 3rem;
 }
 
-.footer-location {
-  text-align: center;
-}
 
-.right {
+
+.right-footer {
   display: flex;
   flex-direction: row;
 }
 @media screen and (max-width: 768px) {
-  .right {
+  .right-footer {
     display: flex;
     flex-direction: column;
   }

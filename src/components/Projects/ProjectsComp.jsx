@@ -5,13 +5,13 @@ import "./Projects.css";
 function ProjectsComp() {
   return (
     <section id="projects" className="project-section mt-5">
-      <div className="project-header">
-        <h2 className="section-title p-4">Projects</h2>
+      <div className="container">
+        <h2 className="section-title">Projects</h2>
         <div className="d-flex subtitle-box">
-          <h3 className="welcome">
+          <p className="">
             Find a sample of personal projects, focused on frontend and
             fullstack development
-          </h3>
+          </p>
           <img
             src={Arrow}
             alt="web development small businesses in Chicago"

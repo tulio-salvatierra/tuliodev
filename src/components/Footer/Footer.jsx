@@ -22,7 +22,7 @@ function Footer() {
           </p>
         </div>
 
-        <div className="right">
+        <div className="right-footer">
           <div className="footer-col">
             <h1 className="footer-nav">Contact</h1>
             <div className="separator"></div>

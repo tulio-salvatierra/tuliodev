@@ -3,7 +3,7 @@ import contactIcon from "../assets/icons/contact.png";
 import projectsIcon from "../assets/icons/projects.png";
 import homeIcon from "../assets/icons/home.png";
 
-export const PROJECTS_URL = "/projects-web-development-freelance-chicago";
+export const PROJECTS_URL = "/projects";
 
 export const HOME_URL = "/";
 
@@ -11,6 +11,8 @@ export const ABOUT_URL =
   "/about-tulio-salvatierra-web-development-services-chicago";
 
 export const CONTACT_URL = "/#contact";
+
+export const PD_URL = "/project/:id"
 
 export const GITHUB_URL = "https://www.github.com/tulio-salvatierra";
 
