@@ -1,7 +1,15 @@
 /* bg: #282222; */
 
+p {
+  color: #aeb3aa;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #84ff85;
+}
+
 @font-face {
-  font-family: helvetica;
+  font-family: "inter";
 }
 
 .container {
@@ -10,7 +18,7 @@
   background: radial-gradient(
     circle,
     rgba(40, 34, 34, 1) 23%,
-    rgba(62, 58, 56, 1) 70%
+    rgba(62, 58, 56, 1) 70%, opacity: 1;
   );
   flex-direction: column;
   justify-content: center;
@@ -29,6 +37,8 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+
 
 #root,
 main {
