@@ -28,9 +28,9 @@
 img.stack  {
   height: auto;
   width: 100%;
-  border-radius: 16px;
+  border-radius: 10px;
   object-fit: cover;
-  padding: 3rem;
+  padding: 0;
 }
 
 
@@ -144,7 +144,7 @@ img.stack  {
 }
 
 .footer-nav {
-  color: #e3e2e4;
+  color: #8aff85;
   font-weight: 700;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -155,7 +155,7 @@ img.stack  {
   font-weight: 800;
   letter-spacing: -8px;
   font-size: 8vw;
-  color: #c6d1ba;
+  color: #8aff85;
   text-align: center;
   margin: 1rem;
 }

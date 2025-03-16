@@ -17,8 +17,7 @@ function Footer() {
         <div className="left">
           <img src={profilePic} alt="profile-pic" className="stack" />
           <p className="footer-profile-text">
-            I build websites and provide digital solutions to help businesses
-            and professionals drive growth and enhance your online presence.
+            Full stack developer, with an eye for design.
           </p>
         </div>
 

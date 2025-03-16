@@ -5,7 +5,7 @@ import "./Projects.css";
 function ProjectsComp() {
   return (
     <section id="projects" className="project-section mt-5">
-      <div className="container">
+      <div className="project-container">
         <h2 className="section-title">Projects</h2>
         <div className="d-flex subtitle-box">
           <p className="">

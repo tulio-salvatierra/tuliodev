@@ -77,9 +77,7 @@ function Hero() {
             >
               <h2>FULL STACK DEVELOPER</h2>
               <p className="">
-                I help elevate your online presence and drive business growth by
-                delivering responsive, user-friendly interfaces and seamless
-                user experience.
+              Full stack developer, with an eye for design.
               </p>
               <CustomButton name="Let's talk!" url={`tel:${TELEPHONE}`} />
             </div>
