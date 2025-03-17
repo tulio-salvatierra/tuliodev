@@ -21,13 +21,13 @@ function Hero() {
 
   useEffect(() => {
     const easeFromBelow = gsap.matchMedia();
-    easeFromBelow.add("(min-width: 801px)", () => {
+    easeFromBelow.add("(min-width: 301px)", () => {
       gsap.from(panelsBottomRef.current, {
         y: 35,
         opacity: 0,
         duration: 1.2,
         ease: "power4.out",
-        stagger: 0.3,
+        stagger: 0.4,
         scrollTrigger: {
           trigger: panelsBottomRef.current,
           start: "top 80%",
