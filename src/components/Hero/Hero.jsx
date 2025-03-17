@@ -82,7 +82,7 @@ function Hero() {
               <CustomButton name="Let's talk!" url={`tel:${TELEPHONE}`} />
             </div>
 
-            <div className="links" ref={(el) => (panelsBottomRef.current[4])}>
+            <div className="links" ref={(el) => (panelsBottomRef.current[4] = el)}>
               <a className="" href={LINKEDIN_URL}>
                 LINKEDIN
                 <svg
