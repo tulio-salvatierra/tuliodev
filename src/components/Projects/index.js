@@ -1,2 +1,1 @@
-import ProjectsComp1 from "./ProjectsComp";
-export default ProjectsComp1;
+export {default} from './ProjectsComp';

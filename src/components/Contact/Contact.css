@@ -1,10 +1,14 @@
 .contact-parent {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-areas: "info picture"; 
-  gap: 1rem; 
+  display: flex;
   align-items: center;
-  height: 100dvh; 
+  height: auto;
+  background: transparent;
+}
+
+.container {
+  border: 1px solid #8aff85;
+  
+  border-radius: 10px;
 }
 
 .contact-text {
@@ -16,7 +20,7 @@
 }
 
 .contact-info {
-  grid-area: info; 
+  grid-area: info;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,28 +28,25 @@
 }
 
 .contact-picture {
-  grid-area: picture; 
-  text-align: right; 
+  grid-area: picture;
+  text-align: right;
   padding: 1rem;
 }
 
 .contact-picture img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px;
   object-fit: cover;
   margin-right: 10rem;
 }
 
 .contact-section {
-  padding: 2rem;
-  height: 90dvh;
+  padding: 1rem;
+  height: auto;
   display: flex;
   justify-content: Space-between;
   flex-direction: column;
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .contact-title {
@@ -57,15 +58,15 @@
 
 @media screen and (max-width: 768px) {
   .contact-parent {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "info"
-      "picture"; 
+      "picture";
   }
 
   .contact-picture {
-    text-align: center; 
+    text-align: center;
   }
 
   .contact-section {
