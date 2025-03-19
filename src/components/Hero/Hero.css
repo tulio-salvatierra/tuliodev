@@ -1,6 +1,6 @@
 .hero-section {
   display: flex;
-  height: 100vh;
+  height: auto;
   margin-top: 2rem;
   color: #84ff85;
 }

@@ -23,11 +23,11 @@ function Hero() {
     const easeFromBelow = gsap.matchMedia();
     easeFromBelow.add("(min-width: 301px)", () => {
       gsap.from(panelsBottomRef.current, {
-        y: 35,
+        y: 15,
         opacity: 0,
         duration: 1.2,
         ease: "power4.out",
-        stagger: 0.4,
+        stagger: 0.1,
         scrollTrigger: {
           trigger: panelsBottomRef.current,
           start: "top 80%",

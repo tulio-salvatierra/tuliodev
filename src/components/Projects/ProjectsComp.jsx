@@ -14,7 +14,7 @@ export default function ProjectsComp() {
     const easedItems = gsap.matchMedia();
     easedItems.add("(min-width: 301px)", () => {
       gsap.from(animatedItems.current, {
-        y: 75,
+        y: -15,
         opacity: 0,
         duration: 1.3,
         ease: "power4.in",
